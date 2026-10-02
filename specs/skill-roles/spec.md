@@ -36,7 +36,7 @@ Supporting resources belong with the skill they support. They do not become sepa
 
 ### SR-003: Composition without duplicated authority
 
-Skills MAY compose across roles. Instructions that appear to overlap MUST be assigned to the role that owns the relevant decision. Other skills may refer to that guidance rather than duplicate its rules.
+Skills MAY compose across roles within the reference restrictions in SR-005. Instructions that appear to overlap MUST be assigned to the role that owns the relevant decision. Other skills may refer to that guidance rather than duplicate its rules when the reference is permitted.
 
 For example, readiness to leave an implementation stage belongs to a stage skill; choosing an investigation strategy belongs to a diagnosis playbook; tracing a code path belongs to a technique; a constraint on accepting a proposed fix belongs to a principle.
 
@@ -46,6 +46,33 @@ Stage skills MAY represent individual stages or route to guidance for multiple s
 
 Role directories MUST NOT imply required category routers, invocation order, or hidden discovery. Routers and progressive disclosure are design choices based on selection needs and context cost. Directory nesting alone is not a promise that skill descriptions are hidden from an agent.
 
+### SR-005: Directional operational references
+
+An operational reference instructs an agent to load, invoke, or follow another skill. Operational references MUST follow this matrix:
+
+| From / To | Stages | Playbooks | Techniques | Principles |
+| --- | --- | --- | --- | --- |
+| Stages | Allowed | Allowed | Allowed | Allowed |
+| Playbooks | Forbidden | Allowed | Allowed | Allowed |
+| Techniques | Forbidden | Forbidden | Allowed | Allowed |
+| Principles | Forbidden | Forbidden | Forbidden | Allowed |
+
+Stages may coordinate useful playbooks, techniques, and principles. Playbooks may compose supporting playbooks, techniques, and principles, but MUST NOT initiate stage transitions. Techniques may use supporting techniques and principles, but MUST NOT initiate playbooks or stage workflows. Principles may reference other principles, but MUST NOT direct execution through another role.
+
+The restriction applies to instructions in both the main skill file and its supporting resources. Moving an instruction into a reference document does not change its role boundary.
+
+Explanatory mentions and examples are not operational references unless they instruct the agent to load, invoke, or follow a skill. Documentation outside runtime skills MAY link across roles freely.
+
+### SR-006: References preserve authority and control
+
+An allowed reference MUST NOT be treated as authorization to execute the referenced skill. Its activation conditions and applicable project rules still govern execution.
+
+Same-role references MUST preserve the caller's scope. Operational references MUST NOT form circular invocation or delegation chains.
+
+A called skill MUST return control and its result to its caller. It MAY report that broader work is needed, but MUST NOT select and initiate a workflow forbidden by SR-005. The caller or requester decides what to do next within its own authority.
+
+For example, a diagnosis playbook may invoke a tracing technique. The technique returns its findings; it does not start a diagnosis playbook in response to those findings.
+
 ## Acceptance conditions
 
 - Each skill has one primary role and resides in its corresponding directory.
@@ -53,6 +80,11 @@ Role directories MUST NOT imply required category routers, invocation order, or 
 - A skill's responsibilities match its role, and composition does not copy another role's rules.
 - Both an individual-stage skill and a stage router are permitted without changing the role model.
 - The layout can be used without introducing a router for every category or prescribing invocation order.
+- Operational references, including those in supporting resources, follow the SR-005 matrix.
+- Explanatory examples do not create operational dependencies merely by mentioning another role.
+- A permitted reference does not bypass activation conditions or project authority.
+- Same-role composition preserves scope and contains no circular invocation or delegation chain.
+- A called skill returns control to its caller rather than initiating a forbidden broader workflow.
 
 ## Outside this feature
 
