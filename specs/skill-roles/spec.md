@@ -16,8 +16,8 @@ Choose the role by the decision the skill owns, not its topic, tool, or position
 
 | Role | Owns | Does not own |
 | --- | --- | --- |
-| Stage | Work state, prerequisites, transition gates, and transition authority | The strategy for solving a particular problem |
-| Playbook | A reusable strategy for a problem or outcome | Work-stage transition gates |
+| Stage | The enclosing workflow's work state, prerequisites, transition gates, and transition authority | The strategy for solving a particular problem |
+| Playbook | A reusable strategy for a problem or outcome, including its internal checkpoints | The enclosing workflow's stage transition gates |
 | Technique | A bounded, reusable operation and its result | The purpose or strategy of the larger task |
 | Principle | Constraints on judgment that can change or reject a decision | A prescribed task sequence |
 
@@ -39,6 +39,8 @@ Supporting resources belong with the skill they support. They do not become sepa
 Skills MAY compose across roles within the reference restrictions in SR-005. Instructions that appear to overlap MUST be assigned to the role that owns the relevant decision. Other skills may refer to that guidance rather than duplicate its rules when the reference is permitted.
 
 For example, readiness to leave an implementation stage belongs to a stage skill; choosing an investigation strategy belongs to a diagnosis playbook; tracing a code path belongs to a technique; a constraint on accepting a proposed fix belongs to a principle.
+
+Playbooks MAY define checkpoints internal to their strategy. A diagnosis playbook may require reproduction before patching, and a TDD playbook may require a failing test before implementation. These checkpoints do not authorize a transition in the enclosing workflow and MUST NOT be treated as stage gates merely because they track progress.
 
 ### SR-004: Role does not dictate packaging
 
@@ -67,7 +69,9 @@ Explanatory mentions and examples are not operational references unless they ins
 
 An allowed reference MUST NOT be treated as authorization to execute the referenced skill. Its activation conditions and applicable project rules still govern execution.
 
-Same-role references MUST preserve the caller's scope. Operational references MUST NOT form circular invocation or delegation chains.
+Every operational call, whether within a role or across roles, MUST remain within the caller's authorized boundary. A caller MAY assign a narrower scope. Expanding beyond that boundary requires an explicit decision by a caller or requester with authority to expand it; the called skill cannot grant itself broader scope.
+
+Operational references MUST NOT form circular invocation or delegation chains.
 
 A called skill MUST return control and its result to its caller. It MAY report that broader work is needed, but MUST NOT select and initiate a workflow forbidden by SR-005. The caller or requester decides what to do next within its own authority.
 
@@ -78,12 +82,15 @@ For example, a diagnosis playbook may invoke a tracing technique. The technique 
 - Each skill has one primary role and resides in its corresponding directory.
 - Imported or adapted skills receive the same classification as locally authored skills.
 - A skill's responsibilities match its role, and composition does not copy another role's rules.
+- A playbook can define internal strategy checkpoints without owning or authorizing transitions in the enclosing workflow.
 - Both an individual-stage skill and a stage router are permitted without changing the role model.
 - The layout can be used without introducing a router for every category or prescribing invocation order.
 - Operational references, including those in supporting resources, follow the SR-005 matrix.
 - Explanatory examples do not create operational dependencies merely by mentioning another role.
 - A permitted reference does not bypass activation conditions or project authority.
-- Same-role composition preserves scope and contains no circular invocation or delegation chain.
+- Every operational call preserves the caller's authorized boundary, including cross-role calls; a narrower assignment is permitted.
+- Broader work requires an explicit decision by an authorized caller or requester.
+- Operational composition contains no circular invocation or delegation chain.
 - A called skill returns control to its caller rather than initiating a forbidden broader workflow.
 
 ## Outside this feature
