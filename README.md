@@ -7,6 +7,8 @@ The repository currently contains no skills or installation tooling. Nix and Ver
 ## Features
 
 - [Skill roles](specs/skill-roles/spec.md) defines responsibilities and source organization.
+- [Progressive disclosure](specs/progressive-disclosure/spec.md) defines on-demand loading of specialized guidance.
+- [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites and tool dependencies.
 
 ## License
 
