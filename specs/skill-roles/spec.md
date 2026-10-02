@@ -40,7 +40,7 @@ Skills MAY compose across roles within the reference restrictions in SR-005. Ins
 
 For example, readiness to leave an implementation stage belongs to a stage skill; choosing an investigation strategy belongs to a diagnosis playbook; tracing a code path belongs to a technique; a constraint on accepting a proposed fix belongs to a principle.
 
-Playbooks MAY define checkpoints internal to their strategy. A diagnosis playbook may require reproduction before patching, and a TDD playbook may require a failing test before implementation. These checkpoints do not authorize a transition in the enclosing workflow and MUST NOT be treated as stage gates merely because they track progress.
+Playbooks MAY define checkpoints internal to their strategy. A diagnosis playbook may require reproduction before patching. These checkpoints do not authorize a transition in the enclosing workflow and MUST NOT be treated as stage gates merely because they track progress.
 
 ### SR-004: Role does not dictate packaging
 
