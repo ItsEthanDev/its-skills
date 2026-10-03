@@ -8,6 +8,10 @@ Nix and Vercel's skills CLI are intended installation paths. Installation toolin
 
 All current skills are guidance-only and need no Nix installation to use their instructions. Explicit-invocation settings depend on harness support.
 
+### Stages
+
+- [Development Stages](stages/stages/SKILL.md): Coordinate applicable Constitute, Specify, Plan, and Implement work without requiring every stage or a fixed sequence.
+
 ### Playbooks
 
 - [Authoring Skills](playbooks/authoring-skills/SKILL.md): Create or revise a skill. Adapted to the collection's governance and specifications; explicitly invoked.
