@@ -2,9 +2,23 @@
 
 ItsSkills is an experimental collection of agent skills, governed by its [constitution](CONSTITUTION.md).
 
-The collection currently includes the [Authoring Skills playbook](playbooks/authoring-skills/SKILL.md), adapted to its governance and feature specifications. It is explicitly invoked in harnesses that support its invocation metadata and needs no Nix installation to use its guidance.
-
 Nix and Vercel's skills CLI are intended installation paths. Installation tooling is not yet implemented or verified.
+
+## Skills
+
+All current skills are guidance-only and need no Nix installation to use their instructions. Explicit-invocation settings depend on harness support.
+
+### Playbooks
+
+- [Authoring Skills](playbooks/authoring-skills/SKILL.md): Create or revise a skill. Adapted to the collection's governance and specifications; explicitly invoked.
+- [Ingest Document](playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
+
+### Techniques
+
+- [Alignment](techniques/alignment/SKILL.md): Settle the questions needed for shared understanding.
+- [Propose First](techniques/propose-first/SKILL.md): Propose an approach and pause before implementation when requested.
+- [Repitch](techniques/repitch/SKILL.md): Replace an explanation with a clearer one when requested.
+- [Dry Run](techniques/dry-run/SKILL.md): Preview a bounded edit and wait for approval; explicitly invoked.
 
 ## Features
 
