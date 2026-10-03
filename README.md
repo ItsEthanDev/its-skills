@@ -23,6 +23,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Project Documentation](techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
 - [Writing](techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
+- [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
 
 ## Features
 
