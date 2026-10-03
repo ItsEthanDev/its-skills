@@ -5,7 +5,7 @@ description: Make real remote web API requests under explicit permission and env
 
 # Calling Web APIs
 
-Make only the real API operations the user authorizes. This technique owns live-access checks, not integration implementation, diagnosis strategy, or workflow transitions.
+Make only the real API operations the user authorizes.
 
 Retrieving public documentation and using local mocks or fake servers do not require API-access permission. The rules below apply equally to raw HTTP, SDKs, CLIs, GraphQL, RPC, and integration tests that contact a real service.
 
@@ -41,4 +41,4 @@ If a request fails or times out, do not infer that a mutation had no effect or r
 
 Report the operation and environment, useful redacted evidence, and any uncertainty about the result or effect. Distinguish a performed call from a proposed call or a result that could not be verified.
 
-Return results and control to the caller. Permission for this operation does not authorize broader work, an integration workflow, or a stage transition.
+Return results and control to the caller.

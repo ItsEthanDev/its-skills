@@ -12,4 +12,4 @@ When asked to propose first, explain a recommended change before implementing it
 3. Make the next step clear: identify what the user needs to tell or decide, what the user needs to do outside the agent's reach, and what the agent can do and verify after approval. Omit categories that do not apply. Do not request secrets in chat. If the result of a user action could change the approach, ask for that observation before settling the proposal.
 4. Stop and wait for approval of the bounded approach before implementing. A supplied fact or follow-up question alone is not approval; a clear direction to proceed with the proposed change is. If new information changes the approach, present the revised proposal before implementing it.
 
-Approval of the proposal covers only the described change. Follow existing rules for pushing, deployment, and other external actions. Other skills may supply the investigation method or implementation workflow; this skill owns only the proposal and pause.
+Approval of the proposal covers only the described change. Follow existing rules for pushing, deployment, and other external actions.

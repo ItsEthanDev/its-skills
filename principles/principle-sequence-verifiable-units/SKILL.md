@@ -13,6 +13,6 @@ A failure is easier to explain when the unit that caused it is identifiable. Fav
 - Preserve the validity of evidence: later changes may invalidate a passing check, while unchanged relevant behavior need not be checked again merely for ceremony.
 - Make delivery understandable through coherent changes and clear evidence. Baseline comparisons, tests, or a subtraction before a reshape can help explain the result without prescribing a commit or PR structure.
 
-This principle does not mandate rebasing, failing-test commits, stacked PRs, a fixed gate sequence, or independent review. Project workflows own execution order and acceptance boundaries.
+Follow project rules for delivery order and acceptance checks. Run an independent review only when explicitly requested or scheduled by an authoritative project artifact.
 
-[Prove It Works](../principle-prove-it-works/SKILL.md) constrains the validity of evidence. [Build the Lever](../principle-build-the-lever/SKILL.md) informs whether a repeatable tool would make the checks cheaper and more reliable. These references do not authorize additional work.
+When judging whether a check establishes its claim, read [Prove It Works](../principle-prove-it-works/SKILL.md). When deciding whether a repeatable tool would improve a check, read [Build the Lever](../principle-build-the-lever/SKILL.md). Keep resulting work within the authorized assignment.

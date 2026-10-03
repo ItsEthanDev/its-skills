@@ -5,7 +5,7 @@ description: Align with the user on an idea, decision, or intended outcome. Use 
 
 # Alignment
 
-Establish a shared understanding for the invoking task. This technique resolves questions; it does not choose the task's next activity.
+Establish a shared understanding for the invoking task.
 
 ## Choose depth
 

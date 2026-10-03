@@ -6,7 +6,7 @@ Use scripts for repeatable mechanics with explicit inputs and observable results
 
 Let the script own its arguments, defaults, validation, execution steps, and implemented verification. Provide usage through its help interface.
 
-In the skill, state when to invoke the script, what authorization or context it needs, and what remains outside its responsibility. Point to the script and its help instead of reproducing their contents. Do not instruct the agent to repeat checks the script already performs.
+In the skill, state when to invoke the script, what authorization or context it needs, and which decisions the agent must resolve before execution. Point to the script and its help instead of reproducing their contents. Do not instruct the agent to repeat checks the script already performs.
 
 ## Supply tools through Nix
 

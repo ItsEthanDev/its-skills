@@ -14,5 +14,3 @@ Context is limited. Large irrelevant payloads can displace the information neede
 - Without suitable delegation, prefer targeted reads, filtering, and concise summaries rather than assume a particular agent facility exists.
 - Keep guidance needed on every invocation in the main skill. Disclose specialized branches only when relevant.
 - Consider selection and retrieval costs as well as raw token count. A summary that hides decisive uncertainty is not an improvement.
-
-This principle constrains context use; it does not prescribe phase sizes, turn budgets, mandatory delegation, or authority to launch work.

@@ -18,4 +18,4 @@ A fix should address the mechanism that causes a defect, not merely hide its vis
 
 Persistent state, caches, configuration, lock files, and serialized data are hypotheses worth examining when behavior changes after restart. Restoration after clearing state is evidence to investigate, not proof that state validation is the only fix.
 
-Do not delete state or broaden repairs merely to test a hypothesis without the required authorization. The investigation strategy and execution sequence belong to the caller's workflow.
+Do not delete state or broaden repairs merely to test a hypothesis without the required authorization.

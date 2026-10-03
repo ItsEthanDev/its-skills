@@ -112,4 +112,4 @@ Good interfaces make testing natural:
 ## Going deeper
 
 - When assessing whether dependencies permit a deeper module, read [DEEPENING.md](DEEPENING.md) for dependency categories, seam discipline, and test-coverage tradeoffs.
-- When comparing alternative interfaces, read [DESIGN-IT-TWICE.md](DESIGN-IT-TWICE.md) for comparison criteria. It does not prescribe a design workflow or delegation pattern.
+- When comparing alternative interfaces, read [DESIGN-IT-TWICE.md](DESIGN-IT-TWICE.md) for comparison criteria.

@@ -39,6 +39,8 @@ Keep one skill when the material shares an invocation and purpose. A distinct re
 
 Write reusable procedure in the skill. Find project policy, paths, commands, and other local facts in the target project's own sources rather than treating one environment as universal.
 
+Omit scope metacommentary from the skill and its supporting references. Do not narrate its role, what it owns, or which responsibilities belong elsewhere. Let its name, activation conditions, and instructions establish scope. Use the role model to decide what to write, not as prose to insert into the finished skill. Preserve concrete activation, handoff, authorization, and safety instructions that change behavior.
+
 ## Check operational references
 
 Treat an instruction to load, invoke, or follow another skill as an operational reference. Apply these allowed directions to both the main file and supporting resources:
@@ -60,7 +62,7 @@ When adding or revising a bundled script, read [Writing skill scripts](reference
 
 ## Prune and check
 
-When in doubt, delete. Keep prose that changes a decision or action. Skip the reason unless the rule would be confusing without it. Match tone and detail to scope.
+When in doubt, delete. Keep prose that changes a decision or action. Remove scope narration and self-description that add no operational instruction. Skip the reason unless the rule would be confusing without it. Match tone and detail to scope.
 
 Check the role, source location, activation setting, operational references, bundled resources, and links. Check the target harness's required frontmatter and supported invocation behavior. For an agent-selected skill, compare its description with representative requests; for an explicitly invoked skill, check its loading path or command where available.
 

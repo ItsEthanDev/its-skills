@@ -7,7 +7,7 @@ description: Build or change code that communicates with a remote web API or rec
 
 Implement the behavior the application needs against the relevant remote contract. Keep implementation authority separate from permission to contact the service.
 
-For diagnosis, use the [Diagnosing Bugs playbook](../diagnosing-bugs/SKILL.md) within its authorized scope. For an explicitly requested or scheduled review, use [Development Review](../development-review/SKILL.md). This playbook supplies implementation strategy; it does not initiate either workflow merely because integration code exists.
+For diagnosis, use the [Diagnosing Bugs playbook](../diagnosing-bugs/SKILL.md) within its authorized scope. For an explicitly requested or scheduled review, use [Development Review](../development-review/SKILL.md).
 
 ## Establish the relevant contract
 
@@ -37,4 +37,4 @@ Keep live contract checks separate and disabled by default. Before any real API 
 
 Retain useful, stable documentation links near the boundary when project conventions permit and the link preserves a non-obvious contract fact. Use [Project Documentation](../../techniques/project-documentation/SKILL.md) when a durable contract or decision needs an owner; do not create an artifact merely to record routine work.
 
-Report the relevant contract evidence, consequential interaction choices, assumptions or conflicts, checks performed, and live behavior that remains unverified. Local modeled-contract tests do not prove actual provider compatibility. Return the result and control to the caller without expanding the assignment or initiating a stage transition.
+Report the relevant contract evidence, consequential interaction choices, assumptions or conflicts, checks performed, and live behavior that remains unverified. Local modeled-contract tests do not prove actual provider compatibility. Return the result and control to the caller.

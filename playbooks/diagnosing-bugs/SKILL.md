@@ -5,7 +5,7 @@ description: Diagnosis loop for hard bugs and performance regressions. Use when 
 
 # Diagnosing Bugs
 
-A discipline for hard bugs. Skip phases only when explicitly justified. These phases are checkpoints within the diagnosis strategy, not transitions in the project's enclosing workflow.
+A discipline for hard bugs. Skip phases only when explicitly justified.
 
 ## Authority and scope
 
@@ -17,21 +17,21 @@ When exploring the codebase, read `CONTEXT.md` (if it exists) to get a clear men
 
 ## Redact
 
-This skill has you show commands, outputs and captured artifacts. **Redact every secret first**: write `<REDACTED>` in its place. Build loops against env vars, so the credential stays in the environment rather than in what you show. Captured artifacts carry auth headers: quote only the lines that carry the signal.
+Before showing commands, outputs, or captured artifacts, **redact every secret**: write `<REDACTED>` in its place. Build loops against env vars, so the credential stays in the environment rather than in what you show. Captured artifacts carry auth headers: quote only the lines that carry the signal.
 
 If the redacted output is not enough to diagnose the bug, say so and ask the user.
 
 ## Phase 1: Build a feedback loop
 
-**This is the skill.** Everything else is mechanical. If you have a **tight** pass/fail signal for the bug (one that goes red on _this_ bug), you will find the cause; bisection, hypothesis-testing, and instrumentation all just consume it. If you don't have one, no amount of staring at code will save you.
+If you have a **tight** pass/fail signal for the bug (one that goes red on _this_ bug), you will find the cause; bisection, hypothesis-testing, and instrumentation all just consume it. If you don't have one, no amount of staring at code will save you.
 
 Spend disproportionate effort here. **Be aggressive. Be creative. Refuse to give up.**
 
 ### Ways to construct one, in roughly this order
 
-These are possible methods, not guaranteed facilities. Use available, authorized project tools. Report missing prerequisites rather than installing tools or services implicitly. Newly bundled skill scripts must follow the collection's Nix-backed execution requirements; this playbook bundles none.
+These are possible methods, not guaranteed facilities. Use available, authorized project tools. Report missing prerequisites rather than installing tools or services implicitly.
 
-Before writing an initial failing test or a regression test, use an already approved seam or obtain confirmation for a new or changed seam. An approved plan confirms its selected seams; do not ask again for each test. When test-first work applies, read [TDD](../../techniques/tdd/SKILL.md) for seam approval and the test-quality and red-green rules. Applying it does not expand the assignment.
+Before writing an initial failing test or a regression test, use an already approved seam or obtain confirmation for a new or changed seam. An approved plan confirms its selected seams; do not ask again for each test. When test-first work applies, read [TDD](../../techniques/tdd/SKILL.md) for seam approval and the test-quality and red-green rules.
 
 1. **Failing test** at an approved seam that reaches the bug: unit, integration, e2e.
 2. **Curl / HTTP script** against a running dev server.
@@ -74,7 +74,7 @@ Phase 1 is done when the loop is **tight** and **red-capable**: you can name **o
 
 For a human-assisted loop, replace the command requirement with the explicit check and its observed result, and justify that exception. Preserve a signal that distinguishes this bug from unrelated failure.
 
-If you catch yourself building a theory before this feedback signal exists, **stop: jumping straight to a hypothesis is the exact failure this skill prevents.** No red-capable feedback signal, no Phase 2.
+If you catch yourself building a theory before this feedback signal exists, **stop and establish a red-capable signal before proceeding.** No red-capable feedback signal, no Phase 2.
 
 ## Phase 2: Reproduce + minimise
 
@@ -130,7 +130,7 @@ For an authorized test-first repair, use the [TDD technique](../../techniques/td
 
 A correct seam is one where the test exercises the **real bug pattern** as it occurs at the call site. If the only available seam is too shallow (single-caller test when the bug needs multiple callers, unit test that can't replicate the chain that triggered the bug), a regression test there gives false confidence.
 
-**If no correct seam exists, that itself is a finding.** Report the limitation and any proposed architectural change. It does not authorize redesign or a new stage of work.
+**If no correct seam exists, that itself is a finding.** Report the limitation and any proposed architectural change. Obtain authorization before redesigning the interface.
 
 When a correct, approved seam exists, use the minimised reproduction as the regression case under the TDD rules. Verify an authorized repair against the original, un-minimised feedback loop as well; passing a narrower test does not prove that the user's scenario is fixed.
 
@@ -144,4 +144,4 @@ Before reporting completion:
 - [ ] Useful reproductions and findings are retained according to project conventions. Remove only authorized temporary artifacts; do not automatically delete experiments or unrelated files.
 - [ ] The supported causal explanation and verification limits appear in the result. Include them in a commit or PR message if that artifact is already part of the authorized workflow; neither is required merely to finish diagnosis.
 
-Return the result and control to the caller. This playbook does not authorize deployment, publication, a review, or a stage transition.
+Return the result and control to the caller.

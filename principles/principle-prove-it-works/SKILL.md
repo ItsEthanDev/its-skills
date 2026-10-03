@@ -20,4 +20,4 @@ When a check fails, consider whether the observation method actually measures th
 
 A deterministic check is useful when repeatability increases confidence enough to justify its cost. A new script or retained results artifact is not mandatory for every task. Follow project rules and authorized scope for creating or committing verification resources.
 
-State what was observed, what remains unverified, and what the evidence cannot establish. Missing access or execution authority limits the claim; it does not authorize external actions or a new workflow.
+State what was observed, what remains unverified, and what the evidence cannot establish. Limit the claim when access or execution authority is missing. Obtain authorization before external checks.

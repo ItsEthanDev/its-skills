@@ -45,6 +45,10 @@ The [Principles router](principles/principles/SKILL.md) selects among 22 enginee
 - [Progressive disclosure](specs/progressive-disclosure/spec.md) defines on-demand loading of specialized guidance.
 - [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites and tool dependencies.
 
+## Repository guidance
+
+Follow [AGENTS.md](AGENTS.md) when changing the collection. Use the [Authoring Skills playbook](playbooks/authoring-skills/SKILL.md) when creating or revising a skill.
+
 ## License
 
 [MIT](LICENSE).

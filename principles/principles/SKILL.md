@@ -7,7 +7,7 @@ description: Apply engineering principles when making consequential implementati
 
 Select the smallest relevant set of principles, read each selected skill in full, and let its guidance affect a concrete decision. Do not load every principle by default or cite one that did not affect the work.
 
-Selection does not authorize implementation, delegation, external actions, or broader scope. Preserve applicable project rules and the caller's authorized boundary. Principles constrain judgment; the caller's workflow owns execution and transitions.
+Preserve applicable project rules and the caller's authorized boundary.
 
 ## Selection
 
@@ -53,5 +53,3 @@ Selection does not authorize implementation, delegation, external actions, or br
 Resolve tension according to the actual decision, project constraints, and available evidence. Prefer the smallest sufficient change unless evidence warrants a different design, experiment, or tool.
 
 Use only available and authorized capabilities. If a selected principle reveals broader work or unresolved authority, return that finding to the caller rather than initiate another workflow. When making a completion claim, select the evidence guidance relevant to that claim; do not turn selection into a mandatory verification sequence.
-
-The leaves retain their explicit-invocation metadata. Its effect depends on harness support; neither directory nesting nor this router guarantees that leaf descriptions are hidden from initial context.

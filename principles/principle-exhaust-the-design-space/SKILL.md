@@ -14,4 +14,4 @@ Judge alternatives against the actual question, constraints, and user experience
 
 Apply this judgment to novel interactions, architectural choices with multiple viable approaches, and product decisions where feel matters. Do not manufacture alternatives for mechanical changes, clear target states, or constraints that permit only one responsible answer.
 
-This principle does not authorize experiments, implementation, delegation, or a workflow transition beyond the current assignment.
+Keep experiments and implementation within the authorized assignment.

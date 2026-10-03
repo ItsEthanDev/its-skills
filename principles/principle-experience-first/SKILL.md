@@ -16,4 +16,4 @@ The product is the experience. Every technical decision either helps or hurts it
 
 The user is whoever consumes the work. For a UI that is the end user. For a library or an internal API it is the colleague who imports it. The engineer who maintains the code next is a user too. Weigh their experience the same way, and explain impact from their seat.
 
-Foundations should serve the experience, not the other way around. Foundational thinking informs structural choices; this principle constrains their effect on the experience.
+Foundations should serve the experience, not the other way around.

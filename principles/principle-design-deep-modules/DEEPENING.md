@@ -34,4 +34,4 @@ Interface-level tests can replace redundant implementation-coupled tests when th
 
 Judge tests by the observable behavior they establish. A test that breaks only because internal structure changed may be crossing the wrong seam.
 
-These criteria do not authorize restructuring, deletion, test execution, or an expansion of scope. The caller's assignment and project rules govern those actions.
+Before restructuring, deleting code or tests, or executing checks, confirm that the action is within the assignment and project rules.

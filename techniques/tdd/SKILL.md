@@ -5,7 +5,7 @@ description: Test-driven development. Use when the user wants to build features 
 
 # Test-Driven Development
 
-TDD is the red → green loop. This skill is the reference that makes that loop produce tests worth keeping: what a good test is, where tests go, the anti-patterns, and the rules of the loop. Apply the essential test-quality and loop rules on every cycle. Load supporting references when their guidance is needed, before relying on it.
+Use the red → green loop to test behavior through approved interfaces. Apply the essential test-quality and loop rules on every cycle. Load supporting references when their guidance is needed, before relying on it.
 
 When exploring the codebase, read `CONTEXT.md` (if it exists) so test names and interface vocabulary match the project's domain language, and respect ADRs in the area you're touching.
 
@@ -25,7 +25,7 @@ When an implementation plan exists, record each selected seam in its verificatio
 
 Ask "What's the public interface, and which seams should we test?" when seams have not been agreed. A new or changed seam requires confirmation; approval of one seam does not authorize another or expand the assignment.
 
-When the shape of that interface is itself in question (how deep the module is, where the seam belongs, what the interface should expose), read [Design Deep Modules](../../principles/principle-design-deep-modules/SKILL.md) for the vocabulary and design criteria. The principle is the shared source of the module, interface, depth, seam, adapter, leverage, and locality terms. Applying it does not authorize broader design or implementation work.
+When the shape of that interface is itself in question (how deep the module is, where the seam belongs, what the interface should expose), read [Design Deep Modules](../../principles/principle-design-deep-modules/SKILL.md) for the vocabulary and design criteria.
 
 ## Anti-patterns
 
@@ -37,4 +37,4 @@ When the shape of that interface is itself in question (how deep the module is, 
 
 - **Red before green.** Write the failing test first, then only enough code to pass it. Don't anticipate future tests or add speculative features.
 - **One slice at a time.** One seam, one test, one minimal implementation per cycle.
-- **Refactoring is not part of this loop.** Handle it as separately authorized work under project rules, not as part of the red → green implementation cycle. This technique does not initiate a review workflow or stage transition.
+- **Refactoring is not part of this loop.** Handle it as separately authorized work under project rules, not as part of the red → green implementation cycle.

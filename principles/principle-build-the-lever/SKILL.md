@@ -15,11 +15,10 @@ When the work isn't trivial, build the tool that does it instead of doing it by 
 - Codemod or script for edits, generator for repetitive files, a dump-to-sqlite query for analysis, a rerunnable check for verification.
 - A deterministic lever beats fan-out. If the tool can process every unit in one pass, run it yourself; don't fan out delegates to hand-apply what a script can do.
 - When authorized delegation is available, a shared, read-only execution contract can prevent instructions from drifting across delegates. Its value comes from consistent inputs, verification expectations, and scope limits, not a mandatory new skill for every delegation.
-- Applying this principle produces a file. If you cited it and there is no codemod, script, generator, or delegate skill in the diff, you didn't apply it.
+- Make the lever available as a runnable artifact, not merely a promise to automate.
 - Preserve a useful lever in the appropriate owner when the work outlives the session. Follow project rules and authorized scope for creating and committing it.
 
-This principle informs whether a tool earns its cost; it does not independently authorize tool creation, delegation, or broader work.
 
 **Balance:** The bar is triviality, not repetition. A one-off still earns a lever when the lever is what makes the work checkable. Per the [Laziness Protocol](../principle-laziness-protocol/SKILL.md), build the smallest script that does or proves the job, never a framework.
 
-Distinct from [Encode Lessons in Structure](../principle-encode-lessons-in-structure/SKILL.md), which makes a recurring instruction a durable guardrail. This is throughput and reviewability on the work in front of you. For scripting the verification itself, see [Prove It Works](../principle-prove-it-works/SKILL.md).
+When deciding how to enforce a recurring correction, read [Encode Lessons in Structure](../principle-encode-lessons-in-structure/SKILL.md). When scripting a verification check, read [Prove It Works](../principle-prove-it-works/SKILL.md).

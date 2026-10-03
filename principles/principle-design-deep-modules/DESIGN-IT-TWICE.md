@@ -25,5 +25,3 @@ No fixed number of designs, agents, or prototypes establishes a good comparison.
 - **Dependencies:** Does the design preserve the behavior and access constraints that matter?
 
 Favor a design whose tradeoffs fit the actual constraints. A hybrid is useful only when its combined interface remains coherent and its additional cost earns its place.
-
-This reference constrains design judgment. It does not prescribe problem-framing steps, delegate work, require a presentation sequence, or authorize implementation.

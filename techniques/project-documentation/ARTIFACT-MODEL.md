@@ -8,7 +8,7 @@ Use flow-back: a discovery or edit may begin in any artifact. Determine whether 
 
 A living spec describes the current target, even while code has not caught up. Delete obsolete target behavior instead of marking it deprecated. Git preserves earlier text. Keep an ADR or an older contract version when its history or compatibility is still needed. Feature directories represent coherent independently verifiable outcomes, not delivery stages.
 
-A user-requested or jointly agreed target change may be recorded without a second approval. An agent-proposed material target change requires user direction before adoption. The active workflow owns any transition gate; this technique does not add one.
+A user-requested or jointly agreed target change may be recorded without a second approval. An agent-proposed material target change requires user direction before adoption.
 
 ## Operational and declarative owners
 

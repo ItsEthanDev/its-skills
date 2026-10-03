@@ -13,4 +13,4 @@ Use a new requirement to reconsider the design, not merely to append a special c
 - Consider affected types, documentation, examples, and rationale so the proposed change is internally consistent.
 - Balance the cleaner design against migration cost, risk, and the smallest change that satisfies the assignment. A from-scratch comparison is a reasoning tool, not an instruction to rewrite everything.
 
-Reconcile affected dependents within authorized scope. Report necessary broader changes for a decision by an authorized caller or requester. This principle does not expand the assignment or determine delivery sequencing.
+Reconcile affected dependents within authorized scope. Report necessary broader changes for a decision by an authorized caller or requester.

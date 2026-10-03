@@ -15,4 +15,4 @@ Structural decisions protect useful options. Code-level decisions protect simpli
 - Prefer increments that establish or deepen a coherent abstraction rather than spread special-case coordination across callers.
 - Remove obsolete structure when doing so simplifies the foundation, within the authorized scope.
 
-Evaluate a foundation by the complexity it removes and the options it preserves, not by how much infrastructure it adds. This principle does not prescribe scaffold, test, commit, or workflow-stage sequencing.
+Evaluate a foundation by the complexity it removes and the options it preserves, not by how much infrastructure it adds.
