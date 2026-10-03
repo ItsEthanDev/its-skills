@@ -12,6 +12,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 
 - [Authoring Skills](playbooks/authoring-skills/SKILL.md): Create or revise a skill. Adapted to the collection's governance and specifications; explicitly invoked.
 - [Ingest Document](playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
+- [Prototype](playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
 
 ### Techniques
 
