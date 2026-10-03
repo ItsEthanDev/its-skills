@@ -21,6 +21,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Repitch](techniques/repitch/SKILL.md): Replace an explanation with a clearer one when requested.
 - [Dry Run](techniques/dry-run/SKILL.md): Preview a bounded edit and wait for approval; explicitly invoked.
 - [Project Documentation](techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
+- [Writing](techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
 
 ## Features
 
