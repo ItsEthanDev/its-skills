@@ -24,6 +24,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Writing](techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
+- [TDD](techniques/tdd/SKILL.md): Develop tested behavior through a red-green loop at approved seams; refactoring remains separate work.
 
 ### Principles
 
