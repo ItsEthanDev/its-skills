@@ -20,6 +20,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Propose First](techniques/propose-first/SKILL.md): Propose an approach and pause before implementation when requested.
 - [Repitch](techniques/repitch/SKILL.md): Replace an explanation with a clearer one when requested.
 - [Dry Run](techniques/dry-run/SKILL.md): Preview a bounded edit and wait for approval; explicitly invoked.
+- [Project Documentation](techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
 
 ## Features
 
