@@ -19,6 +19,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Prototype](playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
 - [Development Review](playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
 - [Diagnosing Bugs](playbooks/diagnosing-bugs/SKILL.md): Establish a red-capable feedback loop, investigate causes, and repair only within authorized scope.
+- [Integrating Web APIs](playbooks/integrating-web-apis/SKILL.md): Build or change remote integrations, with conditional inbound-webhook guidance.
 
 ### Techniques
 
@@ -32,6 +33,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
 - [TDD](techniques/tdd/SKILL.md): Develop tested behavior through a red-green loop at approved seams; refactoring remains separate work.
 - [Show Me](techniques/show-me/SKILL.md): Present work in chat, Hunk, a Markdown browser viewer, or UI screenshots. Its bundled browser script requires Nix.
+- [Calling Web APIs](techniques/calling-web-apis/SKILL.md): Make real API requests within explicit service, environment, and effect authorization.
 
 ### Principles
 
