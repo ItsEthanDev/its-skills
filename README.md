@@ -2,7 +2,9 @@
 
 ItsSkills is an experimental collection of agent skills, governed by its [constitution](CONSTITUTION.md).
 
-The repository currently contains no skills or installation tooling. Nix and Vercel's skills CLI are intended installation paths, not yet implemented.
+The collection currently includes the [Authoring Skills playbook](playbooks/authoring-skills/SKILL.md), adapted to its governance and feature specifications. It is explicitly invoked in harnesses that support its invocation metadata and needs no Nix installation to use its guidance.
+
+Nix and Vercel's skills CLI are intended installation paths. Installation tooling is not yet implemented or verified.
 
 ## Features
 
