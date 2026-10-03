@@ -6,7 +6,7 @@ Nix and Vercel's skills CLI are intended installation paths. Installation toolin
 
 ## Skills
 
-All current skills are guidance-only and need no Nix installation to use their instructions. Explicit-invocation settings depend on harness support.
+Guidance-only skills remain usable without Nix. Bundled script execution requires Nix; the Show Me browser helper supplies mdts through its own pinned environment. Explicit-invocation settings depend on harness support.
 
 ### Stages
 
@@ -31,6 +31,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
 - [TDD](techniques/tdd/SKILL.md): Develop tested behavior through a red-green loop at approved seams; refactoring remains separate work.
+- [Show Me](techniques/show-me/SKILL.md): Present work in chat, Hunk, a Markdown browser viewer, or UI screenshots. Its bundled browser script requires Nix.
 
 ### Principles
 

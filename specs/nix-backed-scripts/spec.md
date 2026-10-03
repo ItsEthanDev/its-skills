@@ -4,7 +4,7 @@
 
 Bundled skill scripts use Nix to obtain their required tools instead of relying on those tools being installed on the host. Nix is an explicit execution prerequisite, not a dependency on a particular consumer repository or machine configuration.
 
-This specification defines intended behavior. No scripts or execution tooling have been implemented. The [constitution](../../CONSTITUTION.md) governs the collection.
+This specification defines intended behavior for bundled skill scripts. The [constitution](../../CONSTITUTION.md) governs the collection.
 
 ## Requirements
 

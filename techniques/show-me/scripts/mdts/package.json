@@ -1,0 +1,11 @@
+{
+  "name": "mdts-cli",
+  "version": "0.20.6",
+  "private": true,
+  "bin": {
+    "mdts": "bin/mdts"
+  },
+  "dependencies": {
+    "mdts": "0.20.6"
+  }
+}
