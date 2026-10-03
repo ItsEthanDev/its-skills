@@ -25,6 +25,10 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
 
+### Principles
+
+The [Principles router](principles/principles/SKILL.md) selects among 22 engineering principles. Each leaf is also a separate skill under `principles/`, with its source-authored explicit-invocation setting. Router and leaf discovery depend on the consuming harness.
+
 ## Features
 
 - [Skill roles](specs/skill-roles/spec.md) defines responsibilities and source organization.
