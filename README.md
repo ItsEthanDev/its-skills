@@ -14,6 +14,7 @@ All current skills are guidance-only and need no Nix installation to use their i
 - [Ingest Document](playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
 - [Prototype](playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
 - [Development Review](playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
+- [Diagnosing Bugs](playbooks/diagnosing-bugs/SKILL.md): Establish a red-capable feedback loop, investigate causes, and repair only within authorized scope.
 
 ### Techniques
 
