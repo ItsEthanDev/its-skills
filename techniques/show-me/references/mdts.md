@@ -1,6 +1,6 @@
 # Browser Markdown Viewer
 
-Use mdts to browse Markdown in a specified directory.
+When mdts is selected, use the bundled helper to browse Markdown in a specified directory.
 
 1. Select the directory the user intends to view. Before remote access, establish which files may be exposed and how the other device will reach the server. An explicit request and known authorized route may settle these inputs; do not ask again merely for ceremony. Do not start or configure Tailscale implicitly.
 2. Run `sh <skill-directory>/scripts/browser.sh --help`, then invoke the helper with the selected inputs. Defer to its help for arguments, supported systems, and prerequisites. Report blockers rather than install Nix, change host configuration, or broaden the network bind as automatic recovery.
