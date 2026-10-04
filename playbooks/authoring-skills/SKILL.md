@@ -33,9 +33,15 @@ For explicit invocation, use the target harness's supported manual-invocation me
 
 Make special pause or question behavior clear when it affects execution. State a stopping condition where the skill needs one; do not impose a uniform interaction mode or completion report.
 
+## Establish strong defaults
+
+For recurring discretionary choices, provide concrete, opinionated defaults with clear applicability conditions. Follow explicit user direction, then intentional project conventions and accepted decisions, then the default. Require evidence of an intentional convention; incidental practice or the existence of another valid approach does not displace the default.
+
+Preserve the strength of the default when no controlling choice overrides it. Adapt only conflicting guidance and retain compatible quality expectations. Keep binding prerequisites, safety rules, and authorization distinct from preferences. Do not invent product intent or permission to supply a fallback, or add a routine approval pause for using one within existing authority.
+
 ## Shape the skill
 
-Put guidance needed on every invocation in the main file. Place branch-specific detail in supporting resources with clear instructions for when to read them. Require the selected branch's resources before relying on their instructions, not unconditional loading of every reference.
+Put guidance needed on every invocation in the main file. Keep enough selection guidance inline to identify defaults, applicability conditions, and required reference-loading triggers. Place longer procedures, examples, or rationale useful only for a selected default in conditional supporting resources; skip that material when a request or convention supersedes the default. Keep short defaults inline when clearer. Preserve general quality, permission, and safety guidance wherever it is needed regardless of the selected option. Require the selected branch's resources before relying on their instructions, not unconditional loading of every reference.
 
 Keep one skill when the material shares an invocation and purpose. A distinct reason for independent invocation may justify a separate skill. Use a router when it improves selection among related material; keep it focused on selection and leave detailed instructions with their owners. Directory nesting alone does not hide discovered skill descriptions.
 
