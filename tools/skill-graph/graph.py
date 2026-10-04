@@ -32,8 +32,11 @@ def markdown_tokens(text):
 def inventory(root):
     skills = {}
     problems = []
+    source_root = root / "skills"
+    if not source_root.is_dir():
+        raise GraphError(f"{source_root}: missing skills directory")
     for role in ROLES:
-        directory = root / role
+        directory = source_root / role
         if not directory.exists():
             continue
         for skill_dir in sorted(p for p in directory.iterdir() if p.is_dir()):

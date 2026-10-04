@@ -4,19 +4,19 @@
     {
       "name": "alignment",
       "role": "techniques",
-      "path": "techniques/alignment/SKILL.md",
+      "path": "skills/techniques/alignment/SKILL.md",
       "resources": [
-        "techniques/alignment/SKILL.md"
+        "skills/techniques/alignment/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "authoring-project-verification",
       "role": "playbooks",
-      "path": "playbooks/authoring-project-verification/SKILL.md",
+      "path": "skills/playbooks/authoring-project-verification/SKILL.md",
       "resources": [
-        "playbooks/authoring-project-verification/SKILL.md",
-        "playbooks/authoring-project-verification/references/project-protocol.md"
+        "skills/playbooks/authoring-project-verification/SKILL.md",
+        "skills/playbooks/authoring-project-verification/references/project-protocol.md"
       ],
       "dependencies": [
         "authoring-skills",
@@ -27,10 +27,10 @@
     {
       "name": "authoring-skills",
       "role": "playbooks",
-      "path": "playbooks/authoring-skills/SKILL.md",
+      "path": "skills/playbooks/authoring-skills/SKILL.md",
       "resources": [
-        "playbooks/authoring-skills/SKILL.md",
-        "playbooks/authoring-skills/references/scripts.md"
+        "skills/playbooks/authoring-skills/SKILL.md",
+        "skills/playbooks/authoring-skills/references/scripts.md"
       ],
       "dependencies": [
         "project-documentation",
@@ -40,33 +40,33 @@
     {
       "name": "calling-web-apis",
       "role": "techniques",
-      "path": "techniques/calling-web-apis/SKILL.md",
+      "path": "skills/techniques/calling-web-apis/SKILL.md",
       "resources": [
-        "techniques/calling-web-apis/SKILL.md"
+        "skills/techniques/calling-web-apis/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "commit",
       "role": "techniques",
-      "path": "techniques/commit/SKILL.md",
+      "path": "skills/techniques/commit/SKILL.md",
       "resources": [
-        "techniques/commit/SKILL.md"
+        "skills/techniques/commit/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "development-review",
       "role": "playbooks",
-      "path": "playbooks/development-review/SKILL.md",
+      "path": "skills/playbooks/development-review/SKILL.md",
       "resources": [
-        "playbooks/development-review/SKILL.md",
-        "playbooks/development-review/references/architecture.md",
-        "playbooks/development-review/references/domain.md",
-        "playbooks/development-review/references/governance.md",
-        "playbooks/development-review/references/implementation.md",
-        "playbooks/development-review/references/plan.md",
-        "playbooks/development-review/references/specification.md"
+        "skills/playbooks/development-review/SKILL.md",
+        "skills/playbooks/development-review/references/architecture.md",
+        "skills/playbooks/development-review/references/domain.md",
+        "skills/playbooks/development-review/references/governance.md",
+        "skills/playbooks/development-review/references/implementation.md",
+        "skills/playbooks/development-review/references/plan.md",
+        "skills/playbooks/development-review/references/specification.md"
       ],
       "dependencies": [
         "principle-design-deep-modules",
@@ -77,9 +77,9 @@
     {
       "name": "diagnosing-bugs",
       "role": "playbooks",
-      "path": "playbooks/diagnosing-bugs/SKILL.md",
+      "path": "skills/playbooks/diagnosing-bugs/SKILL.md",
       "resources": [
-        "playbooks/diagnosing-bugs/SKILL.md"
+        "skills/playbooks/diagnosing-bugs/SKILL.md"
       ],
       "dependencies": [
         "tdd",
@@ -89,37 +89,37 @@
     {
       "name": "diagramming",
       "role": "techniques",
-      "path": "techniques/diagramming/SKILL.md",
+      "path": "skills/techniques/diagramming/SKILL.md",
       "resources": [
-        "techniques/diagramming/SKILL.md"
+        "skills/techniques/diagramming/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "dry-run",
       "role": "techniques",
-      "path": "techniques/dry-run/SKILL.md",
+      "path": "skills/techniques/dry-run/SKILL.md",
       "resources": [
-        "techniques/dry-run/SKILL.md"
+        "skills/techniques/dry-run/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "ingest-document",
       "role": "playbooks",
-      "path": "playbooks/ingest-document/SKILL.md",
+      "path": "skills/playbooks/ingest-document/SKILL.md",
       "resources": [
-        "playbooks/ingest-document/SKILL.md"
+        "skills/playbooks/ingest-document/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "integrating-web-apis",
       "role": "playbooks",
-      "path": "playbooks/integrating-web-apis/SKILL.md",
+      "path": "skills/playbooks/integrating-web-apis/SKILL.md",
       "resources": [
-        "playbooks/integrating-web-apis/SKILL.md",
-        "playbooks/integrating-web-apis/references/inbound-webhooks.md"
+        "skills/playbooks/integrating-web-apis/SKILL.md",
+        "skills/playbooks/integrating-web-apis/references/inbound-webhooks.md"
       ],
       "dependencies": [
         "calling-web-apis",
@@ -135,27 +135,27 @@
     {
       "name": "pause-work",
       "role": "techniques",
-      "path": "techniques/pause-work/SKILL.md",
+      "path": "skills/techniques/pause-work/SKILL.md",
       "resources": [
-        "techniques/pause-work/SKILL.md"
+        "skills/techniques/pause-work/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-boundary-discipline",
       "role": "principles",
-      "path": "principles/principle-boundary-discipline/SKILL.md",
+      "path": "skills/principles/principle-boundary-discipline/SKILL.md",
       "resources": [
-        "principles/principle-boundary-discipline/SKILL.md"
+        "skills/principles/principle-boundary-discipline/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-build-the-lever",
       "role": "principles",
-      "path": "principles/principle-build-the-lever/SKILL.md",
+      "path": "skills/principles/principle-build-the-lever/SKILL.md",
       "resources": [
-        "principles/principle-build-the-lever/SKILL.md"
+        "skills/principles/principle-build-the-lever/SKILL.md"
       ],
       "dependencies": [
         "principle-encode-lessons-in-structure",
@@ -166,101 +166,101 @@
     {
       "name": "principle-design-deep-modules",
       "role": "principles",
-      "path": "principles/principle-design-deep-modules/SKILL.md",
+      "path": "skills/principles/principle-design-deep-modules/SKILL.md",
       "resources": [
-        "principles/principle-design-deep-modules/DEEPENING.md",
-        "principles/principle-design-deep-modules/DESIGN-IT-TWICE.md",
-        "principles/principle-design-deep-modules/SKILL.md"
+        "skills/principles/principle-design-deep-modules/DEEPENING.md",
+        "skills/principles/principle-design-deep-modules/DESIGN-IT-TWICE.md",
+        "skills/principles/principle-design-deep-modules/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-encode-lessons-in-structure",
       "role": "principles",
-      "path": "principles/principle-encode-lessons-in-structure/SKILL.md",
+      "path": "skills/principles/principle-encode-lessons-in-structure/SKILL.md",
       "resources": [
-        "principles/principle-encode-lessons-in-structure/SKILL.md"
+        "skills/principles/principle-encode-lessons-in-structure/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-exhaust-the-design-space",
       "role": "principles",
-      "path": "principles/principle-exhaust-the-design-space/SKILL.md",
+      "path": "skills/principles/principle-exhaust-the-design-space/SKILL.md",
       "resources": [
-        "principles/principle-exhaust-the-design-space/SKILL.md"
+        "skills/principles/principle-exhaust-the-design-space/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-experience-first",
       "role": "principles",
-      "path": "principles/principle-experience-first/SKILL.md",
+      "path": "skills/principles/principle-experience-first/SKILL.md",
       "resources": [
-        "principles/principle-experience-first/SKILL.md"
+        "skills/principles/principle-experience-first/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-fix-root-causes",
       "role": "principles",
-      "path": "principles/principle-fix-root-causes/SKILL.md",
+      "path": "skills/principles/principle-fix-root-causes/SKILL.md",
       "resources": [
-        "principles/principle-fix-root-causes/SKILL.md"
+        "skills/principles/principle-fix-root-causes/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-foundational-thinking",
       "role": "principles",
-      "path": "principles/principle-foundational-thinking/SKILL.md",
+      "path": "skills/principles/principle-foundational-thinking/SKILL.md",
       "resources": [
-        "principles/principle-foundational-thinking/SKILL.md"
+        "skills/principles/principle-foundational-thinking/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-guard-the-context-window",
       "role": "principles",
-      "path": "principles/principle-guard-the-context-window/SKILL.md",
+      "path": "skills/principles/principle-guard-the-context-window/SKILL.md",
       "resources": [
-        "principles/principle-guard-the-context-window/SKILL.md"
+        "skills/principles/principle-guard-the-context-window/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-laziness-protocol",
       "role": "principles",
-      "path": "principles/principle-laziness-protocol/SKILL.md",
+      "path": "skills/principles/principle-laziness-protocol/SKILL.md",
       "resources": [
-        "principles/principle-laziness-protocol/SKILL.md"
+        "skills/principles/principle-laziness-protocol/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-make-operations-idempotent",
       "role": "principles",
-      "path": "principles/principle-make-operations-idempotent/SKILL.md",
+      "path": "skills/principles/principle-make-operations-idempotent/SKILL.md",
       "resources": [
-        "principles/principle-make-operations-idempotent/SKILL.md"
+        "skills/principles/principle-make-operations-idempotent/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-migrate-callers-then-delete-legacy-apis",
       "role": "principles",
-      "path": "principles/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "path": "skills/principles/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
       "resources": [
-        "principles/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+        "skills/principles/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-minimize-reader-load",
       "role": "principles",
-      "path": "principles/principle-minimize-reader-load/SKILL.md",
+      "path": "skills/principles/principle-minimize-reader-load/SKILL.md",
       "resources": [
-        "principles/principle-minimize-reader-load/SKILL.md"
+        "skills/principles/principle-minimize-reader-load/SKILL.md"
       ],
       "dependencies": [
         "principle-guard-the-context-window"
@@ -269,63 +269,63 @@
     {
       "name": "principle-model-the-domain",
       "role": "principles",
-      "path": "principles/principle-model-the-domain/SKILL.md",
+      "path": "skills/principles/principle-model-the-domain/SKILL.md",
       "resources": [
-        "principles/principle-model-the-domain/SKILL.md"
+        "skills/principles/principle-model-the-domain/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-never-block-on-the-human",
       "role": "principles",
-      "path": "principles/principle-never-block-on-the-human/SKILL.md",
+      "path": "skills/principles/principle-never-block-on-the-human/SKILL.md",
       "resources": [
-        "principles/principle-never-block-on-the-human/SKILL.md"
+        "skills/principles/principle-never-block-on-the-human/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-outcome-oriented-execution",
       "role": "principles",
-      "path": "principles/principle-outcome-oriented-execution/SKILL.md",
+      "path": "skills/principles/principle-outcome-oriented-execution/SKILL.md",
       "resources": [
-        "principles/principle-outcome-oriented-execution/SKILL.md"
+        "skills/principles/principle-outcome-oriented-execution/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-prove-it-works",
       "role": "principles",
-      "path": "principles/principle-prove-it-works/SKILL.md",
+      "path": "skills/principles/principle-prove-it-works/SKILL.md",
       "resources": [
-        "principles/principle-prove-it-works/SKILL.md"
+        "skills/principles/principle-prove-it-works/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-redesign-from-first-principles",
       "role": "principles",
-      "path": "principles/principle-redesign-from-first-principles/SKILL.md",
+      "path": "skills/principles/principle-redesign-from-first-principles/SKILL.md",
       "resources": [
-        "principles/principle-redesign-from-first-principles/SKILL.md"
+        "skills/principles/principle-redesign-from-first-principles/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-separate-before-serializing-shared-state",
       "role": "principles",
-      "path": "principles/principle-separate-before-serializing-shared-state/SKILL.md",
+      "path": "skills/principles/principle-separate-before-serializing-shared-state/SKILL.md",
       "resources": [
-        "principles/principle-separate-before-serializing-shared-state/SKILL.md"
+        "skills/principles/principle-separate-before-serializing-shared-state/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-sequence-verifiable-units",
       "role": "principles",
-      "path": "principles/principle-sequence-verifiable-units/SKILL.md",
+      "path": "skills/principles/principle-sequence-verifiable-units/SKILL.md",
       "resources": [
-        "principles/principle-sequence-verifiable-units/SKILL.md"
+        "skills/principles/principle-sequence-verifiable-units/SKILL.md"
       ],
       "dependencies": [
         "principle-build-the-lever",
@@ -335,18 +335,18 @@
     {
       "name": "principle-subtract-before-you-add",
       "role": "principles",
-      "path": "principles/principle-subtract-before-you-add/SKILL.md",
+      "path": "skills/principles/principle-subtract-before-you-add/SKILL.md",
       "resources": [
-        "principles/principle-subtract-before-you-add/SKILL.md"
+        "skills/principles/principle-subtract-before-you-add/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "principle-type-system-discipline",
       "role": "principles",
-      "path": "principles/principle-type-system-discipline/SKILL.md",
+      "path": "skills/principles/principle-type-system-discipline/SKILL.md",
       "resources": [
-        "principles/principle-type-system-discipline/SKILL.md"
+        "skills/principles/principle-type-system-discipline/SKILL.md"
       ],
       "dependencies": [
         "principle-boundary-discipline",
@@ -356,9 +356,9 @@
     {
       "name": "principles",
       "role": "principles",
-      "path": "principles/principles/SKILL.md",
+      "path": "skills/principles/principles/SKILL.md",
       "resources": [
-        "principles/principles/SKILL.md"
+        "skills/principles/principles/SKILL.md"
       ],
       "dependencies": [
         "principle-boundary-discipline",
@@ -388,23 +388,23 @@
     {
       "name": "project-documentation",
       "role": "techniques",
-      "path": "techniques/project-documentation/SKILL.md",
+      "path": "skills/techniques/project-documentation/SKILL.md",
       "resources": [
-        "techniques/project-documentation/ARTIFACT-MODEL.md",
-        "techniques/project-documentation/BOOTSTRAP.md",
-        "techniques/project-documentation/CONTRACTS.md",
-        "techniques/project-documentation/DECISION-RECORDS.md",
-        "techniques/project-documentation/DOMAIN-CONTEXT.md",
-        "techniques/project-documentation/FEATURE-ARTIFACTS.md",
-        "techniques/project-documentation/PROJECT-DOCUMENTATION.md",
-        "techniques/project-documentation/SKILL.md",
-        "techniques/project-documentation/templates/adr.md",
-        "techniques/project-documentation/templates/constitution.md",
-        "techniques/project-documentation/templates/context.md",
-        "techniques/project-documentation/templates/plan.md",
-        "techniques/project-documentation/templates/research.md",
-        "techniques/project-documentation/templates/spec.md",
-        "techniques/project-documentation/templates/tasks.md"
+        "skills/techniques/project-documentation/ARTIFACT-MODEL.md",
+        "skills/techniques/project-documentation/BOOTSTRAP.md",
+        "skills/techniques/project-documentation/CONTRACTS.md",
+        "skills/techniques/project-documentation/DECISION-RECORDS.md",
+        "skills/techniques/project-documentation/DOMAIN-CONTEXT.md",
+        "skills/techniques/project-documentation/FEATURE-ARTIFACTS.md",
+        "skills/techniques/project-documentation/PROJECT-DOCUMENTATION.md",
+        "skills/techniques/project-documentation/SKILL.md",
+        "skills/techniques/project-documentation/templates/adr.md",
+        "skills/techniques/project-documentation/templates/constitution.md",
+        "skills/techniques/project-documentation/templates/context.md",
+        "skills/techniques/project-documentation/templates/plan.md",
+        "skills/techniques/project-documentation/templates/research.md",
+        "skills/techniques/project-documentation/templates/spec.md",
+        "skills/techniques/project-documentation/templates/tasks.md"
       ],
       "dependencies": [
         "diagramming",
@@ -414,28 +414,28 @@
     {
       "name": "propose-first",
       "role": "techniques",
-      "path": "techniques/propose-first/SKILL.md",
+      "path": "skills/techniques/propose-first/SKILL.md",
       "resources": [
-        "techniques/propose-first/SKILL.md"
+        "skills/techniques/propose-first/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "prototype",
       "role": "playbooks",
-      "path": "playbooks/prototype/SKILL.md",
+      "path": "skills/playbooks/prototype/SKILL.md",
       "resources": [
-        "playbooks/prototype/SKILL.md"
+        "skills/playbooks/prototype/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "refactoring",
       "role": "playbooks",
-      "path": "playbooks/refactoring/SKILL.md",
+      "path": "skills/playbooks/refactoring/SKILL.md",
       "resources": [
-        "playbooks/refactoring/SKILL.md",
-        "playbooks/refactoring/references/behavior-preservation.md"
+        "skills/playbooks/refactoring/SKILL.md",
+        "skills/playbooks/refactoring/references/behavior-preservation.md"
       ],
       "dependencies": [
         "principle-design-deep-modules",
@@ -449,9 +449,9 @@
     {
       "name": "reflect",
       "role": "techniques",
-      "path": "techniques/reflect/SKILL.md",
+      "path": "skills/techniques/reflect/SKILL.md",
       "resources": [
-        "techniques/reflect/SKILL.md"
+        "skills/techniques/reflect/SKILL.md"
       ],
       "dependencies": [
         "principle-encode-lessons-in-structure",
@@ -462,34 +462,34 @@
     {
       "name": "repitch",
       "role": "techniques",
-      "path": "techniques/repitch/SKILL.md",
+      "path": "skills/techniques/repitch/SKILL.md",
       "resources": [
-        "techniques/repitch/SKILL.md"
+        "skills/techniques/repitch/SKILL.md"
       ],
       "dependencies": []
     },
     {
       "name": "show-me",
       "role": "techniques",
-      "path": "techniques/show-me/SKILL.md",
+      "path": "skills/techniques/show-me/SKILL.md",
       "resources": [
-        "techniques/show-me/SKILL.md",
-        "techniques/show-me/references/hunk.md",
-        "techniques/show-me/references/mdts.md",
-        "techniques/show-me/references/ui-capture.md"
+        "skills/techniques/show-me/SKILL.md",
+        "skills/techniques/show-me/references/hunk.md",
+        "skills/techniques/show-me/references/mdts.md",
+        "skills/techniques/show-me/references/ui-capture.md"
       ],
       "dependencies": []
     },
     {
       "name": "stages",
       "role": "stages",
-      "path": "stages/stages/SKILL.md",
+      "path": "skills/stages/stages/SKILL.md",
       "resources": [
-        "stages/stages/SKILL.md",
-        "stages/stages/references/constitute.md",
-        "stages/stages/references/implement.md",
-        "stages/stages/references/plan.md",
-        "stages/stages/references/specify.md"
+        "skills/stages/stages/SKILL.md",
+        "skills/stages/stages/references/constitute.md",
+        "skills/stages/stages/references/implement.md",
+        "skills/stages/stages/references/plan.md",
+        "skills/stages/stages/references/specify.md"
       ],
       "dependencies": [
         "development-review",
@@ -502,9 +502,9 @@
     {
       "name": "tdd",
       "role": "techniques",
-      "path": "techniques/tdd/SKILL.md",
+      "path": "skills/techniques/tdd/SKILL.md",
       "resources": [
-        "techniques/tdd/SKILL.md"
+        "skills/techniques/tdd/SKILL.md"
       ],
       "dependencies": [
         "verifying-work"
@@ -513,9 +513,9 @@
     {
       "name": "understanding-code",
       "role": "techniques",
-      "path": "techniques/understanding-code/SKILL.md",
+      "path": "skills/techniques/understanding-code/SKILL.md",
       "resources": [
-        "techniques/understanding-code/SKILL.md"
+        "skills/techniques/understanding-code/SKILL.md"
       ],
       "dependencies": [
         "diagramming",
@@ -525,14 +525,14 @@
     {
       "name": "verifying-work",
       "role": "techniques",
-      "path": "techniques/verifying-work/SKILL.md",
+      "path": "skills/techniques/verifying-work/SKILL.md",
       "resources": [
-        "techniques/verifying-work/SKILL.md",
-        "techniques/verifying-work/references/automated-tests.md",
-        "techniques/verifying-work/references/browser-checks.md",
-        "techniques/verifying-work/references/methods.md",
-        "techniques/verifying-work/references/mocking.md",
-        "techniques/verifying-work/references/tests.md"
+        "skills/techniques/verifying-work/SKILL.md",
+        "skills/techniques/verifying-work/references/automated-tests.md",
+        "skills/techniques/verifying-work/references/browser-checks.md",
+        "skills/techniques/verifying-work/references/methods.md",
+        "skills/techniques/verifying-work/references/mocking.md",
+        "skills/techniques/verifying-work/references/tests.md"
       ],
       "dependencies": [
         "calling-web-apis",
@@ -543,11 +543,11 @@
     {
       "name": "writing",
       "role": "techniques",
-      "path": "techniques/writing/SKILL.md",
+      "path": "skills/techniques/writing/SKILL.md",
       "resources": [
-        "techniques/writing/SKILL.md",
-        "techniques/writing/agent-writing.md",
-        "techniques/writing/human-writing.md"
+        "skills/techniques/writing/SKILL.md",
+        "skills/techniques/writing/agent-writing.md",
+        "skills/techniques/writing/human-writing.md"
       ],
       "dependencies": [
         "diagramming",
@@ -561,7 +561,7 @@
       "to": "authoring-skills",
       "evidence": [
         {
-          "source": "playbooks/authoring-project-verification/SKILL.md",
+          "source": "skills/playbooks/authoring-project-verification/SKILL.md",
           "line_range": [
             8,
             8
@@ -574,7 +574,7 @@
       "to": "calling-web-apis",
       "evidence": [
         {
-          "source": "playbooks/authoring-project-verification/references/project-protocol.md",
+          "source": "skills/playbooks/authoring-project-verification/references/project-protocol.md",
           "line_range": [
             22,
             22
@@ -587,21 +587,21 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "playbooks/authoring-project-verification/SKILL.md",
+          "source": "skills/playbooks/authoring-project-verification/SKILL.md",
           "line_range": [
             8,
             8
           ]
         },
         {
-          "source": "playbooks/authoring-project-verification/SKILL.md",
+          "source": "skills/playbooks/authoring-project-verification/SKILL.md",
           "line_range": [
             22,
             22
           ]
         },
         {
-          "source": "playbooks/authoring-project-verification/references/project-protocol.md",
+          "source": "skills/playbooks/authoring-project-verification/references/project-protocol.md",
           "line_range": [
             26,
             26
@@ -614,7 +614,7 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "playbooks/authoring-skills/SKILL.md",
+          "source": "skills/playbooks/authoring-skills/SKILL.md",
           "line_range": [
             24,
             24
@@ -627,7 +627,7 @@
       "to": "reflect",
       "evidence": [
         {
-          "source": "playbooks/authoring-skills/SKILL.md",
+          "source": "skills/playbooks/authoring-skills/SKILL.md",
           "line_range": [
             75,
             75
@@ -640,14 +640,14 @@
       "to": "principle-design-deep-modules",
       "evidence": [
         {
-          "source": "playbooks/development-review/references/architecture.md",
+          "source": "skills/playbooks/development-review/references/architecture.md",
           "line_range": [
             3,
             3
           ]
         },
         {
-          "source": "playbooks/development-review/references/plan.md",
+          "source": "skills/playbooks/development-review/references/plan.md",
           "line_range": [
             3,
             3
@@ -660,14 +660,14 @@
       "to": "principles",
       "evidence": [
         {
-          "source": "playbooks/development-review/references/architecture.md",
+          "source": "skills/playbooks/development-review/references/architecture.md",
           "line_range": [
             3,
             3
           ]
         },
         {
-          "source": "playbooks/development-review/references/plan.md",
+          "source": "skills/playbooks/development-review/references/plan.md",
           "line_range": [
             3,
             3
@@ -680,28 +680,28 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "playbooks/development-review/references/domain.md",
+          "source": "skills/playbooks/development-review/references/domain.md",
           "line_range": [
             3,
             3
           ]
         },
         {
-          "source": "playbooks/development-review/references/governance.md",
+          "source": "skills/playbooks/development-review/references/governance.md",
           "line_range": [
             3,
             3
           ]
         },
         {
-          "source": "playbooks/development-review/references/plan.md",
+          "source": "skills/playbooks/development-review/references/plan.md",
           "line_range": [
             3,
             3
           ]
         },
         {
-          "source": "playbooks/development-review/references/specification.md",
+          "source": "skills/playbooks/development-review/references/specification.md",
           "line_range": [
             3,
             3
@@ -714,14 +714,14 @@
       "to": "tdd",
       "evidence": [
         {
-          "source": "playbooks/diagnosing-bugs/SKILL.md",
+          "source": "skills/playbooks/diagnosing-bugs/SKILL.md",
           "line_range": [
             34,
             34
           ]
         },
         {
-          "source": "playbooks/diagnosing-bugs/SKILL.md",
+          "source": "skills/playbooks/diagnosing-bugs/SKILL.md",
           "line_range": [
             129,
             129
@@ -734,7 +734,7 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "playbooks/diagnosing-bugs/SKILL.md",
+          "source": "skills/playbooks/diagnosing-bugs/SKILL.md",
           "line_range": [
             34,
             34
@@ -747,7 +747,7 @@
       "to": "calling-web-apis",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             36,
             36
@@ -760,7 +760,7 @@
       "to": "development-review",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             10,
             10
@@ -773,7 +773,7 @@
       "to": "diagnosing-bugs",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             10,
             10
@@ -786,7 +786,7 @@
       "to": "principle-boundary-discipline",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             26,
             26
@@ -799,7 +799,7 @@
       "to": "principle-design-deep-modules",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             26,
             26
@@ -812,7 +812,7 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             38,
             38
@@ -825,7 +825,7 @@
       "to": "tdd",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             34,
             34
@@ -838,7 +838,7 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "playbooks/integrating-web-apis/SKILL.md",
+          "source": "skills/playbooks/integrating-web-apis/SKILL.md",
           "line_range": [
             34,
             34
@@ -851,7 +851,7 @@
       "to": "principle-encode-lessons-in-structure",
       "evidence": [
         {
-          "source": "principles/principle-build-the-lever/SKILL.md",
+          "source": "skills/principles/principle-build-the-lever/SKILL.md",
           "line_range": [
             24,
             24
@@ -864,7 +864,7 @@
       "to": "principle-laziness-protocol",
       "evidence": [
         {
-          "source": "principles/principle-build-the-lever/SKILL.md",
+          "source": "skills/principles/principle-build-the-lever/SKILL.md",
           "line_range": [
             22,
             22
@@ -877,7 +877,7 @@
       "to": "principle-prove-it-works",
       "evidence": [
         {
-          "source": "principles/principle-build-the-lever/SKILL.md",
+          "source": "skills/principles/principle-build-the-lever/SKILL.md",
           "line_range": [
             24,
             24
@@ -890,7 +890,7 @@
       "to": "principle-guard-the-context-window",
       "evidence": [
         {
-          "source": "principles/principle-minimize-reader-load/SKILL.md",
+          "source": "skills/principles/principle-minimize-reader-load/SKILL.md",
           "line_range": [
             13,
             13
@@ -903,7 +903,7 @@
       "to": "principle-build-the-lever",
       "evidence": [
         {
-          "source": "principles/principle-sequence-verifiable-units/SKILL.md",
+          "source": "skills/principles/principle-sequence-verifiable-units/SKILL.md",
           "line_range": [
             18,
             18
@@ -916,7 +916,7 @@
       "to": "principle-prove-it-works",
       "evidence": [
         {
-          "source": "principles/principle-sequence-verifiable-units/SKILL.md",
+          "source": "skills/principles/principle-sequence-verifiable-units/SKILL.md",
           "line_range": [
             18,
             18
@@ -929,7 +929,7 @@
       "to": "principle-boundary-discipline",
       "evidence": [
         {
-          "source": "principles/principle-type-system-discipline/SKILL.md",
+          "source": "skills/principles/principle-type-system-discipline/SKILL.md",
           "line_range": [
             18,
             18
@@ -942,7 +942,7 @@
       "to": "principle-encode-lessons-in-structure",
       "evidence": [
         {
-          "source": "principles/principle-type-system-discipline/SKILL.md",
+          "source": "skills/principles/principle-type-system-discipline/SKILL.md",
           "line_range": [
             21,
             21
@@ -955,7 +955,7 @@
       "to": "principle-boundary-discipline",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             30,
             30
@@ -968,7 +968,7 @@
       "to": "principle-build-the-lever",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             24,
             24
@@ -981,7 +981,7 @@
       "to": "principle-design-deep-modules",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             28,
             28
@@ -994,7 +994,7 @@
       "to": "principle-encode-lessons-in-structure",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             49,
             49
@@ -1007,7 +1007,7 @@
       "to": "principle-exhaust-the-design-space",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             23,
             23
@@ -1020,7 +1020,7 @@
       "to": "principle-experience-first",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             22,
             22
@@ -1033,7 +1033,7 @@
       "to": "principle-fix-root-causes",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             39,
             39
@@ -1046,7 +1046,7 @@
       "to": "principle-foundational-thinking",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             17,
             17
@@ -1059,7 +1059,7 @@
       "to": "principle-guard-the-context-window",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             44,
             44
@@ -1072,7 +1072,7 @@
       "to": "principle-laziness-protocol",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             16,
             16
@@ -1085,7 +1085,7 @@
       "to": "principle-make-operations-idempotent",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             32,
             32
@@ -1098,7 +1098,7 @@
       "to": "principle-migrate-callers-then-delete-legacy-apis",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             33,
             33
@@ -1111,7 +1111,7 @@
       "to": "principle-minimize-reader-load",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             20,
             20
@@ -1124,7 +1124,7 @@
       "to": "principle-model-the-domain",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             29,
             29
@@ -1137,7 +1137,7 @@
       "to": "principle-never-block-on-the-human",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             45,
             45
@@ -1150,7 +1150,7 @@
       "to": "principle-outcome-oriented-execution",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             21,
             21
@@ -1163,7 +1163,7 @@
       "to": "principle-prove-it-works",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             38,
             38
@@ -1176,7 +1176,7 @@
       "to": "principle-redesign-from-first-principles",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             18,
             18
@@ -1189,7 +1189,7 @@
       "to": "principle-separate-before-serializing-shared-state",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             34,
             34
@@ -1202,7 +1202,7 @@
       "to": "principle-sequence-verifiable-units",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             40,
             40
@@ -1215,7 +1215,7 @@
       "to": "principle-subtract-before-you-add",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             19,
             19
@@ -1228,7 +1228,7 @@
       "to": "principle-type-system-discipline",
       "evidence": [
         {
-          "source": "principles/principles/SKILL.md",
+          "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             31,
             31
@@ -1241,7 +1241,7 @@
       "to": "diagramming",
       "evidence": [
         {
-          "source": "techniques/project-documentation/SKILL.md",
+          "source": "skills/techniques/project-documentation/SKILL.md",
           "line_range": [
             18,
             18
@@ -1254,7 +1254,7 @@
       "to": "understanding-code",
       "evidence": [
         {
-          "source": "techniques/project-documentation/BOOTSTRAP.md",
+          "source": "skills/techniques/project-documentation/BOOTSTRAP.md",
           "line_range": [
             5,
             5
@@ -1267,7 +1267,7 @@
       "to": "principle-design-deep-modules",
       "evidence": [
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             14,
             14
@@ -1280,7 +1280,7 @@
       "to": "principle-migrate-callers-then-delete-legacy-apis",
       "evidence": [
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             28,
             28
@@ -1293,7 +1293,7 @@
       "to": "principle-minimize-reader-load",
       "evidence": [
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             14,
             14
@@ -1306,7 +1306,7 @@
       "to": "principle-model-the-domain",
       "evidence": [
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             14,
             14
@@ -1319,7 +1319,7 @@
       "to": "principle-subtract-before-you-add",
       "evidence": [
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             14,
             14
@@ -1332,28 +1332,28 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             18,
             18
           ]
         },
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             20,
             20
           ]
         },
         {
-          "source": "playbooks/refactoring/SKILL.md",
+          "source": "skills/playbooks/refactoring/SKILL.md",
           "line_range": [
             34,
             34
           ]
         },
         {
-          "source": "playbooks/refactoring/references/behavior-preservation.md",
+          "source": "skills/playbooks/refactoring/references/behavior-preservation.md",
           "line_range": [
             28,
             28
@@ -1366,7 +1366,7 @@
       "to": "principle-encode-lessons-in-structure",
       "evidence": [
         {
-          "source": "techniques/reflect/SKILL.md",
+          "source": "skills/techniques/reflect/SKILL.md",
           "line_range": [
             23,
             23
@@ -1379,7 +1379,7 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "techniques/reflect/SKILL.md",
+          "source": "skills/techniques/reflect/SKILL.md",
           "line_range": [
             25,
             25
@@ -1392,7 +1392,7 @@
       "to": "writing",
       "evidence": [
         {
-          "source": "techniques/reflect/SKILL.md",
+          "source": "skills/techniques/reflect/SKILL.md",
           "line_range": [
             25,
             25
@@ -1405,7 +1405,7 @@
       "to": "development-review",
       "evidence": [
         {
-          "source": "stages/stages/references/implement.md",
+          "source": "skills/stages/stages/references/implement.md",
           "line_range": [
             13,
             13
@@ -1418,7 +1418,7 @@
       "to": "principle-design-deep-modules",
       "evidence": [
         {
-          "source": "stages/stages/references/plan.md",
+          "source": "skills/stages/stages/references/plan.md",
           "line_range": [
             7,
             7
@@ -1431,35 +1431,35 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "stages/stages/SKILL.md",
+          "source": "skills/stages/stages/SKILL.md",
           "line_range": [
             29,
             29
           ]
         },
         {
-          "source": "stages/stages/references/constitute.md",
+          "source": "skills/stages/stages/references/constitute.md",
           "line_range": [
             7,
             7
           ]
         },
         {
-          "source": "stages/stages/references/implement.md",
+          "source": "skills/stages/stages/references/implement.md",
           "line_range": [
             11,
             11
           ]
         },
         {
-          "source": "stages/stages/references/plan.md",
+          "source": "skills/stages/stages/references/plan.md",
           "line_range": [
             7,
             7
           ]
         },
         {
-          "source": "stages/stages/references/specify.md",
+          "source": "skills/stages/stages/references/specify.md",
           "line_range": [
             5,
             5
@@ -1472,7 +1472,7 @@
       "to": "refactoring",
       "evidence": [
         {
-          "source": "stages/stages/references/implement.md",
+          "source": "skills/stages/stages/references/implement.md",
           "line_range": [
             7,
             7
@@ -1485,7 +1485,7 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "stages/stages/references/implement.md",
+          "source": "skills/stages/stages/references/implement.md",
           "line_range": [
             9,
             9
@@ -1498,7 +1498,7 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "techniques/tdd/SKILL.md",
+          "source": "skills/techniques/tdd/SKILL.md",
           "line_range": [
             8,
             8
@@ -1511,7 +1511,7 @@
       "to": "diagramming",
       "evidence": [
         {
-          "source": "techniques/understanding-code/SKILL.md",
+          "source": "skills/techniques/understanding-code/SKILL.md",
           "line_range": [
             21,
             21
@@ -1524,7 +1524,7 @@
       "to": "verifying-work",
       "evidence": [
         {
-          "source": "techniques/understanding-code/SKILL.md",
+          "source": "skills/techniques/understanding-code/SKILL.md",
           "line_range": [
             16,
             16
@@ -1537,7 +1537,7 @@
       "to": "calling-web-apis",
       "evidence": [
         {
-          "source": "techniques/verifying-work/SKILL.md",
+          "source": "skills/techniques/verifying-work/SKILL.md",
           "line_range": [
             21,
             21
@@ -1550,7 +1550,7 @@
       "to": "principle-design-deep-modules",
       "evidence": [
         {
-          "source": "techniques/verifying-work/references/automated-tests.md",
+          "source": "skills/techniques/verifying-work/references/automated-tests.md",
           "line_range": [
             11,
             11
@@ -1563,7 +1563,7 @@
       "to": "principle-prove-it-works",
       "evidence": [
         {
-          "source": "techniques/verifying-work/SKILL.md",
+          "source": "skills/techniques/verifying-work/SKILL.md",
           "line_range": [
             8,
             8
@@ -1576,7 +1576,7 @@
       "to": "diagramming",
       "evidence": [
         {
-          "source": "techniques/writing/SKILL.md",
+          "source": "skills/techniques/writing/SKILL.md",
           "line_range": [
             20,
             20
@@ -1589,7 +1589,7 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "techniques/writing/SKILL.md",
+          "source": "skills/techniques/writing/SKILL.md",
           "line_range": [
             8,
             8

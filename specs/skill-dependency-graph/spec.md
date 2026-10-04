@@ -18,7 +18,7 @@ Name-based references do not guarantee that a consumer has installed or can disc
 
 ### DG-002: Source-derived graph and provenance
 
-Each skill MUST have one graph node identified by its frontmatter name, with its role and repository-relative source location. References in supporting Markdown MUST contribute to their owning skill's dependencies. The generator MUST retain source locations for dependency evidence and include skills without dependencies.
+Each skill under `skills/` MUST have one graph node identified by its frontmatter name, with its role and repository-relative source location. Source discovery MUST follow SR-002; it MUST NOT scan repository documentation or maintenance tooling as skill sources. References in supporting Markdown MUST contribute to their owning skill's dependencies. The generator MUST retain source locations for dependency evidence and include skills without dependencies.
 
 The graph MUST be generated from the same source instructions used by consumers, not a second hand-maintained dependency inventory. Ordering and serialization MUST be deterministic, with no timestamps or machine-specific paths. Resource-only links MUST NOT create separate skill nodes.
 

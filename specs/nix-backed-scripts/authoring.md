@@ -1,6 +1,6 @@
 # Authoring ItsSkills Bundled Scripts
 
-Use this guidance when adding or changing a script distributed with ItsSkills. Follow the [Nix-backed script specification](spec.md) and the portable [script-writing guidance](../../playbooks/authoring-skills/references/scripts.md).
+Use this guidance when adding or changing a script distributed with ItsSkills. Follow the [Nix-backed script specification](spec.md) and the portable [script-writing guidance](../../skills/playbooks/authoring-skills/references/scripts.md).
 
 ## Supply the execution environment
 

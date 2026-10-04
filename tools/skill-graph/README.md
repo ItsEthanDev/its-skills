@@ -1,6 +1,6 @@
 # Skill Graph Tool
 
-Generate `DEPENDENCIES.md` and `dependencies.json` from the runtime skills. These are repository maintenance commands, not installation tools.
+Generate `DEPENDENCIES.md` and `dependencies.json` from runtime sources under `skills/<role>/<skill-name>/`. Source paths remain relative to the repository root. These are repository maintenance commands, not installation tools.
 
 ## Run
 

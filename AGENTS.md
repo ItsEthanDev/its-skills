@@ -4,7 +4,7 @@ Read [README.md](README.md), [CONSTITUTION.md](CONSTITUTION.md), and the applica
 
 ## Collection conventions
 
-Place each skill at `<role-directory>/<skill-name>/SKILL.md`, using `stages`, `playbooks`, `techniques`, or `principles` as specified in [Skill Roles](specs/skill-roles/spec.md).
+Place each skill at `skills/<role-directory>/<skill-name>/SKILL.md`, using `stages`, `playbooks`, `techniques`, or `principles` as specified in [Skill Roles](specs/skill-roles/spec.md).
 
 When adding or changing a script distributed by ItsSkills, read [Authoring ItsSkills bundled scripts](specs/nix-backed-scripts/authoring.md). This collection requires Nix-backed execution; scripts authored in other projects follow those projects' conventions. Check resource preservation through both supported installation paths when tooling is available and report unavailable paths as unverified.
 
@@ -20,7 +20,7 @@ Every matching inline identifier contributes a dependency, including explanatory
 
 Create feature specifications for objectives that require coordinated behavior across skill or artifact owners and shared acceptance criteria. Keep an individual skill's executable guidance in `SKILL.md`; do not create one spec per skill or restate that guidance in a second owner. A reference to another skill alone does not justify a feature spec.
 
-Update an existing specification when it already owns the shared requirement. Do not combine independent objectives into a feature merely because their skills are implemented together. Use [Feature Artifacts](techniques/project-documentation/FEATURE-ARTIFACTS.md) when choosing the artifact.
+Update an existing specification when it already owns the shared requirement. Do not combine independent objectives into a feature merely because their skills are implemented together. Use [Feature Artifacts](skills/techniques/project-documentation/FEATURE-ARTIFACTS.md) when choosing the artifact.
 
 ## Skill writing
 

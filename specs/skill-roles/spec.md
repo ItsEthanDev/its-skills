@@ -23,14 +23,16 @@ Choose the role by the decision the skill owns, not its topic, tool, or position
 
 ### SR-002: Source organization
 
-Skills MUST reside under the root directory corresponding to their primary role:
+Skills MUST reside under `skills/`, in the directory corresponding to their primary role:
 
 ```text
-stages/<skill-name>/SKILL.md
-playbooks/<skill-name>/SKILL.md
-techniques/<skill-name>/SKILL.md
-principles/<skill-name>/SKILL.md
+skills/stages/<skill-name>/SKILL.md
+skills/playbooks/<skill-name>/SKILL.md
+skills/techniques/<skill-name>/SKILL.md
+skills/principles/<skill-name>/SKILL.md
 ```
+
+Repository documentation, generated graph outputs, and maintenance tooling remain outside `skills/`.
 
 Supporting resources belong with the skill they support. They do not become separate skills merely because they contain specialized guidance.
 
