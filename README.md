@@ -31,6 +31,8 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Dry Run](techniques/dry-run/SKILL.md): Preview a bounded edit and wait for approval; explicitly invoked.
 - [Project Documentation](techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
 - [Writing](techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
+- [Understanding Code](techniques/understanding-code/SKILL.md): Explain behavior, trace execution and data flow, and investigate design rationale with source-backed claims.
+- [Diagramming](techniques/diagramming/SKILL.md): Choose and construct clear visual representations while specifying, planning, documenting, or explaining information, with Mermaid as a conditional fallback.
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
 - [Reflect](techniques/reflect/SKILL.md): Propose evidence-backed improvements from selected work; explicitly invoked, proposal-only by default, with bounded caller-applied updates when requested.
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
