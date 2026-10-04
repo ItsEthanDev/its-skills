@@ -22,6 +22,8 @@ The agent MUST load resources required for the selected branch before relying on
 
 For example, a presentation technique may keep surface selection in its main file and browser-specific instructions in a reference loaded only when a browser is the requested surface.
 
+[Contextual Defaults](../contextual-defaults/spec.md) defines precedence and the conditional disclosure of detail useful only when a particular default is selected.
+
 ### PD-003: Scope survives disclosure
 
 Moving guidance into a supporting resource MUST NOT change its responsibility or authority. Supporting instructions MUST obey the skill's role, operational-reference restrictions, and inherited scope defined in the skill-role specification.

@@ -49,6 +49,7 @@ The [Principles router](principles/principles/SKILL.md) selects among 22 enginee
 
 - [Skill roles](specs/skill-roles/spec.md) defines responsibilities and source organization.
 - [Progressive disclosure](specs/progressive-disclosure/spec.md) defines on-demand loading of specialized guidance.
+- [Contextual defaults](specs/contextual-defaults/spec.md) defines request and convention precedence, useful fallbacks, and conditional loading of default-specific detail.
 - [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites for scripts distributed by this collection. Generated project scripts follow their target project's conventions.
 - [Self-verifying work](specs/self-verifying-work/spec.md) defines verification behavior, instruction ownership, and project-local protocol authoring.
 
