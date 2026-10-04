@@ -1,6 +1,6 @@
 # Architecture review
 
-Survey repository structure for evidence-backed opportunities to improve interfaces, locality, leverage, testability, and navigability. Load `principles`, select **Design Deep Modules**, and use its module, interface, depth, seam, adapter, leverage, locality, and deletion-test vocabulary.
+Survey repository structure for evidence-backed opportunities to improve interfaces, locality, leverage, testability, and navigability. Load `principles`, select `principle-design-deep-modules`, and use its module, interface, depth, seam, adapter, leverage, locality, and deletion-test vocabulary.
 
 ## Establish the system view
 

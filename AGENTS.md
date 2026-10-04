@@ -10,6 +10,12 @@ When adding or changing a script distributed by ItsSkills, read [Authoring ItsSk
 
 When changing verification guidance, use the ownership map in [Self-Verifying Work](specs/self-verifying-work/spec.md). Keep reusable instruction owners distinct from project-specific recipes and expected behavior sources.
 
+## Skill references and graph
+
+Follow [Skill Dependency Graph](specs/skill-dependency-graph/spec.md). In runtime skills and supporting Markdown, reference another skill by its exact frontmatter identifier in inline code, not by a link into another skill's directory. Preserve conditional loading instructions and authority limits. Keep links to same-skill resources; repository navigation may still link to skills.
+
+Every matching inline identifier contributes a dependency, including explanatory mentions. Avoid using a registered identifier for an unrelated command or concept; plain prose and fenced examples are not graph inputs. Regenerate the committed graph after changing references or source locations, and run its freshness check. See [graph tooling](tools/skill-graph/README.md) for commands and prerequisites.
+
 ## Specification scope
 
 Create feature specifications for objectives that require coordinated behavior across skill or artifact owners and shared acceptance criteria. Keep an individual skill's executable guidance in `SKILL.md`; do not create one spec per skill or restate that guidance in a second owner. A reference to another skill alone does not justify a feature spec.

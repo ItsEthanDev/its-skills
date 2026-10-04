@@ -65,6 +65,8 @@ The restriction applies to instructions in both the main skill file and its supp
 
 Explanatory mentions and examples are not operational references unless they instruct the agent to load, invoke, or follow a skill. Documentation outside runtime skills MAY link across roles freely.
 
+The [Skill Dependency Graph](../skill-dependency-graph/spec.md) conservatively counts all recognized inline skill identifiers, not only operational calls. Its dependency edges obey this role-direction matrix and remain distinct from execution authority.
+
 ### SR-006: References preserve authority and control
 
 An allowed reference MUST NOT be treated as authorization to execute the referenced skill. Its activation conditions and applicable project rules still govern execution.

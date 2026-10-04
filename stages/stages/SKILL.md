@@ -26,7 +26,7 @@ Skipping a separate stage does not waive unresolved decisions, verification obli
 
 A user request or joint conversation that establishes a target is sufficient direction to record it; do not demand a second approval of the user's own decision. Before adopting an agent-proposed material target change, present it and obtain direction. Ask when conflicting artifacts leave consequential intent unclear. Respect explicit user-requested pauses and stricter project governance.
 
-When maintaining artifacts, use [Project Documentation](../../techniques/project-documentation/SKILL.md) for owner selection and reconciliation. References do not grant execution authority. Every call inherits the assignment's scope, may receive a narrower scope, and returns results and control to its caller.
+When maintaining artifacts, use `project-documentation` for owner selection and reconciliation. References do not grant execution authority. Every call inherits the assignment's scope, may receive a narrower scope, and returns results and control to its caller.
 
 ## Handoff
 

@@ -1,0 +1,21 @@
+name: Skill graph
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v30
+        with:
+          github_access_token: ${{ github.token }}
+      - name: Test public CLI
+        run: sh tools/skill-graph/graph.sh test
+      - name: Check committed graph
+        run: sh tools/skill-graph/graph.sh check

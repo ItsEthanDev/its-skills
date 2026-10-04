@@ -21,7 +21,7 @@ Ask which decision an overlapping instruction makes, then put it with that decis
 
 Follow the target project's skill locations and harness conventions. Role does not require a router or determine invocation. A stage may be an individual skill or a router for multiple stages.
 
-When deciding whether skill work needs a separate specification, read [Feature Artifacts](../../techniques/project-documentation/FEATURE-ARTIFACTS.md). Keep executable guidance with the skill rather than automatically creating a matching spec.
+When deciding whether skill work needs a separate specification, read `project-documentation` and its `FEATURE-ARTIFACTS.md` resource. Keep executable guidance with the skill rather than automatically creating a matching spec.
 
 ## Choose activation
 
@@ -51,6 +51,8 @@ Omit scope metacommentary from the skill and its supporting references. Do not n
 
 ## Check operational references
 
+Follow the target project's reference convention. For name-based references, use the exact registered skill identifier in inline code and retain the condition under which to load or follow it. Keep links to resources within the same skill. Do not assume a referenced skill is installed or discoverable; report an unavailable dependency to the caller rather than substitute unrelated guidance. Update derived dependency outputs when the project maintains them.
+
 Treat an instruction to load, invoke, or follow another skill as an operational reference. Apply these allowed directions to both the main file and supporting resources:
 
 - Stages may reference stages, playbooks, techniques, and principles.
@@ -70,7 +72,7 @@ When adding or revising a bundled script, read [Writing skill scripts](reference
 
 ## Apply requested reflection
 
-When the user explicitly requests reflection on the work, reuse its existing proposals for this assignment or use [Reflect](../../techniques/reflect/SKILL.md) if it has not been performed. Leave maintained content unchanged for proposal-only requests. When updates are explicitly authorized, apply covered skill changes through this authoring procedure without seeking the same permission again; resolve unclear destinations or consequential policy choices before adopting them. Do not make reflection an automatic completion step.
+When the user explicitly requests reflection on the work, reuse its existing proposals for this assignment or use `reflect` if it has not been performed. Leave maintained content unchanged for proposal-only requests. When updates are explicitly authorized, apply covered skill changes through this authoring procedure without seeking the same permission again; resolve unclear destinations or consequential policy choices before adopting them. Do not make reflection an automatic completion step.
 
 ## Prune and check
 

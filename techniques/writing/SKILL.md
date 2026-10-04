@@ -17,7 +17,7 @@ Write proposed artifact text in the artifact's voice, even when presenting a dra
 
 Load one reference for a single-audience artifact. Load both references for a mixed-audience artifact.
 
-When the material involves structure, relationships, interactions, decisions, or state transitions, use [Diagramming](../diagramming/SKILL.md) to choose whether and how a visual representation would help. Apply it during drafting even when no diagram was explicitly requested; retain prose or a table when that is clearer.
+When the material involves structure, relationships, interactions, decisions, or state transitions, use `diagramming` to choose whether and how a visual representation would help. Apply it during drafting even when no diagram was explicitly requested; retain prose or a table when that is clearer.
 
 ## Process
 

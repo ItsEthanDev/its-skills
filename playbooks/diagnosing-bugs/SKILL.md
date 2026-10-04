@@ -31,7 +31,7 @@ Spend disproportionate effort here. **Be aggressive. Be creative. Refuse to give
 
 These are possible methods, not guaranteed facilities. Use available, authorized project tools. Report missing prerequisites rather than installing tools or services implicitly.
 
-Use [Verifying Work](../../techniques/verifying-work/SKILL.md) to execute checks and interpret their evidence. Before writing an initial failing test or a regression test, read its [Automated tests guidance](../../techniques/verifying-work/references/automated-tests.md). When test-first repair applies, use [TDD](../../techniques/tdd/SKILL.md) for the red-green cadence.
+Use `verifying-work` to execute checks and interpret their evidence. Before writing an initial failing test or a regression test, read its `references/automated-tests.md` resource. When test-first repair applies, use `tdd` for the red-green cadence.
 
 1. **Failing test** at an approved seam that reaches the bug: unit, integration, e2e.
 2. **Curl / HTTP script** against a running dev server.
@@ -126,7 +126,7 @@ Tool preference:
 
 Apply a repair only when the assignment authorizes it. Otherwise report the evidenced cause, proposed fix, and test coverage needs, then perform only authorized cleanup.
 
-For an authorized test-first repair, use the [TDD technique](../../techniques/tdd/SKILL.md) at an approved seam that reproduces the real bug pattern.
+For an authorized test-first repair, use the `tdd` at an approved seam that reproduces the real bug pattern.
 
 A correct seam is one where the test exercises the **real bug pattern** as it occurs at the call site. If the only available seam is too shallow (single-caller test when the bug needs multiple callers, unit test that can't replicate the chain that triggered the bug), a regression test there gives false confidence.
 

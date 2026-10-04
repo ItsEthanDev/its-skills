@@ -5,7 +5,7 @@ description: Create or maintain a project-specific verification skill when reque
 
 # Authoring Project Verification
 
-Confirm the requested project, creation or maintenance task, and permitted edit boundary. A missing verification skill is a finding, not permission to create one. Read [Authoring Skills](../authoring-skills/SKILL.md) for general skill construction and [Verifying Work](../../techniques/verifying-work/SKILL.md) for verification methods and shared test guidance.
+Confirm the requested project, creation or maintenance task, and permitted edit boundary. A missing verification skill is a finding, not permission to create one. Read `authoring-skills` for general skill construction and `verifying-work` for verification methods and shared test guidance.
 
 ## Discover the project protocol
 
@@ -19,7 +19,7 @@ If the application cannot build or start, establish the specific blocker. Repair
 
 Read [Project protocol construction](references/project-protocol.md) before authoring the project-specific instructions. Use the target project's skill location and supported metadata. Select a technique for a bounded verification operation unless the actual work requires another role.
 
-Keep concrete project commands, fixtures, interaction recipes, special hazards, and expected observations in the project skill. Link authoritative behavior sources rather than copy requirements or silently redefine them from current output. Keep shared verification and test-writing rules with their existing owners. Do not add an instruction that invokes Verifying Work back from the generated skill.
+Keep concrete project commands, fixtures, interaction recipes, special hazards, and expected observations in the project skill. Link authoritative behavior sources rather than copy requirements or silently redefine them from current output. Keep shared verification and test-writing rules with their existing owners. Do not add an instruction that invokes `verifying-work` back from the generated skill.
 
 Add a feature map only when distinct repeated interaction recipes justify it. State which branches it covers and the observations that establish their claims. Add a helper only when it improves repeatability; use the portable script-writing guidance selected by Authoring Skills and the target project's approved tools.
 

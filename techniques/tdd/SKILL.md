@@ -5,7 +5,7 @@ description: Develop features or repairs test-first through a red-green loop. Us
 
 # Test-Driven Development
 
-Use the red → green loop for the authorized implementation. Before writing tests, read [Automated tests](../verifying-work/references/automated-tests.md) for test quality, seam approval, and dependency substitution guidance. Reuse existing approval rather than ask again for each cycle.
+Use the red → green loop for the authorized implementation. Before writing tests, read `verifying-work` and its `references/automated-tests.md` resource for test quality, seam approval, and dependency substitution guidance. Reuse existing approval rather than ask again for each cycle.
 
 ## Run one behavioral slice
 

@@ -25,4 +25,4 @@ Control time, randomness, environment, and fixture state when they would otherwi
 
 Preserve the old artifact or baseline only when the comparison needs it and the assignment permits it. Use an isolated build, worktree, fixture, or temporary copy according to project conventions. Record which versions and conditions were compared, and clean up only resources this check created and is permitted to remove.
 
-Use Verifying Work to execute checks and classify their results. An incomplete or wrong-boundary comparison must remain a coverage limit, not proof of equivalence.
+Use `verifying-work` to execute checks and classify their results. An incomplete or wrong-boundary comparison must remain a coverage limit, not proof of equivalence.

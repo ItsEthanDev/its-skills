@@ -5,7 +5,7 @@ description: Check changed behavior and artifacts against requirements, and gath
 
 # Verifying Work
 
-Check the result against the requested behavior and its authoritative sources. Read [Prove It Works](../../principles/principle-prove-it-works/SKILL.md) when deciding whether evidence supports a claim.
+Check the result against the requested behavior and its authoritative sources. Read `principle-prove-it-works` when deciding whether evidence supports a claim.
 
 ## Prepare the checks
 
@@ -18,7 +18,7 @@ Check the result against the requested behavior and its authoritative sources. R
 
 ## Execute and interpret
 
-4. **Prepare safe, known state.** Inspect what each command can execute, including lifecycle hooks and remote calls. Before a real API operation, use [Calling Web APIs](../calling-web-apis/SKILL.md). Prefer isolated fixtures and test instances. Do not drive a user's shared session or modify maintained content without authorization. Identify readiness, expected build or version, and the resources this run will create. Missing prerequisites are a blocker, not permission to install tools or widen access.
+4. **Prepare safe, known state.** Inspect what each command can execute, including lifecycle hooks and remote calls. Before a real API operation, use `calling-web-apis`. Prefer isolated fixtures and test instances. Do not drive a user's shared session or modify maintained content without authorization. Identify readiness, expected build or version, and the resources this run will create. Missing prerequisites are a blocker, not permission to install tools or widen access.
 5. **Run the selected checks.** Exercise the actual artifact or interaction and capture the action, observed result, and relevant side effects. Record commands or artifact locations sufficient to reproduce the observation. Use bounded waits and redact credentials and unnecessary private data. After a surprising failure, check instance health and return to known state before trying again. Clean up resources created by failed attempts as well as successful ones; preserve evidence still needed by the caller and leave unrelated processes untouched.
 6. **Classify each result.** Distinguish failed product behavior, an invalid assertion or harness, unavailable prerequisites, and ambiguous expected behavior. Repair an invalid check only when editing it is authorized and its expected result remains grounded in the authoritative source. Never weaken an assertion, update a baseline, or redefine expected behavior merely to pass. Stop retries when they yield no new evidence and return the precise finding.
 7. **Return evidence and limits.** Mark claims as passed, failed, blocked, or unverified. Include the relevant command, observed result or evidence location, coverage limits, and cleanup status. An inconclusive or wrong-surface check is not a pass. Return findings and control to the caller so authorized corrections can be followed by another verification pass.

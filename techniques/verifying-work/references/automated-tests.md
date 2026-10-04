@@ -8,7 +8,7 @@ Before writing maintained tests, use an already approved seam or obtain confirma
 
 Running existing tests or making a temporary observation does not require a new seam-approval pause. Temporary checks still require permission for their actions and effects.
 
-If the interface itself is uncertain, read [Design Deep Modules](../../../principles/principle-design-deep-modules/SKILL.md) for seam and interface design criteria. Report a necessary redesign rather than adopt it solely to make a test convenient.
+If the interface itself is uncertain, read `principle-design-deep-modules` for seam and interface design criteria. Report a necessary redesign rather than adopt it solely to make a test convenient.
 
 ## Write a discriminating assertion
 

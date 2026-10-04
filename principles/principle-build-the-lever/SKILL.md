@@ -19,6 +19,6 @@ When the work isn't trivial, default to building the tool that does it instead o
 - Preserve a useful lever in the appropriate owner when the work outlives the session. Follow project rules and authorized scope for creating and committing it.
 
 
-**Balance:** The bar is triviality, not repetition. A one-off still earns a lever when the lever is what makes the work checkable. Per the [Laziness Protocol](../principle-laziness-protocol/SKILL.md), build the smallest script that does or proves the job, never a framework.
+**Balance:** The bar is triviality, not repetition. A one-off still earns a lever when the lever is what makes the work checkable. Per the `principle-laziness-protocol`, build the smallest script that does or proves the job, never a framework.
 
-When deciding how to enforce a recurring correction, read [Encode Lessons in Structure](../principle-encode-lessons-in-structure/SKILL.md). When scripting a verification check, read [Prove It Works](../principle-prove-it-works/SKILL.md).
+When deciding how to enforce a recurring correction, read `principle-encode-lessons-in-structure`. When scripting a verification check, read `principle-prove-it-works`.

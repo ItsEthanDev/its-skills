@@ -19,11 +19,11 @@ Provide enough project-specific detail to run applicable branches:
 - **Evidence:** the action and resulting observation needed to interpret the check, the approved capture location, redaction requirements, and the useful retention period. Use existing project conventions; do not require committed reports for every run.
 - **Cleanup:** exact procedures for resources this run creates, including failed attempts. Track process handles instead of killing by name. Respect explicit keep-running instructions and retain evidence for its stated lifetime.
 
-Inspect commands and helpers for real service access and consequential effects. Local execution and names such as `dry-run` do not establish non-mutation. Follow the applicable access rules through [Calling Web APIs](../../../techniques/calling-web-apis/SKILL.md) when a real remote operation is needed. Keep permission-dependent branches explicit; do not embed credentials in instructions.
+Inspect commands and helpers for real service access and consequential effects. Local execution and options such as `--dry-run` do not establish non-mutation. Follow the applicable access rules through `calling-web-apis` when a real remote operation is needed. Keep permission-dependent branches explicit; do not embed credentials in instructions.
 
 ## Keep executable detail with its owner
 
-Let command help, configuration, and scripts define their arguments, defaults, and implemented checks. Explain when to invoke them and what the agent must decide rather than reproduce their internals in prose. A helper must have a documented entry point, explicit prerequisites, and observable failure. Do not add an invocation of Verifying Work to the generated skill.
+Let command help, configuration, and scripts define their arguments, defaults, and implemented checks. Explain when to invoke them and what the agent must decide rather than reproduce their internals in prose. A helper must have a documented entry point, explicit prerequisites, and observable failure. Do not add an invocation of `verifying-work` to the generated skill.
 
 ## Add feature recipes selectively
 

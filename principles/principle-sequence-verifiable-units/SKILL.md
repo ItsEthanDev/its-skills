@@ -15,4 +15,4 @@ A failure is easier to explain when the unit that caused it is identifiable. Fav
 
 Follow project rules for delivery order and acceptance checks. Run an independent review only when explicitly requested or scheduled by an authoritative project artifact.
 
-When judging whether a check establishes its claim, read [Prove It Works](../principle-prove-it-works/SKILL.md). When deciding whether a repeatable tool would improve a check, read [Build the Lever](../principle-build-the-lever/SKILL.md). Keep resulting work within the authorized assignment.
+When judging whether a check establishes its claim, read `principle-prove-it-works`. When deciding whether a repeatable tool would improve a check, read `principle-build-the-lever`. Keep resulting work within the authorized assignment.

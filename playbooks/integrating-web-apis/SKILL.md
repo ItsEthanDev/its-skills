@@ -7,7 +7,7 @@ description: Build or change code that communicates with a remote web API or rec
 
 Implement the behavior the application needs against the relevant remote contract. Keep implementation authority separate from permission to contact the service.
 
-For diagnosis, use the [Diagnosing Bugs playbook](../diagnosing-bugs/SKILL.md) within its authorized scope. For an explicitly requested or scheduled review, use [Development Review](../development-review/SKILL.md).
+For diagnosis, use the `diagnosing-bugs` within its authorized scope. For an explicitly requested or scheduled review, use `development-review`.
 
 ## Establish the relevant contract
 
@@ -23,7 +23,7 @@ Follow a suitable existing convention. Otherwise choose and report a routine, pr
 
 ## Implement the affected boundary
 
-Reuse a suitable interface. Introduce an adapter only when it concentrates meaningful vendor knowledge or supports real variation, not merely to wrap a single call. When validation or representation placement is uncertain, read [Boundary Discipline](../../principles/principle-boundary-discipline/SKILL.md). When interface depth or seam placement is uncertain, read [Design Deep Modules](../../principles/principle-design-deep-modules/SKILL.md).
+Reuse a suitable interface. Introduce an adapter only when it concentrates meaningful vendor knowledge or supports real variation, not merely to wrap a single call. When validation or representation placement is uncertain, read `principle-boundary-discipline`. When interface depth or seam placement is uncertain, read `principle-design-deep-modules`.
 
 Treat remote input as unknown. Validate and map the relevant data into application types, deriving wire types from an authoritative schema where available. Keep parsing and mapping pure where practical. Do not silently accept malformed data. Preserve error, timeout, cancellation, pagination, and retry behavior relevant to the application's contract.
 
@@ -31,10 +31,10 @@ When receiving webhooks, read [Inbound Webhooks](references/inbound-webhooks.md)
 
 ## Verify locally and report
 
-Use [Verifying Work](../../techniques/verifying-work/SKILL.md) to select checks and interpret their results. Test the affected behavior using documented examples, local fakes, or sanitized fixtures without credentials or network access. Cover request construction, parsing, mapping, and relevant failure behavior. Add pagination, retry, or missing-field cases when those are part of the change, not as a universal checklist. When test-first implementation applies, use [TDD](../../techniques/tdd/SKILL.md) at approved seams.
+Use `verifying-work` to select checks and interpret their results. Test the affected behavior using documented examples, local fakes, or sanitized fixtures without credentials or network access. Cover request construction, parsing, mapping, and relevant failure behavior. Add pagination, retry, or missing-field cases when those are part of the change, not as a universal checklist. When test-first implementation applies, use `tdd` at approved seams.
 
-Keep live contract checks separate and disabled by default. Before any real API operation, use [Calling Web APIs](../../techniques/calling-web-apis/SKILL.md); implementing a mutation does not authorize executing it.
+Keep live contract checks separate and disabled by default. Before any real API operation, use `calling-web-apis`; implementing a mutation does not authorize executing it.
 
-Retain useful, stable documentation links near the boundary when project conventions permit and the link preserves a non-obvious contract fact. Use [Project Documentation](../../techniques/project-documentation/SKILL.md) when a durable contract or decision needs an owner; do not create an artifact merely to record routine work.
+Retain useful, stable documentation links near the boundary when project conventions permit and the link preserves a non-obvious contract fact. Use `project-documentation` when a durable contract or decision needs an owner; do not create an artifact merely to record routine work.
 
 Report the relevant contract evidence, consequential interaction choices, assumptions or conflicts, checks performed, and live behavior that remains unverified. Local modeled-contract tests do not prove actual provider compatibility. Return the result and control to the caller.

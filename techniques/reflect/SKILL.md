@@ -20,9 +20,9 @@ Extract candidate lessons from observed failures, recurring friction, or success
 
 Compare each candidate with existing guidance and project constraints. Distinguish a missing instruction from an instruction that was ignored, a selection or execution failure, and a tool or environment problem. Do not add a duplicate rule merely because an existing one was missed. Reject unsupported generalizations and permit a result with no worthwhile proposals.
 
-Read [Encode Lessons in Structure](../../principles/principle-encode-lessons-in-structure/SKILL.md) when deciding whether a feasible mechanism would address the problem better than more prose. Keep project-specific facts with project guidance; propose reusable skill changes only when the evidence supports reusable behavior.
+Read `principle-encode-lessons-in-structure` when deciding whether a feasible mechanism would address the problem better than more prose. Keep project-specific facts with project guidance; propose reusable skill changes only when the evidence supports reusable behavior.
 
-When the durable destination is unclear, use [Project Documentation](../project-documentation/SKILL.md) to select the owner. For proposed artifact wording, use [Writing](../writing/SKILL.md). Preserve existing activation, composition, and authority constraints. Exclude secrets, unnecessary personal details, personality judgments, and inferred personal traits from proposed durable records.
+When the durable destination is unclear, use `project-documentation` to select the owner. For proposed artifact wording, use `writing`. Preserve existing activation, composition, and authority constraints. Exclude secrets, unnecessary personal details, personality judgments, and inferred personal traits from proposed durable records.
 
 ## Return proposals and update scope
 
