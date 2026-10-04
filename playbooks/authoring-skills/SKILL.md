@@ -19,7 +19,7 @@ Choose one primary role by the decision the skill owns. Apply the same classific
 
 Ask which decision an overlapping instruction makes, then put it with that decision's owner. For example, readiness to leave an implementation stage is a stage gate; requiring reproduction before patching can be a diagnosis playbook checkpoint; tracing a code path is a technique.
 
-For this collection, place each skill at `<role-directory>/<skill-name>/SKILL.md`, using `stages`, `playbooks`, `techniques`, or `principles`. Role does not require a router or determine invocation. A stage may be an individual skill or a router for multiple stages.
+Follow the target project's skill locations and harness conventions. Role does not require a router or determine invocation. A stage may be an individual skill or a router for multiple stages.
 
 ## Choose activation
 
@@ -58,7 +58,7 @@ Preserve the caller's authorized boundary on every call, including cross-role ca
 
 Put repeatable execution in a script when it makes the operation more reliable. Keep invocation criteria, authorization decisions, and unresolved judgment in the skill. Let the script own its interface and implemented behavior; point to its help instead of duplicating arguments, defaults, checks, or execution steps.
 
-When adding or revising a bundled script, read [Writing skill scripts](references/scripts.md). Bundled scripts require Nix and obtain tool dependencies through repository-owned declarations. Guidance-only skills remain usable without Nix.
+When adding or revising a bundled script, read [Writing skill scripts](references/scripts.md). Follow the target project's dependency conventions and make execution prerequisites explicit.
 
 ## Prune and check
 
@@ -66,4 +66,4 @@ When in doubt, delete. Keep prose that changes a decision or action. Remove scop
 
 Check the role, source location, activation setting, operational references, bundled resources, and links. Check the target harness's required frontmatter and supported invocation behavior. For an agent-selected skill, compare its description with representative requests; for an explicitly invoked skill, check its loading path or command where available.
 
-Provide representative cases for the maintainer to evaluate. Distinguish structural checks from observed agent behavior, and report what was checked and what remains unverified. When installation paths are available, verify that both retain the skill's required resources.
+Provide representative cases for the maintainer to evaluate. Distinguish structural checks from observed agent behavior, and report what was checked and what remains unverified. When supported installation paths are available, verify that they retain the skill's required resources.

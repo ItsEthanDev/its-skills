@@ -31,7 +31,7 @@ When receiving webhooks, read [Inbound Webhooks](references/inbound-webhooks.md)
 
 ## Verify locally and report
 
-Test the affected behavior using documented examples, local fakes, or sanitized fixtures without credentials or network access. Cover request construction, parsing, mapping, and relevant failure behavior. Add pagination, retry, or missing-field cases when those are part of the change, not as a universal checklist. When test-first implementation applies, use [TDD](../../techniques/tdd/SKILL.md) at approved seams.
+Use [Verifying Work](../../techniques/verifying-work/SKILL.md) to select checks and interpret their results. Test the affected behavior using documented examples, local fakes, or sanitized fixtures without credentials or network access. Cover request construction, parsing, mapping, and relevant failure behavior. Add pagination, retry, or missing-field cases when those are part of the change, not as a universal checklist. When test-first implementation applies, use [TDD](../../techniques/tdd/SKILL.md) at approved seams.
 
 Keep live contract checks separate and disabled by default. Before any real API operation, use [Calling Web APIs](../../techniques/calling-web-apis/SKILL.md); implementing a mutation does not authorize executing it.
 

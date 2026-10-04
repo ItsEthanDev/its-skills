@@ -20,7 +20,7 @@ Characteristics:
 - Uses public API only
 - Survives internal refactors
 - Describes WHAT, not HOW
-- One logical assertion per test
+- Assertions establish one coherent behavior
 
 ## Bad Tests
 
@@ -42,7 +42,7 @@ Red flags:
 - Asserting on call counts/order
 - Test breaks when refactoring without behavior change
 - Test name describes HOW not WHAT
-- Verifying through external means instead of interface
+- Bypassing the chosen interface instead of checking its contract
 
 ```typescript
 // BAD: Bypasses interface to verify

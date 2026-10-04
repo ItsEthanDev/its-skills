@@ -8,23 +8,19 @@ Let the script own its arguments, defaults, validation, execution steps, and imp
 
 In the skill, state when to invoke the script, what authorization or context it needs, and which decisions the agent must resolve before execution. Point to the script and its help instead of reproducing their contents. Do not instruct the agent to repeat checks the script already performs.
 
-## Supply tools through Nix
+## Declare execution prerequisites
 
-Require Nix for bundled script execution and make that prerequisite explicit. Obtain required tools through repository-owned Nix declarations rather than relying on host-installed versions. Locate required bundled resources relative to the script, not the caller's working directory.
+Follow the target project's dependency and packaging conventions. State required tools, versions where behavior depends on them, supported platforms, and how to obtain the approved environment. Reuse project dependency declarations and locks rather than add an unrelated provisioning system.
 
-Keep the script runnable after installation through either supported path. Preserve any required shared resources as well as resources inside the skill. Do not depend on a personal configuration or a particular consumer repository. Follow the repository's selected packaging design rather than assume a separate flake per skill or a shared environment.
+Locate bundled resources relative to the script, not the caller's working directory. Keep the script runnable through the project's supported installation paths and preserve required shared resources. Do not rely on undeclared details of a personal environment.
 
-Declare required Nix features and supported platforms. Do not require NixOS unless the operation actually depends on it. Installing skill files does not install Nix or supply execution dependencies by itself.
-
-Pin runtime dependencies through the selected Nix declarations and applicable application dependency locks and hashes. Pinning a runtime does not pin packages it downloads. Prefer packaging the application with its dependency graph over resolving packages at execution time.
-
-Allow Nix to acquire declared dependencies without installing them into a user profile. If Nix is unavailable, report that prerequisite clearly and fail without trying to install it. Do not change host configuration as automatic recovery.
+Report missing tools or unsupported platforms clearly. Installing skill files does not itself supply execution dependencies. Do not install dependencies or change host configuration as automatic recovery; follow the project's authorization rules.
 
 ## Separate dependencies from runtime state
 
 Treat credentials, input files, ports, permissions, network connectivity, and authenticated services as runtime conditions. Supplying an executable does not supply those prerequisites or authorize external actions.
 
-Check only prerequisites needed for the requested operation. Local browser viewing does not require Tailscale. Remote viewing requires an explicitly selected access method.
+Check only prerequisites needed for the requested operation. Require remote-access facilities only when remote access is requested.
 
 Do not broaden network exposure, authenticate services, or change system configuration as automatic recovery. Require authorization for those actions.
 
@@ -42,8 +38,8 @@ Keep output useful to the caller. Report results clearly and send diagnostics to
 
 ## Verify the boundary
 
-Check syntax and exercise a representative successful invocation. Test relevant failures, including invalid inputs, missing Nix, and unavailable runtime prerequisites.
+Check syntax and exercise a representative successful invocation. Test relevant failures, including invalid inputs, missing tools, and unavailable runtime prerequisites.
 
-Verify execution with Nix available and additional required tools absent from the host. Run from another working directory and check bundled path resolution. When installation paths are available, verify that both preserve required scripts and dependency declarations.
+Verify execution in the declared environment rather than rely on incidental host tools. Run from another working directory and check bundled path resolution. When supported installation paths are available, verify that they preserve required scripts and dependency resources.
 
 Distinguish reproducible dependencies from stateful execution. A declared environment does not guarantee available ports, connectivity, credentials, or permissions. Report checks that could not be performed.

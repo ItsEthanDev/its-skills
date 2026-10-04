@@ -31,7 +31,7 @@ Spend disproportionate effort here. **Be aggressive. Be creative. Refuse to give
 
 These are possible methods, not guaranteed facilities. Use available, authorized project tools. Report missing prerequisites rather than installing tools or services implicitly.
 
-Before writing an initial failing test or a regression test, use an already approved seam or obtain confirmation for a new or changed seam. An approved plan confirms its selected seams; do not ask again for each test. When test-first work applies, read [TDD](../../techniques/tdd/SKILL.md) for seam approval and the test-quality and red-green rules.
+Use [Verifying Work](../../techniques/verifying-work/SKILL.md) to execute checks and interpret their evidence. Before writing an initial failing test or a regression test, read its [Automated tests guidance](../../techniques/verifying-work/references/automated-tests.md). When test-first repair applies, use [TDD](../../techniques/tdd/SKILL.md) for the red-green cadence.
 
 1. **Failing test** at an approved seam that reaches the bug: unit, integration, e2e.
 2. **Curl / HTTP script** against a running dev server.

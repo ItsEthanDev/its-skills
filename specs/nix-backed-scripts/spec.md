@@ -2,9 +2,9 @@
 
 ## Outcome
 
-Bundled skill scripts use Nix to obtain their required tools instead of relying on those tools being installed on the host. Nix is an explicit execution prerequisite, not a dependency on a particular consumer repository or machine configuration.
+Scripts bundled and distributed by ItsSkills use Nix to obtain their required tools instead of relying on those tools being installed on the host. Nix is an explicit execution prerequisite, not a dependency on a particular consumer repository or machine configuration.
 
-This specification defines intended behavior for bundled skill scripts. The [constitution](../../CONSTITUTION.md) governs the collection.
+Scripts or skills generated in another project follow that project's dependency conventions. They do not acquire a Nix requirement from the use of an ItsSkills authoring skill. The [constitution](../../CONSTITUTION.md) governs the collection.
 
 ## Requirements
 
@@ -36,6 +36,12 @@ The failure MUST NOT be presented as a missing script-specific tool when Nix its
 
 Both Nix-based skill consumption and Vercel skills CLI installation MUST preserve the resources needed to execute bundled scripts. Neither installation path may require a separately maintained copy of a script or its dependency declarations.
 
+### NS-006: Repository policy stays local
+
+ItsSkills-specific script dependency guidance MUST remain in repository-local contributor guidance, with [AGENTS.md](../../AGENTS.md) directing authors to it. General skill-authoring instructions MUST describe explicit prerequisites and target-project conventions without imposing Nix.
+
+[Authoring bundled scripts](authoring.md) provides the collection's operational authoring guidance.
+
 ## Acceptance conditions
 
 - A bundled script can run with Nix available and its additional required tools absent from the host.
@@ -44,7 +50,9 @@ Both Nix-based skill consumption and Vercel skills CLI installation MUST preserv
 - A guidance-only skill can be used without Nix.
 - Both installation paths retain the resources required for script execution.
 - Required non-tool inputs and access are identified rather than treated as supplied by Nix.
+- A script authored in another project follows that project's conventions without inheriting a Nix prerequisite.
+- Nix-specific contributor guidance is discoverable from repository instructions without appearing in the portable authoring skill.
 
 ## Outside this feature
 
-This feature does not add scripts, select a Nix packaging mechanism, prescribe per-skill versus shared dependency environments, configure a consumer, or implement either installation path. It does not promise non-Nix script execution or supply credentials and external-service access.
+Packaging may use per-skill or shared dependency environments if both installation paths preserve the required resources. Consumer configuration, credentials, and external-service permissions remain separate from dependency provisioning. Non-Nix execution of scripts distributed by ItsSkills is not a supported requirement.

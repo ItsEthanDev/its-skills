@@ -14,7 +14,8 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 
 ### Playbooks
 
-- [Authoring Skills](playbooks/authoring-skills/SKILL.md): Create or revise a skill. Adapted to the collection's governance and specifications; explicitly invoked.
+- [Authoring Skills](playbooks/authoring-skills/SKILL.md): Create or revise a skill using target-project conventions; explicitly invoked.
+- [Authoring Project Verification](playbooks/authoring-project-verification/SKILL.md): Create or maintain project-specific verification instructions and prove the affected procedures.
 - [Ingest Document](playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
 - [Prototype](playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
 - [Development Review](playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
@@ -31,7 +32,8 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Writing](techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
-- [TDD](techniques/tdd/SKILL.md): Develop tested behavior through a red-green loop at approved seams; refactoring remains separate work.
+- [Verifying Work](techniques/verifying-work/SKILL.md): Select and execute checks, interpret findings, and return evidence and verification limits.
+- [TDD](techniques/tdd/SKILL.md): Develop behavior test-first through a red-green loop using shared automated-test guidance; refactoring remains separate work.
 - [Show Me](techniques/show-me/SKILL.md): Present work in chat, Hunk, a Markdown browser viewer, or UI screenshots. Its bundled browser script requires Nix.
 - [Calling Web APIs](techniques/calling-web-apis/SKILL.md): Make real API requests within explicit service, environment, and effect authorization.
 
@@ -43,7 +45,8 @@ The [Principles router](principles/principles/SKILL.md) selects among 22 enginee
 
 - [Skill roles](specs/skill-roles/spec.md) defines responsibilities and source organization.
 - [Progressive disclosure](specs/progressive-disclosure/spec.md) defines on-demand loading of specialized guidance.
-- [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites and tool dependencies.
+- [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites for scripts distributed by this collection. Generated project scripts follow their target project's conventions.
+- [Self-verifying work](specs/self-verifying-work/spec.md) defines verification behavior, instruction ownership, and project-local protocol authoring.
 
 ## Repository guidance
 

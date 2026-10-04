@@ -4,7 +4,7 @@
 
 Each skill has a clear responsibility within a composable four-role model. The role defines which decisions the skill owns; the source directory makes that role visible to authors and readers.
 
-This specification defines the intended organization. It does not imply that skills or installation tooling already exist. The [constitution](../../CONSTITUTION.md) governs the collection.
+The [constitution](../../CONSTITUTION.md) governs the collection.
 
 ## Requirements
 

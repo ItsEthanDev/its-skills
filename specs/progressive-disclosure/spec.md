@@ -4,7 +4,7 @@
 
 An agent can use a skill's essential guidance without loading every specialized procedure or reference. Detail becomes available when the task needs it.
 
-This specification defines intended behavior, not an existing implementation. The [constitution](../../CONSTITUTION.md) and [skill-role specification](../skill-roles/spec.md) govern the collection.
+The [constitution](../../CONSTITUTION.md) and [skill-role specification](../skill-roles/spec.md) govern the collection.
 
 ## Requirements
 
