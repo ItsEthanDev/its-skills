@@ -10,6 +10,12 @@ When adding or changing a script distributed by ItsSkills, read [Authoring ItsSk
 
 When changing verification guidance, use the ownership map in [Self-Verifying Work](specs/self-verifying-work/spec.md). Keep reusable instruction owners distinct from project-specific recipes and expected behavior sources.
 
+## Specification scope
+
+Create feature specifications for objectives that require coordinated behavior across skill or artifact owners and shared acceptance criteria. Keep an individual skill's executable guidance in `SKILL.md`; do not create one spec per skill or restate that guidance in a second owner. A reference to another skill alone does not justify a feature spec.
+
+Update an existing specification when it already owns the shared requirement. Do not combine independent objectives into a feature merely because their skills are implemented together. Use [Feature Artifacts](techniques/project-documentation/FEATURE-ARTIFACTS.md) when choosing the artifact.
+
 ## Skill writing
 
 Write direct instructions that change an agent's decisions or actions. Do not include scope metacommentary in skills or supporting references: statements narrating the skill's role, what it owns, or which responsibilities belong elsewhere. Let the name, activation conditions, and procedure establish its scope.

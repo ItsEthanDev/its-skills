@@ -21,6 +21,8 @@ Ask which decision an overlapping instruction makes, then put it with that decis
 
 Follow the target project's skill locations and harness conventions. Role does not require a router or determine invocation. A stage may be an individual skill or a router for multiple stages.
 
+When deciding whether skill work needs a separate specification, read [Feature Artifacts](../../techniques/project-documentation/FEATURE-ARTIFACTS.md). Keep executable guidance with the skill rather than automatically creating a matching spec.
+
 ## Choose activation
 
 Define the skill's own activation conditions. Decide whether the agent should select it or a person should invoke it explicitly.
@@ -59,6 +61,10 @@ Preserve the caller's authorized boundary on every call, including cross-role ca
 Put repeatable execution in a script when it makes the operation more reliable. Keep invocation criteria, authorization decisions, and unresolved judgment in the skill. Let the script own its interface and implemented behavior; point to its help instead of duplicating arguments, defaults, checks, or execution steps.
 
 When adding or revising a bundled script, read [Writing skill scripts](references/scripts.md). Follow the target project's dependency conventions and make execution prerequisites explicit.
+
+## Apply requested reflection
+
+When the user explicitly requests reflection on the work, reuse its existing proposals for this assignment or use [Reflect](../../techniques/reflect/SKILL.md) if it has not been performed. Leave maintained content unchanged for proposal-only requests. When updates are explicitly authorized, apply covered skill changes through this authoring procedure without seeking the same permission again; resolve unclear destinations or consequential policy choices before adopting them. Do not make reflection an automatic completion step.
 
 ## Prune and check
 

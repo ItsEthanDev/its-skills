@@ -17,6 +17,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Authoring Skills](playbooks/authoring-skills/SKILL.md): Create or revise a skill using target-project conventions; explicitly invoked.
 - [Authoring Project Verification](playbooks/authoring-project-verification/SKILL.md): Create or maintain project-specific verification instructions and prove the affected procedures.
 - [Ingest Document](playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
+- [Refactoring](playbooks/refactoring/SKILL.md): Improve structure while preserving accepted behavior, with direct checks and separate reporting of discovered defects.
 - [Prototype](playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
 - [Development Review](playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
 - [Diagnosing Bugs](playbooks/diagnosing-bugs/SKILL.md): Establish a red-capable feedback loop, investigate causes, and repair only within authorized scope.
@@ -31,6 +32,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Project Documentation](techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
 - [Writing](techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
 - [Commit](techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
+- [Reflect](techniques/reflect/SKILL.md): Propose evidence-backed improvements from selected work; explicitly invoked, proposal-only by default, with bounded caller-applied updates when requested.
 - [Pause Work](techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
 - [Verifying Work](techniques/verifying-work/SKILL.md): Select and execute checks, interpret findings, and return evidence and verification limits.
 - [TDD](techniques/tdd/SKILL.md): Develop behavior test-first through a red-green loop using shared automated-test guidance; refactoring remains separate work.
