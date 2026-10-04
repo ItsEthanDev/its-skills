@@ -13,7 +13,7 @@ Design operations so they converge to the correct state regardless of how many t
 **The pattern:**
 - Convergent startup: scan for existing state, clean stale artifacts, adopt live sessions
 - Content-based cleanup: compare by content equivalence, not creation order
-- Self-healing locks: use PID-based stale lock detection
+- Self-healing locks: follow explicit direction or an intentional project lock-ownership and recovery convention. For local process-owned locks, default to PID-based stale detection when the owning process's identity and liveness can be checked reliably, accounting for PID reuse and namespaces. Use environment-appropriate ownership and recovery checks for other lock models.
 - Idempotent scheduling: failed work respawns cleanly, fresh input regenerated after each cycle
 
 **The test:**
