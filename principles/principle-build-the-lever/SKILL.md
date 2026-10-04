@@ -1,15 +1,15 @@
 ---
 name: principle-build-the-lever
-description: "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun."
+description: "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Default to building the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun."
 disable-model-invocation: true
 ---
 # Build the Lever
 
-When the work isn't trivial, build the tool that does it instead of doing it by hand.
+When the work isn't trivial, default to building the tool that does it instead of doing it by hand.
 
-**Why:** Two payoffs. Throughput: a codemod, generator, or script does the work the same way every time and reruns for free. Confidence: the tool is one artifact a reviewer can read and rerun to check the work. Hand-done changes can only be re-verified by redoing them. A deterministic script turns "trust me" into "run this".
+**Why:** Two payoffs. Throughput: a codemod, generator, or script does the work the same way every time and can be rerun. Confidence: the tool is one artifact a reviewer can read and rerun to check the work. Existing checks can verify hand-done changes, but do not necessarily make their execution repeatable. A deterministic script turns "trust me" into "run this".
 
-**Pattern:** Default to building the lever. Skip it only when the task is genuinely trivial, a couple of obvious edits you can see at a glance.
+**Pattern:** Default to building the lever, including for non-trivial one-off work. Reuse or adapt an existing suitable lever rather than duplicate it. Follow explicit user direction or an intentional project workflow that selects another approach; do not infer such an override from incidental practice. Otherwise skip construction only when the task is genuinely trivial, a couple of obvious edits you can see at a glance. Existing verification alone does not automatically replace automation of execution.
 
 - A useful lever reproduces the expected result on a representative unit and is safe to rerun. Compare its output against an independent baseline; no fixed manual-first development sequence is required.
 - Codemod or script for edits, generator for repetitive files, a dump-to-sqlite query for analysis, a rerunnable check for verification.
