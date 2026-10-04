@@ -15,7 +15,8 @@ The explanation did not land. Replace it with a simpler explanation rather than 
    - Give enough context to orient the user.
    - Present the ideas again in a simpler conceptual order.
    - Cover every core idea, relationship, decision, and question needed to retain the target's meaning.
-   - Use ASD-STE100 Simplified Technical English and the ubiquitous language from the applicable `CONTEXT.md`; follow `CONTEXT-MAP.md` when the repository has more than one context.
+   - Follow the user's requested language and style, then applicable intentional project conventions; otherwise retain the conversation's language. For English explanations, default to ASD-STE100 Simplified Technical English.
+   - Preserve domain terminology from the applicable `CONTEXT.md`; follow `CONTEXT-MAP.md` when the repository has more than one context.
    - Use concrete examples when they make the idea easier to understand.
 4. Stop after the replacement explanation.
 
