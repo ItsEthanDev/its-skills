@@ -2,7 +2,7 @@
 
 ## Outcome
 
-Skills provide useful, well-chosen defaults without obstructing user requests or established project practices. An agent resolves discretionary choices from the applicable context before using a fallback, and loads fallback-specific detail only when it needs that branch.
+Skills establish strong, well-chosen defaults without obstructing explicit user requests or intentional project conventions. An agent resolves discretionary choices from the applicable context before using a fallback, preserves compatible quality guidance, and loads fallback-specific detail only when it needs that branch.
 
 The [constitution](../../CONSTITUTION.md), [skill roles](../skill-roles/spec.md), and [progressive disclosure](../progressive-disclosure/spec.md) govern this feature.
 
@@ -10,9 +10,11 @@ The [constitution](../../CONSTITUTION.md), [skill roles](../skill-roles/spec.md)
 
 ### CD-001: Resolve choices from context first
 
-For a discretionary choice, a skill MUST direct the agent to follow explicit user direction, then applicable project conventions and accepted decisions, then its default when neither supplies the answer. This ordering MUST remain subject to instruction priority, binding requirements, authorization, and actual capabilities.
+For a discretionary choice, a skill MUST direct the agent to follow explicit user direction, then applicable intentional project conventions and accepted decisions, then its default when neither supplies the answer. This ordering MUST remain subject to instruction priority, binding requirements, authorization, and actual capabilities.
 
-A skill MUST NOT require changing an otherwise valid project convention merely to match its default. Existing tools, artifact owners, formats, and workflows MUST be considered before introducing alternatives. Defaults MUST NOT be presented as mandatory requirements when other valid choices satisfy the intended outcome.
+A competing convention MUST be supported by evidence of an intentional project choice, such as explicit guidance, accepted decisions, or configured tooling. The agent MUST NOT infer one merely from ad hoc commit history, incidental directory layout, or the existence of another possible approach.
+
+A skill MUST NOT require changing an otherwise valid intentional project convention merely to match its default. Existing tools, artifact owners, formats, and workflows MUST be considered before introducing alternatives. Defaults MUST remain distinguishable from binding requirements and overridable by valid explicit requests or intentional conventions; the mere availability of another valid approach does not displace them.
 
 ### CD-002: Distinguish defaults from binding requirements
 
@@ -48,6 +50,12 @@ Concrete defaults and their conditional procedures MUST stay with the skill or r
 
 Runtime instructions MUST state actionable selection rules and loading conditions rather than narrate the shared feature's scope. References MUST preserve the caller's authority and the permitted directions defined by [Skill Roles](../skill-roles/spec.md).
 
+### CD-007: Preserve strong guidance
+
+Skills MUST retain strong, opinionated defaults when no controlling request or intentional convention selects another approach and the default's applicability conditions are met. Reconciliation with this feature MUST NOT dilute a default into generic discretion merely to allow hypothetical alternatives.
+
+When adapting a discretionary choice, skills MUST preserve compatible guidance that improves the result, such as independent verification, clear explanations, and safe isolation. Selecting another format, location, or workflow does not by itself discard those expectations. Override only the guidance that conflicts with the controlling choice; retain the rest. This does not make every quality recommendation a binding constraint or allow it to override instruction priority or authorized scope.
+
 ## Acceptance cases
 
 These cases define expected behavior, not evidence that the current collection already conforms.
@@ -55,8 +63,11 @@ These cases define expected behavior, not evidence that the current collection a
 | Case | Expected result |
 | --- | --- |
 | The user requests a supported diagram format different from the skill default. | Use the requested format within applicable constraints; skip instructions useful only for the superseded default. |
-| A project has an established experiment directory and the user specifies no location. | Use the project directory rather than the skill's fallback; do not introduce a second convention. |
-| Neither the request nor project conventions select a format or location, and the skill's default fits. | Use the stated default without a redundant approval pause. |
+| A project has an intentional experiment-location convention and the user specifies no location. | Use the project location rather than the skill's fallback; do not introduce a second convention. |
+| Neither the request nor intentional project conventions select a format or location, and the skill's default fits. | Apply the opinionated default without a redundant approval pause, rather than defer the choice merely because alternatives exist. |
+| Commit history contains varied ad hoc messages, with no requested format or intentional project guidance. | Retain the skill's commit-format default; do not treat incidental history as a competing convention. |
+| The user selects another valid workflow while independent verification and safe isolation remain compatible. | Follow the selected workflow and preserve those quality expectations. |
+| A skill favors automation, and a manual approach is also possible, but no request or intentional convention selects it. | Preserve the automation-first default when its applicability conditions are met; the mere existence of a valid manual approach does not displace it. |
 | The selected default requires a longer reference procedure. | Recognize the default and loading trigger in `SKILL.md`; load the reference before using its procedure. |
 | A convention supersedes a default, but general clarity and permission checks still apply. | Retain those checks without loading default-only syntax, examples, or rationale. |
 | A default is concise and needs no specialized procedure. | Keep it inline; do not create a reference solely to satisfy a packaging pattern. |
