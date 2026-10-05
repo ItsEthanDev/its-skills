@@ -970,6 +970,32 @@
         {
           "source": "skills/principles/principles/SKILL.md",
           "line_range": [
+            32,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-build-the-lever",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            26,
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-design-deep-modules",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
             30,
             30
           ]
@@ -978,7 +1004,33 @@
     },
     {
       "from": "principles",
-      "to": "principle-build-the-lever",
+      "to": "principle-encode-lessons-in-structure",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            51,
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-exhaust-the-design-space",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            25,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-experience-first",
       "evidence": [
         {
           "source": "skills/principles/principles/SKILL.md",
@@ -991,65 +1043,13 @@
     },
     {
       "from": "principles",
-      "to": "principle-design-deep-modules",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            28,
-            28
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-encode-lessons-in-structure",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            49,
-            49
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-exhaust-the-design-space",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            23,
-            23
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-experience-first",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            22,
-            22
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
       "to": "principle-fix-root-causes",
       "evidence": [
         {
           "source": "skills/principles/principles/SKILL.md",
           "line_range": [
-            39,
-            39
+            41,
+            41
           ]
         }
       ]
@@ -1057,175 +1057,6 @@
     {
       "from": "principles",
       "to": "principle-foundational-thinking",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            17,
-            17
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-guard-the-context-window",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            44,
-            44
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-laziness-protocol",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            16,
-            16
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-make-operations-idempotent",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            32,
-            32
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-migrate-callers-then-delete-legacy-apis",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            33,
-            33
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-minimize-reader-load",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            20,
-            20
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-model-the-domain",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            29,
-            29
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-never-block-on-the-human",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            45,
-            45
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-outcome-oriented-execution",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            21,
-            21
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-prove-it-works",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            38,
-            38
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-redesign-from-first-principles",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            18,
-            18
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-separate-before-serializing-shared-state",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            34,
-            34
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-sequence-verifiable-units",
-      "evidence": [
-        {
-          "source": "skills/principles/principles/SKILL.md",
-          "line_range": [
-            40,
-            40
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principles",
-      "to": "principle-subtract-before-you-add",
       "evidence": [
         {
           "source": "skills/principles/principles/SKILL.md",
@@ -1238,13 +1069,182 @@
     },
     {
       "from": "principles",
-      "to": "principle-type-system-discipline",
+      "to": "principle-guard-the-context-window",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            46,
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-laziness-protocol",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            18,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-make-operations-idempotent",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            34,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-migrate-callers-then-delete-legacy-apis",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            35,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-minimize-reader-load",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            22,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-model-the-domain",
       "evidence": [
         {
           "source": "skills/principles/principles/SKILL.md",
           "line_range": [
             31,
             31
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-never-block-on-the-human",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            47,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-outcome-oriented-execution",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            23,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-prove-it-works",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            40,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-redesign-from-first-principles",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            20,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-separate-before-serializing-shared-state",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            36,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-sequence-verifiable-units",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            42,
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-subtract-before-you-add",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            21,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "from": "principles",
+      "to": "principle-type-system-discipline",
+      "evidence": [
+        {
+          "source": "skills/principles/principles/SKILL.md",
+          "line_range": [
+            33,
+            33
           ]
         }
       ]

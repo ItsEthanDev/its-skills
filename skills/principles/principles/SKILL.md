@@ -7,6 +7,8 @@ description: Apply engineering principles when making consequential implementati
 
 Select the smallest relevant set of principles, read each selected skill in full, and let its guidance affect a concrete decision. Do not load every principle by default or cite one that did not affect the work.
 
+Read each selected principle directly at `../<skill-name>/SKILL.md`, relative to the directory containing this file. Search configured skill locations only if that read fails because the file is missing; report an unavailable skill if it is not installed.
+
 Preserve applicable project rules and the caller's authorized boundary.
 
 ## Selection
