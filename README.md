@@ -6,7 +6,7 @@ Developers retain authority over intent, constraints, and consequential tradeoff
 
 ## Installation
 
-The repository follows Vercel's skills CLI source layout. End-to-end installation verification is pending publication. The Nix distribution interface remains planned.
+The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same skill directories. End-to-end installation verification against the published repository is pending publication.
 
 ### Recommended
 
@@ -70,9 +70,39 @@ Choose any skill or combination by identifier:
 npx skills add ItsEthanDev/its-skills --skill writing understanding-code
 ```
 
+### Nix
+
+Add a source-only input to your configuration flake:
+
+```nix
+inputs.its-skills = {
+  url = "github:ItsEthanDev/its-skills";
+  flake = false;
+};
+```
+
+Your consumer's `flake.lock` pins the source revision. ItsSkills does not require a provider flake, package build, or separate copy of the skills.
+
+For Pi through Home Manager, pass your flake `inputs` through `extraSpecialArgs` and point its skill discovery at the source directory:
+
+```nix
+{ inputs, ... }: {
+  programs.pi-coding-agent = {
+    enable = true;
+    settings.skills = [ "${inputs.its-skills}/skills" ];
+  };
+}
+```
+
+The directory contains every skill, equivalent to Maximal. To select individual skills, use their complete directory paths instead, such as `"${inputs.its-skills}/skills/techniques/writing"`. Keep each selected skill's references, templates, and scripts with it; selecting a `SKILL.md` alone does not preserve its bundle. The Recommended command remains the curated membership list; no separate Nix profile definition is maintained.
+
+If replacing an existing collection, remove overlapping skill sources from discovery rather than loading both versions. Keep consumer-owned agent instructions, prompts, and configuration separately managed.
+
+Before publication, test with an explicit local input override rather than committing a machine-specific source path. After publication, lock the intended GitHub revision and verify the consuming configuration before activation.
+
 ### Installation notes
 
-- The commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly. Profiles do not force installation to every agent.
+- The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly. Profiles do not force installation to every agent.
 - Guidance-only skills do not require Nix. Bundled scripts require Nix and keep their pinned environments with the owning skill.
 - Profile commands select skills; they do not automatically install referenced skills outside that selection. If a task requires an unavailable reference, install that skill separately or use Maximal. The [dependency graph](DEPENDENCIES.md) shows the references.
 - Invocation metadata support depends on the consuming agent.
