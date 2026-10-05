@@ -171,6 +171,15 @@ Browse the committed [Mermaid dependency graph](DEPENDENCIES.md) on GitHub. [Mac
 
 Follow [AGENTS.md](AGENTS.md) when changing the collection. Use the [Authoring Skills playbook](skills/playbooks/authoring-skills/SKILL.md) when creating or revising a skill.
 
+## Acknowledgments
+
+ItsSkills draws on ideas and adapted guidance from:
+
+- [Matt Pocock's skills](https://github.com/mattpocock/skills), published under the [MIT license](https://github.com/mattpocock/skills/blob/24fe0ef7737efae15c87225755e9f6f5965e4888/LICENSE). Copyright (c) 2026 Matt Pocock.
+- [Lauren Tan (Poteto)'s Pstack](https://github.com/cursor/plugins/tree/main/pstack), published under the [MIT license](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/LICENSE). Copyright (c) 2026 Lauren Tan.
+
+The collection developed through earlier local adaptations in the maintainer's Nix configuration. Attribution is currently collection-level; exact file-by-file upstream lineage has not been fully reconstructed. These license references identify the versions checked, not necessarily the original import revisions. Credit does not imply endorsement or upstream authorship of every skill.
+
 ## License
 
-[MIT](LICENSE).
+ItsSkills uses [MIT](LICENSE). Collection-level [third-party notices](THIRD-PARTY-NOTICES.md) preserve the upstream copyright and permission notices, which apply to their respective material. Distributions of copied or adapted material must retain the applicable notices. Individual-directory installations may omit these root files; notice preservation for those installations remains unresolved.
