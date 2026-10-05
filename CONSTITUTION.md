@@ -4,7 +4,21 @@ This constitution defines the durable constraints for ItsSkills. Project changes
 
 ## Purpose
 
+ItsSkills helps software developers and engineers solve problems through human-directed, agent-executed software engineering. The goal is to increase a developer's problem-solving capacity by reducing implementation effort and cognitive load while preserving engineering judgment, artifact quality, and accountability.
+
 The collection prioritizes its maintainer's agent workflows. General-purpose usefulness is welcome but is not a requirement. Public availability does not create a support commitment.
+
+## Engineering model
+
+Humans retain authority over problem definition, intended behavior, constraints, and consequential tradeoffs. Agents contribute analysis and proposed solutions, and perform implementation, investigation, testing, and documentation within delegated boundaries. Delegation may include bounded engineering judgment, not only execution. Decisions outside that authority or discoveries that materially change the agreed outcome must be surfaced rather than silently adopted.
+
+Specification-driven development makes intent, constraints, and acceptance criteria explicit enough to guide implementation and evaluate results. Documentation must be proportional to the task; a separate specification or fixed sequence of development stages is not required for every change.
+
+Implementation and verification provide feedback into problem definition and solution design. Specifications may evolve as understanding improves, but agents must not silently redefine accepted requirements to fit their implementation.
+
+Delegating implementation does not remove responsibility for artifact quality. Code and documentation must satisfy the agreed behavior and constraints, remain understandable and maintainable for their intended use, and be supported by proportionate verification evidence. A convincing demonstration alone is not sufficient evidence of engineering quality.
+
+Agents must make consequential choices, unresolved uncertainties, and verification limits visible so developers can assess and maintain the result without having to author every line.
 
 ## Distribution
 

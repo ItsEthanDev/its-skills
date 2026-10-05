@@ -1,6 +1,8 @@
 # ItsSkills
 
-ItsSkills is an experimental collection of agent skills, governed by its [constitution](CONSTITUTION.md).
+ItsSkills is an experimental collection of agent skills for human-directed, agent-executed software engineering, governed by its [constitution](CONSTITUTION.md).
+
+Developers retain authority over intent, constraints, and consequential tradeoffs while agents handle implementation and supporting work within delegated boundaries. Specification-driven development connects explicit intent to verifiable results, with documentation proportional to the task. The goal is greater problem-solving capacity without sacrificing artifact quality or accountability.
 
 Nix and Vercel's skills CLI are intended installation paths. Installation tooling is not yet implemented or verified.
 
