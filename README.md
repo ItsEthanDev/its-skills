@@ -4,7 +4,80 @@ ItsSkills is an experimental collection of agent skills for human-directed, agen
 
 Developers retain authority over intent, constraints, and consequential tradeoffs while agents handle implementation and supporting work within delegated boundaries. Specification-driven development connects explicit intent to verifiable results, with documentation proportional to the task. The goal is greater problem-solving capacity without sacrificing artifact quality or accountability.
 
-Nix and Vercel's skills CLI are intended installation paths. Installation tooling is not yet implemented or verified.
+## Installation
+
+The repository follows Vercel's skills CLI source layout. End-to-end installation verification is pending publication. The Nix distribution interface remains planned.
+
+### Recommended
+
+The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 38 skills: the Principles router and all 22 leaves, 12 techniques, and the Refactoring, Integrating Web APIs, and Development Review playbooks.
+
+```sh
+npx skills add ItsEthanDev/its-skills --skill \
+  alignment \
+  calling-web-apis \
+  commit \
+  development-review \
+  diagramming \
+  dry-run \
+  integrating-web-apis \
+  pause-work \
+  principle-boundary-discipline \
+  principle-build-the-lever \
+  principle-design-deep-modules \
+  principle-encode-lessons-in-structure \
+  principle-exhaust-the-design-space \
+  principle-experience-first \
+  principle-fix-root-causes \
+  principle-foundational-thinking \
+  principle-guard-the-context-window \
+  principle-laziness-protocol \
+  principle-make-operations-idempotent \
+  principle-migrate-callers-then-delete-legacy-apis \
+  principle-minimize-reader-load \
+  principle-model-the-domain \
+  principle-never-block-on-the-human \
+  principle-outcome-oriented-execution \
+  principle-prove-it-works \
+  principle-redesign-from-first-principles \
+  principle-separate-before-serializing-shared-state \
+  principle-sequence-verifiable-units \
+  principle-subtract-before-you-add \
+  principle-type-system-discipline \
+  principles \
+  propose-first \
+  refactoring \
+  repitch \
+  show-me \
+  understanding-code \
+  verifying-work \
+  writing
+```
+
+### Maximal
+
+Install every skill, including optional development workflows. Making a skill available does not require using it or override its activation conditions.
+
+```sh
+npx skills add ItsEthanDev/its-skills --skill '*'
+```
+
+### Individual skills
+
+Choose any skill or combination by identifier:
+
+```sh
+npx skills add ItsEthanDev/its-skills --skill writing understanding-code
+```
+
+### Installation notes
+
+- The commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly. Profiles do not force installation to every agent.
+- Guidance-only skills do not require Nix. Bundled scripts require Nix and keep their pinned environments with the owning skill.
+- Profile commands select skills; they do not automatically install referenced skills outside that selection. If a task requires an unavailable reference, install that skill separately or use Maximal. The [dependency graph](DEPENDENCIES.md) shows the references.
+- Invocation metadata support depends on the consuming agent.
+
+The Recommended command above is the authoritative profile list. When adding, renaming, or removing skills, review Recommended membership and update that command as needed. New skills are not automatically Recommended. Maximal selects all available skills without a separately maintained inventory.
 
 ## Skills
 
