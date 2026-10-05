@@ -34,7 +34,8 @@
       ],
       "dependencies": [
         "project-documentation",
-        "reflect"
+        "reflect",
+        "writing"
       ]
     },
     {
@@ -71,7 +72,8 @@
       "dependencies": [
         "principle-design-deep-modules",
         "principles",
-        "project-documentation"
+        "project-documentation",
+        "verifying-work"
       ]
     },
     {
@@ -262,9 +264,7 @@
       "resources": [
         "skills/principles/principle-minimize-reader-load/SKILL.md"
       ],
-      "dependencies": [
-        "principle-guard-the-context-window"
-      ]
+      "dependencies": []
     },
     {
       "name": "principle-model-the-domain",
@@ -629,8 +629,21 @@
         {
           "source": "skills/playbooks/authoring-skills/SKILL.md",
           "line_range": [
-            75,
-            75
+            77,
+            77
+          ]
+        }
+      ]
+    },
+    {
+      "from": "authoring-skills",
+      "to": "writing",
+      "evidence": [
+        {
+          "source": "skills/playbooks/authoring-skills/SKILL.md",
+          "line_range": [
+            44,
+            44
           ]
         }
       ]
@@ -705,6 +718,19 @@
           "line_range": [
             3,
             3
+          ]
+        }
+      ]
+    },
+    {
+      "from": "development-review",
+      "to": "verifying-work",
+      "evidence": [
+        {
+          "source": "skills/playbooks/development-review/SKILL.md",
+          "line_range": [
+            43,
+            43
           ]
         }
       ]
@@ -881,19 +907,6 @@
           "line_range": [
             24,
             24
-          ]
-        }
-      ]
-    },
-    {
-      "from": "principle-minimize-reader-load",
-      "to": "principle-guard-the-context-window",
-      "evidence": [
-        {
-          "source": "skills/principles/principle-minimize-reader-load/SKILL.md",
-          "line_range": [
-            13,
-            13
           ]
         }
       ]

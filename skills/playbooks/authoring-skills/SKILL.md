@@ -41,6 +41,8 @@ Preserve the strength of the default when no controlling choice overrides it. Ad
 
 ## Shape the skill
 
+When drafting or revising the skill's instructions or supporting Markdown, use `writing`. Apply its `agent-writing.md` guidance to runtime instructions; load its `human-writing.md` guidance only for human-facing material.
+
 Put guidance needed on every invocation in the main file. Keep enough selection guidance inline to identify defaults, applicability conditions, and required reference-loading triggers. Place longer procedures, examples, or rationale useful only for a selected default in conditional supporting resources; skip that material when a request or convention supersedes the default. Keep short defaults inline when clearer. Preserve general quality, permission, and safety guidance wherever it is needed regardless of the selected option. Require the selected branch's resources before relying on their instructions, not unconditional loading of every reference.
 
 Keep one skill when the material shares an invocation and purpose. A distinct reason for independent invocation may justify a separate skill. Use a router when it improves selection among related material; keep it focused on selection and leave detailed instructions with their owners. Directory nesting alone does not hide discovered skill descriptions.

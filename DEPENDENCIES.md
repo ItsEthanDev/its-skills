@@ -64,9 +64,11 @@ flowchart LR
   skill_authoring_project_verification --> skill_verifying_work
   skill_authoring_skills --> skill_project_documentation
   skill_authoring_skills --> skill_reflect
+  skill_authoring_skills --> skill_writing
   skill_development_review --> skill_principle_design_deep_modules
   skill_development_review --> skill_principles
   skill_development_review --> skill_project_documentation
+  skill_development_review --> skill_verifying_work
   skill_diagnosing_bugs --> skill_tdd
   skill_diagnosing_bugs --> skill_verifying_work
   skill_integrating_web_apis --> skill_calling_web_apis
@@ -80,7 +82,6 @@ flowchart LR
   skill_principle_build_the_lever --> skill_principle_encode_lessons_in_structure
   skill_principle_build_the_lever --> skill_principle_laziness_protocol
   skill_principle_build_the_lever --> skill_principle_prove_it_works
-  skill_principle_minimize_reader_load --> skill_principle_guard_the_context_window
   skill_principle_sequence_verifiable_units --> skill_principle_build_the_lever
   skill_principle_sequence_verifiable_units --> skill_principle_prove_it_works
   skill_principle_type_system_discipline --> skill_principle_boundary_discipline
@@ -141,10 +142,10 @@ Legend: `A --> B` means A directly references B. Nodes are grouped by source rol
 | --- | --- | --- |
 | `alignment` | techniques | — |
 | `authoring-project-verification` | playbooks | `authoring-skills` ([skills/playbooks/authoring-project-verification/SKILL.md:8](<skills/playbooks/authoring-project-verification/SKILL.md?plain=1#L8>)); `calling-web-apis` ([skills/playbooks/authoring-project-verification/references/project-protocol.md:22](<skills/playbooks/authoring-project-verification/references/project-protocol.md?plain=1#L22>)); `verifying-work` ([skills/playbooks/authoring-project-verification/SKILL.md:8](<skills/playbooks/authoring-project-verification/SKILL.md?plain=1#L8>), [skills/playbooks/authoring-project-verification/SKILL.md:22](<skills/playbooks/authoring-project-verification/SKILL.md?plain=1#L22>), [skills/playbooks/authoring-project-verification/references/project-protocol.md:26](<skills/playbooks/authoring-project-verification/references/project-protocol.md?plain=1#L26>)) |
-| `authoring-skills` | playbooks | `project-documentation` ([skills/playbooks/authoring-skills/SKILL.md:24](<skills/playbooks/authoring-skills/SKILL.md?plain=1#L24>)); `reflect` ([skills/playbooks/authoring-skills/SKILL.md:75](<skills/playbooks/authoring-skills/SKILL.md?plain=1#L75>)) |
+| `authoring-skills` | playbooks | `project-documentation` ([skills/playbooks/authoring-skills/SKILL.md:24](<skills/playbooks/authoring-skills/SKILL.md?plain=1#L24>)); `reflect` ([skills/playbooks/authoring-skills/SKILL.md:77](<skills/playbooks/authoring-skills/SKILL.md?plain=1#L77>)); `writing` ([skills/playbooks/authoring-skills/SKILL.md:44](<skills/playbooks/authoring-skills/SKILL.md?plain=1#L44>)) |
 | `calling-web-apis` | techniques | — |
 | `commit` | techniques | — |
-| `development-review` | playbooks | `principle-design-deep-modules` ([skills/playbooks/development-review/references/architecture.md:3](<skills/playbooks/development-review/references/architecture.md?plain=1#L3>), [skills/playbooks/development-review/references/plan.md:3](<skills/playbooks/development-review/references/plan.md?plain=1#L3>)); `principles` ([skills/playbooks/development-review/references/architecture.md:3](<skills/playbooks/development-review/references/architecture.md?plain=1#L3>), [skills/playbooks/development-review/references/plan.md:3](<skills/playbooks/development-review/references/plan.md?plain=1#L3>)); `project-documentation` ([skills/playbooks/development-review/references/domain.md:3](<skills/playbooks/development-review/references/domain.md?plain=1#L3>), [skills/playbooks/development-review/references/governance.md:3](<skills/playbooks/development-review/references/governance.md?plain=1#L3>), [skills/playbooks/development-review/references/plan.md:3](<skills/playbooks/development-review/references/plan.md?plain=1#L3>), [skills/playbooks/development-review/references/specification.md:3](<skills/playbooks/development-review/references/specification.md?plain=1#L3>)) |
+| `development-review` | playbooks | `principle-design-deep-modules` ([skills/playbooks/development-review/references/architecture.md:3](<skills/playbooks/development-review/references/architecture.md?plain=1#L3>), [skills/playbooks/development-review/references/plan.md:3](<skills/playbooks/development-review/references/plan.md?plain=1#L3>)); `principles` ([skills/playbooks/development-review/references/architecture.md:3](<skills/playbooks/development-review/references/architecture.md?plain=1#L3>), [skills/playbooks/development-review/references/plan.md:3](<skills/playbooks/development-review/references/plan.md?plain=1#L3>)); `project-documentation` ([skills/playbooks/development-review/references/domain.md:3](<skills/playbooks/development-review/references/domain.md?plain=1#L3>), [skills/playbooks/development-review/references/governance.md:3](<skills/playbooks/development-review/references/governance.md?plain=1#L3>), [skills/playbooks/development-review/references/plan.md:3](<skills/playbooks/development-review/references/plan.md?plain=1#L3>), [skills/playbooks/development-review/references/specification.md:3](<skills/playbooks/development-review/references/specification.md?plain=1#L3>)); `verifying-work` ([skills/playbooks/development-review/SKILL.md:43](<skills/playbooks/development-review/SKILL.md?plain=1#L43>)) |
 | `diagnosing-bugs` | playbooks | `tdd` ([skills/playbooks/diagnosing-bugs/SKILL.md:34](<skills/playbooks/diagnosing-bugs/SKILL.md?plain=1#L34>), [skills/playbooks/diagnosing-bugs/SKILL.md:129](<skills/playbooks/diagnosing-bugs/SKILL.md?plain=1#L129>)); `verifying-work` ([skills/playbooks/diagnosing-bugs/SKILL.md:34](<skills/playbooks/diagnosing-bugs/SKILL.md?plain=1#L34>)) |
 | `diagramming` | techniques | — |
 | `dry-run` | techniques | — |
@@ -163,7 +164,7 @@ Legend: `A --> B` means A directly references B. Nodes are grouped by source rol
 | `principle-laziness-protocol` | principles | — |
 | `principle-make-operations-idempotent` | principles | — |
 | `principle-migrate-callers-then-delete-legacy-apis` | principles | — |
-| `principle-minimize-reader-load` | principles | `principle-guard-the-context-window` ([skills/principles/principle-minimize-reader-load/SKILL.md:13](<skills/principles/principle-minimize-reader-load/SKILL.md?plain=1#L13>)) |
+| `principle-minimize-reader-load` | principles | — |
 | `principle-model-the-domain` | principles | — |
 | `principle-never-block-on-the-human` | principles | — |
 | `principle-outcome-oriented-execution` | principles | — |

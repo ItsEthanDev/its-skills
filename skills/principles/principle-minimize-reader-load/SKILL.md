@@ -10,7 +10,7 @@ Maintainability is the work a reader must do to understand code. Track two axes:
 1. **Layers to trace.** How many indirections sit between the question and the answer.
 2. **State to hold.** How much hidden or mutable context the reader must keep in their head.
 
-**Why:** Code is read far more than it is written. LOC, cyclomatic complexity, and "clean architecture" are proxies. Reader load is the thing that matters. The two axes are independent. A flat file with 50 globals can be as hard to reason about as a 6-layer adapter stack. Guard both. This is the human analog of `principle-guard-the-context-window`: working memory is finite for readers too.
+**Why:** Code is read far more than it is written. LOC, cyclomatic complexity, and "clean architecture" are proxies. Reader load is the thing that matters. The two axes are independent. A flat file with 50 globals can be as hard to reason about as a 6-layer adapter stack. Guard both. Working memory is finite for readers too.
 
 **The pattern:**
 - **Collapse layers** that do not earn their keep: wrappers with one caller, adapters with no second implementation, indirection introduced for a future that never came. Inline them.
