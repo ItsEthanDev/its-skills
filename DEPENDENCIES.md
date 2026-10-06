@@ -23,6 +23,7 @@ flowchart LR
     skill_commit["commit"]
     skill_diagramming["diagramming"]
     skill_dry_run["dry-run"]
+    skill_frontend_design["frontend-design"]
     skill_pause_work["pause-work"]
     skill_project_documentation["project-documentation"]
     skill_propose_first["propose-first"]
@@ -71,6 +72,7 @@ flowchart LR
   skill_development_review --> skill_verifying_work
   skill_diagnosing_bugs --> skill_tdd
   skill_diagnosing_bugs --> skill_verifying_work
+  skill_frontend_design --> skill_verifying_work
   skill_integrating_web_apis --> skill_calling_web_apis
   skill_integrating_web_apis --> skill_development_review
   skill_integrating_web_apis --> skill_diagnosing_bugs
@@ -149,6 +151,7 @@ Legend: `A --> B` means A directly references B. Nodes are grouped by source rol
 | `diagnosing-bugs` | playbooks | `tdd` ([skills/playbooks/diagnosing-bugs/SKILL.md:34](<skills/playbooks/diagnosing-bugs/SKILL.md?plain=1#L34>), [skills/playbooks/diagnosing-bugs/SKILL.md:129](<skills/playbooks/diagnosing-bugs/SKILL.md?plain=1#L129>)); `verifying-work` ([skills/playbooks/diagnosing-bugs/SKILL.md:34](<skills/playbooks/diagnosing-bugs/SKILL.md?plain=1#L34>)) |
 | `diagramming` | techniques | — |
 | `dry-run` | techniques | — |
+| `frontend-design` | techniques | `verifying-work` ([skills/techniques/frontend-design/SKILL.md:59](<skills/techniques/frontend-design/SKILL.md?plain=1#L59>)) |
 | `ingest-document` | playbooks | — |
 | `integrating-web-apis` | playbooks | `calling-web-apis` ([skills/playbooks/integrating-web-apis/SKILL.md:36](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L36>)); `development-review` ([skills/playbooks/integrating-web-apis/SKILL.md:10](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L10>)); `diagnosing-bugs` ([skills/playbooks/integrating-web-apis/SKILL.md:10](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L10>)); `principle-boundary-discipline` ([skills/playbooks/integrating-web-apis/SKILL.md:26](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L26>)); `principle-design-deep-modules` ([skills/playbooks/integrating-web-apis/SKILL.md:26](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L26>)); `project-documentation` ([skills/playbooks/integrating-web-apis/SKILL.md:38](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L38>)); `tdd` ([skills/playbooks/integrating-web-apis/SKILL.md:34](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L34>)); `verifying-work` ([skills/playbooks/integrating-web-apis/SKILL.md:34](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L34>)) |
 | `pause-work` | techniques | — |

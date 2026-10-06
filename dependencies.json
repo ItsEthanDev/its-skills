@@ -107,6 +107,17 @@
       "dependencies": []
     },
     {
+      "name": "frontend-design",
+      "role": "techniques",
+      "path": "skills/techniques/frontend-design/SKILL.md",
+      "resources": [
+        "skills/techniques/frontend-design/SKILL.md"
+      ],
+      "dependencies": [
+        "verifying-work"
+      ]
+    },
+    {
       "name": "ingest-document",
       "role": "playbooks",
       "path": "skills/playbooks/ingest-document/SKILL.md",
@@ -764,6 +775,19 @@
           "line_range": [
             34,
             34
+          ]
+        }
+      ]
+    },
+    {
+      "from": "frontend-design",
+      "to": "verifying-work",
+      "evidence": [
+        {
+          "source": "skills/techniques/frontend-design/SKILL.md",
+          "line_range": [
+            59,
+            59
           ]
         }
       ]

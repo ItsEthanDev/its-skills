@@ -140,6 +140,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Writing](skills/techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
 - [Understanding Code](skills/techniques/understanding-code/SKILL.md): Explain behavior, trace execution and data flow, and investigate design rationale with source-backed claims.
 - [Diagramming](skills/techniques/diagramming/SKILL.md): Choose and construct clear visual representations while specifying, planning, documenting, or explaining information, with Mermaid as a conditional fallback.
+- [Frontend Design](skills/techniques/frontend-design/SKILL.md): Craft requested UI work with concise copy, familiar icons, deliberate hierarchy, and rendered inspection before simplifying.
 - [Commit](skills/techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
 - [Reflect](skills/techniques/reflect/SKILL.md): Propose evidence-backed improvements from selected work; explicitly invoked, proposal-only by default, with bounded caller-applied updates when requested.
 - [Pause Work](skills/techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
@@ -177,6 +178,8 @@ ItsSkills draws on ideas and adapted guidance from:
 
 - [Matt Pocock's skills](https://github.com/mattpocock/skills), published under the [MIT license](https://github.com/mattpocock/skills/blob/24fe0ef7737efae15c87225755e9f6f5965e4888/LICENSE). Copyright (c) 2026 Matt Pocock.
 - [Lauren Tan (Poteto)'s Pstack](https://github.com/cursor/plugins/tree/main/pstack), published under the [MIT license](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/LICENSE). Copyright (c) 2026 Lauren Tan.
+
+[Anthropic's Frontend Design skill](https://www.skills.sh/anthropics/skills/frontend-design) informed Frontend Design's emphasis on intentional visual structure, user-centered copy, restraint, and screenshot inspection. The collection's skill uses original instructions rather than importing Anthropic's skill or its distinctive-identity premise.
 
 The collection developed through earlier local adaptations in the maintainer's Nix configuration. Attribution is currently collection-level; exact file-by-file upstream lineage has not been fully reconstructed. These license references identify the versions checked, not necessarily the original import revisions. Credit does not imply endorsement or upstream authorship of every skill.
 
