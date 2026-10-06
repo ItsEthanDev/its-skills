@@ -10,6 +10,17 @@ When adding or changing a script distributed by ItsSkills, read [Authoring ItsSk
 
 When changing verification guidance, use the ownership map in [Self-Verifying Work](specs/self-verifying-work/spec.md). Keep reusable instruction owners distinct from project-specific recipes and expected behavior sources.
 
+## Installation profiles
+
+When adding, renaming, or removing skills, review Recommended membership and update the authoritative command and counts in [README.md](README.md). Apply these membership rules:
+
+- Exclude stages.
+- Include playbooks selectively when they provide useful problem-solving strategies without requiring adoption of the collection's development lifecycle.
+- Include techniques by default, with exceptions for those unsuitable for the curated starting point.
+- Include all principles, including the router and every leaf.
+
+Maximal selects all available skills; do not maintain a separate inventory for it.
+
 ## Skill references and graph
 
 Follow [Skill Dependency Graph](specs/skill-dependency-graph/spec.md). In runtime skills and supporting Markdown, reference another skill by its exact frontmatter identifier in inline code, not by a link into another skill's directory. Preserve conditional loading instructions and authority limits. Keep links to same-skill resources; repository navigation may still link to skills.

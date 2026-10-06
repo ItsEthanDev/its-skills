@@ -108,14 +108,7 @@ Before publication, test with an explicit local input override rather than commi
 - Profile commands select skills; they do not automatically install referenced skills outside that selection. If a task requires an unavailable reference, install that skill separately or use Maximal. The [dependency graph](DEPENDENCIES.md) shows the references.
 - Invocation metadata support depends on the consuming agent.
 
-The Recommended command above is the authoritative profile list. Apply these membership rules when adding or changing skills:
-
-- Exclude stages.
-- Include playbooks selectively when they provide useful problem-solving strategies without requiring adoption of the collection's development lifecycle.
-- Include techniques by default, with exceptions for those unsuitable for the curated starting point.
-- Include all principles, including the router and every leaf.
-
-When adding, renaming, or removing skills, update the Recommended command and counts as needed. Maximal selects all available skills without a separately maintained inventory.
+The Recommended command above is the authoritative profile list. Maximal selects all available skills.
 
 ## Skills
 
