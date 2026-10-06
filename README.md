@@ -130,6 +130,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Development Review](skills/playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
 - [Diagnosing Bugs](skills/playbooks/diagnosing-bugs/SKILL.md): Establish a red-capable feedback loop, investigate causes, and repair only within authorized scope.
 - [Integrating Web APIs](skills/playbooks/integrating-web-apis/SKILL.md): Build or change remote integrations, with conditional inbound-webhook guidance.
+- [Reflect](skills/playbooks/reflect/SKILL.md): Propose evidence-backed improvements from selected work; explicitly invoked, proposal-only by default, with bounded caller-applied updates when requested.
 
 ### Techniques
 
@@ -143,7 +144,6 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Diagramming](skills/techniques/diagramming/SKILL.md): Choose and construct clear visual representations while specifying, planning, documenting, or explaining information, with Mermaid as a conditional fallback.
 - [Frontend Design](skills/techniques/frontend-design/SKILL.md): Craft requested UI work with concise copy, familiar icons, deliberate hierarchy, and rendered inspection before simplifying.
 - [Commit](skills/techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
-- [Reflect](skills/techniques/reflect/SKILL.md): Propose evidence-backed improvements from selected work; explicitly invoked, proposal-only by default, with bounded caller-applied updates when requested.
 - [Pause Work](skills/techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
 - [Verifying Work](skills/techniques/verifying-work/SKILL.md): Select and execute checks, interpret findings, and return evidence and verification limits.
 - [TDD](skills/techniques/tdd/SKILL.md): Develop behavior test-first through a red-green loop using shared automated-test guidance; refactoring remains separate work.

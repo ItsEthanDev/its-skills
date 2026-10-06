@@ -459,10 +459,10 @@
     },
     {
       "name": "reflect",
-      "role": "techniques",
-      "path": "skills/techniques/reflect/SKILL.md",
+      "role": "playbooks",
+      "path": "skills/playbooks/reflect/SKILL.md",
       "resources": [
-        "skills/techniques/reflect/SKILL.md"
+        "skills/playbooks/reflect/SKILL.md"
       ],
       "dependencies": [
         "principle-encode-lessons-in-structure",
@@ -1403,10 +1403,10 @@
       "to": "principle-encode-lessons-in-structure",
       "evidence": [
         {
-          "source": "skills/techniques/reflect/SKILL.md",
+          "source": "skills/playbooks/reflect/SKILL.md",
           "line_range": [
-            23,
-            23
+            36,
+            36
           ]
         }
       ]
@@ -1416,10 +1416,10 @@
       "to": "project-documentation",
       "evidence": [
         {
-          "source": "skills/techniques/reflect/SKILL.md",
+          "source": "skills/playbooks/reflect/SKILL.md",
           "line_range": [
-            25,
-            25
+            38,
+            38
           ]
         }
       ]
@@ -1429,10 +1429,10 @@
       "to": "writing",
       "evidence": [
         {
-          "source": "skills/techniques/reflect/SKILL.md",
+          "source": "skills/playbooks/reflect/SKILL.md",
           "line_range": [
-            25,
-            25
+            38,
+            38
           ]
         }
       ]

@@ -16,6 +16,7 @@ flowchart LR
     skill_integrating_web_apis["integrating-web-apis"]
     skill_prototype["prototype"]
     skill_refactoring["refactoring"]
+    skill_reflect["reflect"]
   end
   subgraph techniques
     skill_alignment["alignment"]
@@ -27,7 +28,6 @@ flowchart LR
     skill_pause_work["pause-work"]
     skill_project_documentation["project-documentation"]
     skill_propose_first["propose-first"]
-    skill_reflect["reflect"]
     skill_repitch["repitch"]
     skill_show_me["show-me"]
     skill_tdd["tdd"]
@@ -182,7 +182,7 @@ Legend: `A --> B` means A directly references B. Nodes are grouped by source rol
 | `propose-first` | techniques | — |
 | `prototype` | playbooks | — |
 | `refactoring` | playbooks | `principle-design-deep-modules` ([skills/playbooks/refactoring/SKILL.md:14](<skills/playbooks/refactoring/SKILL.md?plain=1#L14>)); `principle-migrate-callers-then-delete-legacy-apis` ([skills/playbooks/refactoring/SKILL.md:28](<skills/playbooks/refactoring/SKILL.md?plain=1#L28>)); `principle-minimize-reader-load` ([skills/playbooks/refactoring/SKILL.md:14](<skills/playbooks/refactoring/SKILL.md?plain=1#L14>)); `principle-model-the-domain` ([skills/playbooks/refactoring/SKILL.md:14](<skills/playbooks/refactoring/SKILL.md?plain=1#L14>)); `principle-subtract-before-you-add` ([skills/playbooks/refactoring/SKILL.md:14](<skills/playbooks/refactoring/SKILL.md?plain=1#L14>)); `verifying-work` ([skills/playbooks/refactoring/SKILL.md:18](<skills/playbooks/refactoring/SKILL.md?plain=1#L18>), [skills/playbooks/refactoring/SKILL.md:20](<skills/playbooks/refactoring/SKILL.md?plain=1#L20>), [skills/playbooks/refactoring/SKILL.md:34](<skills/playbooks/refactoring/SKILL.md?plain=1#L34>), [skills/playbooks/refactoring/references/behavior-preservation.md:28](<skills/playbooks/refactoring/references/behavior-preservation.md?plain=1#L28>)) |
-| `reflect` | techniques | `principle-encode-lessons-in-structure` ([skills/techniques/reflect/SKILL.md:23](<skills/techniques/reflect/SKILL.md?plain=1#L23>)); `project-documentation` ([skills/techniques/reflect/SKILL.md:25](<skills/techniques/reflect/SKILL.md?plain=1#L25>)); `writing` ([skills/techniques/reflect/SKILL.md:25](<skills/techniques/reflect/SKILL.md?plain=1#L25>)) |
+| `reflect` | playbooks | `principle-encode-lessons-in-structure` ([skills/playbooks/reflect/SKILL.md:36](<skills/playbooks/reflect/SKILL.md?plain=1#L36>)); `project-documentation` ([skills/playbooks/reflect/SKILL.md:38](<skills/playbooks/reflect/SKILL.md?plain=1#L38>)); `writing` ([skills/playbooks/reflect/SKILL.md:38](<skills/playbooks/reflect/SKILL.md?plain=1#L38>)) |
 | `repitch` | techniques | — |
 | `show-me` | techniques | — |
 | `stages` | stages | `development-review` ([skills/stages/stages/references/implement.md:13](<skills/stages/stages/references/implement.md?plain=1#L13>)); `principle-design-deep-modules` ([skills/stages/stages/references/plan.md:7](<skills/stages/stages/references/plan.md?plain=1#L7>)); `project-documentation` ([skills/stages/stages/SKILL.md:29](<skills/stages/stages/SKILL.md?plain=1#L29>), [skills/stages/stages/references/constitute.md:7](<skills/stages/stages/references/constitute.md?plain=1#L7>), [skills/stages/stages/references/implement.md:11](<skills/stages/stages/references/implement.md?plain=1#L11>), [skills/stages/stages/references/plan.md:7](<skills/stages/stages/references/plan.md?plain=1#L7>), [skills/stages/stages/references/specify.md:5](<skills/stages/stages/references/specify.md?plain=1#L5>)); `refactoring` ([skills/stages/stages/references/implement.md:7](<skills/stages/stages/references/implement.md?plain=1#L7>)); `verifying-work` ([skills/stages/stages/references/implement.md:9](<skills/stages/stages/references/implement.md?plain=1#L9>)) |
