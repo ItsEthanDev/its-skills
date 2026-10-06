@@ -10,7 +10,7 @@ The repository follows Vercel's skills CLI source layout and can be consumed as 
 
 ### Recommended
 
-The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 38 skills: the Principles router and all 22 leaves, 12 techniques, and the Refactoring, Integrating Web APIs, and Development Review playbooks.
+The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 39 skills: the Principles router and all 22 leaves, 13 techniques, and the Refactoring, Integrating Web APIs, and Development Review playbooks.
 
 ```sh
 npx skills add ItsEthanDev/its-skills --skill \
@@ -20,6 +20,7 @@ npx skills add ItsEthanDev/its-skills --skill \
   development-review \
   diagramming \
   dry-run \
+  frontend-design \
   integrating-web-apis \
   pause-work \
   principle-boundary-discipline \
