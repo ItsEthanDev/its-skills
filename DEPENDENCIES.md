@@ -12,6 +12,7 @@ flowchart LR
     skill_authoring_skills["authoring-skills"]
     skill_development_review["development-review"]
     skill_diagnosing_bugs["diagnosing-bugs"]
+    skill_hillclimb["hillclimb"]
     skill_ingest_document["ingest-document"]
     skill_integrating_web_apis["integrating-web-apis"]
     skill_prototype["prototype"]
@@ -73,6 +74,10 @@ flowchart LR
   skill_diagnosing_bugs --> skill_tdd
   skill_diagnosing_bugs --> skill_verifying_work
   skill_frontend_design --> skill_verifying_work
+  skill_hillclimb --> skill_refactoring
+  skill_hillclimb --> skill_understanding_code
+  skill_hillclimb --> skill_verifying_work
+  skill_hillclimb --> skill_writing
   skill_integrating_web_apis --> skill_calling_web_apis
   skill_integrating_web_apis --> skill_development_review
   skill_integrating_web_apis --> skill_diagnosing_bugs
@@ -152,6 +157,7 @@ Legend: `A --> B` means A directly references B. Nodes are grouped by source rol
 | `diagramming` | techniques | — |
 | `dry-run` | techniques | — |
 | `frontend-design` | techniques | `verifying-work` ([skills/techniques/frontend-design/SKILL.md:59](<skills/techniques/frontend-design/SKILL.md?plain=1#L59>)) |
+| `hillclimb` | playbooks | `refactoring` ([skills/playbooks/hillclimb/SKILL.md:21](<skills/playbooks/hillclimb/SKILL.md?plain=1#L21>)); `understanding-code` ([skills/playbooks/hillclimb/SKILL.md:13](<skills/playbooks/hillclimb/SKILL.md?plain=1#L13>)); `verifying-work` ([skills/playbooks/hillclimb/SKILL.md:16](<skills/playbooks/hillclimb/SKILL.md?plain=1#L16>), [skills/playbooks/hillclimb/SKILL.md:22](<skills/playbooks/hillclimb/SKILL.md?plain=1#L22>)); `writing` ([skills/playbooks/hillclimb/SKILL.md:13](<skills/playbooks/hillclimb/SKILL.md?plain=1#L13>)) |
 | `ingest-document` | playbooks | — |
 | `integrating-web-apis` | playbooks | `calling-web-apis` ([skills/playbooks/integrating-web-apis/SKILL.md:36](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L36>)); `development-review` ([skills/playbooks/integrating-web-apis/SKILL.md:10](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L10>)); `diagnosing-bugs` ([skills/playbooks/integrating-web-apis/SKILL.md:10](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L10>)); `principle-boundary-discipline` ([skills/playbooks/integrating-web-apis/SKILL.md:26](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L26>)); `principle-design-deep-modules` ([skills/playbooks/integrating-web-apis/SKILL.md:26](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L26>)); `project-documentation` ([skills/playbooks/integrating-web-apis/SKILL.md:38](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L38>)); `tdd` ([skills/playbooks/integrating-web-apis/SKILL.md:34](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L34>)); `verifying-work` ([skills/playbooks/integrating-web-apis/SKILL.md:34](<skills/playbooks/integrating-web-apis/SKILL.md?plain=1#L34>)) |
 | `pause-work` | techniques | — |

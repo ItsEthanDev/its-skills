@@ -118,6 +118,22 @@
       ]
     },
     {
+      "name": "hillclimb",
+      "role": "playbooks",
+      "path": "skills/playbooks/hillclimb/SKILL.md",
+      "resources": [
+        "skills/playbooks/hillclimb/SKILL.md",
+        "skills/playbooks/hillclimb/references/qualitative.md",
+        "skills/playbooks/hillclimb/references/quantitative.md"
+      ],
+      "dependencies": [
+        "refactoring",
+        "understanding-code",
+        "verifying-work",
+        "writing"
+      ]
+    },
+    {
       "name": "ingest-document",
       "role": "playbooks",
       "path": "skills/playbooks/ingest-document/SKILL.md",
@@ -788,6 +804,65 @@
           "line_range": [
             59,
             59
+          ]
+        }
+      ]
+    },
+    {
+      "from": "hillclimb",
+      "to": "refactoring",
+      "evidence": [
+        {
+          "source": "skills/playbooks/hillclimb/SKILL.md",
+          "line_range": [
+            21,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "from": "hillclimb",
+      "to": "understanding-code",
+      "evidence": [
+        {
+          "source": "skills/playbooks/hillclimb/SKILL.md",
+          "line_range": [
+            13,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "from": "hillclimb",
+      "to": "verifying-work",
+      "evidence": [
+        {
+          "source": "skills/playbooks/hillclimb/SKILL.md",
+          "line_range": [
+            16,
+            16
+          ]
+        },
+        {
+          "source": "skills/playbooks/hillclimb/SKILL.md",
+          "line_range": [
+            22,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "from": "hillclimb",
+      "to": "writing",
+      "evidence": [
+        {
+          "source": "skills/playbooks/hillclimb/SKILL.md",
+          "line_range": [
+            13,
+            13
           ]
         }
       ]
