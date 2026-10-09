@@ -67,7 +67,7 @@ Tie completion to an artifact, command result, enumerated set, or other observab
 - Document conventions, rationale, and non-obvious hazards that the environment cannot reveal.
 - Remove stale branches, duplicated meanings, and instructions that no longer alter behavior.
 
-An instruction is useful only if it changes behavior relative to the model's default. When uncertain, run representative tasks and keep the instruction only when the results justify it.
+For each statement, identify the decision or action that would differ if it were removed. Delete statements with no operational effect, including redundant restatements of metadata. Keep statements that establish authority, constraints, defaults, or actions, whether declarative or imperative. When the effect is uncertain, use representative tasks to evaluate it.
 
 ## Control scope and load
 

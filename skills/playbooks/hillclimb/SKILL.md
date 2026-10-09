@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Hillclimb
 
-Invoke explicitly. Use fresh subagents for attempts; report a blocker if delegation is unavailable or prohibited. The supervisor owns the objective, evaluation, experiment record, and acceptance decisions. Keep every assignment within the caller's permissions. Do not change accepted requirements or authorize external actions. Follow user direction and intentional project conventions for tools, models, and delivery.
+Use fresh subagents for attempts; report a blocker if delegation is unavailable or prohibited. The supervisor owns the objective, evaluation, experiment record, and acceptance decisions. Keep every assignment within the caller's permissions. Do not change accepted requirements or authorize external actions. Follow user direction and intentional project conventions for tools, models, and delivery.
 
 ## 1. Frame the run
 

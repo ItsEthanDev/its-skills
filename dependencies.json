@@ -672,6 +672,13 @@
             44,
             44
           ]
+        },
+        {
+          "source": "skills/playbooks/authoring-skills/SKILL.md",
+          "line_range": [
+            81,
+            81
+          ]
         }
       ]
     },

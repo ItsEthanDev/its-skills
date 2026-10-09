@@ -35,7 +35,7 @@ Update an existing specification when it already owns the shared requirement. Do
 
 ## Skill writing
 
-Write direct instructions that change an agent's decisions or actions. Do not include scope metacommentary in skills or supporting references: statements narrating the skill's role, what it owns, or which responsibilities belong elsewhere. Let the name, activation conditions, and procedure establish its scope.
+Write statements that change an agent's decisions or actions. Omit prose that merely describes the skill's purpose or role, or redundantly restates metadata. Declarative statements establishing agent responsibilities or decision authority are operational guidance, not scope metacommentary.
 
 Use the role model to classify and compose skills while authoring, not as commentary to insert into their runtime instructions. Keep role definitions in the authoring guidance and feature specification.
 
