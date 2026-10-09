@@ -12,7 +12,11 @@ Preserve the baseline and compare the candidate with the current best using the 
 
 Use observed user or agent behavior when the claimed improvement depends on that behavior. Static inspection can establish that contradictory statements were removed, but cannot establish that readers now make fewer mistakes. If behavioral evaluation is unavailable, narrow the claim and report the unverified outcome.
 
-Separate facts from judgments. Record what changed, why it helps the selected task, what got worse, and what remains unknown. When feasible, compare artifacts without revealing which is the new candidate to reduce preference for recent work. An independent evaluator can help, but delegation or external evaluation still requires authorization.
+Separate facts from judgments. Record what changed, why it helps the selected task, what got worse, and what remains unknown.
+
+When feasible within the run's permissions and resources, launch a fresh evaluator subagent separate from the attempt author. Give it the criteria, cases, preserved constraints, and both artifacts, but not the attempt author's preferred verdict. Use neutral artifact labels and withhold which is the candidate when practical. Keep the evaluator read-only and require specific evidence for advantages, regressions, and uncertainty. It reports a comparison, not an acceptance decision. External evaluation still requires explicit authorization.
+
+If a separate evaluator is not feasible, state the limitation and have the supervisor compare the actual artifacts directly against the fixed criteria. The attempt author's self-assessment alone is insufficient. Keep final acceptance with the supervisor even when an evaluator recommends a winner.
 
 ## Decide from evidence
 

@@ -127,7 +127,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Authoring Project Verification](skills/playbooks/authoring-project-verification/SKILL.md): Create or maintain project-specific verification instructions and prove the affected procedures.
 - [Ingest Document](skills/playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
 - [Refactoring](skills/playbooks/refactoring/SKILL.md): Improve structure while preserving accepted behavior, with direct checks and separate reporting of discovered defects.
-- [Hillclimb](skills/playbooks/hillclimb/SKILL.md): Improve a selected target through bounded experiments with quantitative or qualitative evidence; explicitly invoked.
+- [Hillclimb](skills/playbooks/hillclimb/SKILL.md): Improve a selected target through supervised subagent experiments with quantitative or qualitative evidence; explicitly invoked and requires subagent tooling.
 - [Prototype](skills/playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
 - [Development Review](skills/playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
 - [Diagnosing Bugs](skills/playbooks/diagnosing-bugs/SKILL.md): Establish a red-capable feedback loop, investigate causes, and repair only within authorized scope.
@@ -184,7 +184,7 @@ ItsSkills draws on ideas and adapted guidance from:
 
 [Anthropic's Frontend Design skill](https://www.skills.sh/anthropics/skills/frontend-design) informed Frontend Design's emphasis on intentional visual structure, user-centered copy, restraint, and screenshot inspection. The collection's skill uses original instructions rather than importing Anthropic's skill or its distinctive-identity premise.
 
-Pstack's [Hillclimb playbook](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/hillclimb.md) informed Hillclimb's hypothesis, comparison, and keep-or-discard loop. ItsSkills adds qualitative evaluation alongside quantitative measurement and follows the collection's invocation and authority conventions.
+Pstack's [Hillclimb playbook](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/hillclimb.md) informed Hillclimb's hypothesis, comparison, and keep-or-discard loop. ItsSkills adds qualitative evaluation alongside quantitative measurement, requires fresh subagents for attempts, and follows the collection's invocation and authority conventions.
 
 The collection developed through earlier local adaptations in the maintainer's Nix configuration. Attribution is currently collection-level; exact file-by-file upstream lineage has not been fully reconstructed. These license references identify the versions checked, not necessarily the original import revisions. Credit does not imply endorsement or upstream authorship of every skill.
 
