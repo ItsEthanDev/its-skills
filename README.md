@@ -14,6 +14,16 @@ Choose any skill or combination by identifier:
 npx skills add ItsEthanDev/its-skills --skill writing understanding-code
 ```
 
+### Project setup
+
+Install `setup` to establish a project's documentation baseline, issue-tracker configuration, and domain-doc layout:
+
+```sh
+npx skills add ItsEthanDev/its-skills --skill setup
+```
+
+Invoke `setup` explicitly in your agent. It explores the repo and asks you to approve the proposed documentation before writing.
+
 ### Nix
 
 Add a source-only input to your configuration flake:
