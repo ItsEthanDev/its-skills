@@ -7,33 +7,23 @@ description: Diagnosis loop for hard bugs and performance regressions. Use when 
 
 A discipline for hard bugs. Skip phases only when explicitly justified.
 
-## Authority and scope
-
-Establish whether the assignment authorizes diagnosis only or also repair. Keep investigation, instrumentation, tests, and changes within that scope and applicable project rules. A debugging request does not by itself authorize new infrastructure, production instrumentation, external access, or broader fixes.
-
-For diagnosis-only work, return the evidenced cause and proposed repair without applying it. Report broader needs to an authorized caller or requester rather than initiate another workflow. Any investigation changes require authorization too; diagnosis-only does not imply permission to modify maintained content.
-
-When exploring the codebase, read `CONTEXT.md` (if it exists) to get a clear mental model of the relevant modules, and check ADRs in the area you're touching.
+When exploring the codebase, read `GLOSSARY.md` (if it exists) to get a clear mental model of the relevant modules, and check ADRs in the area you're touching.
 
 ## Redact
 
-Before showing commands, outputs, or captured artifacts, **redact every secret**: write `<REDACTED>` in its place. Build loops against env vars, so the credential stays in the environment rather than in what you show. Captured artifacts carry auth headers: quote only the lines that carry the signal.
+This skill has you show commands, outputs and captured artifacts. **Redact every secret first**: write `<REDACTED>` in its place. Build loops against env vars, so the credential stays in the environment rather than in what you show. Captured artifacts carry auth headers: quote only the lines that carry the signal.
 
 If the redacted output is not enough to diagnose the bug, say so and ask the user.
 
 ## Phase 1: Build a feedback loop
 
-If you have a **tight** pass/fail signal for the bug (one that goes red on _this_ bug), you will find the cause; bisection, hypothesis-testing, and instrumentation all just consume it. If you don't have one, no amount of staring at code will save you.
+**This is the skill.** Everything else is mechanical. If you have a **tight** pass/fail signal for the bug (one that goes red on _this_ bug), you will find the cause; bisection, hypothesis-testing, and instrumentation all just consume it. If you don't have one, no amount of staring at code will save you.
 
 Spend disproportionate effort here. **Be aggressive. Be creative. Refuse to give up.**
 
 ### Ways to construct one, in roughly this order
 
-These are possible methods, not guaranteed facilities. Use available, authorized project tools. Report missing prerequisites rather than installing tools or services implicitly.
-
-Use `verifying-work` to execute checks and interpret their evidence. Before writing an initial failing test or a regression test, read its `references/automated-tests.md` resource. When test-first repair applies, use `tdd` for the red-green cadence.
-
-1. **Failing test** at an approved seam that reaches the bug: unit, integration, e2e.
+1. **Failing test** at whatever seam reaches the bug: unit, integration, e2e.
 2. **Curl / HTTP script** against a running dev server.
 3. **CLI invocation** with a fixture input, diffing stdout against a known-good snapshot.
 4. **Headless browser script** (Playwright / Puppeteer) that drives the UI and asserts on DOM/console/network.
@@ -42,6 +32,7 @@ Use `verifying-work` to execute checks and interpret their evidence. Before writ
 7. **Property / fuzz loop.** If the bug is "sometimes wrong output", run 1000 random inputs and look for the failure mode.
 8. **Bisection harness.** If the bug appeared between two known states (commit, dataset, version), automate "boot at state X, check, repeat" so you can `git bisect run` it.
 9. **Differential loop.** Run the same input through old-version vs new-version (or two configs) and diff outputs.
+10. **HITL bash script.** Last resort. If a human must click, drive _them_ with `scripts/hitl-loop.template.sh` so the loop is still structured. Captured output feeds back to you.
 
 Build the right feedback loop, and the bug is 90% fixed.
 
@@ -61,7 +52,7 @@ The goal is not a clean repro but a **higher reproduction rate**. Loop the trigg
 
 ### When you genuinely cannot build a loop
 
-Stop and say so explicitly. List what you tried. Ask for the minimum needed to establish the signal: (a) access to the relevant environment, (b) a redacted captured artifact (HAR file, log dump, core dump, screen recording with timestamps), (c) an explicitly described human-assisted check, or (d) permission for temporary production instrumentation. Do not assume that access or instrumentation is authorized. Do **not** proceed to hypothesise without a loop.
+Stop and say so explicitly. List what you tried. Ask the user for: (a) access to whatever environment reproduces it, (b) a redacted captured artifact (HAR file, log dump, core dump, screen recording with timestamps), or (c) permission to add temporary production instrumentation. Do **not** proceed to hypothesise without a loop.
 
 ### Completion criterion: a tight loop that goes red
 
@@ -70,11 +61,9 @@ Phase 1 is done when the loop is **tight** and **red-capable**: you can name **o
 - [ ] **Red-capable**: it drives the actual bug code path and asserts the **user's exact symptom**, so it can go red on this bug and green once fixed. Not "runs without erroring"; it must be able to _catch this specific bug_.
 - [ ] **Deterministic**: same verdict every run (flaky bugs: a pinned, high reproduction rate, per above).
 - [ ] **Fast**: seconds, not minutes.
-- [ ] **Agent-runnable where possible**: prefer unattended execution. If human assistance is necessary, state the exact action, expected observation, and why automation is unavailable. Record the actual observation and its limitations; do not imply that a missing helper script exists.
+- [ ] **Agent-runnable**: you can run it unattended; a human in the loop only via `scripts/hitl-loop.template.sh`.
 
-For a human-assisted loop, replace the command requirement with the explicit check and its observed result, and justify that exception. Preserve a signal that distinguishes this bug from unrelated failure.
-
-If you catch yourself building a theory before this feedback signal exists, **stop and establish a red-capable signal before proceeding.** No red-capable feedback signal, no Phase 2.
+If you catch yourself reading code to build a theory before this command exists, **stop: jumping straight to a hypothesis is the exact failure this skill prevents.** No red-capable command, no Phase 2.
 
 ## Phase 2: Reproduce + minimise
 
@@ -118,30 +107,32 @@ Tool preference:
 2. **Targeted logs** at the boundaries that distinguish hypotheses.
 3. Never "log everything and grep".
 
-**Tag investigation-owned debug logs** with a unique prefix, e.g. `[DEBUG-a4f2]`, when instrumentation is authorized. Track what this investigation introduced so cleanup can distinguish it from existing work. A matching prefix is not permission to remove someone else's instrumentation.
+**Tag every debug log** with a unique prefix, e.g. `[DEBUG-a4f2]`. Cleanup at the end becomes a single grep. Untagged logs survive; tagged logs die.
 
 **Perf branch.** For performance regressions, logs are usually wrong. Instead: establish a baseline measurement (timing harness, `performance.now()`, profiler, query plan), then bisect. Measure first, fix second.
 
 ## Phase 5: Fix + regression test
 
-Apply a repair only when the assignment authorizes it. Otherwise report the evidenced cause, proposed fix, and test coverage needs, then perform only authorized cleanup.
-
-For an authorized test-first repair, use the `tdd` at an approved seam that reproduces the real bug pattern.
+Write the regression test **before the fix**, but only if there is a **correct seam** for it.
 
 A correct seam is one where the test exercises the **real bug pattern** as it occurs at the call site. If the only available seam is too shallow (single-caller test when the bug needs multiple callers, unit test that can't replicate the chain that triggered the bug), a regression test there gives false confidence.
 
-**If no correct seam exists, that itself is a finding.** Report the limitation and any proposed architectural change. Obtain authorization before redesigning the interface.
+**If no correct seam exists, that itself is the finding.** Note it. The codebase architecture is preventing the bug from being locked down. Flag this for the next phase.
 
-When a correct, approved seam exists, use the minimised reproduction as the regression case under the TDD rules. Verify an authorized repair against the original, un-minimised feedback loop as well; passing a narrower test does not prove that the user's scenario is fixed.
+If a correct seam exists:
+
+1. Turn the minimised repro into a failing test at that seam.
+2. Watch it fail. If you forced the red by mutating code or a fixture, `diff` against a pristine copy to prove the mutation landed before you trust it.
+3. Apply the fix.
+4. Watch it pass.
+5. Re-run the Phase 1 feedback loop against the original (un-minimised) scenario.
 
 ## Phase 6: Cleanup
 
-Before reporting completion:
+Required before declaring done:
 
-- [ ] For an authorized repair, the original reproduction no longer exhibits the defect and the regression test passes, or the coverage limitation is explicit.
-- [ ] For diagnosis-only work, the causal finding, evidence, proposed repair, and remaining uncertainty are explicit. Do not claim that an unapplied repair is verified.
-- [ ] Investigation-owned instrumentation is accounted for and removed where cleanup is authorized. Report anything left active or in place and why.
-- [ ] Useful reproductions and findings are retained according to project conventions. Remove only authorized temporary artifacts; do not automatically delete experiments or unrelated files.
-- [ ] The supported causal explanation and verification limits appear in the result. Include them in a commit or PR message if that artifact is already part of the authorized workflow; neither is required merely to finish diagnosis.
-
-Return the result and control to the caller.
+- [ ] Original repro no longer reproduces (re-run the Phase 1 loop)
+- [ ] Regression test passes (or absence of seam is documented)
+- [ ] All `[DEBUG-...]` instrumentation removed (`grep` the prefix)
+- [ ] Throwaway prototypes deleted (or moved to a clearly-marked debug location)
+- [ ] The hypothesis that turned out correct is stated in the commit / PR message, so the next debugger learns
