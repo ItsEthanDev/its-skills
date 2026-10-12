@@ -11,7 +11,7 @@ Identify the observed structural problem, the intended improvement, affected con
 
 Read applicable requirements, contracts, project decisions, and the relevant code before choosing a target shape. Separate accepted behavior from observed quirks and known defects. Report a discovered bug or missing feature as a separate finding; repair or implement it only when the assignment includes that authority. Continue unaffected structural work only while adequate evidence remains.
 
-When interface depth or seam placement matters, read `principle-design-deep-modules`. When the shape duplicates domain knowledge, read `principle-model-the-domain`. When evaluating removal or an added abstraction, read `principle-subtract-before-you-add` and `principle-minimize-reader-load`. Use the criteria relevant to the observed problem, not every principle for every refactor.
+Read `principles` and the relevant resources: `references/design-deep-modules.md` when interface depth or seam placement matters; `references/model-the-domain.md` when the shape duplicates domain knowledge; `references/subtract-before-you-add.md` and `references/minimize-reader-load.md` when evaluating removal or an added abstraction. Use the criteria relevant to the observed problem, not every principle for every refactor.
 
 ## Establish behavior evidence
 
@@ -25,7 +25,7 @@ If a defect, missing prerequisite, or ambiguous requirement prevents establishin
 
 Name the smallest sufficient target shape and why it addresses the observed problem. Make bounded changes, rechecking affected behavior after each meaningful unit. Preserve unrelated work. Follow project rules for any explicitly authorized isolated intermediate breakage; the delivered artifact must meet the preserved contract.
 
-For an internal API replacement, use `principle-migrate-callers-then-delete-legacy-apis` when its conditions apply. Inventory actual callers and references, including serialized names, configuration, documentation, and tests where relevant. Do not infer that external consumers can absorb the same coordinated change.
+For an internal API replacement, read `principles` and its `references/migrate-callers-then-delete-legacy-apis.md` resource when its conditions apply. Inventory actual callers and references, including serialized names, configuration, documentation, and tests where relevant. Do not infer that external consumers can absorb the same coordinated change.
 
 When a check fails, use its finding to revise the structural change within the assignment and recheck. Separate a behavior change from a faulty check or an existing defect before editing further. Do not weaken expected results, discard distinct test coverage, or refresh a baseline simply to obtain a pass.
 

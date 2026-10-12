@@ -5,7 +5,7 @@ description: Check changed behavior and artifacts against requirements, and gath
 
 # Verifying Work
 
-Check the result against the requested behavior and its authoritative sources. Read `principle-prove-it-works` when deciding whether evidence supports a claim.
+Check the result against the requested behavior and its authoritative sources. Read `principles` and its `references/prove-it-works.md` resource when deciding whether evidence supports a claim.
 
 ## Prepare the checks
 

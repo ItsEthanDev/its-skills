@@ -33,7 +33,7 @@ Use these prompts where the evidence warrants them; do not require a finding in 
 
 Compare each candidate with existing guidance and project constraints. Distinguish a missing instruction from an instruction that was ignored, a selection or execution failure, and a tool or environment problem. Do not add a duplicate rule merely because an existing one was missed. Reject unsupported generalizations and permit a result with no worthwhile proposals.
 
-Read `principle-encode-lessons-in-structure` when deciding whether a feasible mechanism would address the problem better than more prose.
+Read `principles` and its `references/encode-lessons-in-structure.md` resource when deciding whether a feasible mechanism would address the problem better than more prose.
 
 When the durable destination is unclear, use `project-documentation` to select the owner. For proposed artifact wording, use `writing`. Preserve existing activation, composition, and authority constraints. Exclude secrets, unnecessary personal details, personality judgments, and inferred personal traits from proposed durable records.
 

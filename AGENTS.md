@@ -17,7 +17,7 @@ When adding, renaming, or removing skills, review Recommended membership and upd
 - Exclude stages.
 - Include playbooks selectively when they provide useful problem-solving strategies without requiring adoption of the collection's development lifecycle.
 - Include techniques by default, with exceptions for those unsuitable for the curated starting point.
-- Include all principles, including the router and every leaf.
+- Include `principles` with all its bundled references.
 
 Maximal selects all available skills; do not maintain a separate inventory for it.
 

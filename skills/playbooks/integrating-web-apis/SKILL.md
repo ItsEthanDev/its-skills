@@ -23,7 +23,7 @@ Follow a suitable existing convention. Otherwise choose and report a routine, pr
 
 ## Implement the affected boundary
 
-Reuse a suitable interface. Introduce an adapter only when it concentrates meaningful vendor knowledge or supports real variation, not merely to wrap a single call. When validation or representation placement is uncertain, read `principle-boundary-discipline`. When interface depth or seam placement is uncertain, read `principle-design-deep-modules`.
+Reuse a suitable interface. Introduce an adapter only when it concentrates meaningful vendor knowledge or supports real variation, not merely to wrap a single call. When validation or representation placement is uncertain, read `principles` and its `references/boundary-discipline.md` resource. When interface depth or seam placement is uncertain, read `principles` and its `references/design-deep-modules.md` resource.
 
 Treat remote input as unknown. Validate and map the relevant data into application types, deriving wire types from an authoritative schema where available. Keep parsing and mapping pure where practical. Do not silently accept malformed data. Preserve error, timeout, cancellation, pagination, and retry behavior relevant to the application's contract.
 

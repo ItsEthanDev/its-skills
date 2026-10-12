@@ -48,6 +48,8 @@ Playbooks MAY define checkpoints internal to their strategy. A diagnosis playboo
 
 Stage skills MAY represent individual stages or route to guidance for multiple stages. The same role boundaries apply in either design.
 
+The collection MUST package engineering principles as references bundled with the `principles` skill, not as individually discoverable skills. The router MUST identify each reference and its loading conditions. Other skills MUST reference `principles` and name the relevant reference when a specific principle is required. Both supported installation paths MUST preserve the complete bundle, including resources linked by a principle reference.
+
 Role directories MUST NOT imply required category routers, invocation order, or hidden discovery. Routers and progressive disclosure are design choices based on selection needs and context cost. Directory nesting alone is not a promise that skill descriptions are hidden from an agent.
 
 ### SR-005: Directional operational references
@@ -86,6 +88,8 @@ For example, a diagnosis playbook may invoke a tracing technique. The technique 
 - A skill's responsibilities match its role, and composition does not copy another role's rules.
 - A playbook can define internal strategy checkpoints without owning or authorizing transitions in the enclosing workflow.
 - Both an individual-stage skill and a stage router are permitted without changing the role model.
+- `principles` is the only engineering-principle skill; selecting it through either installation path includes every principle reference and its supporting resources.
+- Principle callers name `principles` and the required reference, preserving conditional loading and authority limits.
 - The layout can be used without introducing a router for every category or prescribing invocation order.
 - Operational references, including those in supporting resources, follow the SR-005 matrix.
 - Explanatory examples do not create operational dependencies merely by mentioning another role.

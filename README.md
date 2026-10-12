@@ -10,7 +10,7 @@ The repository follows Vercel's skills CLI source layout and can be consumed as 
 
 ### Recommended
 
-The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 40 skills: the Principles router and all 22 leaves, 13 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
+The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 18 skills: Principles with all 22 bundled principle references, 13 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
 
 ```sh
 npx skills add ItsEthanDev/its-skills --skill \
@@ -24,28 +24,6 @@ npx skills add ItsEthanDev/its-skills --skill \
   hillclimb \
   integrating-web-apis \
   pause-work \
-  principle-boundary-discipline \
-  principle-build-the-lever \
-  principle-design-deep-modules \
-  principle-encode-lessons-in-structure \
-  principle-exhaust-the-design-space \
-  principle-experience-first \
-  principle-fix-root-causes \
-  principle-foundational-thinking \
-  principle-guard-the-context-window \
-  principle-laziness-protocol \
-  principle-make-operations-idempotent \
-  principle-migrate-callers-then-delete-legacy-apis \
-  principle-minimize-reader-load \
-  principle-model-the-domain \
-  principle-never-block-on-the-human \
-  principle-outcome-oriented-execution \
-  principle-prove-it-works \
-  principle-redesign-from-first-principles \
-  principle-separate-before-serializing-shared-state \
-  principle-sequence-verifiable-units \
-  principle-subtract-before-you-add \
-  principle-type-system-discipline \
   principles \
   propose-first \
   refactoring \
@@ -154,7 +132,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 
 ### Principles
 
-The [Principles router](skills/principles/principles/SKILL.md) selects among 22 engineering principles. Each leaf is also a separate skill under `skills/principles/`, with its source-authored explicit-invocation setting. Router and leaf discovery depend on the consuming harness.
+The [Principles skill](skills/principles/principles/SKILL.md) selects among 22 engineering principles bundled as Markdown references in its `references/` directory. Install `principles` to include them all; load only the references relevant to the current decision. Individual principles are not separate skills.
 
 ## Features
 
