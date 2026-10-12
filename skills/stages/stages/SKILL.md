@@ -1,13 +1,12 @@
 ---
 name: stages
-description: Coordinate constitute, specify, plan, and implement work, or a requested stage. Select stages according to unresolved decisions and project requirements rather than enforce a fixed sequence.
+description: Coordinate specify, plan, and implement work, or a requested stage. Select stages according to unresolved decisions and project requirements rather than enforce a fixed sequence.
 ---
 
 # Development Stages
 
 Use the requested stage, or select according to the decision:
 
-- Durable project rules: [Constitute](references/constitute.md).
 - Intended behavior: [Specify](references/specify.md).
 - Approach and verification: [Plan](references/plan.md).
 - Authorized delivery and completion evidence: [Implement](references/implement.md).
@@ -16,7 +15,7 @@ Load only references relevant to the work.
 
 ## Select applicable stages
 
-A full-workflow request authorizes coordination of the stages needed for that work, not an obligation to perform all four. Existing governance may need no Constitute work. A small change may move directly from Specify to Implement when the target and approach are sufficiently clear and project rules do not require separate planning. Stages may be combined or skipped when their decisions are already resolved; do not manufacture artifacts or approval gates to fill a sequence.
+A full-workflow request authorizes coordination of the stages needed for that work, not an obligation to perform all three. When durable project rules need to be established or amended within the assignment, use `constitute`. A small change may move directly from Specify to Implement when the target and approach are sufficiently clear and project rules do not require separate planning. Stages may be combined or skipped when their decisions are already resolved; do not manufacture artifacts or approval gates to fill a sequence.
 
 A request for one stage does not authorize the next. At its boundary, return the result and identify remaining decisions. Revisit earlier decisions only within the assignment; report an out-of-scope need to an authorized caller or requester.
 

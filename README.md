@@ -10,13 +10,14 @@ The repository follows Vercel's skills CLI source layout and can be consumed as 
 
 ### Recommended
 
-The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 20 skills: Principles with all 22 bundled principle references, 15 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
+The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 21 skills: Principles with all 22 bundled principle references, 16 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
 
 ```sh
 npx skills add ItsEthanDev/its-skills --skill \
   alignment \
   calling-web-apis \
   commit \
+  constitute \
   development-review \
   decision-records \
   diagramming \
@@ -99,7 +100,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 
 ### Stages
 
-- [Development Stages](skills/stages/stages/SKILL.md): Coordinate applicable Constitute, Specify, Plan, and Implement work without requiring every stage or a fixed sequence.
+- [Development Stages](skills/stages/stages/SKILL.md): Coordinate applicable Specify, Plan, and Implement work without requiring every stage or a fixed sequence.
 
 ### Playbooks
 
@@ -116,6 +117,7 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 
 ### Techniques
 
+- [Constitute](skills/techniques/constitute/SKILL.md): Establish or amend durable project constraints and reconcile affected artifacts.
 - [Alignment](skills/techniques/alignment/SKILL.md): Settle the questions needed for shared understanding.
 - [Propose First](skills/techniques/propose-first/SKILL.md): Propose an approach and pause before implementation when requested.
 - [Repitch](skills/techniques/repitch/SKILL.md): Replace an explanation with a clearer one when requested.
