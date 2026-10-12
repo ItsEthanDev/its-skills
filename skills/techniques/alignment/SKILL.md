@@ -1,35 +1,32 @@
 ---
 name: alignment
-description: Align with the user on an idea, decision, or intended outcome. Use when asked to get on the same page or grill a proposal; use exhaustive grilling when explicitly asked to settle the full decision space.
+description: Align with the user on an plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'alignment' trigger phrases.
 ---
 
 # Alignment
 
-Establish a shared understanding for the invoking task.
+Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.
 
-## Choose depth
+Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
 
-- **Working alignment:** Default, including an unqualified "grill me." Settle what the invoking task needs to proceed. Leave questions that require experience or are not yet relevant open.
-- **Exhaustive grilling:** Use when the user explicitly asks to explore every branch or settle the full decision space before proceeding. Continue until the design tree is covered.
-
-## Working alignment
-
-1. Identify the outcome under discussion and what the invoking task needs to know next. Check available sources for facts instead of asking the user to supply them.
-2. Ask about unresolved choices that affect that outcome or block the invoking task. Give a recommendation when one is useful. Do not expand the interview into downstream choices that can wait.
-3. State the shared understanding: agreed decisions, provisional assumptions, open questions, and which questions block the invoking task. Ask for confirmation when a consequential choice remains unresolved; otherwise hand control back to the invoking task.
-
-## Exhaustive grilling
-
-Map the subject as a **design tree**: every decision branches into the decisions that hang off it. Work in **rounds**. The **frontier** is every decision whose prerequisites are settled. Ask the whole frontier in one round, number each question, give your recommended answer, then wait.
-
-Format each question:
+Format a round like so:
 
 ```
-❓ **Q1** - **<question title>**: <question body, including choices where useful>
+❓ **Q1** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
+
+➡️ <your recommended answer>
+
+---
+
+❓ **Q2** - **<question title>**: <question body, might be multiple paragraphs, including multiple choices>
 
 ➡️ <your recommended answer>
 ```
 
-Each round reshapes the tree. Recompute the frontier after the user's answers. Defer questions that depend on an answer still open in the current round. Find environmental facts yourself; ask the user for decisions. If fact-finding is underway, ask the independent frontier questions while dependent ones wait.
+Word each question so "yes" accepts your recommended answer.
 
-Finish when every relevant branch has been visited. Summarize the agreed decisions and any remaining uncertainty, then ask the user to confirm the shared understanding before handing control back to the invoking task.
+Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
+
+Finding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment (filesystem, tools, etc.), dispatch a sub-agent to find it; don't ask the user for anything you could look up yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. The _decisions_ are the user's: put each to them and wait.
+
+The session is done when the frontier is empty: every branch of the design tree visited, nothing left silently assumed. Do not act on it until the user confirms you have reached a shared understanding.
