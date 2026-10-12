@@ -1,23 +1,15 @@
 ---
 name: repitch
-description: Re-pitch an explanation when the user asks to repitch or says "wait what" as a clarification request. Re-pitch the complete preceding response unless the user names, quotes, or numbers a specific target.
+description: Re-pitch an message or part of a message. Use when the user asks you to rexplain yourself, re-pitch or says "wait what"
 ---
 
 # Repitch
 
-The explanation did not land. Replace it with a simpler explanation rather than extending or defending it. Apply this skill to requests to repitch an explanation or to `wait what` used as a clarification request, not discussion of the phrase or skill.
+The explanation did not land. Replace it with a simpler explanation rather than extending or defending it.
 
 1. Select the scope:
-   - A standalone `repitch` or `wait what` targets the complete preceding assistant response.
-   - In a numbered reply, `2. repitch` or `2. wait what` targets the complete question 2. A quotation or named reference similarly targets that complete item.
+   - A standalone `repitch` targets the complete preceding assistant response.
+   - In a sectioned reply, `repitch` targets only that section.
 2. Retain the conversational state of every unaffected answer and decision without repeating them. Keep the target unresolved and do not advance dependent work.
-3. Re-pitch the target from the beginning:
-   - Give enough context to orient the user.
-   - Present the ideas again in a simpler conceptual order.
-   - Cover every core idea, relationship, decision, and question needed to retain the target's meaning.
-   - Follow the user's requested language and style, then applicable intentional project conventions; otherwise retain the conversation's language. For English explanations, default to ASD-STE100 Simplified Technical English.
-   - Preserve domain terminology from the applicable `CONTEXT.md`; follow `CONTEXT-MAP.md` when the repository has more than one context.
-   - Use concrete examples when they make the idea easier to understand.
+3. Re-pitch the target from the beginning. Give the user a bit of context, talk in ASD-STE100 Simplified Technical English, and use the ubiquitous language from GLOSSARY.md (follow GLOSSARY-MAP.md to the right one if the repo has more than one).
 4. Stop after the replacement explanation.
-
-A re-pitch is not a summary of one selected point, an explanation of why the prior answer said something, or extra detail appended to it. It is a fresh, simpler explanation of the complete selected scope.
