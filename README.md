@@ -106,14 +106,14 @@ Before publication, test with an explicit local input override rather than commi
 
 - The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly. Profiles do not force installation to every agent.
 - Guidance-only skills do not require Nix. Bundled scripts require Nix and keep their pinned environments with the owning skill.
-- Profile commands select skills; they do not automatically install referenced skills outside that selection. If a task requires an unavailable reference, install that skill separately or use Maximal. The [dependency graph](DEPENDENCIES.md) shows the references.
+- Profile commands select skills; they do not automatically install referenced skills outside that selection. If a task requires an unavailable reference, install that skill separately or use Maximal.
 - Invocation metadata support depends on the consuming agent.
 
 The Recommended command above is the authoritative profile list. Maximal selects all available skills.
 
 ## Skills
 
-Runtime sources live under `skills/<role>/<skill-name>/`. Specifications, generated graph outputs, and maintenance tools remain at the repository level.
+Runtime sources live under `skills/<role>/<skill-name>/`. Specifications and maintenance tools remain at the repository level.
 
 Guidance-only skills remain usable without Nix. Bundled script execution requires Nix; the Show Me browser helper supplies mdts through its own pinned environment. Explicit-invocation settings depend on harness support.
 
@@ -156,16 +156,9 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 
 The [Principles router](skills/principles/principles/SKILL.md) selects among 22 engineering principles. Each leaf is also a separate skill under `skills/principles/`, with its source-authored explicit-invocation setting. Router and leaf discovery depend on the consuming harness.
 
-## Dependency graph
-
-Browse the committed [Mermaid dependency graph](DEPENDENCIES.md) on GitHub. [Machine-readable graph data](dependencies.json) records direct dependencies and source evidence for consumer analysis. References are conservative: a dependency may not be used on every invocation. The graph identifies potential change impact and supports computing subset dependency sets; it does not install skills or resolve packages.
-
-[Graph tooling](tools/skill-graph/README.md) documents regeneration, validation, and freshness checks.
-
 ## Features
 
 - [Skill roles](specs/skill-roles/spec.md) defines responsibilities and source organization.
-- [Skill dependency graph](specs/skill-dependency-graph/spec.md) defines name-based references, committed graph outputs, and freshness validation.
 - [Progressive disclosure](specs/progressive-disclosure/spec.md) defines on-demand loading of specialized guidance.
 - [Contextual defaults](specs/contextual-defaults/spec.md) defines request and convention precedence, useful fallbacks, and conditional loading of default-specific detail.
 - [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites for scripts distributed by this collection. Generated project scripts follow their target project's conventions.

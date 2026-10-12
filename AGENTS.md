@@ -21,11 +21,9 @@ When adding, renaming, or removing skills, review Recommended membership and upd
 
 Maximal selects all available skills; do not maintain a separate inventory for it.
 
-## Skill references and graph
+## Skill references
 
-Follow [Skill Dependency Graph](specs/skill-dependency-graph/spec.md). In runtime skills and supporting Markdown, reference another skill by its exact frontmatter identifier in inline code, not by a link into another skill's directory. Preserve conditional loading instructions and authority limits. Keep links to same-skill resources; repository navigation may still link to skills.
-
-Every matching inline identifier contributes a dependency, including explanatory mentions. Avoid using a registered identifier for an unrelated command or concept; plain prose and fenced examples are not graph inputs. Regenerate the committed graph after changing references or source locations, and run its freshness check. See [graph tooling](tools/skill-graph/README.md) for commands and prerequisites.
+In runtime skills and supporting Markdown, reference another skill by its exact frontmatter identifier in inline code, not by a link into another skill's directory. Preserve conditional loading instructions and authority limits. Keep links to same-skill resources; repository navigation may still link to skills.
 
 ## Specification scope
 

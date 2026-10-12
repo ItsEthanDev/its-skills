@@ -32,7 +32,7 @@ skills/techniques/<skill-name>/SKILL.md
 skills/principles/<skill-name>/SKILL.md
 ```
 
-Repository documentation, generated graph outputs, and maintenance tooling remain outside `skills/`.
+Repository documentation and maintenance tooling remain outside `skills/`.
 
 Supporting resources belong with the skill they support. They do not become separate skills merely because they contain specialized guidance.
 
@@ -66,8 +66,6 @@ Stages may coordinate useful playbooks, techniques, and principles. Playbooks ma
 The restriction applies to instructions in both the main skill file and its supporting resources. Moving an instruction into a reference document does not change its role boundary.
 
 Explanatory mentions and examples are not operational references unless they instruct the agent to load, invoke, or follow a skill. Documentation outside runtime skills MAY link across roles freely.
-
-The [Skill Dependency Graph](../skill-dependency-graph/spec.md) conservatively counts all recognized inline skill identifiers, not only operational calls. Its dependency edges obey this role-direction matrix and remain distinct from execution authority.
 
 ### SR-006: References preserve authority and control
 
