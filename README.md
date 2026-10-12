@@ -10,7 +10,7 @@ The repository follows Vercel's skills CLI source layout and can be consumed as 
 
 ### Recommended
 
-The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 18 skills: Principles with all 22 bundled principle references, 13 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
+The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 20 skills: Principles with all 22 bundled principle references, 15 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
 
 ```sh
 npx skills add ItsEthanDev/its-skills --skill \
@@ -18,7 +18,9 @@ npx skills add ItsEthanDev/its-skills --skill \
   calling-web-apis \
   commit \
   development-review \
+  decision-records \
   diagramming \
+  domain-language \
   dry-run \
   frontend-design \
   hillclimb \
@@ -120,6 +122,8 @@ Guidance-only skills remain usable without Nix. Bundled script execution require
 - [Dry Run](skills/techniques/dry-run/SKILL.md): Preview a bounded edit and wait for approval; explicitly invoked.
 - [Project Documentation](skills/techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
 - [Writing](skills/techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
+- [Domain Language](skills/techniques/domain-language/SKILL.md): Resolve terminology and concept distinctions; capture agreed definitions in the glossary.
+- [Decision Records](skills/techniques/decision-records/SKILL.md): Offer ADRs sparingly and record consequential decisions and their rationale.
 - [Understanding Code](skills/techniques/understanding-code/SKILL.md): Explain behavior, trace execution and data flow, and investigate design rationale with source-backed claims.
 - [Diagramming](skills/techniques/diagramming/SKILL.md): Choose and construct clear visual representations while specifying, planning, documenting, or explaining information, with Mermaid as a conditional fallback.
 - [Frontend Design](skills/techniques/frontend-design/SKILL.md): Craft requested UI work with concise copy, familiar icons, deliberate hierarchy, and rendered inspection before simplifying.
