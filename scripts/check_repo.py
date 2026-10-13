@@ -46,6 +46,9 @@ def table_rows(root, filename, section, columns, errors):
                 continue
             found_header = True
             continue
+        if cells == columns:
+            found_separator = False
+            continue
         if not found_separator:
             if len(cells) != len(columns) or not all(
                 re.fullmatch(r":?-{3,}:?", cell) for cell in cells
