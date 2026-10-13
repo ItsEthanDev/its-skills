@@ -5,7 +5,9 @@ description: "Resolve permission before authenticated access or consequential ac
 
 # Action Authorization
 
-Authorize effects, not tool names. Credentials provide capability, not permission. Apply this procedure before acting; do not interrupt operations already covered by a request or grant.
+Authorize effects, not tool names. Credentials provide capability, not permission. Apply this procedure before authenticated access or consequential actions; do not interrupt operations already covered by a request or grant.
+
+Routine local development—including source/configuration edits, tests, verification, and local commits—is outside this skill's scope. Follow the task and applicable development guidance for that work; this skill adds no approval or task-scope restrictions to it. Consequential effects remain covered even when a development tool causes them, such as system activation, shared-database mutation, remote publication, or deployment.
 
 ## 1. Identify the operation and effects
 
@@ -17,7 +19,7 @@ Include indirect effects: a push that triggers deployment requires authorization
 
 Read applicable user and project instructions, current conversation grants, and the project's `docs/agent/action-permissions.md` if it exists. If project instructions designate another permission-file location, use it. A missing file means use the defaults below, not block all work. When reading or maintaining that file, read [Permission file format](PERMISSION-FORMAT.md).
 
-An explicit request authorizes the described operation: "push this branch" needs no redundant confirmation when its target and effects are clear. A general goal such as "implement this feature" does not authorize every possible means of achieving it. Explicit instructions, such as committing completed changes by default, authorize only their stated scope.
+An explicit request authorizes the described operation: "push this branch" needs no redundant confirmation when its target and effects are clear. A development task does not by itself authorize consequential external effects. Existing explicit authorization for consequential actions applies within its stated bounds.
 
 Use these defaults where no applicable instruction or decision changes them:
 
@@ -25,14 +27,11 @@ Use these defaults where no applicable instruction or decision changes them:
 | --- | --- |
 | Public reads without private-data disclosure, unusual cost, or material production burden | Standing permission |
 | Read-only access needed to develop the project, including authenticated issues, production logs, and database tables | Standing permission |
-| Ordinary local development within the scope of the user's task: source/configuration edits and ordinary tests | Standing permission |
 | Remote writes, publication, pushes, deployments, system activation, destructive operations beyond ordinary local edits, spending, or private-data disclosure | Ask |
 | Reads with unusual cost or material production burden, such as an expensive production-wide scan | Ask |
-| Operations outside these defaults and existing grants | Ask |
+| Other consequential operations outside these defaults and existing grants | Ask |
 
-Infer routine development steps from the task; individual edits and test runs do not require explicit requests. Investigate, implement, and verify autonomously within that scope. Permission does not extend to unrelated changes or consequential external effects.
-
-Development-read permission covers observation, not exporting private data to another service. Local-development permission does not cover activating configuration, mutating shared databases, or tests with consequential remote effects.
+Development-read permission covers observation, not exporting private data to another service.
 
 Permissions are bounded by action, target, and constraints:
 
