@@ -11,7 +11,7 @@ The repository follows Vercel's skills CLI source layout and can be consumed as 
 Choose any skill or combination by identifier:
 
 ```sh
-npx skills add ItsEthanDev/its-skills --skill writing understanding-code
+npx skills add ItsEthanDev/its-skills --skill writing codebase-design
 ```
 
 ### Project setup
@@ -52,7 +52,7 @@ The directory contains every skill. To select individual skills, use their compl
 
 ### Installation notes
 
-- The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly. Profiles do not force installation to every agent.
+- The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly.
 - Invocation metadata support depends on the consuming agent.
 
 ## Acknowledgments
@@ -63,8 +63,6 @@ ItsSkills draws on ideas and adapted guidance from:
 - [Lauren Tan (Poteto)'s Pstack](https://github.com/cursor/plugins/tree/main/pstack), published under the [MIT license](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/LICENSE). Copyright (c) 2026 Lauren Tan.
 
 [Anthropic's Frontend Design skill](https://www.skills.sh/anthropics/skills/frontend-design) informed Frontend Design's emphasis on intentional visual structure, user-centered copy, restraint, and screenshot inspection. The collection's skill uses original instructions rather than importing Anthropic's skill or its distinctive-identity premise.
-
-Pstack's [Hillclimb playbook](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/hillclimb.md) informed Hillclimb's hypothesis, comparison, and keep-or-discard loop. ItsSkills adds qualitative evaluation alongside quantitative measurement, requires fresh subagents for attempts, and follows the collection's invocation and authority conventions.
 
 The collection developed through earlier local adaptations in the maintainer's Nix configuration. Attribution is currently collection-level; exact file-by-file upstream lineage has not been fully reconstructed. These license references identify the versions checked, not necessarily the original import revisions. Credit does not imply endorsement or upstream authorship of every skill.
 

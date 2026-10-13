@@ -1,11 +1,6 @@
 ---
 name: pr
 description: "Use when writing a PR body."
-metadata:
-  credits:
-    skill: pr
-    author: Matt Pocock
-    url: "https://github.com/mattpocock/skills/blob/main/skills/engineering/pr/SKILL.md"
 ---
 
 Use this template for writing the PR body:
