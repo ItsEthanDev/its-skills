@@ -69,8 +69,6 @@ SOFTWARE.
 
 Source: [anthropics/skills/frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design).
 
-The upstream skill informed `frontend-design`; this attribution does not establish that the local skill is a copy or derivative of it.
-
 License verified at [dbd4588f9e1033efb41dad4bef2f7947c8993d44](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt).
 
 ```text
