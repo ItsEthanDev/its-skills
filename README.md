@@ -8,6 +8,7 @@ Use these identifiers with `--skill` when installing individual skills. Each lin
 
 | Skill | Purpose |
 | --- | --- |
+| [action-authorization](skills/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
 | [alignment](skills/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
 | [code-review](skills/code-review/SKILL.md) | Review changes against repository standards and the originating spec in parallel. |
 | [codebase-design](skills/codebase-design/SKILL.md) | Design deeper modules, clearer interfaces, and testable boundaries. |

@@ -1,6 +1,6 @@
 # Third-party notices
 
-Every current skill and its supporting files has been compared against Matt Pocock's skills, Lauren Tan (Poteto)'s Pstack, and Anthropic's skills. Each skill directory contains `PROVENANCE.md`, a `LICENSE`, and any additional upstream licenses under `licenses/`, so its notices travel with individual-directory distributions.
+The skills listed in the inventory below and their supporting files have been compared against Matt Pocock's skills, Lauren Tan (Poteto)'s Pstack, and Anthropic's skills. New skills outside that audit record their creation history in their own provenance files. Each skill directory contains `PROVENANCE.md`, a `LICENSE`, and any additional upstream licenses under `licenses/`, so its notices travel with individual-directory distributions.
 
 ItsSkills' original material uses the MIT license. Copied and adapted material retains its upstream notices. An inspiration credit does not relicense original local text. Attribution does not imply endorsement or upstream authorship of unrelated material. Retain each directory's provenance and applicable license files when redistributing it.
 
