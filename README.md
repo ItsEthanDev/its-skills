@@ -55,6 +55,10 @@ The directory contains every skill. To select individual skills, use their compl
 - The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly.
 - Invocation metadata support depends on the consuming agent.
 
+## Project principles
+
+The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.
+
 ## Acknowledgments
 
 ItsSkills draws on ideas and adapted guidance from:
