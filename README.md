@@ -92,6 +92,18 @@ The directory contains every skill. To select individual skills, use their compl
 - The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly.
 - Invocation metadata support depends on the consuming agent.
 
+## Verification
+
+Run the repository consistency check with Python 3 (no additional packages):
+
+```sh
+python3 scripts/check_repo.py
+```
+
+The check requires every skill in the README catalog and a `LICENSE` and `PROVENANCE.md` in each skill directory. It validates existing third-party inventory entries, classifications, and provenance links without requiring an inventory entry for every skill. It reports all errors and exits nonzero on failure. Provenance accuracy and license adequacy still require human review.
+
+The same check runs in GitHub Actions on pushes and pull requests.
+
 ## Project principles
 
 The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.
