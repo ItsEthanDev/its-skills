@@ -31,7 +31,9 @@ Use these identifiers with `--skill` when installing individual skills. Each lin
 | [setup](skills/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
 | [specify](skills/specify/SKILL.md) | Synthesize the conversation into a spec and publish it to the issue tracker. |
 | [tdd](skills/tdd/SKILL.md) | Build features or fix bugs with test-driven development. |
+| [teach](skills/teach/SKILL.md) | Teach a skill or concept through lessons in a persistent learning workspace. |
 | [ticket](skills/ticket/SKILL.md) | Break a plan or spec into tracer-bullet tickets with explicit blocking dependencies. |
+| [to-questionnaire](skills/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
 | [verifying-work](skills/verifying-work/SKILL.md) | Prove results, establish feedback loops, and maintain verification guidance. |
 | [wayfinder](skills/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
 | [wizard](skills/wizard/SKILL.md) | Generate an interactive Bash wizard for steps only a human can perform. |
@@ -104,4 +106,4 @@ ItsSkills draws on ideas and adapted guidance from:
 
 ## License
 
-ItsSkills' original material uses [MIT](LICENSE). Copied and adapted material retains its applicable upstream notices. The [skill inventory](THIRD-PARTY-NOTICES.md#skill-inventory) classifies all 29 skills and links to file-level evidence. Each skill directory includes `PROVENANCE.md`, `LICENSE`, and any additional upstream licenses under `licenses/`; retain them with individual skill distributions. Inspiration credits do not change the license of original local text.
+ItsSkills' original material uses [MIT](LICENSE). Copied and adapted material retains its applicable upstream notices. The [skill inventory](THIRD-PARTY-NOTICES.md#skill-inventory) classifies audited skills and links to file-level evidence. Each skill directory includes `PROVENANCE.md`, `LICENSE`, and any additional upstream licenses under `licenses/`; retain them with individual skill distributions. Inspiration credits do not change the license of original local text.
