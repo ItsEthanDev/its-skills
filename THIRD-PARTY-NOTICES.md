@@ -2,7 +2,7 @@
 
 ItsSkills draws on ideas and adapted guidance from the projects below, including through earlier local adaptations in the maintainer's Nix configuration. Exact file-by-file lineage has not been fully reconstructed. The pinned references identify the licenses checked, not necessarily the original import revisions.
 
-These collection-level notices accompany the repository's own MIT license. They do not assert that the listed upstream authors contributed to every file. Each copyright and license notice applies to its respective material; attribution does not imply endorsement. Retain the applicable notices when redistributing copies or substantial portions of that material, including individual skill distributions.
+ItsSkills' original material uses the MIT license. Third-party material remains subject to its applicable upstream license. These collection-level notices do not assert that the listed upstream authors contributed to every file; attribution does not imply endorsement. When redistributing copied or adapted material, including individual skill distributions, retain the applicable notices and comply with the applicable license terms.
 
 ## Matt Pocock's skills
 
