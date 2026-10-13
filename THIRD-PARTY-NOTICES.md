@@ -8,10 +8,6 @@ These collection-level notices accompany the repository's own MIT license. They 
 
 Source: [mattpocock/skills](https://github.com/mattpocock/skills).
 
-`setup` adapts [Setup Matt Pocock's Skills](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/SKILL.md) and its domain and issue-tracker templates, plus the Domain Modeling glossary format. It adds a project documentation baseline and glossary seeding, and uses `AGENTS.md` as the agent instructions file.
-
-`domain-language` and `decision-records` split the upstream [Domain Modeling skill](https://github.com/mattpocock/skills/blob/main/skills/engineering/domain-modeling/SKILL.md), preserving its glossary and ADR format references.
-
 License verified at [24fe0ef7737efae15c87225755e9f6f5965e4888](https://github.com/mattpocock/skills/blob/24fe0ef7737efae15c87225755e9f6f5965e4888/LICENSE).
 
 ```text
@@ -75,7 +71,7 @@ Source: [anthropics/skills/frontend-design](https://github.com/anthropics/skills
 
 The upstream skill informed `frontend-design`; this attribution does not establish that the local skill is a copy or derivative of it.
 
-License verified at [dbd4588f9e1033efb41dad4bef2f7947c8993d44](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt). The skill's license file contains the Apache License 2.0 terms below, with no separate copyright statement. No `NOTICE` file was present in the upstream repository at that revision.
+License verified at [dbd4588f9e1033efb41dad4bef2f7947c8993d44](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt).
 
 ```text
 
