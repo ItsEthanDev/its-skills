@@ -1,6 +1,6 @@
 ---
 name: setup
-description: "Configure this repo's documentation baseline, issue tracker, and domain doc layout. Run once when bringing a project into the skills workflow."
+description: "Configure this repo's documentation baseline, issue tracker, triage labels, and domain doc layout. Run once when bringing a project into the skills workflow."
 disable-model-invocation: true
 ---
 
@@ -10,6 +10,7 @@ Scaffold the per-repo documentation and configuration that developers and agents
 
 - **Project docs**: `README.md`, `AGENTS.md`, `docs/quickstart.md`, and `docs/deployment.md`
 - **Issue tracker**: where issues live (GitHub by default; local markdown is also supported out of the box)
+- **Triage labels**: how canonical implementation triage roles map to this repo's labels or local ticket statuses
 - **Domain docs**: `GLOSSARY.md`, where ADRs belong, and the consumer rules for reading them
 
 This is a prompt-driven skill, not a deterministic script. Explore, present what you found, confirm with the user, then write.
@@ -52,7 +53,9 @@ If a project remote points at GitHub, propose GitHub. If it points at GitLab (in
 - **Local markdown**: issues live as files under `.scratch/<feature>/` in this repo
 - **Other** (Jira, Linear, etc.): ask the user to describe the workflow in one paragraph
 
-Record the choice in `docs/agents/issue-tracker.md`. Resolve ambiguous remotes or a tracker in a different repository with the user. For another tracker, establish its project identifier and how to create, read, list, comment on, and close tickets; also record how parent/child tickets and blocking relationships work.
+Record the choice in `docs/agents/issue-tracker.md`. Resolve ambiguous remotes or a tracker in a different repository with the user. Include the template's "Wayfinding operations" section, adapted to the configured tracker. For another tracker, establish its project identifier and how to create, read, list, comment on, and close tickets; also record how to store a Wayfinder map, identify and type its children, record blocking, select the frontier, claim a ticket, and resolve it.
+
+**Triage label vocabulary.** Recommend the default roles from [triage-labels.md](triage-labels.md): `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, and `wontfix`. Ask whether to keep those strings; preserve any existing mapping or collect the user's overrides. Record the agreed mapping in `docs/agents/triage-labels.md`. Local implementation tickets use those strings in `Status:`; Wayfinder decision tickets instead use the tracker-specific lifecycle convention. Record required remote labels without creating them: setup writes documentation only.
 
 **Section B: Project docs.**
 
@@ -84,7 +87,7 @@ Show the user a draft of all proposed additions and changes:
 - `README.md`, `docs/quickstart.md`, and `docs/deployment.md`
 - The `AGENTS.md` changes, including the `## Agent skills` block
 - `GLOSSARY.md`, or the map and relevant context glossaries
-- `docs/agents/issue-tracker.md` and `docs/agents/domain.md`
+- `docs/agents/issue-tracker.md`, `docs/agents/triage-labels.md`, and `docs/agents/domain.md`
 
 Use the seed templates below as starting points, adapting paths and commands to the repo. Show unresolved facts and any instructions you could not verify. Let the user edit before writing. Proceed only after they approve the draft.
 
@@ -109,6 +112,10 @@ Before planning a deployment or release, read `docs/deployment.md`.
 
 Before reading, creating, or updating tickets, read `docs/agents/issue-tracker.md`.
 
+### Triage labels
+
+Before applying implementation triage roles or writing local implementation ticket statuses, read `docs/agents/triage-labels.md`.
+
 ### Domain docs
 
 Before exploring a domain area or proposing a change, read `docs/agents/domain.md` and follow its glossary and ADR pointers.
@@ -125,6 +132,7 @@ Seed templates:
 - [issue-tracker-github.md](./issue-tracker-github.md): GitHub issue tracker
 - [issue-tracker-gitlab.md](./issue-tracker-gitlab.md): GitLab issue tracker
 - [issue-tracker-local.md](./issue-tracker-local.md): local-markdown issue tracker
+- [triage-labels.md](./triage-labels.md): implementation triage role mapping
 - [domain.md](./domain.md): domain doc consumer rules and layout
 
 For other issue trackers, write `docs/agents/issue-tracker.md` from the confirmed workflow.

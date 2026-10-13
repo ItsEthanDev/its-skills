@@ -18,7 +18,7 @@ Every map and ticket is an issue, so it has a **name**: its title. In everything
 
 ## The Map
 
-The map is a single issue on this repo's issue tracker, labelled `wayfinder:map`, the canonical artifact. Its tickets are child issues of the map.
+The map is the canonical artifact: a single issue labelled `wayfinder:map` on a remote tracker, or a map file on a local tracker. Its decision tickets are child issues or child files, as defined by the tracker doc.
 
 The map is an **index**, not a store. It lists the decisions made and points at the tickets that hold their detail; a decision lives in exactly one place, its ticket, so the map never restates it, only gists it and links.
 
@@ -26,7 +26,7 @@ The map is an **index**, not a store. It lists the decisions made and points at 
 
 ### The map body
 
-The whole map at low resolution, loaded once per session. Open tickets are **not** listed: they are open child issues, found by query.
+The whole map at low resolution, loaded once per session. Open ticket questions live in the child tickets, not in this body. Find them through the tracker doc's frontier operation; maintain a child task list only when its tracker convention requires one.
 
 ```markdown
 ## Destination
@@ -54,7 +54,7 @@ The whole map at low resolution, loaded once per session. Open tickets are **not
 
 ### Tickets
 
-Each ticket is a **child issue** of the map; the tracker's issue id is its identity. Its body is the question, sized to one 100K token agent session:
+Each ticket is a **child issue or file** of the map; its tracker issue id or file path is its identity. Its body is the question, sized to one 100K token agent session:
 
 ```markdown
 ## Question
@@ -62,13 +62,13 @@ Each ticket is a **child issue** of the map; the tracker's issue id is its ident
 <the decision or investigation this ticket resolves>
 ```
 
-Each ticket carries a `wayfinder:<type>` label, one of `research`, `prototype`, `alignment`, `task` (see [Ticket Types](#ticket-types)). `wayfinder:` labels are the only labels a map and its tickets carry, never a triage label like `ready-for-agent`: they are decisions, not implementation work.
+Each ticket records a type, one of `research`, `prototype`, `alignment`, `task` (see [Ticket Types](#ticket-types)): a `wayfinder:<type>` label on a remote tracker, or a `Type:` line on a local tracker. Remote maps and tickets carry only `wayfinder:` labels, never an implementation triage label like `ready-for-agent`: they are decisions, not implementation work.
 
-A session **claims** a ticket by assigning it to the dev driving the map, **first**, before any work, so concurrent sessions skip it. That assignee _is_ the claim: an open, unassigned ticket is unclaimed.
+A session **claims** a ticket using the tracker doc's claim operation, **first**, before any work, so concurrent sessions skip it. On remote trackers, assignment to the dev driving the map is the claim; on the local tracker, `Status: claimed` is the claim. Re-read before claiming and skip work already claimed by another session.
 
 Blocking uses the tracker's **native** dependency relationship: essential because it renders the frontier _visually_ in the tracker's own UI, so the human sees what's takeable without opening the map. Only a tracker that lacks native blocking falls back to a body convention. A ticket is **unblocked** when every ticket blocking it is closed; the **frontier** is the open, unblocked, unclaimed children, the edge of the known.
 
-The answer isn't part of the body; it's recorded on resolution (see [Work through the map](#work-through-the-map)). Assets created while resolving a ticket are linked from the issue, not pasted in.
+The question stays in the ticket body; record the answer separately on resolution, as a comment remotely or an appended `## Answer` section locally (see [Work through the map](#work-through-the-map)). Assets created while resolving a ticket are linked from the issue, not pasted in.
 
 ## Ticket Types
 
@@ -120,9 +120,9 @@ User invokes with a loose idea.
 User invokes with a map (URL or number). A ticket is **optional**: without one, you pick the next decision, not the user.
 
 1. Load the **map**: the low-res view, not every ticket body.
-2. Choose the ticket. If the user named one, use it. Otherwise take the first frontier ticket in order. **Claim it**: assign it to yourself before any work.
-3. Resolve it as the type its `wayfinder:<type>` label names (see [Ticket Types](#ticket-types)). Read the label, not just the body: the body never states the type. **Zoom as needed**: fetch the full body of any related or closed ticket on demand; call the Skill tool for whichever skills the `## Notes` block names. If in doubt, call the Skill tool for each of "alignment", "domain-language", and "decision-records".
-4. Record the resolution: post the answer as a **resolution comment**, **close** the issue, and **append a context pointer** to the map's Decisions-so-far.
+2. Choose the ticket. If the user named one, use it. Otherwise take the first frontier ticket in order. **Claim it** using the tracker doc's claim operation before any work.
+3. Resolve it as its recorded type (see [Ticket Types](#ticket-types)). Read the `wayfinder:<type>` label on a remote tracker or the `Type:` line on a local tracker; do not infer the type from the question. **Zoom as needed**: fetch the full body of any related or closed ticket on demand; call the Skill tool for whichever skills the `## Notes` block names. If in doubt, call the Skill tool for each of "alignment", "domain-language", and "decision-records".
+4. Record the resolution using the tracker doc's resolve operation: post a **resolution comment** and **close** the issue remotely, or append `## Answer` and set `Status: resolved` locally. **Append a context pointer** to the map's Decisions-so-far.
 5. Add newly-surfaced tickets (create-then-wire); graduate any fog the answer has made specifiable, clearing each graduated patch from **Not yet specified** so it lives only as its new ticket. If the answer reveals that a ticket (this one or another) sits beyond the destination, **rule it out of scope** rather than resolving it on the route. If the decision invalidates other parts of the map, update or delete those tickets.
 
 The user may run unblocked tickets in parallel, so expect other sessions to be editing the tracker concurrently.
