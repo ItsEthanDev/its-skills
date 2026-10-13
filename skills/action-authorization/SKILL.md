@@ -25,10 +25,12 @@ Use these defaults where no applicable instruction or decision changes them:
 | --- | --- |
 | Public reads without private-data disclosure, unusual cost, or material production burden | Standing permission |
 | Read-only access needed to develop the project, including authenticated issues, production logs, and database tables | Standing permission |
-| Ordinary local development requested by the user: source/configuration edits and ordinary tests | Allowed by the task |
+| Ordinary local development within the scope of the user's task: source/configuration edits and ordinary tests | Standing permission |
 | Remote writes, publication, pushes, deployments, system activation, destructive operations beyond ordinary local edits, spending, or private-data disclosure | Ask |
 | Reads with unusual cost or material production burden, such as an expensive production-wide scan | Ask |
 | Operations outside these defaults and existing grants | Ask |
+
+Infer routine development steps from the task; individual edits and test runs do not require explicit requests. Investigate, implement, and verify autonomously within that scope. Permission does not extend to unrelated changes or consequential external effects.
 
 Development-read permission covers observation, not exporting private data to another service. Local-development permission does not cover activating configuration, mutating shared databases, or tests with consequential remote effects.
 
