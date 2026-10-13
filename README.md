@@ -48,7 +48,7 @@ For Pi through Home Manager, pass your flake `inputs` through `extraSpecialArgs`
 }
 ```
 
-The directory contains every skill. To select individual skills, use their complete directory paths instead, such as `"${inputs.its-skills}/skills/writing"`. Keep each selected skill's references, templates, and scripts with it; selecting a `SKILL.md` alone does not preserve its bundle.
+The directory contains every skill. To select individual skills, use their complete directory paths instead, such as `"${inputs.its-skills}/skills/writing"`. Keep each selected skill's references, templates, scripts, `PROVENANCE.md`, `LICENSE`, and any `licenses/` directory with it; selecting a `SKILL.md` alone does not preserve its bundle or notices.
 
 ### Installation notes
 
@@ -69,4 +69,4 @@ ItsSkills draws on ideas and adapted guidance from:
 
 ## License
 
-ItsSkills' original material uses [MIT](LICENSE). Third-party material remains subject to its applicable upstream license. Collection-level [third-party notices](THIRD-PARTY-NOTICES.md) preserve the upstream license texts and applicable notices. Distributions of copied or adapted material must retain those notices and comply with the applicable license terms.
+ItsSkills' original material uses [MIT](LICENSE). Copied and adapted material retains its applicable upstream notices. The [skill inventory](THIRD-PARTY-NOTICES.md#skill-inventory) classifies all 28 skills and links to file-level evidence. Each skill directory includes `PROVENANCE.md`, `LICENSE`, and any additional upstream licenses under `licenses/`; retain them with individual skill distributions. Inspiration credits do not change the license of original local text.

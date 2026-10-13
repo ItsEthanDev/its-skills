@@ -1,6 +1,6 @@
 # Project Constitution
 
-**Version:** 1.0.0
+**Version:** 1.0.1
 **Ratified:** 2026-10-12
 **Last amended:** 2026-10-12
 
@@ -22,7 +22,7 @@ Distributions of copied or adapted material MUST preserve applicable copyright a
 
 **Compliance signal:** A distribution of copied or adapted material includes its applicable notices. Provenance claims match the evidence recorded in [Third-party notices](THIRD-PARTY-NOTICES.md).
 
-Individual-directory installations may omit the collection-level notices. Notice preservation for those installations remains unresolved, as documented in the [README](README.md#license); this gap is not an exemption from the rule.
+Each skill directory includes its provenance and applicable license files, as documented in the [README](README.md#license). Individual-directory distributions must retain those files; collection-level notices alone do not cover a distribution that omits them.
 
 ## Governance
 

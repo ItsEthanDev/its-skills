@@ -1,8 +1,62 @@
 # Third-party notices
 
-ItsSkills draws on ideas and adapted guidance from the projects below, including through earlier local adaptations in the maintainer's Nix configuration. Exact file-by-file lineage has not been fully reconstructed. The pinned references identify the licenses checked, not necessarily the original import revisions.
+Every current skill and its supporting files has been compared against Matt Pocock's skills, Lauren Tan (Poteto)'s Pstack, and Anthropic's skills. Each skill directory contains `PROVENANCE.md`, a `LICENSE`, and any additional upstream licenses under `licenses/`, so its notices travel with individual-directory distributions.
 
-ItsSkills' original material uses the MIT license. Third-party material remains subject to its applicable upstream license. These collection-level notices do not assert that the listed upstream authors contributed to every file; attribution does not imply endorsement. When redistributing copied or adapted material, including individual skill distributions, retain the applicable notices and comply with the applicable license terms.
+ItsSkills' original material uses the MIT license. Copied and adapted material retains its upstream notices. An inspiration credit does not relicense original local text. Attribution does not imply endorsement or upstream authorship of unrelated material. Retain each directory's provenance and applicable license files when redistributing it.
+
+## Audit scope and classifications
+
+The comparison uses these pinned source trees:
+
+- [Matt Pocock: 49dd158d1076134a641b33efb035946536778336](https://github.com/mattpocock/skills/tree/49dd158d1076134a641b33efb035946536778336)
+- [Pstack: 1dcc2bacde73ddd284803b7af28164d0436198fc](https://github.com/cursor/plugins/tree/1dcc2bacde73ddd284803b7af28164d0436198fc/pstack)
+- [Anthropic: dbd4588f9e1033efb41dad4bef2f7947c8993d44](https://github.com/anthropics/skills/tree/dbd4588f9e1033efb41dad4bef2f7947c8993d44)
+
+The review combines full local-file inspection, exact diffs, distinctive passage matching across the three source collections, and local Git history. Matt's and Pstack's license files at these revisions are byte-identical to the earlier license pins below. These pins identify comparison revisions, not necessarily original imports; some material arrived through earlier Nix-configuration adaptations.
+
+- **Copied:** substantive instructions are verbatim, including bundles that only rename metadata or add a heading. File-level evidence identifies those packaging changes.
+- **Adapted:** upstream text or a distinctive procedure is retained with changed instructions, extraction, reorganization, or synthesis. A bundle with both original and borrowed files is classified as adapted.
+- **Inspired:** evidence establishes idea-level influence, without identifiable copied passages or an adapted procedure.
+- **Original:** no identifiable borrowing from these three projects. This is a bounded audit finding, not proof of independent creation; generic similarities and calls to another skill do not establish derivation.
+
+## Skill inventory
+
+| Skill | Classification | Evidence |
+| --- | --- | --- |
+| [`alignment`](skills/alignment/PROVENANCE.md) | Copied | Renamed copy of grilling; the interview procedure is verbatim. |
+| [`code-review`](skills/code-review/PROVENANCE.md) | Adapted | Near-verbatim code-review with the setup reference retargeted. |
+| [`codebase-design`](skills/codebase-design/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
+| [`commit`](skills/commit/PROVENANCE.md) | Original | Local commit procedure; no identifiable borrowing in the audited sources. |
+| [`constitute`](skills/constitute/PROVENANCE.md) | Original | Local governance skill and template. |
+| [`decision-records`](skills/decision-records/PROVENANCE.md) | Adapted | ADR branch extracted from domain-modeling; template copied verbatim. |
+| [`diagnosing-bugs`](skills/diagnosing-bugs/PROVENANCE.md) | Adapted | Diagnosis workflow retained; feedback-loop construction extracted and reproduction gate changed. |
+| [`domain-language`](skills/domain-language/PROVENANCE.md) | Adapted | Glossary branch extracted from domain-modeling; template copied verbatim. |
+| [`dry-run`](skills/dry-run/PROVENANCE.md) | Original | Local diff-preview and approval procedure. |
+| [`frontend-design`](skills/frontend-design/PROVENANCE.md) | Inspired | Original task-centered instructions informed by Anthropic frontend-design. |
+| [`implement`](skills/implement/PROVENANCE.md) | Adapted | Implementation workflow extended with verification gates. |
+| [`improve-codebase-architecture`](skills/improve-codebase-architecture/PROVENANCE.md) | Adapted | Architecture review retargeted to local skills; report guidance copied verbatim. |
+| [`ingest-document`](skills/ingest-document/PROVENANCE.md) | Original | Local document-intake and adoption procedure. |
+| [`pause-work`](skills/pause-work/PROVENANCE.md) | Adapted | Matt handoff text combined with Poteto safe-pause guidance. |
+| [`pr`](skills/pr/PROVENANCE.md) | Copied | Verbatim PR guidance, including the restored upstream credit. |
+| [`propose-first`](skills/propose-first/PROVENANCE.md) | Original | Local investigation, recommendation, and approval procedure. |
+| [`prototype`](skills/prototype/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
+| [`repitch`](skills/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |
+| [`research`](skills/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
+| [`retro`](skills/retro/PROVENANCE.md) | Adapted | Near-verbatim retro with writing references retargeted. |
+| [`setup`](skills/setup/PROVENANCE.md) | Adapted | Matt setup and tracker templates expanded with original project-documentation templates. |
+| [`specify`](skills/specify/PROVENANCE.md) | Adapted | to-spec renamed and adapted to configured triage roles. |
+| [`tdd`](skills/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
+| [`ticket`](skills/ticket/PROVENANCE.md) | Adapted | to-tickets renamed and adapted to configured tracker conventions. |
+| [`verifying-work`](skills/verifying-work/PROVENANCE.md) | Adapted | Poteto verification protocols and Matt feedback-loop guidance combined; HITL script copied. |
+| [`wayfinder`](skills/wayfinder/PROVENANCE.md) | Adapted | Wayfinding procedure adapted to local skills and tracker conventions. |
+| [`wizard`](skills/wizard/PROVENANCE.md) | Copied | Skill and bash template are byte-identical. |
+| [`writing`](skills/writing/PROVENANCE.md) | Adapted | Matt agent-writing and Poteto technical-writing guidance behind an original audience router. |
+
+### Retained upstream credit and audit limits
+
+Matt's `pr` skill credits Dex Horthy / Humanlayer's `show-me`; that metadata is preserved in the local file. Humanlayer was not independently audited because this review is limited to the three requested projects. This is an upstream credit, not a claim that its separate licensing has been verified.
+
+Anthropic's frontend-design license is colocated as a source reference, not as the license of the original local skill. Its repository's third-party dependency notices concern components not included in this skill bundle; none of those components is distributed here. No frontend-design-specific `NOTICE` file was found in the pinned source tree.
 
 ## Matt Pocock's skills
 
