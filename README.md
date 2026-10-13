@@ -2,6 +2,41 @@
 
 ItsSkills is an experimental collection of agent skills for human-directed, agent-executed software engineering.
 
+## Skill catalog
+
+Use these identifiers with `--skill` when installing individual skills. Each link opens the skill's instructions.
+
+| Skill | Purpose |
+| --- | --- |
+| [alignment](skills/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
+| [code-review](skills/code-review/SKILL.md) | Review changes against repository standards and the originating spec in parallel. |
+| [codebase-design](skills/codebase-design/SKILL.md) | Design deeper modules, clearer interfaces, and testable boundaries. |
+| [commit](skills/commit/SKILL.md) | Stage and commit scoped changes using Conventional Commits. |
+| [constitute](skills/constitute/SKILL.md) | Establish or amend durable project constraints. |
+| [decision-records](skills/decision-records/SKILL.md) | Record consequential decisions in architecture decision records (ADRs). |
+| [diagnosing-bugs](skills/diagnosing-bugs/SKILL.md) | Diagnose bugs and performance regressions. |
+| [domain-language](skills/domain-language/SKILL.md) | Sharpen project terminology and maintain a glossary. |
+| [dry-run](skills/dry-run/SKILL.md) | Preview a small edit as a diff and wait for approval before changing files. |
+| [frontend-design](skills/frontend-design/SKILL.md) | Design or reshape frontend pages, components, and interactive prototypes. |
+| [implement](skills/implement/SKILL.md) | Implement work from a spec or set of tickets. |
+| [improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice. |
+| [ingest-document](skills/ingest-document/SKILL.md) | Extract project-relevant proposals from a document and ask which to adopt. |
+| [pause-work](skills/pause-work/SKILL.md) | Pause safely and save a resume checkpoint. |
+| [pr](skills/pr/SKILL.md) | Write a pull request body. |
+| [propose-first](skills/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
+| [prototype](skills/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
+| [repitch](skills/repitch/SKILL.md) | Re-explain a message or part of one. |
+| [research](skills/research/SKILL.md) | Investigate primary sources and save findings as Markdown in the repo. |
+| [retro](skills/retro/SKILL.md) | Conduct a retrospective on a coding session. |
+| [setup](skills/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
+| [specify](skills/specify/SKILL.md) | Synthesize the conversation into a spec and publish it to the issue tracker. |
+| [tdd](skills/tdd/SKILL.md) | Build features or fix bugs with test-driven development. |
+| [ticket](skills/ticket/SKILL.md) | Break a plan or spec into tracer-bullet tickets with explicit blocking dependencies. |
+| [verifying-work](skills/verifying-work/SKILL.md) | Prove results, establish feedback loops, and maintain verification guidance. |
+| [wayfinder](skills/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
+| [wizard](skills/wizard/SKILL.md) | Generate an interactive Bash wizard for steps only a human can perform. |
+| [writing](skills/writing/SKILL.md) | Write and revise technical prose for humans and coding agents. |
+
 ## Installation
 
 The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same skill directories. End-to-end installation verification against the published repository is pending publication.
