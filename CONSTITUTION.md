@@ -1,45 +1,30 @@
-# ItsSkills Constitution
+# Project Constitution
 
-This constitution defines the durable constraints for ItsSkills. Project changes must conform to these rules. A change that conflicts with them requires an explicit amendment rather than an exception hidden in implementation.
+**Version:** 1.0.1
+**Ratified:** 2026-10-12
+**Last amended:** 2026-10-12
 
-## Purpose
+## PR-001 — Composable skills
 
-ItsSkills helps software developers and engineers solve problems through human-directed, agent-executed software engineering. The goal is to increase a developer's problem-solving capacity by reducing implementation effort and cognitive load while preserving engineering judgment, artifact quality, and accountability.
+Each skill MUST have a clear purpose and invocation boundary. Shared guidance MUST have one canonical owner; consuming skills MUST reference that owner rather than duplicate its rules.
 
-The collection prioritizes its maintainer's agent workflows. General-purpose usefulness is welcome but is not a requirement. Public availability does not create a support commitment.
+**Compliance signal:** New or changed skills identify when they apply. Guidance shared by multiple skills has an authoritative source and references from its consumers.
 
-## Engineering model
+## PR-002 — Deliberate context use
 
-Humans retain authority over problem definition, intended behavior, constraints, and consequential tradeoffs. Agents contribute analysis and proposed solutions, and perform implementation, investigation, testing, and documentation within delegated boundaries. Delegation may include bounded engineering judgment, not only execution. Decisions outside that authority or discoveries that materially change the agreed outcome must be surfaced rather than silently adopted.
+Skills MUST keep universally needed instructions inline and disclose branch-specific guidance through pointers that state when to read it. Skill descriptions MUST identify invocation conditions; user-invoked descriptions MUST state the task they serve.
 
-Specification-driven development makes intent, constraints, and acceptance criteria explicit enough to guide implementation and evaluate results. Documentation must be proportional to the task; a separate specification or fixed sequence of development stages is not required for every change.
+**Compliance signal:** New or changed descriptions make invocation clear. Required references have explicit reading conditions, and branch-specific material is loaded only when relevant.
 
-Implementation and verification provide feedback into problem definition and solution design. Specifications may evolve as understanding improves, but agents must not silently redefine accepted requirements to fit their implementation.
+## PR-003 — Attribution
 
-Delegating implementation does not remove responsibility for artifact quality. Code and documentation must satisfy the agreed behavior and constraints, remain understandable and maintainable for their intended use, and be supported by proportionate verification evidence. A convincing demonstration alone is not sufficient evidence of engineering quality.
+Distributions of copied or adapted material MUST preserve applicable copyright and permission notices. Attribution MUST distinguish known provenance from unresolved lineage and MUST NOT imply upstream authorship of unrelated material.
 
-Agents must make consequential choices, unresolved uncertainties, and verification limits visible so developers can assess and maintain the result without having to author every line.
+**Compliance signal:** A distribution of copied or adapted material includes its applicable notices. Provenance claims match the evidence recorded in [Third-party notices](THIRD-PARTY-NOTICES.md).
 
-## Distribution
+Each skill directory includes its provenance and applicable license files, as documented in the [README](README.md#license). Individual-directory distributions must retain those files; collection-level notices alone do not cover a distribution that omits them.
 
-Skills must be easy to include through Nix configuration and easy to install through Vercel's skills CLI. Both installation paths must consume the same skill sources, without separately maintained copies.
+## Governance
 
-Changes to packaging or discovery must be verified against both installation paths. Neither path may become an incidental or unsupported alternative.
-
-## Independence
-
-Skills must not depend on a particular consumer repository or machine configuration. Required tools and environment assumptions must be explicit rather than inherited from the maintainer's setup.
-
-## Scope
-
-The repository owns skills and only the documentation and tooling needed to maintain and distribute them. It is not a general collection of agent configurations, prompts, or unrelated utilities.
-
-## Evolution
-
-The collection favors experimentation. Skills, names, behavior, and installation interfaces may change without backward compatibility guarantees.
-
-Change does not remove the requirement that both installation paths remain functional and easy to use.
-
-## License
-
-The collection uses the MIT license. Contributions must be distributable under that license.
+- Amendments MUST update the version and amendment date.
+- A changed or removed principle MUST be reconciled with dependent specifications, plans, instructions, and checks.
