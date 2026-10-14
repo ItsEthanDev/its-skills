@@ -17,7 +17,7 @@ Proceed to the permission check only when the effects are understood; ask about 
 
 ## 2. Check permission
 
-Consult applicable instructions, conversation grants, and `docs/agent/action-permissions.md` if present, or the permission-file location designated by project instructions. Read [Permission file format](PERMISSION-FORMAT.md) when consulting or maintaining that file. A missing file does not block work. Use these defaults unless an applicable instruction or decision changes them:
+Consult applicable instructions, conversation grants, and `docs/agents/action-permissions.md` if present, or the permission-file location designated by project instructions. Read [Permission file format](PERMISSION-FORMAT.md) when consulting or maintaining that file. A missing file does not block work. Use these defaults unless an applicable instruction or decision changes them:
 
 | Effects | Default |
 | --- | --- |
