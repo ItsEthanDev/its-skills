@@ -1,76 +1,77 @@
 # ItsSkills
 
-ItsSkills is an experimental collection of agent skills for human-directed, agent-executed software engineering, governed by its [constitution](CONSTITUTION.md).
+ItsSkills is an experimental collection of agent skills for human-directed, agent-executed software engineering.
 
-Developers retain authority over intent, constraints, and consequential tradeoffs while agents handle implementation and supporting work within delegated boundaries. Specification-driven development connects explicit intent to verifiable results, with documentation proportional to the task. The goal is greater problem-solving capacity without sacrificing artifact quality or accountability.
+## Skill catalog
+
+Use these identifiers with `--skill` when installing individual skills. Each link opens the skill's instructions. Invocation metadata support depends on the consuming agent.
+
+### Model invoked
+
+The model can load these skills when their invocation conditions match the task. You can also invoke them explicitly.
+
+| Skill | Purpose |
+| --- | --- |
+| [action-authorization](skills/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
+| [alignment](skills/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
+| [code-review](skills/code-review/SKILL.md) | Review changes against repository standards and the originating spec in parallel. |
+| [codebase-design](skills/codebase-design/SKILL.md) | Design deeper modules, clearer interfaces, and testable boundaries. |
+| [commit](skills/commit/SKILL.md) | Stage and commit scoped changes using Conventional Commits. |
+| [constitute](skills/constitute/SKILL.md) | Establish or amend durable project constraints. |
+| [decision-records](skills/decision-records/SKILL.md) | Record consequential decisions in architecture decision records (ADRs). |
+| [diagnosing-bugs](skills/diagnosing-bugs/SKILL.md) | Diagnose bugs and performance regressions. |
+| [domain-language](skills/domain-language/SKILL.md) | Sharpen project terminology and maintain a glossary. |
+| [frontend-design](skills/frontend-design/SKILL.md) | Design or reshape frontend pages, components, and interactive prototypes. |
+| [pr](skills/pr/SKILL.md) | Write a pull request body. |
+| [propose-first](skills/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
+| [prototype](skills/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
+| [repitch](skills/repitch/SKILL.md) | Re-explain a message or part of one. |
+| [research](skills/research/SKILL.md) | Investigate primary sources and save findings as Markdown in the repo. |
+| [tdd](skills/tdd/SKILL.md) | Build features or fix bugs with test-driven development. |
+| [verifying-work](skills/verifying-work/SKILL.md) | Prove results, establish feedback loops, and maintain verification guidance. |
+| [wizard](skills/wizard/SKILL.md) | Generate an interactive Bash wizard for steps only a human can perform. |
+| [writing](skills/writing/SKILL.md) | Write and revise technical prose for humans and coding agents. |
+
+### Manually invoked
+
+Invoke these skills explicitly. Their metadata sets `disable-model-invocation: true`.
+
+| Skill | Purpose |
+| --- | --- |
+| [dry-run](skills/dry-run/SKILL.md) | Preview a small edit as a diff and wait for approval before changing files. |
+| [implement](skills/implement/SKILL.md) | Implement work from a spec or set of tickets. |
+| [improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice. |
+| [ingest-document](skills/ingest-document/SKILL.md) | Extract project-relevant proposals from a document and ask which to adopt. |
+| [pause-work](skills/pause-work/SKILL.md) | Pause safely and save a resume checkpoint. |
+| [retro](skills/retro/SKILL.md) | Conduct a retrospective on a coding session. |
+| [setup](skills/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
+| [specify](skills/specify/SKILL.md) | Synthesize the conversation into a spec and publish it to the issue tracker. |
+| [teach](skills/teach/SKILL.md) | Teach a skill or concept through lessons in a persistent learning workspace. |
+| [ticket](skills/ticket/SKILL.md) | Break a plan or spec into tracer-bullet tickets with explicit blocking dependencies. |
+| [to-questionnaire](skills/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
+| [wayfinder](skills/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
 
 ## Installation
 
 The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same skill directories. End-to-end installation verification against the published repository is pending publication.
-
-### Recommended
-
-The Recommended profile is a curated starting point for improving agent reasoning, output quality, and verification without requiring adoption of the collection's development lifecycle. It contains 40 skills: the Principles router and all 22 leaves, 13 techniques, and the Refactoring, Integrating Web APIs, Development Review, and Hillclimb playbooks.
-
-```sh
-npx skills add ItsEthanDev/its-skills --skill \
-  alignment \
-  calling-web-apis \
-  commit \
-  development-review \
-  diagramming \
-  dry-run \
-  frontend-design \
-  hillclimb \
-  integrating-web-apis \
-  pause-work \
-  principle-boundary-discipline \
-  principle-build-the-lever \
-  principle-design-deep-modules \
-  principle-encode-lessons-in-structure \
-  principle-exhaust-the-design-space \
-  principle-experience-first \
-  principle-fix-root-causes \
-  principle-foundational-thinking \
-  principle-guard-the-context-window \
-  principle-laziness-protocol \
-  principle-make-operations-idempotent \
-  principle-migrate-callers-then-delete-legacy-apis \
-  principle-minimize-reader-load \
-  principle-model-the-domain \
-  principle-never-block-on-the-human \
-  principle-outcome-oriented-execution \
-  principle-prove-it-works \
-  principle-redesign-from-first-principles \
-  principle-separate-before-serializing-shared-state \
-  principle-sequence-verifiable-units \
-  principle-subtract-before-you-add \
-  principle-type-system-discipline \
-  principles \
-  propose-first \
-  refactoring \
-  repitch \
-  show-me \
-  understanding-code \
-  verifying-work \
-  writing
-```
-
-### Maximal
-
-Install every skill, including optional development workflows. Making a skill available does not require using it or override its activation conditions.
-
-```sh
-npx skills add ItsEthanDev/its-skills --skill '*'
-```
 
 ### Individual skills
 
 Choose any skill or combination by identifier:
 
 ```sh
-npx skills add ItsEthanDev/its-skills --skill writing understanding-code
+npx skills add ItsEthanDev/its-skills --skill writing codebase-design
 ```
+
+### Project setup
+
+Install `setup` to establish a project's documentation baseline, issue-tracker configuration, and domain-doc layout:
+
+```sh
+npx skills add ItsEthanDev/its-skills --skill setup
+```
+
+Invoke `setup` explicitly in your agent. It explores the repo and asks you to approve the proposed documentation before writing.
 
 ### Nix
 
@@ -96,84 +97,28 @@ For Pi through Home Manager, pass your flake `inputs` through `extraSpecialArgs`
 }
 ```
 
-The directory contains every skill, equivalent to Maximal. To select individual skills, use their complete directory paths instead, such as `"${inputs.its-skills}/skills/techniques/writing"`. Keep each selected skill's references, templates, and scripts with it; selecting a `SKILL.md` alone does not preserve its bundle. The Recommended command remains the curated membership list; no separate Nix profile definition is maintained.
-
-If replacing an existing collection, remove overlapping skill sources from discovery rather than loading both versions. Keep consumer-owned agent instructions, prompts, and configuration separately managed.
-
-Before publication, test with an explicit local input override rather than committing a machine-specific source path. After publication, lock the intended GitHub revision and verify the consuming configuration before activation.
+The directory contains every skill. To select individual skills, use their complete directory paths instead, such as `"${inputs.its-skills}/skills/writing"`. Keep each selected skill's references, templates, scripts, `PROVENANCE.md`, `LICENSE`, and any `licenses/` directory with it; selecting a `SKILL.md` alone does not preserve its bundle or notices.
 
 ### Installation notes
 
-- The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly. Profiles do not force installation to every agent.
-- Guidance-only skills do not require Nix. Bundled scripts require Nix and keep their pinned environments with the owning skill.
-- Profile commands select skills; they do not automatically install referenced skills outside that selection. If a task requires an unavailable reference, install that skill separately or use Maximal. The [dependency graph](DEPENDENCIES.md) shows the references.
+- The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly.
 - Invocation metadata support depends on the consuming agent.
 
-The Recommended command above is the authoritative profile list. Maximal selects all available skills.
+## Verification
 
-## Skills
+Run the repository consistency check with Python 3 (no additional packages):
 
-Runtime sources live under `skills/<role>/<skill-name>/`. Specifications, generated graph outputs, and maintenance tools remain at the repository level.
+```sh
+python3 scripts/check_repo.py
+```
 
-Guidance-only skills remain usable without Nix. Bundled script execution requires Nix; the Show Me browser helper supplies mdts through its own pinned environment. Explicit-invocation settings depend on harness support.
+The check requires every skill in the README catalog and a `LICENSE` and `PROVENANCE.md` in each skill directory. It validates existing third-party inventory entries, classifications, and provenance links without requiring an inventory entry for every skill. It reports all errors and exits nonzero on failure. Provenance accuracy and license adequacy still require human review.
 
-### Stages
+The same check runs in GitHub Actions on pushes and pull requests.
 
-- [Development Stages](skills/stages/stages/SKILL.md): Coordinate applicable Constitute, Specify, Plan, and Implement work without requiring every stage or a fixed sequence.
+## Project principles
 
-### Playbooks
-
-- [Authoring Skills](skills/playbooks/authoring-skills/SKILL.md): Create or revise a skill using target-project conventions; explicitly invoked.
-- [Authoring Project Verification](skills/playbooks/authoring-project-verification/SKILL.md): Create or maintain project-specific verification instructions and prove the affected procedures.
-- [Ingest Document](skills/playbooks/ingest-document/SKILL.md): Identify proposals in a document and ask which to adopt; explicitly invoked.
-- [Refactoring](skills/playbooks/refactoring/SKILL.md): Improve structure while preserving accepted behavior, with direct checks and separate reporting of discovered defects.
-- [Hillclimb](skills/playbooks/hillclimb/SKILL.md): Improve a selected target through supervised subagent experiments with quantitative or qualitative evidence; explicitly invoked and requires subagent tooling.
-- [Prototype](skills/playbooks/prototype/SKILL.md): Build an isolated, throwaway experiment to answer a question before production implementation.
-- [Development Review](skills/playbooks/development-review/SKILL.md): Conduct an authorized, bounded review without changing maintained project content.
-- [Diagnosing Bugs](skills/playbooks/diagnosing-bugs/SKILL.md): Establish a red-capable feedback loop, investigate causes, and repair only within authorized scope.
-- [Integrating Web APIs](skills/playbooks/integrating-web-apis/SKILL.md): Build or change remote integrations, with conditional inbound-webhook guidance.
-- [Reflect](skills/playbooks/reflect/SKILL.md): Propose evidence-backed improvements from selected work; explicitly invoked, proposal-only by default, with bounded caller-applied updates when requested.
-
-### Techniques
-
-- [Alignment](skills/techniques/alignment/SKILL.md): Settle the questions needed for shared understanding.
-- [Propose First](skills/techniques/propose-first/SKILL.md): Propose an approach and pause before implementation when requested.
-- [Repitch](skills/techniques/repitch/SKILL.md): Replace an explanation with a clearer one when requested.
-- [Dry Run](skills/techniques/dry-run/SKILL.md): Preview a bounded edit and wait for approval; explicitly invoked.
-- [Project Documentation](skills/techniques/project-documentation/SKILL.md): Choose authoritative artifact owners and maintain or reconcile project documentation.
-- [Writing](skills/techniques/writing/SKILL.md): Plan, draft, revise, or review technical prose for humans or coding agents.
-- [Understanding Code](skills/techniques/understanding-code/SKILL.md): Explain behavior, trace execution and data flow, and investigate design rationale with source-backed claims.
-- [Diagramming](skills/techniques/diagramming/SKILL.md): Choose and construct clear visual representations while specifying, planning, documenting, or explaining information, with Mermaid as a conditional fallback.
-- [Frontend Design](skills/techniques/frontend-design/SKILL.md): Craft requested UI work with concise copy, familiar icons, deliberate hierarchy, and rendered inspection before simplifying.
-- [Commit](skills/techniques/commit/SKILL.md): Stage and commit completed work; push only when explicitly requested.
-- [Pause Work](skills/techniques/pause-work/SKILL.md): Pause a task safely and save a resume checkpoint; explicitly invoked.
-- [Verifying Work](skills/techniques/verifying-work/SKILL.md): Select and execute checks, interpret findings, and return evidence and verification limits.
-- [TDD](skills/techniques/tdd/SKILL.md): Develop behavior test-first through a red-green loop using shared automated-test guidance; refactoring remains separate work.
-- [Show Me](skills/techniques/show-me/SKILL.md): Present work in chat, Hunk, a Markdown browser viewer, or UI screenshots. Its bundled browser script requires Nix.
-- [Calling Web APIs](skills/techniques/calling-web-apis/SKILL.md): Make real API requests within explicit service, environment, and effect authorization.
-
-### Principles
-
-The [Principles router](skills/principles/principles/SKILL.md) selects among 22 engineering principles. Each leaf is also a separate skill under `skills/principles/`, with its source-authored explicit-invocation setting. Router and leaf discovery depend on the consuming harness.
-
-## Dependency graph
-
-Browse the committed [Mermaid dependency graph](DEPENDENCIES.md) on GitHub. [Machine-readable graph data](dependencies.json) records direct dependencies and source evidence for consumer analysis. References are conservative: a dependency may not be used on every invocation. The graph identifies potential change impact and supports computing subset dependency sets; it does not install skills or resolve packages.
-
-[Graph tooling](tools/skill-graph/README.md) documents regeneration, validation, and freshness checks.
-
-## Features
-
-- [Skill roles](specs/skill-roles/spec.md) defines responsibilities and source organization.
-- [Skill dependency graph](specs/skill-dependency-graph/spec.md) defines name-based references, committed graph outputs, and freshness validation.
-- [Progressive disclosure](specs/progressive-disclosure/spec.md) defines on-demand loading of specialized guidance.
-- [Contextual defaults](specs/contextual-defaults/spec.md) defines request and convention precedence, useful fallbacks, and conditional loading of default-specific detail.
-- [Nix-backed script execution](specs/nix-backed-scripts/spec.md) defines execution prerequisites for scripts distributed by this collection. Generated project scripts follow their target project's conventions.
-- [Self-verifying work](specs/self-verifying-work/spec.md) defines verification behavior, instruction ownership, and project-local protocol authoring.
-
-## Repository guidance
-
-Follow [AGENTS.md](AGENTS.md) when changing the collection. Use the [Authoring Skills playbook](skills/playbooks/authoring-skills/SKILL.md) when creating or revising a skill.
+The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.
 
 ## Acknowledgments
 
@@ -181,13 +126,8 @@ ItsSkills draws on ideas and adapted guidance from:
 
 - [Matt Pocock's skills](https://github.com/mattpocock/skills), published under the [MIT license](https://github.com/mattpocock/skills/blob/24fe0ef7737efae15c87225755e9f6f5965e4888/LICENSE). Copyright (c) 2026 Matt Pocock.
 - [Lauren Tan (Poteto)'s Pstack](https://github.com/cursor/plugins/tree/main/pstack), published under the [MIT license](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/LICENSE). Copyright (c) 2026 Lauren Tan.
-
-[Anthropic's Frontend Design skill](https://www.skills.sh/anthropics/skills/frontend-design) informed Frontend Design's emphasis on intentional visual structure, user-centered copy, restraint, and screenshot inspection. The collection's skill uses original instructions rather than importing Anthropic's skill or its distinctive-identity premise.
-
-Pstack's [Hillclimb playbook](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/hillclimb.md) informed Hillclimb's hypothesis, comparison, and keep-or-discard loop. ItsSkills adds qualitative evaluation alongside quantitative measurement, requires fresh subagents for attempts, and follows the collection's invocation and authority conventions.
-
-The collection developed through earlier local adaptations in the maintainer's Nix configuration. Attribution is currently collection-level; exact file-by-file upstream lineage has not been fully reconstructed. These license references identify the versions checked, not necessarily the original import revisions. Credit does not imply endorsement or upstream authorship of every skill.
+- [Anthropic's frontend design skill](https://github.com/anthropics/skills/tree/main/skills/frontend-design), published under the [Apache License 2.0](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt).
 
 ## License
 
-ItsSkills uses [MIT](LICENSE). Collection-level [third-party notices](THIRD-PARTY-NOTICES.md) preserve the upstream copyright and permission notices, which apply to their respective material. Distributions of copied or adapted material must retain the applicable notices. Individual-directory installations may omit these root files; notice preservation for those installations remains unresolved.
+ItsSkills' original material uses [MIT](LICENSE). Copied and adapted material retains its applicable upstream notices. The [skill inventory](THIRD-PARTY-NOTICES.md#skill-inventory) classifies audited skills and links to file-level evidence. Each skill directory includes `PROVENANCE.md`, `LICENSE`, and any additional upstream licenses under `licenses/`; retain them with individual skill distributions. Inspiration credits do not change the license of original local text.
