@@ -1,6 +1,6 @@
 # ItsSkills
 
-ItsSkills is an experimental collection of agent skills for human-directed, agent-executed software engineering.
+ItsSkills is an experimental collection of reusable agent skills for general work, software engineering, and learning.
 
 ## Skill catalog
 
@@ -11,54 +11,93 @@ Skills named `to-<artifact>` transform context or source material into the named
 artifact, rather than executing its downstream use. Not every skill that produces
 an artifact needs a `to-` name.
 
-### Model invoked
+Skills live under `skills/<task-domain>/<skill>/`. Classify by purpose, not by
+implementation tools or occasional reuse. Each skill has one canonical home;
+workflows in other domains can use it without copying it.
 
-The model can load these skills when their invocation conditions match the task. You can also invoke them explicitly.
+The lists below describe current instructions. Cross-domain instruction changes
+and an audit remain open under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
+
+### General
+
+Cross-domain work, including Git collaboration on code, prose, or other files.
+
+#### Model invoked
+
+The model can load these skills when their invocation conditions match the task.
+You can also invoke them explicitly.
 
 | Skill | Purpose |
 | --- | --- |
-| [action-authorization](skills/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
-| [alignment](skills/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
-| [code-review](skills/code-review/SKILL.md) | Review changes against repository standards and the originating spec in parallel. |
-| [codebase-design](skills/codebase-design/SKILL.md) | Design deeper modules, clearer interfaces, and testable boundaries. |
-| [commit](skills/commit/SKILL.md) | Stage and commit scoped changes using Conventional Commits. |
-| [constitute](skills/constitute/SKILL.md) | Establish or amend durable project constraints. |
-| [decision-records](skills/decision-records/SKILL.md) | Record consequential decisions in architecture decision records (ADRs). |
-| [diagnosing-bugs](skills/diagnosing-bugs/SKILL.md) | Diagnose bugs and performance regressions. |
-| [domain-language](skills/domain-language/SKILL.md) | Sharpen project terminology and maintain a glossary. |
-| [frontend-design](skills/frontend-design/SKILL.md) | Design or reshape frontend pages, components, and interactive prototypes. |
-| [pr](skills/pr/SKILL.md) | Write a pull request body. |
-| [propose-first](skills/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
-| [prototype](skills/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
-| [repitch](skills/repitch/SKILL.md) | Re-explain a message or part of one. |
-| [research](skills/research/SKILL.md) | Investigate primary sources and save findings as Markdown in the repo. |
-| [tdd](skills/tdd/SKILL.md) | Build features or fix bugs with test-driven development. |
-| [verifying-work](skills/verifying-work/SKILL.md) | Prove results, establish feedback loops, and maintain verification guidance. |
-| [wizard](skills/wizard/SKILL.md) | Generate an interactive Bash wizard for steps only a human can perform. |
-| [writing](skills/writing/SKILL.md) | Write and revise technical prose for humans and coding agents. |
+| [action-authorization](skills/general/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
+| [alignment](skills/general/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
+| [commit](skills/general/commit/SKILL.md) | Stage and commit scoped changes using Conventional Commits. |
+| [constitute](skills/general/constitute/SKILL.md) | Establish or amend durable project constraints. |
+| [decision-records](skills/general/decision-records/SKILL.md) | Record consequential decisions in architecture decision records (ADRs). |
+| [domain-language](skills/general/domain-language/SKILL.md) | Sharpen project terminology and maintain a glossary. |
+| [pr](skills/general/pr/SKILL.md) | Write a pull request body. |
+| [propose-first](skills/general/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
+| [prototype](skills/general/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
+| [repitch](skills/general/repitch/SKILL.md) | Re-explain a message or part of one. |
+| [research](skills/general/research/SKILL.md) | Investigate primary sources and save findings as Markdown in the repo. |
+| [verifying-work](skills/general/verifying-work/SKILL.md) | Prove results, establish feedback loops, and maintain verification guidance. |
+| [wizard](skills/general/wizard/SKILL.md) | Generate an interactive Bash wizard for steps only a human can perform. |
+| [writing](skills/general/writing/SKILL.md) | Write and revise technical prose for humans and coding agents. |
 
-### Manually invoked
+#### Manually invoked
 
 Invoke these skills explicitly. Their metadata sets `disable-model-invocation: true`.
 
 | Skill | Purpose |
 | --- | --- |
-| [dry-run](skills/dry-run/SKILL.md) | Preview a small edit as a diff and wait for approval before changing files. |
-| [implement](skills/implement/SKILL.md) | Implement work from a spec or set of tickets. |
-| [improve-codebase-architecture](skills/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice. |
-| [ingest-document](skills/ingest-document/SKILL.md) | Extract project-relevant proposals from a document and ask which to adopt. |
-| [pause-work](skills/pause-work/SKILL.md) | Pause safely and save a resume checkpoint. |
-| [retro](skills/retro/SKILL.md) | Conduct a retrospective on a coding session. |
-| [setup](skills/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
-| [to-spec](skills/to-spec/SKILL.md) | Synthesize the conversation into a spec and publish it to the issue tracker. |
-| [teach](skills/teach/SKILL.md) | Teach a skill or concept through lessons in a persistent learning workspace. |
-| [to-implementation-tickets](skills/to-implementation-tickets/SKILL.md) | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
-| [to-questionnaire](skills/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
-| [wayfinder](skills/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
+| [dry-run](skills/general/dry-run/SKILL.md) | Preview a small edit as a diff and wait for approval before changing files. |
+| [ingest-document](skills/general/ingest-document/SKILL.md) | Extract project-relevant proposals from a document and ask which to adopt. |
+| [pause-work](skills/general/pause-work/SKILL.md) | Pause safely and save a resume checkpoint. |
+| [retro](skills/general/retro/SKILL.md) | Conduct a retrospective on a coding session. |
+| [setup](skills/general/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
+| [to-questionnaire](skills/general/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
+| [wayfinder](skills/general/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
+
+### Engineering
+
+Software design, implementation, review, diagnosis, and testing.
+
+#### Model invoked
+
+| Skill | Purpose |
+| --- | --- |
+| [code-review](skills/engineering/code-review/SKILL.md) | Review changes against repository standards and the originating spec in parallel. |
+| [codebase-design](skills/engineering/codebase-design/SKILL.md) | Design deeper modules, clearer interfaces, and testable boundaries. |
+| [diagnosing-bugs](skills/engineering/diagnosing-bugs/SKILL.md) | Diagnose bugs and performance regressions. |
+| [frontend-design](skills/engineering/frontend-design/SKILL.md) | Design or reshape frontend pages, components, and interactive prototypes. |
+| [tdd](skills/engineering/tdd/SKILL.md) | Build features or fix bugs with test-driven development. |
+
+#### Manually invoked
+
+| Skill | Purpose |
+| --- | --- |
+| [implement](skills/engineering/implement/SKILL.md) | Implement work from a spec or set of tickets. |
+| [improve-codebase-architecture](skills/engineering/improve-codebase-architecture/SKILL.md) | Find module-deepening opportunities, present an HTML report, and align on a choice. |
+| [to-spec](skills/engineering/to-spec/SKILL.md) | Synthesize the conversation into a spec and publish it to the issue tracker. |
+| [to-implementation-tickets](skills/engineering/to-implementation-tickets/SKILL.md) | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
+
+### Learning
+
+#### Manually invoked
+
+| Skill | Purpose |
+| --- | --- |
+| [teach](skills/learning/teach/SKILL.md) | Teach a skill or concept through lessons in a persistent learning workspace. |
 
 ## Installation
 
-The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same skill directories. End-to-end installation verification against the published repository is pending publication.
+The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. End-to-end installation verification against the published repository is pending publication.
+
+A task-domain directory is an ownership and browsing boundary, not a self-contained
+installation. Include the general skills required by selected workflows. Selection
+uses existing CLI options or Nix paths; there is no custom installer or dependency
+resolver. The dependency audit and verified group-selection commands remain open
+under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
 
 ### Individual skills
 
@@ -102,7 +141,22 @@ For Pi through Home Manager, pass your flake `inputs` through `extraSpecialArgs`
 }
 ```
 
-The directory contains every skill. To select individual skills, use their complete directory paths instead, such as `"${inputs.its-skills}/skills/writing"`. Keep each selected skill's references, templates, scripts, `PROVENANCE.md`, `LICENSE`, and any `licenses/` directory with it; selecting a `SKILL.md` alone does not preserve its bundle or notices.
+The directory contains every skill in nested task-domain directories. To select
+engineering plus all general skills, use:
+
+```nix
+settings.skills = [
+  "${inputs.its-skills}/skills/general"
+  "${inputs.its-skills}/skills/engineering"
+];
+```
+
+For individual skills, use complete directory paths such as
+`"${inputs.its-skills}/skills/general/writing"`, and include any skills they require.
+Selecting only a domain directory does not add dependencies from other domains.
+Keep each selected skill's references, templates, scripts, `PROVENANCE.md`,
+`LICENSE`, and any `licenses/` directory with it; selecting a `SKILL.md` alone does
+not preserve its bundle or notices.
 
 ### Installation notes
 
@@ -117,7 +171,7 @@ Run the repository consistency check with Python 3 (no additional packages):
 python3 scripts/check_repo.py
 ```
 
-The check requires every skill in the README catalog and a `LICENSE` and `PROVENANCE.md` in each skill directory. It validates existing third-party inventory entries, classifications, and provenance links without requiring an inventory entry for every skill. It reports all errors and exits nonzero on failure. Provenance accuracy and license adequacy still require human review.
+The check enforces `skills/<general|engineering|learning>/<skill>/SKILL.md`, globally unique skill directory names, catalog coverage, and a `LICENSE` and `PROVENANCE.md` in each skill directory. It validates existing third-party inventory entries, classifications, and provenance links without requiring an inventory entry for every skill. It reports all errors and exits nonzero on failure. Provenance accuracy and license adequacy still require human review.
 
 The same check runs in GitHub Actions on pushes and pull requests.
 

@@ -10,6 +10,16 @@ The source repository is `ItsEthanDev/its-skills` on GitHub.
 Publishing source changes requires repository write access.
 Local consistency checks require no credentials.
 
+Bundles live at `skills/<general|engineering|learning>/<skill>/`. Each skill has
+one canonical home. A task-domain directory is not a self-contained installation:
+include the general skills required by the selected workflows, using existing CLI
+selection options or Nix paths. There is no custom installer or dependency resolver.
+
+Instruction generalization, dependency auditing, and nested-layout consumption
+checks remain tracked under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
+That issue stays open until its required follow-ups are resolved; learning-suite
+implementation remains gated on that work.
+
 Each distributed bundle must retain its supporting resources and notices.
 Follow the [license guidance](../README.md#license) and
 [third-party notices](../THIRD-PARTY-NOTICES.md).
@@ -31,8 +41,11 @@ receive later source changes when reinstalling or updating.
 Run the [local checks](quickstart.md#verify-a-change) before publication.
 
 End-to-end published-source installation verification remains unverified for
-both consumption paths. Before claiming a distribution works, exercise each
-affected path and inspect the installed bundle for instructions, supporting
+both consumption paths. The nested layout also needs executable discovery and
+full-bundle selection checks through the skills CLI and source-only Nix/Pi path;
+source inspection alone does not establish successful consumption. Before claiming
+a distribution works, exercise each affected path and inspect the installed bundle
+for instructions, supporting
 resources, provenance, and applicable license files.
 
 ## Recovery
