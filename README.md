@@ -37,7 +37,7 @@ You can also invoke them explicitly.
 | [domain-language](skills/general/domain-language/SKILL.md) | Sharpen project terminology and maintain a glossary. |
 | [pr](skills/general/pr/SKILL.md) | Write a pull request body. |
 | [propose-first](skills/general/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
-| [prototype](skills/general/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
+| [prototype](skills/general/prototype/SKILL.md) | Build a throwaway artifact, including non-code examples or UI/logic demos, to answer a design question. |
 | [repitch](skills/general/repitch/SKILL.md) | Re-explain a message or part of one. |
 | [research](skills/general/research/SKILL.md) | Investigate primary sources and save findings as Markdown in the repo. |
 | [verifying-work](skills/general/verifying-work/SKILL.md) | Prove results, establish feedback loops, and maintain verification guidance. |

@@ -39,7 +39,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`pause-work`](skills/general/pause-work/PROVENANCE.md) | Adapted | Matt handoff text combined with Poteto safe-pause guidance. |
 | [`pr`](skills/general/pr/PROVENANCE.md) | Copied | Verbatim PR guidance, including the restored upstream credit. |
 | [`propose-first`](skills/general/propose-first/PROVENANCE.md) | Original | Local investigation, recommendation, and approval procedure. |
-| [`prototype`](skills/general/prototype/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
+| [`prototype`](skills/general/prototype/PROVENANCE.md) | Adapted | Shared process generalized for non-code artifacts; engineering rules extracted and capture boundaries clarified. |
 | [`repitch`](skills/general/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |
 | [`research`](skills/general/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
 | [`retro`](skills/general/retro/PROVENANCE.md) | Adapted | Retrospective procedure retained; engineering guidance extracted into a conditional reference. |
