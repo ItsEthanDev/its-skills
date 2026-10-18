@@ -54,7 +54,7 @@ Invoke these skills explicitly. Their metadata sets `disable-model-invocation: t
 | [ingest-document](skills/general/ingest-document/SKILL.md) | Extract project-relevant proposals from a document and ask which to adopt. |
 | [pause-work](skills/general/pause-work/SKILL.md) | Pause safely and save a resume checkpoint. |
 | [retro](skills/general/retro/SKILL.md) | Conduct a retrospective on an agent session. |
-| [setup](skills/general/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
+| [setup](skills/general/setup/SKILL.md) | Establish, extend, or migrate discoverable project guidance and selected tooling, across the project or for a specific feature. |
 | [to-questionnaire](skills/general/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
 | [wayfinder](skills/general/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
 
@@ -109,13 +109,23 @@ npx skills add ItsEthanDev/its-skills --skill writing codebase-design
 
 ### Project setup
 
-Install `setup` to establish a project's documentation baseline, issue-tracker configuration, and domain-doc layout:
+Install `setup` to establish a project's documentation, conventions, and selected tooling:
 
 ```sh
 npx skills add ItsEthanDev/its-skills --skill setup
 ```
 
-Invoke `setup` explicitly in your agent. It explores the repo and asks you to approve the proposed documentation before writing.
+Invoke `setup` explicitly in your agent. It explores the project, establishes your
+intent, and asks you to approve the proposed changes before writing. Run it for
+general setup, scope it to a feature such as commit guidance or a constitution,
+or use it to extend or migrate existing conventions. Features are selected for
+the work the project supports; a tracker, constitution, or toolchain is not
+mandatory. Approved lint/format setup can configure tools as well as document them.
+
+The generated guidance belongs to the project and remains usable without the
+setup skill. The README indexes selected guidance by purpose; agent instructions
+explain when to follow it. Future setup recommendations do not change existing
+project policy without an approved change.
 
 ### Nix
 

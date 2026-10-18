@@ -43,7 +43,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`repitch`](skills/general/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |
 | [`research`](skills/general/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
 | [`retro`](skills/general/retro/PROVENANCE.md) | Adapted | Retrospective procedure retained; engineering guidance extracted into a conditional reference. |
-| [`setup`](skills/general/setup/PROVENANCE.md) | Adapted | Matt setup and tracker templates expanded with original project-documentation templates. |
+| [`setup`](skills/general/setup/PROVENANCE.md) | Adapted | Matt setup sequence and tracker/domain guidance retained; intent-led features, self-contained project conventions, discovery, and local tooling setup added. |
 | [`to-spec`](skills/engineering/to-spec/PROVENANCE.md) | Adapted | to-spec adapted to configured triage roles. |
 | [`tdd`](skills/engineering/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
 | [`teach`](skills/learning/teach/PROVENANCE.md) | Copied | Skill and all three format references are byte-identical to Matt's teach skill. |
