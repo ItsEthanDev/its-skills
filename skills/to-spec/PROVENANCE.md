@@ -1,4 +1,4 @@
-# Provenance: specify
+# Provenance: to-spec
 
 **Classification: Adapted.** to-spec renamed and adapted to configured triage roles.
 

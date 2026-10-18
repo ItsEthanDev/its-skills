@@ -44,7 +44,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`research`](skills/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
 | [`retro`](skills/retro/PROVENANCE.md) | Adapted | Near-verbatim retro with writing references retargeted. |
 | [`setup`](skills/setup/PROVENANCE.md) | Adapted | Matt setup and tracker templates expanded with original project-documentation templates. |
-| [`specify`](skills/specify/PROVENANCE.md) | Adapted | to-spec renamed and adapted to configured triage roles. |
+| [`to-spec`](skills/to-spec/PROVENANCE.md) | Adapted | to-spec adapted to configured triage roles. |
 | [`tdd`](skills/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
 | [`teach`](skills/teach/PROVENANCE.md) | Copied | Skill and all three format references are byte-identical to Matt's teach skill. |
 | [`to-implementation-tickets`](skills/to-implementation-tickets/PROVENANCE.md) | Adapted | to-tickets renamed and adapted to configured tracker conventions. |
