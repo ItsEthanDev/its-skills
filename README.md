@@ -6,6 +6,11 @@ ItsSkills is an experimental collection of agent skills for human-directed, agen
 
 Use these identifiers with `--skill` when installing individual skills. Each link opens the skill's instructions. Invocation metadata support depends on the consuming agent.
 
+Skills named `to-<artifact>` transform context or source material into the named
+[artifact](GLOSSARY.md#work-products). Their completion criterion is producing the
+artifact, rather than executing its downstream use. Not every skill that produces
+an artifact needs a `to-` name.
+
 ### Model invoked
 
 The model can load these skills when their invocation conditions match the task. You can also invoke them explicitly.
