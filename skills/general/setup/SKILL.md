@@ -42,43 +42,11 @@ Summarise what's present and what's missing. Then take the sections in order. On
 
 Lead each section with the recommended answer so the user can accept it in a word. Give a one-line explainer only when the choice genuinely branches; skip questions already settled by existing configuration.
 
-**Section A: Issue tracker.**
+Read each reference when you reach its section, in this order:
 
-The issue tracker is where issues live for this repo. Skills need to know whether to call a CLI, write a markdown file under `.scratch/`, or follow some other workflow you describe. Pick the place you actually track work for this repo.
-
-If a project remote points at GitHub, propose GitHub. If it points at GitLab (including a self-hosted instance), propose GitLab. Otherwise, or if the user prefers, offer:
-
-- **GitHub**: issues live in the repo's GitHub Issues (uses the `gh` CLI)
-- **GitLab**: issues live in the repo's GitLab Issues (uses the `glab` CLI)
-- **Local markdown**: issues live as files under `.scratch/<feature>/` in this repo
-- **Other** (Jira, Linear, etc.): ask the user to describe the workflow in one paragraph
-
-Record the choice in `docs/agents/issue-tracker.md`. Resolve ambiguous remotes or a tracker in a different repository with the user. Include the template's "Wayfinding operations" section, adapted to the configured tracker. For another tracker, establish its project identifier and how to create, read, list, comment on, and close tickets; also record how to store a Wayfinder map, identify and type its children, record blocking, select the frontier, claim a ticket, and resolve it.
-
-**Triage label vocabulary.** Recommend the default roles from [triage-labels.md](triage-labels.md): `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, and `wontfix`. Ask whether to keep those strings; preserve any existing mapping or collect the user's overrides. Record the agreed mapping in `docs/agents/triage-labels.md`. Local implementation tickets use those strings in `Status:`; Wayfinder decision tickets instead use the tracker-specific lifecycle convention. Record required remote labels without creating them: setup writes documentation only.
-
-**Section B: Project docs.**
-
-Recommend the four-file baseline below. Preserve useful existing content; use the baseline files as short entry points when equivalent docs already own the procedures.
-
-| File | Purpose |
-| --- | --- |
-| `README.md` | What the project is, who it is for, and where to go next |
-| `docs/quickstart.md` | From a fresh checkout to running locally and verifying a change |
-| `docs/deployment.md` | How a change reaches a deployed environment or a distributed release, how to verify it, and how to roll it back |
-| `AGENTS.md` | Project-specific agent rules and conditional pointers to the docs |
-
-Keep the docs short, but concrete. The quickstart needs prerequisites, configuration, exact commands, and expected results. Deployment needs the platform, environments, release trigger, required access, verification, and rollback. Ask about missing operational facts; do not invent infrastructure or release procedures. If the project is not deployed, document its release/distribution workflow, or a brief "This project is not deployed or distributed" statement when neither applies.
-
-Document secret names and how to obtain access, never secret values. Mark any unresolved facts explicitly rather than presenting guesses as working instructions.
-
-**Section C: Domain docs.**
-
-Default to **single-context** (one root `GLOSSARY.md` + `docs/adr/`). Preserve an existing `GLOSSARY-MAP.md` layout. Offer **multi-context** only when exploration found genuinely distinct domain contexts; then confirm the layout and paths with the user.
-
-Propose the candidate terms and definitions, following [glossary.md](./glossary.md). Confirm them with the user before writing. Seed the glossary with agreed terms, not generic programming vocabulary or implementation details. If no terms can be established yet, use only the context heading, its description, and an empty `## Language` section. In a multi-context repo, establish the mapped glossaries rather than duplicating their terms in a root glossary.
-
-Record layout and consumer rules in `docs/agents/domain.md`. Establish the ADR location without creating placeholder ADRs or empty directories. Decisions get records only when there is a consequential, agreed trade-off to capture.
+- **Section A: Issue tracker.** Read [references/issue-tracker.md](references/issue-tracker.md) to configure the tracker and triage vocabulary.
+- **Section B: Project docs.** Read [references/project-docs.md](references/project-docs.md) to agree on the documentation baseline.
+- **Section C: Domain docs.** Read [references/domain-docs.md](references/domain-docs.md) to agree on glossary layout, terms, and decision-record locations.
 
 ### 3. Confirm and edit
 
@@ -125,15 +93,15 @@ Keep procedures in their owning docs. Link to them from the README instead of du
 
 Seed templates:
 
-- [readme.md](./readme.md): project overview and documentation links
-- [quickstart.md](./quickstart.md): local setup and verification
-- [deployment.md](./deployment.md): deployment or release workflow
-- [glossary.md](./glossary.md): confirmed domain terms
-- [issue-tracker-github.md](./issue-tracker-github.md): GitHub issue tracker
-- [issue-tracker-gitlab.md](./issue-tracker-gitlab.md): GitLab issue tracker
-- [issue-tracker-local.md](./issue-tracker-local.md): local-markdown issue tracker
-- [triage-labels.md](./triage-labels.md): implementation triage role mapping
-- [domain.md](./domain.md): domain doc consumer rules and layout
+- [assets/readme.md](assets/readme.md): project overview and documentation links
+- [assets/quickstart.md](assets/quickstart.md): local setup and verification
+- [assets/deployment.md](assets/deployment.md): deployment or release workflow
+- [assets/glossary.md](assets/glossary.md): confirmed domain terms
+- [assets/issue-tracker-github.md](assets/issue-tracker-github.md): GitHub issue tracker
+- [assets/issue-tracker-gitlab.md](assets/issue-tracker-gitlab.md): GitLab issue tracker
+- [assets/issue-tracker-local.md](assets/issue-tracker-local.md): local-markdown issue tracker
+- [assets/triage-labels.md](assets/triage-labels.md): implementation triage role mapping
+- [assets/domain.md](assets/domain.md): domain doc consumer rules and layout
 
 For other issue trackers, write `docs/agents/issue-tracker.md` from the confirmed workflow.
 
