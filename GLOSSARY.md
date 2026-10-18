@@ -15,6 +15,12 @@ and license notices.
 The kind of work a skill supports, such as software engineering or learning.
 Cross-domain skills support work across multiple task domains.
 
+## Work products
+
+**Artifact**:
+A recorded work product that can be reviewed, shared, or used independently
+of the conversation that produced it.
+
 ## Planning and tracking
 
 **Issue**:
