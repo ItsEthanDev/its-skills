@@ -53,7 +53,7 @@ Invoke these skills explicitly. Their metadata sets `disable-model-invocation: t
 | [dry-run](skills/general/dry-run/SKILL.md) | Preview a small edit as a diff and wait for approval before changing files. |
 | [ingest-document](skills/general/ingest-document/SKILL.md) | Extract project-relevant proposals from a document and ask which to adopt. |
 | [pause-work](skills/general/pause-work/SKILL.md) | Pause safely and save a resume checkpoint. |
-| [retro](skills/general/retro/SKILL.md) | Conduct a retrospective on a coding session. |
+| [retro](skills/general/retro/SKILL.md) | Conduct a retrospective on an agent session. |
 | [setup](skills/general/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
 | [to-questionnaire](skills/general/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
 | [wayfinder](skills/general/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |

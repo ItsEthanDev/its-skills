@@ -1,6 +1,6 @@
 # Provenance: retro
 
-**Classification: Adapted.** Near-verbatim retro with writing references retargeted.
+**Classification: Adapted.** Retrospective procedure retained, with engineering guidance extracted into a conditional reference.
 
 ## License scope
 
@@ -14,6 +14,7 @@ Retain this file and the applicable license files when distributing this directo
 
 | Local file | Classification | Pinned source | Evidence and changes |
 | --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/retro/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md) | Retrospective procedure retained; writing-for-agents calls retargeted to writing and its reference. |
+| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/retro/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md) | Four-step retrospective procedure retained; writing references retargeted, shared categories generalized, engineering material extracted, and recommendation-only boundary made explicit. |
+| `ENGINEERING.md` | Adapted | [Matt Pocock: `skills/engineering/retro/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md) | Engineering check and coding-standard categories, implementation-versus-review guidance, and standards-file advice extracted from the adapted local skill. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.
