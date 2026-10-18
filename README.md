@@ -116,6 +116,15 @@ The check requires every skill in the README catalog and a `LICENSE` and `PROVEN
 
 The same check runs in GitHub Actions on pushes and pull requests.
 
+## Contributor docs
+
+- [Quickstart](docs/quickstart.md): checkout prerequisites and local verification.
+- [Distribution](docs/deployment.md): consumption paths and release-verification gaps.
+- [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding conventions.
+- [Triage labels](docs/agents/triage-labels.md): implementation triage vocabulary.
+- [Domain docs](docs/agents/domain.md): glossary conventions.
+- [Glossary](GLOSSARY.md): agreed project terms.
+
 ## Project principles
 
 The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.

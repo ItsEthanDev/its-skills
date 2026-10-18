@@ -5,3 +5,26 @@ Before proposing or changing skills, supporting files, or distribution documenta
 When writing or editing skills, read [the writing skill](skills/writing/SKILL.md) and follow its agent-writing and skill-writing references.
 
 Before changing attribution or distributing copied or adapted material, read [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and the [README license section](README.md#license).
+
+## Agent skills
+
+### Getting started
+
+When setting up the checkout or verifying a change, read `docs/quickstart.md`.
+
+### Distribution
+
+Before planning a release or changing distribution, read `docs/deployment.md`.
+
+### Issue tracker
+
+Before reading, creating, or updating tickets, read `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Before applying implementation triage roles, read `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Before exploring a domain area or proposing a change, read `docs/agents/domain.md`
+and follow its glossary pointers.
