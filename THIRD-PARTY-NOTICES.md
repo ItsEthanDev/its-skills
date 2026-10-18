@@ -42,7 +42,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`prototype`](skills/general/prototype/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
 | [`repitch`](skills/general/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |
 | [`research`](skills/general/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
-| [`retro`](skills/general/retro/PROVENANCE.md) | Adapted | Near-verbatim retro with writing references retargeted. |
+| [`retro`](skills/general/retro/PROVENANCE.md) | Adapted | Retrospective procedure retained; engineering guidance extracted into a conditional reference. |
 | [`setup`](skills/general/setup/PROVENANCE.md) | Adapted | Matt setup and tracker templates expanded with original project-documentation templates. |
 | [`to-spec`](skills/engineering/to-spec/PROVENANCE.md) | Adapted | to-spec adapted to configured triage roles. |
 | [`tdd`](skills/engineering/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
