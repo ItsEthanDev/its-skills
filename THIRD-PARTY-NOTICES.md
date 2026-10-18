@@ -37,7 +37,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`improve-codebase-architecture`](skills/engineering/improve-codebase-architecture/PROVENANCE.md) | Adapted | Architecture review retargeted to local skills; report guidance copied verbatim. |
 | [`ingest-document`](skills/general/ingest-document/PROVENANCE.md) | Original | Local document-intake and adoption procedure. |
 | [`pause-work`](skills/general/pause-work/PROVENANCE.md) | Adapted | Matt handoff text combined with Poteto safe-pause guidance. |
-| [`pr`](skills/general/pr/PROVENANCE.md) | Copied | Verbatim PR guidance, including the restored upstream credit. |
+| [`pr`](skills/general/pr/PROVENANCE.md) | Adapted | PR guidance retained; evidence guidance generalized for executable behavior, prose, and research. Upstream credit preserved. |
 | [`propose-first`](skills/general/propose-first/PROVENANCE.md) | Original | Local investigation, recommendation, and approval procedure. |
 | [`prototype`](skills/general/prototype/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
 | [`repitch`](skills/general/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |

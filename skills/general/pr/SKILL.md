@@ -161,7 +161,7 @@ Concrete evidence that the change works. Show a before and after.
 
 Screenshots are S-tier - when the environment is set up for it and the change is visual.
 
-Execution-based evidence is A-tier. Test results, console output. Show the exact test that now fails and passes, using pseudocode.
+Match the evidence to the change. For executable behavior, show test results or console output. For prose or research, show relevant before-and-after excerpts, rendered output, or source checks. State what remains unverified.
 
 ### Merge Danger
 
