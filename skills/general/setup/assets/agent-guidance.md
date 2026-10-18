@@ -5,7 +5,8 @@ Before choosing a project workflow, consult the [documentation index](README.md#
 - Before using local tools or verifying work, read the quickstart.
 - Before pushing, releasing, deploying, or changing environment configuration, read deployment/distribution guidance for triggers, prerequisites, and required authorization.
 - Before reading, creating, or updating tickets, read issue-tracker guidance. Before assigning implementation triage roles, read the triage mapping.
-- Before exploring a domain area or proposing a change, read domain-language guidance and relevant decision records.
+- Before exploring a domain area, discussing or changing domain concepts, or proposing a change, read domain-language guidance. Follow its active terminology and approval practices, not just its definitions.
+- When resolving a consequential trade-off or offering, writing, or revisiting a decision record, read decision-record guidance and relevant records.
 - Before changing governed work, read the constitution. Surface conflicts rather than silently bypassing it; amendments follow its approval procedure.
 - Before writing or reviewing code, read coding standards and the applicable lint/format configuration.
 - Before committing, read commit guidance. A request to commit is not permission to push.

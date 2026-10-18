@@ -28,9 +28,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`codebase-design`](skills/engineering/codebase-design/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
 | [`commit`](skills/general/commit/PROVENANCE.md) | Original | Local commit procedure; no identifiable borrowing in the audited sources. |
 | [`constitute`](skills/general/constitute/PROVENANCE.md) | Original | Local governance skill and template. |
-| [`decision-records`](skills/general/decision-records/PROVENANCE.md) | Adapted | ADR branch extracted from domain-modeling; template copied verbatim. |
 | [`diagnosing-bugs`](skills/engineering/diagnosing-bugs/PROVENANCE.md) | Adapted | Diagnosis workflow retained; feedback-loop construction extracted and reproduction gate changed. |
-| [`domain-language`](skills/general/domain-language/PROVENANCE.md) | Adapted | Glossary branch extracted from domain-modeling; template copied verbatim. |
 | [`dry-run`](skills/general/dry-run/PROVENANCE.md) | Original | Local diff-preview and approval procedure. |
 | [`frontend-design`](skills/engineering/frontend-design/PROVENANCE.md) | Inspired | Original task-centered instructions informed by Anthropic frontend-design. |
 | [`implement`](skills/engineering/implement/PROVENANCE.md) | Adapted | Implementation workflow extended with verification gates. |
@@ -43,7 +41,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`repitch`](skills/general/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |
 | [`research`](skills/general/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
 | [`retro`](skills/general/retro/PROVENANCE.md) | Adapted | Retrospective procedure retained; engineering guidance extracted into a conditional reference. |
-| [`setup`](skills/general/setup/PROVENANCE.md) | Adapted | Matt setup sequence and tracker/domain guidance retained; intent-led features, self-contained project conventions, discovery, and local tooling setup added. |
+| [`setup`](skills/general/setup/PROVENANCE.md) | Adapted | Matt setup and domain-modeling guidance adapted into selectable features and project-owned terminology/decision-record methods; file-level sources retained. |
 | [`to-spec`](skills/engineering/to-spec/PROVENANCE.md) | Adapted | to-spec adapted to configured triage roles. |
 | [`tdd`](skills/engineering/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
 | [`teach`](skills/learning/teach/PROVENANCE.md) | Copied | Skill and all three format references are byte-identical to Matt's teach skill. |
@@ -59,6 +57,27 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 Matt's `pr` skill credits Dex Horthy / Humanlayer's `show-me`; that metadata is preserved in the local file. Humanlayer was not independently audited because this review is limited to the three requested projects. This is an upstream credit, not a claim that its separate licensing has been verified.
 
 Anthropic's frontend-design license is colocated as a source reference, not as the license of the original local skill. Its repository's third-party dependency notices concern components not included in this skill bundle; none of those components is distributed here. No frontend-design-specific `NOTICE` file was found in the pinned source tree.
+
+## Project guidance
+
+The former `domain-language` and `decision-records` bundles have been retired.
+Their methods were adapted from Matt Pocock's domain-modeling skill; their
+applicable MIT notice remains in `skills/general/setup/licenses/Matt-Pocock-MIT.txt`
+and in this collection-level notice. Removal of the bundles does not remove
+attribution for the material retained in setup or project documentation.
+
+- [Domain guidance](docs/agents/domain.md) adapts the active terminology practice from
+  [domain-modeling/SKILL.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md)
+  and definition rules from
+  [GLOSSARY-FORMAT.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/GLOSSARY-FORMAT.md).
+- [Decision-record guidance](docs/agents/decision-records.md) adapts the offer criteria from
+  [domain-modeling/SKILL.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md)
+  and the short record format, examples, and optional sections from
+  [ADR-FORMAT.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/ADR-FORMAT.md).
+
+Local additions define project approval, discovery, and maintenance. The setup
+bundle's provenance identifies the corresponding adapted templates; upstream
+authorship is not claimed for unrelated local policy.
 
 ## Matt Pocock's skills
 

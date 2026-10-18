@@ -33,8 +33,6 @@ You can also invoke them explicitly.
 | [alignment](skills/general/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
 | [commit](skills/general/commit/SKILL.md) | Stage and commit scoped changes using Conventional Commits. |
 | [constitute](skills/general/constitute/SKILL.md) | Establish or amend durable project constraints. |
-| [decision-records](skills/general/decision-records/SKILL.md) | Record consequential decisions in architecture decision records (ADRs). |
-| [domain-language](skills/general/domain-language/SKILL.md) | Sharpen project terminology and maintain a glossary. |
 | [pr](skills/general/pr/SKILL.md) | Write a pull request body. |
 | [propose-first](skills/general/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
 | [prototype](skills/general/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
@@ -127,6 +125,12 @@ setup skill. The README indexes selected guidance by purpose; agent instructions
 explain when to follow it. Future setup recommendations do not change existing
 project policy without an approved change.
 
+Domain-language and decision-record methods now live in setup's project-guidance
+templates rather than standalone skills. When updating an existing installation,
+establish or locate the project's own guidance and replace invocations of the
+retired skills before using migrated consumers. Scoped setup can help; it does
+not rewrite existing project conventions without approval.
+
 ### Nix
 
 Add a source-only input to your configuration flake:
@@ -191,8 +195,9 @@ The same check runs in GitHub Actions on pushes and pull requests.
 - [Distribution](docs/deployment.md): consumption paths and release-verification gaps.
 - [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding conventions.
 - [Triage labels](docs/agents/triage-labels.md): implementation triage vocabulary.
-- [Domain docs](docs/agents/domain.md): glossary conventions.
+- [Domain guidance](docs/agents/domain.md): active terminology practice, glossary format, and maintenance.
 - [Glossary](GLOSSARY.md): agreed project terms.
+- [Decision records](docs/agents/decision-records.md): criteria, format, approval, and record index.
 
 ## Project principles
 

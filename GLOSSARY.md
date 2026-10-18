@@ -2,6 +2,8 @@
 
 ItsSkills is a collection of reusable agent instructions and their supporting resources.
 
+See [Domain guidance](docs/agents/domain.md) for when to consult this glossary and how to propose, approve, or change definitions.
+
 ## Skills
 
 **Skill**:

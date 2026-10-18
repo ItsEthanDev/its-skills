@@ -26,5 +26,12 @@ Before applying implementation triage roles, read `docs/agents/triage-labels.md`
 
 ### Domain docs
 
-Before exploring a domain area or proposing a change, read `docs/agents/domain.md`
-and follow its glossary pointers.
+Before exploring a domain area, discussing or changing domain concepts, or proposing a change,
+find Domain guidance in the README's documentation index and follow its glossary pointers
+and active terminology practices.
+
+### Decision records
+
+When resolving a consequential trade-off or offering, writing, or revisiting a decision record,
+find Decision records in the README's documentation index and follow its criteria, format,
+and approval procedure. Read relevant accepted records before proposing conflicting work.
