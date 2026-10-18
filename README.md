@@ -47,7 +47,7 @@ Invoke these skills explicitly. Their metadata sets `disable-model-invocation: t
 | [setup](skills/setup/SKILL.md) | Configure project documentation, issue tracking, triage labels, and domain docs. |
 | [specify](skills/specify/SKILL.md) | Synthesize the conversation into a spec and publish it to the issue tracker. |
 | [teach](skills/teach/SKILL.md) | Teach a skill or concept through lessons in a persistent learning workspace. |
-| [ticket](skills/ticket/SKILL.md) | Break a plan or spec into tracer-bullet tickets with explicit blocking dependencies. |
+| [to-implementation-tickets](skills/to-implementation-tickets/SKILL.md) | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
 | [to-questionnaire](skills/to-questionnaire/SKILL.md) | Turn unresolved decisions into a questionnaire for someone with the missing knowledge. |
 | [wayfinder](skills/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
 

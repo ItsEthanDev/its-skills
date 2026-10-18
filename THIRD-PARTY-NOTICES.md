@@ -47,7 +47,7 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`specify`](skills/specify/PROVENANCE.md) | Adapted | to-spec renamed and adapted to configured triage roles. |
 | [`tdd`](skills/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
 | [`teach`](skills/teach/PROVENANCE.md) | Copied | Skill and all three format references are byte-identical to Matt's teach skill. |
-| [`ticket`](skills/ticket/PROVENANCE.md) | Adapted | to-tickets renamed and adapted to configured tracker conventions. |
+| [`to-implementation-tickets`](skills/to-implementation-tickets/PROVENANCE.md) | Adapted | to-tickets renamed and adapted to configured tracker conventions. |
 | [`to-questionnaire`](skills/to-questionnaire/PROVENANCE.md) | Adapted | Matt's questionnaire skill with "Grill the send" changed to "Align on the send". |
 | [`verifying-work`](skills/verifying-work/PROVENANCE.md) | Adapted | Poteto verification protocols and Matt feedback-loop guidance combined; HITL script copied. |
 | [`wayfinder`](skills/wayfinder/PROVENANCE.md) | Adapted | Wayfinding procedure adapted to local skills and tracker conventions. |

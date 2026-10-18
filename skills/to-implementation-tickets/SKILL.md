@@ -1,12 +1,12 @@
 ---
-name: ticket
-description: Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).
+name: to-implementation-tickets
+description: Break a plan, spec, or the current conversation into a set of tracer-bullet implementation tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).
 disable-model-invocation: true
 ---
 
-# To Tickets
+# To Implementation Tickets
 
-Break a plan, spec, or conversation into a set of **tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
+Break a plan, spec, or conversation into a set of **implementation tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
 The issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run the setup skill.
 
