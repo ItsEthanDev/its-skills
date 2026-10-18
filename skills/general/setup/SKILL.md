@@ -71,8 +71,6 @@ Read only the references for the selected features, when you reach them:
 
 Paths in the templates are starting points, not requirements. Preserve existing owners and agree on locations before writing. When adding guidance or changing its location, include documentation discovery in scope so people and agents can find it.
 
-For learning projects, establish only the workflows and preferences the user has agreed. Don't invent learning-map contracts, spaced-repetition integrations, or external-tool configuration that has not been designed or requested.
-
 ### 4. Confirm and edit
 
 Show the user a draft of all proposed additions and changes for the selected features, including index and agent-pointer changes. For tooling, include dependencies, configuration, commands, and CI changes. Separate a repository-wide reformat from tool setup; propose it as its own change.
