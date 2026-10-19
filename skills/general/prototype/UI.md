@@ -97,14 +97,14 @@ Surface the URL (and the `?variant=` keys). The user will flip through whenever 
 
 ### 6. Capture the answer and clean up
 
-Once the user has chosen a variant, capture the answer (which variant and why), then capture the prototype the way the [SKILL](SKILL.md) describes. Preserve the full set of variants as a primary source. Follow [ENGINEERING.md](ENGINEERING.md) for Git capture and implementation boundaries.
+Once the user has chosen a variant, capture the answer (which variant and why), then capture the prototype the way the [SKILL](SKILL.md) describes. Preserve the full set of variants as a primary source. Follow [ENGINEERING.md](ENGINEERING.md) for implementation boundaries.
 
 If implementation is separately in scope, fold the winner into the real code and keep prototype scaffolding out of production:
 
 - **Sub-shape A**: fold the winner into the existing page; drop the losing variants and the switcher from main.
 - **Sub-shape B**: promote the winning variant to a real route; drop the throwaway route and the switcher from main.
 
-A throwaway branch can retain the full set of variants when Git capture is appropriate, since variant components and the switcher left in the main branch rot fast and confuse the next reader.
+Variant components and the switcher left in the main branch rot fast and confuse the next reader.
 
 ## Anti-patterns
 

@@ -55,7 +55,7 @@ Send them the file, or open it for them. They'll click through the walkthroughs 
 
 ### 5. Capture the answer and the prototype
 
-Once the user has confirmed the answer, capture it and the prototype the way the [SKILL](SKILL.md) describes. Preserve the self-contained HTML file as a re-runnable primary source. If implementation is separately in scope, the validated reducer / machine / function set can lift into the real module; keep the HTML shell out of production. Follow [ENGINEERING.md](ENGINEERING.md) for Git capture and implementation boundaries.
+Once the user has confirmed the answer, capture it and the prototype the way the [SKILL](SKILL.md) describes. Preserve the self-contained HTML file as a re-runnable primary source. If implementation is separately in scope, the validated reducer / machine / function set can lift into the real module; keep the HTML shell out of production. Follow [ENGINEERING.md](ENGINEERING.md) for implementation boundaries.
 
 ## Anti-patterns
 
