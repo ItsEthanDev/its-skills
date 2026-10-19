@@ -193,7 +193,7 @@ The same check runs in GitHub Actions on pushes and pull requests.
 
 ## Project principles
 
-The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.
+The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Project standards](STANDARDS.md) describe the guiding qualities used to design and assess skills and their applicable downstream artifacts and practices. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.
 
 ## Acknowledgments
 

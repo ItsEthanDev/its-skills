@@ -2,6 +2,8 @@
 
 Before proposing or changing skills, supporting files, or distribution documentation, read [CONSTITUTION.md](CONSTITUTION.md).
 
+Before designing, changing, or reviewing project work, read [STANDARDS.md](STANDARDS.md) and assess the applicable standards.
+
 When writing or editing skills, read [the writing skill](skills/general/writing/SKILL.md) and follow its agent-writing and skill-writing references.
 
 Before changing attribution or distributing copied or adapted material, read [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and the [README license section](README.md#license).
