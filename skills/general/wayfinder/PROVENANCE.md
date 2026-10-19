@@ -14,6 +14,6 @@ Retain this file and the applicable license files when distributing this directo
 
 | Local file | Classification | Pinned source | Evidence and changes |
 | --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/wayfinder/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md) | Map, frontier, fog-of-war, and ticket lifecycle retained; grilling retargeted to alignment, tracker conventions clarified, and retired terminology/decision-record calls replaced by discovery of project-owned guidance. |
+| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/wayfinder/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md) | Map, frontier, fog-of-war, and ticket lifecycle retained; alignment handles interviewing, project-owned guidance supplies terminology/decision-record methods, and missing tracker guidance prompts for the map's destination. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

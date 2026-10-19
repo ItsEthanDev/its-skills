@@ -1,6 +1,6 @@
 # Decision records
 
-This index explains where to find consequential project decisions and how to record new ones. Read records relevant to the area being changed; surface conflicts with accepted decisions rather than silently overriding them.
+This guide explains when and how to record consequential project decisions. Read records relevant to the area being changed; surface conflicts with accepted decisions rather than silently overriding them. The [decision-record index](../adr/README.md) links to the records themselves.
 
 ## Conventions
 
@@ -51,10 +51,6 @@ Only include these when they add genuine value. Most records won't need them.
 - **Considered Options**: only when the rejected alternatives are worth remembering
 - **Consequences**: only when non-obvious downstream effects need to be called out
 
-## Records
-
-<Links to actual records, or: No decisions have been recorded yet. Do not create placeholder records.>
-
 ## Maintenance
 
 Add an index link when a record is accepted. A proposal is not an accepted decision; follow the acceptance process above before presenting it as one. Preserve the history and rationale when a decision is superseded, and reconcile guidance affected by the new decision. Changes to these conventions require <the project's agreed approval process>.
@@ -63,4 +59,4 @@ If guidance or a record moves, reconcile its index links and other pointers. Cre
 
 Adapted guidance and applicable notices: [Third-party notices](<relative-path-to-retained-notices>).
 
-<!-- Seed instructions: these criteria and the short format are proposed defaults, not mandatory conventions for every project. Confirm or adapt them to the user's intent and existing practices. Keep only examples relevant to the project, replacing them with concrete domain examples when useful. Resolve location, naming, acceptance, status/supersession, records, and maintenance placeholders; format examples are intentional instructional syntax. The generated project must contain the actual chosen criteria and format, not delegate them to a skill. Remove this comment before writing. -->
+<!-- Seed instructions: these criteria and the short format are proposed defaults, not mandatory conventions for every project. Confirm or adapt them to the user's intent and existing practices. Keep only examples relevant to the project, replacing them with concrete domain examples when useful. Resolve location, naming, acceptance, status/supersession, and maintenance placeholders; format examples are intentional instructional syntax. Adapt the link to the actual human-facing record index. The generated project must contain the actual chosen criteria and format, not delegate them to a skill. Remove this comment before writing. -->

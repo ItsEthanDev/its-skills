@@ -1,17 +1,18 @@
 # Commit guidance
 
-Establish how this Git-managed project handles commits. This applies to prose, research, learning materials, and software alike. A project that does not use Git does not need a commit policy.
+Establish the commit conventions for this Git-managed project. This applies to prose, research, learning materials, and software alike. A project that does not use Git does not need commit guidance.
 
-Read existing project and personal instructions before proposing changes. Ask what is not already settled:
+Read existing project and personal instructions before proposing changes. Preserve explicit policy unless changing it is in scope. The agent-navigation seed supplies the proposed automatic-commit and staging-scope instructions for Git projects; keep those in the harness-loaded entry point, not in a second copy here.
 
-- When agents commit: on request, at agreed checkpoints, after completed work, or another explicit policy.
-- How completed work is selected and unrelated changes are kept out of the commit.
+Ask what is not already settled:
+
 - Commit-message format, including whether to use Conventional Commits or the project's own format.
 - Required verification or review, and what to do when a prerequisite is blocked.
 - Branch restrictions and how commit requests differ from permission to push.
+- How changes to these conventions are approved.
 
-Don't select automatic commits or a message format merely because this skill has a preference. Surface conflicts with applicable instructions; a project file cannot silently override higher-priority constraints. Record an intentional project policy, not a copy of the operator's personal default that nobody agreed to adopt.
+Use the commit-guidance seed. Preserve the safeguards against redundant checks, inferring conventions from incidental history, and treating a commit request as push authorization. Keep the result-reporting instruction so contributors report the commit hash and subject or the exact reason the commit failed.
 
-Use the commit-guidance seed to write a procedure contributors can follow without a commit skill: inspect the relevant changes, satisfy the agreed prerequisites, stage the intended paths, create the agreed message, and report the result. Adapt the procedure to the policy rather than retaining template defaults blindly.
+Don't impose a message format merely because this skill has a preference. Surface conflicts with applicable instructions; a project file cannot silently override higher-priority constraints.
 
 Document push/deployment effects by reference to their owners. Commit guidance is not permission to push or bypass protected-branch and deployment rules. Creating it does not authorize committing unrelated work during setup.

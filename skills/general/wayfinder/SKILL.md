@@ -16,7 +16,7 @@ Wayfinder is **planning** by default: each ticket resolves a decision, and the m
 
 Find the project's domain-language and decision-record guidance through its README documentation index and agent instructions. Follow those owners when resolving terms, offering or recording consequential decisions, and revisiting accepted decisions; use their locations, formats, and approval procedures rather than prescribing new ones here.
 
-If required guidance is missing or ambiguous, explain the gap and ask how to proceed before the affected work. Distinguish that from a workflow the project explicitly does not use; optional guidance does not block unrelated work. Do not invent policy or create guidance merely to proceed. The user can request scoped setup if they want to establish it.
+If required guidance is missing or ambiguous, explain the gap and ask how to proceed before the affected work. Distinguish that from a workflow the project explicitly does not use; optional guidance does not block unrelated work. Do not invent policy or create guidance merely to proceed. The user can run the setup skill if they want to establish that guidance.
 
 ## Refer by name
 
@@ -28,7 +28,7 @@ The map is the canonical artifact: a single issue labelled `wayfinder:map` on a 
 
 The map is an **index**, not a store. It lists the decisions made and points at the tickets that hold their detail; a decision lives in exactly one place, its ticket, so the map never restates it, only gists it and links.
 
-**Where the map, its child tickets, blocking, and frontier queries physically live is tracker-specific.** The issue tracker should have been provided to you. If not, tell the user to run the setup skill. Consult the tracker doc's "Wayfinding operations" section for how _this_ repo expresses them. If no tracker has been provided, default to the local-markdown tracker.
+The issue tracker should have been provided to you. If not, ask where the map and its tickets should live. The user can run the setup skill if they want to establish that guidance.
 
 ### The map body
 

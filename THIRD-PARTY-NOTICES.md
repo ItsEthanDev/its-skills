@@ -26,8 +26,6 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 | [`alignment`](skills/general/alignment/PROVENANCE.md) | Copied | Renamed copy of grilling; the interview procedure is verbatim. |
 | [`code-review`](skills/engineering/code-review/PROVENANCE.md) | Adapted | Near-verbatim code-review with the setup reference retargeted. |
 | [`codebase-design`](skills/engineering/codebase-design/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
-| [`commit`](skills/general/commit/PROVENANCE.md) | Original | Local commit procedure; no identifiable borrowing in the audited sources. |
-| [`constitute`](skills/general/constitute/PROVENANCE.md) | Original | Local governance skill and template. |
 | [`diagnosing-bugs`](skills/engineering/diagnosing-bugs/PROVENANCE.md) | Adapted | Diagnosis workflow retained; feedback-loop construction extracted and reproduction gate changed. |
 | [`dry-run`](skills/general/dry-run/PROVENANCE.md) | Original | Local diff-preview and approval procedure. |
 | [`frontend-design`](skills/engineering/frontend-design/PROVENANCE.md) | Inspired | Original task-centered instructions informed by Anthropic frontend-design. |
@@ -60,11 +58,9 @@ Anthropic's frontend-design license is colocated as a source reference, not as t
 
 ## Project guidance
 
-The former `domain-language` and `decision-records` bundles have been retired.
-Their methods were adapted from Matt Pocock's domain-modeling skill; their
-applicable MIT notice remains in `skills/general/setup/licenses/Matt-Pocock-MIT.txt`
-and in this collection-level notice. Removal of the bundles does not remove
-attribution for the material retained in setup or project documentation.
+The terminology and decision-record methods in setup and project guidance adapt
+Matt Pocock's domain-modeling skill. Their applicable MIT notice is included in
+`skills/general/setup/licenses/Matt-Pocock-MIT.txt` and in this collection-level notice.
 
 - [Domain guidance](docs/agents/domain.md) adapts the active terminology practice from
   [domain-modeling/SKILL.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md)

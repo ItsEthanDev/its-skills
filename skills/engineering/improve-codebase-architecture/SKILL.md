@@ -22,7 +22,7 @@ This command is _informed_ by the project's domain model and built on a shared d
 - If the user named a direction (a module, a subsystem, a pain point), take it, and skip the inference below.
 - Otherwise, walk back a good stretch of the commit history (`git log --oneline`) to find the codebase's hot spots, the files and areas that keep coming up, and let those paths pull your attention first. If the changes are scattered with no clear hot spot, widen the net.
 
-Read the project's domain-language guidance, relevant glossaries, decision-record guidance, and any records in the area you're touching first. Follow the project's formats and approval procedures. If required guidance is missing or ambiguous, explain the gap and ask how to proceed before the affected work. If the project explicitly does not use a workflow, don't create it merely to run this command; optional guidance does not block unrelated work.
+Read the project's domain-language guidance, relevant glossaries, decision-record guidance, and any records in the area you're touching first. Follow the project's formats and approval procedures. If required guidance is missing or ambiguous, explain the gap and ask how to proceed before the affected work. If the project explicitly does not use a workflow, don't create it merely to run this command; optional guidance does not block unrelated work. The user can run the setup skill if they want to establish that guidance.
 
 Then spawn a sub-agent to walk the codebase. Don't follow rigid heuristics; explore organically and note where you experience friction:
 

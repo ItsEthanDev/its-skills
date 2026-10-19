@@ -8,8 +8,6 @@ Actively build and sharpen the project's domain language as you design. This is 
 
 When your output names a domain concept (in an issue title, a proposal, a hypothesis, or a work product), use the term as defined in the relevant glossary. Don't drift to synonyms the glossary explicitly avoids.
 
-If vocabulary guidance required for the task cannot be found, explain the gap and ask how to proceed. Do not invent project terminology to fill it.
-
 ## File structure
 
 <The agreed glossary locations and context relationships. For a single context, one glossary is usually enough. For multiple contexts, link a glossary map that lists each context, its glossary, and how the contexts relate.>
@@ -55,7 +53,9 @@ _Avoid_: <Synonyms the project has agreed not to use; omit if none>
 
 ## Maintenance and approval
 
-Changes follow <the project's agreed approval process for terms, definitions, and this guidance>. Preserve established definitions unless the change is agreed, and reconcile affected guidance when terminology changes.
+Record a definition when the user agrees to it; do not ask for the same approval again. <Any explicit project-specific additional approval requirement, or: No separate approval is required to record an agreed definition.>
+
+Preserve established definitions unless the change is agreed, and reconcile affected guidance when terminology changes. Changes to this guide follow <the project's agreed approval process for this guidance>.
 
 Keep each accepted term in its owning context glossary. Keep this guide and the documentation index linked when owners move. If decision records are used, follow their separate guidance for consequential decisions rather than recording them as definitions.
 

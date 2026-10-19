@@ -5,11 +5,9 @@
 **Ratified:** <Approval date, or not yet ratified>
 **Last amended:** <Date>
 
-## Authority and use
+## Purpose and scope
 
-This constitution governs <scope of project work>. Contributors consult it before proposing or changing governed work and assess their work against the principles and compliance signals below. A proposal that violates an accepted principle is not compliant; surface the conflict rather than silently bypassing the rule.
-
-This document does not override higher-priority instructions or grant permission for consequential actions. Draft principles are proposals, not adopted policy.
+This constitution establishes durable constraints for <scope of project work>.
 
 ## Principles
 
@@ -23,8 +21,8 @@ The project MUST <accepted, actionable durable rule>.
 
 ## Governance
 
-- Amendments require approval from <maintainer or approval role> through <ratification procedure> before they take effect. Agents may propose amendments; proposing one does not ratify it.
-- Approved amendments update the version and amendment date. Record ratification when the constitution is adopted.
-- A changed or removed principle must be reconciled with dependent specifications, plans, instructions, and checks.
+- Amendments require approval from <maintainer or approval role> through <ratification procedure> before they take effect. Draft amendments do not change accepted principles.
+- Approved amendments update the version and amendment date. Record ratification when this constitution is adopted.
+- A changed or removed principle MUST be reconciled with dependent specifications, plans, instructions, and checks.
 
-<!-- Seed instructions: confirm authority, approval procedure, and initial principles with the user. Preserve existing governance owners. Replace every retained placeholder; do not invent rules to fill the template. Remove this comment before writing. -->
+<!-- Seed instructions: confirm scope, approval procedure, and initial principles with the user. Preserve existing governance owners. Keep agent operating instructions in agent constitution guidance, not in this human-facing document. Replace every retained placeholder and omit unnecessary rationale; do not invent rules to fill the template. Remove this comment before writing. -->

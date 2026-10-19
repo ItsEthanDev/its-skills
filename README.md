@@ -31,8 +31,6 @@ You can also invoke them explicitly.
 | --- | --- |
 | [action-authorization](skills/general/action-authorization/SKILL.md) | Resolve permission for consequential actions and record scoped grants or denials. |
 | [alignment](skills/general/alignment/SKILL.md) | Stress-test a plan, decision, or idea with the user. |
-| [commit](skills/general/commit/SKILL.md) | Stage and commit scoped changes using Conventional Commits. |
-| [constitute](skills/general/constitute/SKILL.md) | Establish or amend durable project constraints. |
 | [pr](skills/general/pr/SKILL.md) | Write a pull request body. |
 | [propose-first](skills/general/propose-first/SKILL.md) | Propose a solution and wait for approval before implementing. |
 | [prototype](skills/general/prototype/SKILL.md) | Build a throwaway prototype to answer a design question. |
@@ -124,12 +122,6 @@ The generated guidance belongs to the project and remains usable without the
 setup skill. The README indexes selected guidance by purpose; agent instructions
 explain when to follow it. Future setup recommendations do not change existing
 project policy without an approved change.
-
-Domain-language and decision-record methods now live in setup's project-guidance
-templates rather than standalone skills. When updating an existing installation,
-establish or locate the project's own guidance and replace invocations of the
-retired skills before using migrated consumers. Scoped setup can help; it does
-not rewrite existing project conventions without approval.
 
 ### Nix
 

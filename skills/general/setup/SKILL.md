@@ -18,7 +18,7 @@ The project owns the resulting conventions. Its documentation must explain how t
 
 Look at the current project to understand its starting state. Read whatever exists; don't assume:
 
-- `README.md` and `AGENTS.md` at the project root: what do they already cover? Is there a documentation index or an `## Agent skills` section? Follow existing links before assuming guidance is missing.
+- `README.md` and `AGENTS.md` at the project root: what do they already cover? Is there a documentation index? Follow existing links before assuming guidance is missing.
 - Existing governance, coding standards, commit guidance, and decision records: where do accepted conventions live, and how are changes approved?
 - Quickstart, deployment, and equivalent documentation elsewhere: are there working instructions worth preserving or linking to?
 - In a Git repository, `git remote -v` and `.git/config`: where is it hosted? Which remote tracks the project?
@@ -63,8 +63,8 @@ Read only the references for the selected features, when you reach them:
 | Issue tracker | [references/issue-tracker.md](references/issue-tracker.md) | [GitHub](assets/issue-tracker-github.md), [GitLab](assets/issue-tracker-gitlab.md), [local markdown](assets/issue-tracker-local.md) |
 | Implementation triage | [references/triage-labels.md](references/triage-labels.md) | [Triage labels](assets/triage-labels.md) |
 | Domain language | [references/domain-docs.md](references/domain-docs.md) | [Glossary](assets/glossary.md), [consumer guidance](assets/domain.md) |
-| Decision records | [references/decision-records.md](references/decision-records.md) | [Decision-record index](assets/decision-records.md) |
-| Constitution | [references/constitution.md](references/constitution.md) | [Constitution](assets/constitution.md) |
+| Decision records | [references/decision-records.md](references/decision-records.md) | [Record index](assets/decision-record-index.md), [agent guidance](assets/decision-records.md) |
+| Constitution | [references/constitution.md](references/constitution.md) | [Constitution](assets/constitution.md), [agent guidance](assets/constitution-guidance.md) |
 | Coding standards | [references/coding-standards.md](references/coding-standards.md) | [Coding standards](assets/coding-standards.md) |
 | Commit guidance | [references/commit-guidance.md](references/commit-guidance.md) | [Commit guidance](assets/commit-guidance.md) |
 | Linting and formatting | [references/linting-formatting.md](references/linting-formatting.md) | Use the selected tools' current configuration formats. |
@@ -77,15 +77,15 @@ Show the user a draft of all proposed additions and changes for the selected fea
 
 For migration, show what is being replaced, what depends on the old convention, and how those consumers and links will be reconciled. Follow the project's existing amendment and approval procedure; approving setup does not bypass it.
 
-Use the seed templates as starting points, adapting paths and commands to the project. Show unresolved facts and any instructions you could not verify. Let the user edit before writing. Proceed only after they approve the draft.
+Use the seed templates as starting points, adapting paths and commands to the project. Preserve their strong guidance, conventions, and wording where applicable rather than summarizing away the methods. Show unresolved facts and any instructions you could not verify. Let the user edit before writing. Proceed only after they approve the draft.
 
 ### 5. Write and verify
 
 Preserve user edits and unrelated sections in every existing file. On reruns, make only the agreed changes; switching trackers must not move or delete existing issues. Update existing sections in-place rather than appending duplicates.
 
-Keep procedures in their owning docs. Link to them from the README instead of duplicating them in `AGENTS.md`. Write the conventions and their maintenance instructions into the project: future contributors must not need this skill or its templates to understand the rules.
+Keep procedures in their owning docs. Index human-facing artifacts under Project documentation and agent procedures under Agent documentation in the README. Put direct, conditional links to the selected guidance in the harness-loaded instruction file rather than duplicate the procedures there. Write the conventions and their maintenance instructions into the project: future contributors must not need this skill or its templates to understand the rules.
 
-Check that all selected docs exist in the agreed locations, local links resolve, template placeholders are replaced, and commands match the project's scripts and configuration. Follow discovery from the README through the relevant guidance; confirm the agent entry point tells agents when to consult it. For domain language and decision records, confirm a contributor can apply the selected methods, format, and maintenance/approval rules using only project documentation. No required procedure may exist only in this skill, its references, or removable template comments. Leave unselected features alone.
+Check that all selected docs exist in the agreed locations, local links resolve, template placeholders are replaced, and commands match the project's scripts and configuration. Follow discovery from both README sections and the direct harness pointers through the relevant guidance. Confirm that human-facing artifacts and agent procedures are separated, their links resolve, and a contributor can apply the selected methods, format, and maintenance/approval rules using only project documentation. No required procedure may exist only in this skill, its references, or removable template comments. Leave unselected features alone.
 
 Run safe local checks when feasible; record what was actually verified. Setup may write documentation and configure approved local tooling. Before executing dependency installation or checks, inspect lifecycle hooks and command effects. Obtain separate authorization for effects outside the approved scope. Do not deploy, provision infrastructure, publish releases, activate systems, or mutate the external tracker to test the instructions. Documenting a push or deployment procedure is not permission to execute it.
 
