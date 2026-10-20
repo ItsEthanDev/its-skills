@@ -21,7 +21,7 @@ Identify and state which question is being answered, using the user's prompt, th
 
 These branches produce very different artifacts, so getting this wrong wastes the whole prototype. If the question is genuinely ambiguous and the user isn't reachable, default to whichever branch better matches the surrounding work and state the assumption at the top of the prototype.
 
-Before handing it over, record the question, necessary assumptions, and a context pointer to the prototype in the relevant issue. Follow the caller's recording convention, including wayfinder's asset link when working a prototype decision ticket. Without an issue tracker, use a project record or put the context alongside the prototype. A few lines are enough; add instructions for inspecting it only when they aren't obvious.
+Before handing it over, record the question, necessary assumptions, and a prototype pointer in the relevant issue, following the caller's recording convention. Without a tracker, keep this context alongside the prototype. A few lines are enough.
 
 ## Rules that apply to all branches
 
