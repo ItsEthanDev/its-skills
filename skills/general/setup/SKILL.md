@@ -71,6 +71,8 @@ Read only the references for the selected features, when you reach them:
 
 Paths in the templates are starting points, not requirements. Preserve existing owners and agree on locations before writing. When adding guidance or changing its location, include documentation discovery in scope so people and agents can find it.
 
+When a selected integration depends on conventions still being designed, identify and defer that integration rather than inventing its contract. Continue independent setup work; an unsettled extension does not block the common features.
+
 ### 4. Confirm and edit
 
 Show the user a draft of all proposed additions and changes for the selected features, including index and agent-pointer changes. For tooling, include dependencies, configuration, commands, and CI changes. Separate a repository-wide reformat from tool setup; propose it as its own change.
