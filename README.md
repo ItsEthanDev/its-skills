@@ -15,10 +15,6 @@ Skills live under `skills/<task-domain>/<skill>/`. Classify by purpose, not by
 implementation tools or occasional reuse. Each skill has one canonical home;
 workflows in other domains can use it without copying it.
 
-The lists below describe current instructions. Cross-domain instruction changes
-and the dependency audit are complete; their evidence and limits are recorded in
-[task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
-
 ### General
 
 Cross-domain work, including Git collaboration on code, prose, or other files.
@@ -88,14 +84,12 @@ Software design, implementation, review, diagnosis, and testing.
 
 ## Installation
 
-The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. Published experimental revision `1ff4cc9` passed CLI installation and source-only Nix/Pi discovery and full-bundle checks; see [installation verification](https://github.com/ItsEthanDev/its-skills/issues/16) for evidence and limits. The unpinned examples below target main; consumption of the nested layout through those examples still needs verification after the merge.
+The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. The unpinned examples below target main; select a revision containing the skills you need.
 
 A task-domain directory is an ownership and browsing boundary, not a self-contained
 installation. Include the general skills required by selected workflows. Selection
 uses existing CLI options or Nix paths; there is no custom installer or dependency
-resolver. The dependency audit is complete; maintained workflow-dependency and
-group-selection guidance is deferred. Findings remain in the
-[cross-domain audit](https://github.com/ItsEthanDev/its-skills/issues/15).
+resolver.
 
 ### Individual skills
 
@@ -187,7 +181,6 @@ The same check runs in GitHub Actions on pushes and pull requests.
 
 - [Quickstart](docs/quickstart.md): prerequisites and local verification.
 - [Distribution](docs/deployment.md): source publication, verification, and limits.
-- [Commit guidance](docs/commits.md): prerequisites, messages, branches, and reporting.
 - [Constitution](CONSTITUTION.md): binding project constraints and amendment rules.
 - [Project standards](STANDARDS.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
@@ -196,6 +189,7 @@ The same check runs in GitHub Actions on pushes and pull requests.
 ## Agent documentation
 
 - [Agent instructions](AGENTS.md): conditional pointers and commit behavior.
+- [Commit guidance](docs/agents/commits.md): agent prerequisites, messages, branches, and reporting.
 - [Constitution guidance](docs/agents/constitution.md): applying and amending governance.
 - [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding.
 - [Triage labels](docs/agents/triage-labels.md): implementation-role mappings.

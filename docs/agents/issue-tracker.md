@@ -1,10 +1,23 @@
 # Issue tracker: GitHub
 
-Issues live in `ItsEthanDev/its-skills`. Use `gh` with an explicit repository
-argument, or the repository-qualified API paths below.
+The issue tracker is [GitHub Issues](https://github.com/ItsEthanDev/its-skills/issues)
+for `ItsEthanDev/its-skills`. Use `gh` with an explicit repository argument, or the
+repository-qualified API paths below.
 
 Authentication must be configured before remote operations. Documentation of
 an operation is not authorization to execute it.
+
+## Standing documentation
+
+Keep standing project documentation about the current design and procedures.
+Historical verification evidence, migration progress, and transitional work belong
+in the issue tracker. Keep accepted conventions, required procedures, and decision
+rationale in their project-owned documents so the tracker is dispensable.
+
+Link to the tracker only for general discovery, as in this guide's introduction.
+Standing documentation must not link to specific issues or pull requests, or
+direct readers to search the tracker for topic-specific context. These
+restrictions do not apply to tickets or other active work in the tracker.
 
 ## Common operations
 
@@ -61,7 +74,8 @@ that native relationships are unavailable.
 
 ## Wayfinding operations
 
-Refer to maps and tickets by linked titles in human-facing prose.
+In tracker discussions and work reports, refer to maps and tickets by linked
+titles. Standing documentation follows the documentation rules above.
 
 - **Map:** one issue labelled `wayfinder:map`, containing Destination, Notes,
   Decisions so far, Not yet specified, and Out of scope.
@@ -103,8 +117,9 @@ Required remote labels are the five implementation labels and the five
 ## Verification limits
 
 See the [quickstart](../quickstart.md#verify-a-change) for local repository
-verification. Authenticated tracker operations, label existence, and native
-relationship operations have not been exercised during setup.
+verification. Local checks do not establish authentication, remote label
+existence, or support for native relationship operations. Confirm the relevant
+capabilities before using them.
 
 ## Maintenance
 

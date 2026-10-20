@@ -18,6 +18,8 @@ Use [Project documentation](README.md#project-documentation) and
   read [distribution guidance](docs/deployment.md).
 - Before reading, creating, or updating tickets, read
   [issue-tracker guidance](docs/agents/issue-tracker.md).
+- Before writing standing project documentation, read
+  [tracker boundaries](docs/agents/issue-tracker.md#standing-documentation).
 - Before assigning implementation triage roles, read
   [triage labels](docs/agents/triage-labels.md).
 - Before exploring a domain area, discussing or changing domain concepts, or
@@ -29,7 +31,7 @@ Use [Project documentation](README.md#project-documentation) and
 - Before changing governed work or proposing an amendment, read the
   [constitution](CONSTITUTION.md) and
   [agent constitution guidance](docs/agents/constitution.md).
-- Before committing, read [commit guidance](docs/commits.md).
+- Before committing, read [commit guidance](docs/agents/commits.md).
 
 Follow each document's maintenance and approval rules.
 

@@ -15,11 +15,6 @@ one canonical home. A task-domain directory is not a self-contained installation
 include the general skills required by the selected workflows, using existing CLI
 selection options or Nix paths. There is no custom installer or dependency resolver.
 
-Instruction generalization, dependency auditing, and nested-layout consumption
-checks are complete under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
-That prerequisite is satisfied; separate learning-suite design and implementation
-criteria still apply. Maintained workflow-dependency presentation remains deferred.
-
 Each distributed bundle must retain its supporting resources and notices.
 Follow the [license guidance](../README.md#license) and
 [third-party notices](../THIRD-PARTY-NOTICES.md).
@@ -31,7 +26,6 @@ Pinned consumers adopt changes by selecting another revision.
 
 There is no automated release workflow. Tags and GitHub releases are optional,
 separately authorized publication actions; no versioning scheme is established.
-Do not infer policy from the existing v0.1 tag.
 
 Repository CI checks consistency on pushes and pull requests; it does not publish
 a package or activate a consumer configuration.
@@ -41,7 +35,8 @@ Before publication:
 1. Identify the exact candidate revision, target branch or tag, and remote.
 2. Complete the applicable [quickstart checks](quickstart.md#verify-a-change) and review.
 3. Verify each consumption path affected by the change.
-4. Record the revision, commands, tool versions, results, and verification limits.
+4. Record the revision, commands, tool versions, results, and verification limits
+   in the issue tracker.
 5. Obtain explicit authorization for the publication action.
 
 Directory or bundle changes require affected discovery and installation checks.
@@ -58,18 +53,19 @@ or successful remote CI.
 
 Run the [local checks](quickstart.md#verify-a-change) before publication.
 
-Published experimental revision `1ff4cc988f4e2d98469126ea047ac4abec46d9e7`
-passed skills CLI discovery of all 27 identifiers, representative installations,
-full-bundle comparisons of all 148 files, source-only Nix fetching, and actual Pi
-resource discovery. [Installation verification](https://github.com/ItsEthanDev/its-skills/issues/16)
-records tool versions, selections, and limits. These checks did not exercise
-model behavior, Home Manager activation, or full configuration builds.
+Exercise each affected consumption path against the candidate revision:
 
-The unpinned README examples target main, which did not contain the nested layout
-at verification time. Recheck those paths after the merge before claiming they
-consume the new layout. Later source changes are not covered by the recorded
-revision's results: exercise each affected consumption path and inspect the bundle
-for instructions, supporting resources, provenance, and applicable license files.
+- For skills CLI changes, check discovery and representative installations in an
+  isolated location.
+- For Nix changes, check source-only fetching of the candidate revision.
+- For Pi discovery changes, check actual resource discovery with the candidate
+  revision selected in the test configuration.
+- Inspect each affected installed or fetched bundle for its instructions,
+  supporting resources, provenance, and applicable license files.
+
+Success means the affected skills are discoverable and their bundles are complete.
+These checks do not establish model behavior, Home Manager activation, or full
+consumer configuration builds.
 
 ## Recovery
 
@@ -78,6 +74,7 @@ No project recovery procedure is established.
 ## Maintenance
 
 Changes to this workflow require explicit project-maintainer approval.
-Keep consumption instructions, verification evidence, and documentation pointers
-consistent. Documentation does not authorize publication, remote configuration
+Keep consumption instructions and documentation pointers consistent. Keep
+run-specific verification evidence in the issue tracker, not this runbook.
+Documentation does not authorize publication, tracker writes, remote configuration
 changes, or consumer activation.

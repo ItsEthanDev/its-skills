@@ -1,10 +1,10 @@
-# Commit guidance
+# Agent commit guidance
 
-Consult this guide before committing project changes.
+Read this guide before committing project changes.
 
 ## Prerequisites
 
-Complete the applicable [quickstart verification](quickstart.md#verify-a-change)
+Complete the applicable [quickstart verification](../quickstart.md#verify-a-change)
 and review changed work against the constitution and applicable project guidance.
 No separate review ceremony is required.
 
@@ -31,7 +31,7 @@ and explicit instructions.
 
 A request to commit does not imply permission to push. Before an authorized
 push, verify the branch, remote, and consequential effects described in
-[distribution guidance](deployment.md). Surface conflicting instructions rather
+[distribution guidance](../deployment.md). Surface conflicting instructions rather
 than treating this guide as an override.
 
 ## Maintenance
