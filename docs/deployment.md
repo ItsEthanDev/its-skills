@@ -16,9 +16,9 @@ include the general skills required by the selected workflows, using existing CL
 selection options or Nix paths. There is no custom installer or dependency resolver.
 
 Instruction generalization, dependency auditing, and nested-layout consumption
-checks remain tracked under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
-That issue stays open until its required follow-ups are resolved; learning-suite
-implementation remains gated on that work.
+checks are complete under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
+That prerequisite is satisfied; separate learning-suite design and implementation
+criteria still apply. Maintained workflow-dependency presentation remains deferred.
 
 Each distributed bundle must retain its supporting resources and notices.
 Follow the [license guidance](../README.md#license) and
@@ -40,13 +40,18 @@ receive later source changes when reinstalling or updating.
 
 Run the [local checks](quickstart.md#verify-a-change) before publication.
 
-End-to-end published-source installation verification remains unverified for
-both consumption paths. The nested layout also needs executable discovery and
-full-bundle selection checks through the skills CLI and source-only Nix/Pi path;
-source inspection alone does not establish successful consumption. Before claiming
-a distribution works, exercise each affected path and inspect the installed bundle
-for instructions, supporting
-resources, provenance, and applicable license files.
+Published experimental revision `1ff4cc988f4e2d98469126ea047ac4abec46d9e7`
+passed skills CLI discovery of all 27 identifiers, representative installations,
+full-bundle comparisons of all 148 files, source-only Nix fetching, and actual Pi
+resource discovery. [Installation verification](https://github.com/ItsEthanDev/its-skills/issues/16)
+records tool versions, selections, and limits. These checks did not exercise
+model behavior, Home Manager activation, or full configuration builds.
+
+The unpinned README examples target main, which did not contain the nested layout
+at verification time. Recheck those paths after the merge before claiming they
+consume the new layout. Later source changes are not covered by the recorded
+revision's results: exercise each affected consumption path and inspect the bundle
+for instructions, supporting resources, provenance, and applicable license files.
 
 ## Recovery
 

@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 
-The issue tracker and triage label vocabulary should have been provided to you. If not, tell the user to run the setup skill.
+Before reading tracker issues or publishing the spec, find and read the project's issue-tracker and implementation-triage guidance through its README documentation index and agent instructions. Follow the configured tracker operations, locations, and role mappings. If required guidance is missing or ambiguous, explain the gap and ask how to proceed; the user can run the setup skill to establish it.
 
 ## Process
 
@@ -16,7 +16,7 @@ The issue tracker and triage label vocabulary should have been provided to you. 
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below, then publish it to the project issue tracker. Apply the configured label for the `ready-for-agent` triage role from `docs/agents/triage-labels.md` (or its `Status:` value for a local spec) - no need for additional triage.
+3. Write the spec using the template below, then publish it to the project issue tracker. Apply the configured label for the `ready-for-agent` triage role from the project's implementation-triage guidance (or its `Status:` value for a local spec) - no need for additional triage.
 
 <spec-template>
 

@@ -16,7 +16,8 @@ implementation tools or occasional reuse. Each skill has one canonical home;
 workflows in other domains can use it without copying it.
 
 The lists below describe current instructions. Cross-domain instruction changes
-and an audit remain open under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
+and the dependency audit are complete; their evidence and limits are recorded in
+[task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
 
 ### General
 
@@ -87,13 +88,14 @@ Software design, implementation, review, diagnosis, and testing.
 
 ## Installation
 
-The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. End-to-end installation verification against the published repository is pending publication.
+The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. Published experimental revision `1ff4cc9` passed CLI installation and source-only Nix/Pi discovery and full-bundle checks; see [installation verification](https://github.com/ItsEthanDev/its-skills/issues/16) for evidence and limits. The unpinned examples below target main; consumption of the nested layout through those examples still needs verification after the merge.
 
 A task-domain directory is an ownership and browsing boundary, not a self-contained
 installation. Include the general skills required by selected workflows. Selection
 uses existing CLI options or Nix paths; there is no custom installer or dependency
-resolver. The dependency audit and verified group-selection commands remain open
-under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
+resolver. The dependency audit is complete; maintained workflow-dependency and
+group-selection guidance is deferred. Findings remain in the
+[cross-domain audit](https://github.com/ItsEthanDev/its-skills/issues/15).
 
 ### Individual skills
 
