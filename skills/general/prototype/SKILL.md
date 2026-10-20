@@ -1,26 +1,33 @@
 ---
 name: prototype
-description: Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.
+description: Build a throwaway prototype to answer a design question. Use when the user needs something concrete to react to, such as an outline, sample lesson, paper mockup, or UI/logic demo.
 ---
 
 # Prototype
 
-A prototype is **throwaway code that answers a question**. The question decides the shape.
+A prototype is **a throwaway artifact or set of artifacts that answers a question**. The question decides the shape.
+
+## Prerequisite: version control
+
+Version control is required for code and non-code prototypes alike. Before creating prototype artifacts, identify the version-controlled location where they will be preserved. If none is available, stop and ask where to preserve the work; do not initialize a repository merely to proceed.
 
 ## Pick a branch
 
-Identify which question is being answered, using the user's prompt, the surrounding code, or by asking if the user is around:
+Identify and state which question is being answered, using the user's prompt, the surrounding work, or by asking if the user is around:
 
-- **"Does this logic / state model feel right?"** → [LOGIC.md](LOGIC.md). Build a single shareable HTML file (free-play buttons plus tabbed guided walkthroughs) that pushes the state machine through cases that are hard to reason about on paper, and that a non-developer can drive.
-- **"What should this look like?"** → [UI.md](UI.md). Generate several radically different UI variations on a single route, switchable via a URL search param and a floating bottom bar.
+- **"Does this logic / state model feel right?" (software logic)** → Read [ENGINEERING.md](ENGINEERING.md) and [LOGIC.md](LOGIC.md). Build a single shareable HTML file (free-play buttons plus tabbed guided walkthroughs) that pushes the state machine through cases that are hard to reason about on paper, and that a non-developer can drive.
+- **"What should this look like?" (software UI)** → Read [ENGINEERING.md](ENGINEERING.md) and [UI.md](UI.md). Generate several radically different UI variations on a single route, switchable via a URL search param and a floating bottom bar.
+- **A non-code question about content, structure, or a workflow** → Make the smallest concrete example the user can judge: an outline, a sample lesson, a draft ticket, or a paper mockup. Include enough detail to expose the choice, not a finished deliverable or a learner activity by default. No code or runnable demo is required. A workflow or state model does not require the engineering branch merely because it has states or transitions; choose the artifact that exposes the question.
 
-The two branches produce very different artifacts, so getting this wrong wastes the whole prototype. If the question is genuinely ambiguous and the user isn't reachable, default to whichever branch better matches the surrounding code (a backend module → logic; a page or component → UI) and state the assumption at the top of the prototype.
+These branches produce very different artifacts, so getting this wrong wastes the whole prototype. If the question is genuinely ambiguous and the user isn't reachable, default to whichever branch better matches the surrounding work and state the assumption at the top of the prototype.
 
-## Rules that apply to both
+Before handing it over, record the question, necessary assumptions, and a prototype pointer in the relevant issue, following the caller's recording convention. Without a tracker, keep this context alongside the prototype. A few lines are enough.
 
-1. **Throwaway from day one, and clearly marked as such.** Locate the prototype code close to where it will actually be used (next to the module or page it's prototyping for) so context is obvious, but name it so a casual reader can see it's a prototype, not production. For throwaway UI routes, obey whatever routing convention the project already uses; don't invent a new top-level structure.
-2. **Trivial to run.** A UI prototype starts from one command in the project's task runner: `pnpm <name>`, `python <path>`, `bun <path>`, etc. A logic demo is a single HTML file the user double-clicks. Either way, no thinking required to start it.
-3. **No persistence by default.** State lives in memory. Persistence is the thing the prototype is _checking_, not something it should depend on. If the question explicitly involves a database, hit a scratch DB or a local file with a clear "PROTOTYPE, wipe me" name.
-4. **Skip the polish.** No tests, no error handling beyond what makes the prototype _runnable_, no abstractions. The point is to learn something fast.
-5. **Surface the state.** After every action (logic) or on every variant switch (UI), print or render the full relevant state so the user can see what changed.
-6. **Capture it when done.** Fold any validated decision into the real code, then capture the prototype itself as a **primary source**: commit it to a throwaway branch, out of main, and leave a context pointer to that branch on the implementation issue. Capture the answer too (the verdict and the question it settled) in the issue or a commit. The main branch keeps only the validated decision.
+## Rules that apply to all branches
+
+1. **Throwaway from day one, and clearly marked as such.** Locate the prototype close to where it will actually be used so context is obvious, but name it so a casual reader can see it's a prototype, not a finished deliverable.
+2. **Trivial to inspect.** Whether it's one file or several, no thinking required to open it.
+3. **Skip the polish.** Include only what the user needs to judge the question. The point is to learn something fast.
+4. **Surface the state.** When the question involves behavior or a workflow, make the relevant state and changes visible so the user can see what each action does.
+5. **Hand it over.** Show the prototype and ask the user to react to the stated question. Adjust it when their feedback exposes a missing case or alternative. If the answer is obvious from the question and available evidence, the agent can choose it and record why without waiting for feedback. Otherwise, seek the user's judgment. Follow any caller requirement for human confirmation, including wayfinder's HITL tickets; an agent decision is not user approval. If work pauses with the decision still open, preserve the prototype and mark that status in the same record.
+6. **Capture it when done.** Fold any validated decision into the real work when that work is in scope; this also governs the engineering references' integration steps. Capture the prototype itself as a **primary source**: commit it to a throwaway branch, out of main, and leave a context pointer to that branch and revision in the same record. This applies to code and non-code prototypes alike. Follow an explicit project convention instead when it provides equivalent isolation and a durable revision pointer. Capture the answer too (the verdict, why, and the question it settled) in the same record. Preservation does not require ongoing upkeep or keeping the prototype in sync with finished work. A local commit satisfies capture; publishing or pushing the prototype requires authorization.
