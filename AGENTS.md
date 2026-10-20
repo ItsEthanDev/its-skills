@@ -8,32 +8,35 @@ When writing or editing skills, read [the writing skill](skills/general/writing/
 
 Before changing attribution or distributing copied or adapted material, read [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and the [README license section](README.md#license).
 
-## Agent skills
+## Project guidance
 
-### Getting started
+Use [Project documentation](README.md#project-documentation) and
+[Agent documentation](README.md#agent-documentation) to locate project guidance.
 
-When setting up the checkout or verifying a change, read `docs/quickstart.md`.
+- Before using local tools or verifying work, read the [quickstart](docs/quickstart.md).
+- Before pushing, releasing, or changing distribution or environment configuration,
+  read [distribution guidance](docs/deployment.md).
+- Before reading, creating, or updating tickets, read
+  [issue-tracker guidance](docs/agents/issue-tracker.md).
+- Before assigning implementation triage roles, read
+  [triage labels](docs/agents/triage-labels.md).
+- Before exploring a domain area, discussing or changing domain concepts, or
+  proposing a change, read [domain guidance](docs/agents/domain.md).
+  Follow its active terminology and approval practices.
+- When resolving a consequential trade-off or offering, writing, or revisiting
+  a decision record, read [decision-record guidance](docs/agents/decision-records.md)
+  and relevant records.
+- Before changing governed work or proposing an amendment, read the
+  [constitution](CONSTITUTION.md) and
+  [agent constitution guidance](docs/agents/constitution.md).
+- Before committing, read [commit guidance](docs/commits.md).
 
-### Distribution
+Follow each document's maintenance and approval rules.
 
-Before planning a release or changing distribution, read `docs/deployment.md`.
+## Commits
 
-### Issue tracker
-
-Before reading, creating, or updating tickets, read `docs/agents/issue-tracker.md`.
-
-### Triage labels
-
-Before applying implementation triage roles, read `docs/agents/triage-labels.md`.
-
-### Domain docs
-
-Before exploring a domain area, discussing or changing domain concepts, or proposing a change,
-find Domain guidance in the README's documentation index and follow its glossary pointers
-and active terminology practices.
-
-### Decision records
-
-When resolving a consequential trade-off or offering, writing, or revisiting a decision record,
-find Decision records in the README's documentation index and follow its criteria, format,
-and approval procedure. Read relevant accepted records before proposing conflicting work.
+After completing and verifying a coherent unit of work, commit its changes
+unless explicitly instructed otherwise. Stage only changes belonging to that
+work; leave unrelated changes untouched. If verification or commit scope is
+unresolved, report the blocker rather than commit incomplete or ambiguous work.
+A request to commit does not imply permission to push.

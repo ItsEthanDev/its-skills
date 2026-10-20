@@ -1,6 +1,6 @@
 # Decision records
 
-This guide is the index for consequential project decisions and explains how to record new ones. Read records relevant to the area being changed; surface conflicts with accepted decisions rather than silently overriding them.
+This guide explains how to select, record, and maintain consequential project decisions. The [decision-record index](../decisions.md) links the records. Read records relevant to the area being changed; surface conflicts with accepted decisions rather than silently overriding them.
 
 ## Conventions
 
@@ -53,11 +53,11 @@ Only include these when they add genuine value. Most records won't need them.
 
 ## Records
 
-No individual records have been written in `docs/adr/` yet. Existing issue discussions remain in the tracker; this change does not turn them into accepted ADRs or duplicate their answers here.
+Find accepted records in the [decision-record index](../decisions.md).
 
 ## Maintenance
 
-Add an index link when a record is accepted. Preserve the history and rationale when a decision is superseded, and reconcile guidance affected by the new decision. Changes to these conventions require explicit user approval. Changes affecting the constitution also follow its amendment rules.
+Add a link to the [decision-record index](../decisions.md) when a record is accepted. Preserve the history and rationale when a decision is superseded, and reconcile guidance affected by the new decision. Changes to these conventions require explicit user approval. Changes affecting the constitution also follow its amendment rules.
 
 If guidance or a record moves, reconcile its index links and other pointers. This guide remains usable without a decision-record skill or an external template.
 

@@ -24,17 +24,35 @@ Each distributed bundle must retain its supporting resources and notices.
 Follow the [license guidance](../README.md#license) and
 [third-party notices](../THIRD-PARTY-NOTICES.md).
 
-## Release workflow
+## Publication
 
-No automated release or deployment workflow is present.
+Source changes reaching main become available to later unpinned installations.
+Pinned consumers adopt changes by selecting another revision.
+
+There is no automated release workflow. Tags and GitHub releases are optional,
+separately authorized publication actions; no versioning scheme is established.
+Do not infer policy from the existing v0.1 tag.
+
 Repository CI checks consistency on pushes and pull requests; it does not publish
 a package or activate a consumer configuration.
 
-The repository contains a `v0.1` tag, but a tag-creation policy and release
-approval procedure are not documented. Do not infer them from the tag.
+Before publication:
 
-A Nix consumer's lockfile selects its source revision. Unpinned consumers may
-receive later source changes when reinstalling or updating.
+1. Identify the exact candidate revision, target branch or tag, and remote.
+2. Complete the applicable [quickstart checks](quickstart.md#verify-a-change) and review.
+3. Verify each consumption path affected by the change.
+4. Record the revision, commands, tool versions, results, and verification limits.
+5. Obtain explicit authorization for the publication action.
+
+Directory or bundle changes require affected discovery and installation checks.
+Nix or Pi discovery changes require corresponding checks. A wording-only change
+does not by itself require repeating installation checks.
+
+If a required check cannot run, report the gap before publication. Proceed only
+with explicit project-maintainer approval of the documented exception.
+
+Local inspection does not establish current remote contents, branch protection,
+or successful remote CI.
 
 ## Verify distribution
 
@@ -55,12 +73,11 @@ for instructions, supporting resources, provenance, and applicable license files
 
 ## Recovery
 
-A Nix consumer can select a previously known-good source revision in its
-configuration and lockfile; the exact update and activation procedure belongs
-to that consumer project.
+No project recovery procedure is established.
 
-A skills CLI recovery procedure has not been established here.
-Neither consumption path's recovery procedure has been exercised during setup.
+## Maintenance
 
-Publishing, changing tags, or activating consumer configurations requires
-separate authorization.
+Changes to this workflow require explicit project-maintainer approval.
+Keep consumption instructions, verification evidence, and documentation pointers
+consistent. Documentation does not authorize publication, remote configuration
+changes, or consumer activation.

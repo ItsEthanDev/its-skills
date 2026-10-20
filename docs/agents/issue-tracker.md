@@ -13,11 +13,11 @@ gh issue create --repo ItsEthanDev/its-skills --title "..." --body-file body.md
 gh issue view NUMBER --repo ItsEthanDev/its-skills \
   --json number,title,body,labels,comments,assignees,state
 gh issue list --repo ItsEthanDev/its-skills --state open \
-  --json number,title,labels,assignees
+  --json number,title,body,labels,assignees
 gh issue comment NUMBER --repo ItsEthanDev/its-skills --body-file answer.md
 gh issue edit NUMBER --repo ItsEthanDev/its-skills --add-label "LABEL"
 gh issue edit NUMBER --repo ItsEthanDev/its-skills --remove-label "LABEL"
-gh issue close NUMBER --repo ItsEthanDev/its-skills
+gh issue close NUMBER --repo ItsEthanDev/its-skills --comment "Resolution summary"
 ```
 
 Replace uppercase arguments with actual values. Use
@@ -72,7 +72,7 @@ Refer to maps and tickets by linked titles in human-facing prose.
 - **Frontier:** enumerate the map's native children in their returned order.
   Keep open, unassigned children whose blockers are all closed.
   Fetch all pages of children and dependencies. Use the fallback parent task
-  list order only when native sub-issues are unavailable.
+  list order only when native sub-issues are unavailable. First in map order wins.
 - **Claim:** re-read the selected ticket and skip it if closed or assigned.
   Assign it to the developer driving the map before starting work.
   Use `--add-assignee @me` only when the authenticated account is that developer.
@@ -102,6 +102,12 @@ Required remote labels are the five implementation labels and the five
 
 ## Verification limits
 
-The local repository check passes. Authenticated tracker operations, label
-existence, and native relationship operations have not been exercised during
-setup.
+See the [quickstart](../quickstart.md#verify-a-change) for local repository
+verification. Authenticated tracker operations, label existence, and native
+relationship operations have not been exercised during setup.
+
+## Maintenance
+
+Changes to these conventions require explicit project-maintainer approval.
+Keep this guide, the triage mapping, and their README and agent-entry-point links
+consistent. Remote tracker changes require separate authorization.

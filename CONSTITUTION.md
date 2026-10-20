@@ -1,8 +1,14 @@
 # Project Constitution
 
-**Version:** 1.0.1
+**Status:** Ratified
+**Version:** 1.1.0
 **Ratified:** 2026-10-12
-**Last amended:** 2026-10-12
+**Last amended:** 2026-10-19
+
+## Purpose and scope
+
+This constitution establishes durable constraints for ItsSkills' skills,
+supporting resources, project guidance, and distributions.
 
 ## PR-001 — Composable skills
 
@@ -26,5 +32,10 @@ Each skill directory includes its provenance and applicable license files, as do
 
 ## Governance
 
-- Amendments MUST update the version and amendment date.
-- A changed or removed principle MUST be reconciled with dependent specifications, plans, instructions, and checks.
+- Amendments require explicit approval from the project maintainer before
+  taking effect. Approval must identify the proposed amendment in a recorded
+  review or conversation. An agent's proposal is not ratification.
+- Approved amendments MUST update the version and amendment date.
+  The ratification date records the constitution's original adoption.
+- A changed or removed principle MUST be reconciled with dependent
+  specifications, plans, instructions, and checks.

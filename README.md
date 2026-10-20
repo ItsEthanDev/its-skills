@@ -183,19 +183,24 @@ The check enforces `skills/<general|engineering|learning>/<skill>/SKILL.md`, glo
 
 The same check runs in GitHub Actions on pushes and pull requests.
 
-## Contributor docs
+## Project documentation
 
-- [Quickstart](docs/quickstart.md): checkout prerequisites and local verification.
-- [Distribution](docs/deployment.md): consumption paths and release-verification gaps.
-- [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding conventions.
-- [Triage labels](docs/agents/triage-labels.md): implementation triage vocabulary.
-- [Domain guidance](docs/agents/domain.md): active terminology practice, glossary format, and maintenance.
+- [Quickstart](docs/quickstart.md): prerequisites and local verification.
+- [Distribution](docs/deployment.md): source publication, verification, and limits.
+- [Commit guidance](docs/commits.md): prerequisites, messages, branches, and reporting.
+- [Constitution](CONSTITUTION.md): binding project constraints and amendment rules.
+- [Project standards](STANDARDS.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
-- [Decision records](docs/agents/decision-records.md): criteria, format, approval, and record index.
+- [Decision records](docs/decisions.md): accepted decisions and their rationale.
 
-## Project principles
+## Agent documentation
 
-The [project constitution](CONSTITUTION.md) governs skill composition, context use, and attribution. [Project standards](STANDARDS.md) describe the guiding qualities used to design and assess skills and their applicable downstream artifacts and practices. [Agent instructions](AGENTS.md) point contributors using agents to the applicable guidance.
+- [Agent instructions](AGENTS.md): conditional pointers and commit behavior.
+- [Constitution guidance](docs/agents/constitution.md): applying and amending governance.
+- [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding.
+- [Triage labels](docs/agents/triage-labels.md): implementation-role mappings.
+- [Domain guidance](docs/agents/domain.md): active terminology practice and maintenance.
+- [Decision-record guidance](docs/agents/decision-records.md): selection, format, approval, and maintenance.
 
 ## Acknowledgments
 
