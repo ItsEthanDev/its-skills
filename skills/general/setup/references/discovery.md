@@ -1,6 +1,6 @@
 # Documentation discovery
 
-Make the project's guidance discoverable by purpose, without requiring people or skills to know its filenames.
+Make the project's guidance discoverable without requiring people or skills to know its filenames. The README indexes guidance by purpose; the agent entry point indexes it by consultation trigger. Repeating destinations is intentional. Keep procedures in their canonical owners rather than duplicate them in either index.
 
 ## README index
 

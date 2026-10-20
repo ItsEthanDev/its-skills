@@ -22,8 +22,8 @@
 
 ## Verification limits and maintenance
 
-<What procedures were actually exercised, what remains unverified, and who approves changes to this workflow.>
+<Standing limits of the verification procedure, any procedures not yet verified, and who approves changes to this workflow. Keep run-specific results and transitional context out of this runbook.>
 
 Documented procedures do not grant permission to push, publish, deploy, or change remote configuration. Obtain the authorization required by the project and applicable instructions.
 
-<!-- Seed instructions: replace placeholders with observed facts or explicit gaps. If no deployment or distribution applies, a brief statement in existing guidance may replace this file. Remove this comment before writing. -->
+<!-- Seed instructions: document the current workflow, not a history of deployments or setup checks. Report setup results in the completion response; retained historical evidence belongs in the configured issue tracker. Standing documentation links to the tracker only for general discovery, not to specific issues or pull requests or topic-specific searches. Keep the runbook usable without the tracker. Replace placeholders with observed facts or explicit gaps. If no deployment or distribution applies, a brief statement in existing guidance may replace this file. Remove this comment before writing. -->

@@ -16,4 +16,6 @@ Use the deployment seed template as a starting point. If the project is not depl
 
 If a local change needs a separate production configuration change, document the dependency and propose a task through the configured tracker when appropriate. Do not create a remote issue or change production merely to complete setup without authorization.
 
-Documenting procedures does not grant permission to push, deploy, publish, or change environment configuration. Verification during setup stays within approved effects; mark unexercised procedures as unverified.
+Keep the runbook about the current workflow: prerequisites, commands, expected results, standing verification limits, and maintenance. Distinguish those limits from evidence about a particular run. Report setup verification results in the completion response; retain historical receipts and transitional work in the configured tracker under the standing-documentation rules in the setup process. Do not copy revision-specific results, completed-migration narratives, or topic-specific tracker pointers into the runbook.
+
+Documenting procedures does not grant permission to push, deploy, publish, or change environment configuration. Verification during setup stays within approved effects; state any unverified procedure without adding a run history. Retaining evidence in the tracker requires separate authorization for any tracker writes.

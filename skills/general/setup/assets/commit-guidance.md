@@ -1,6 +1,6 @@
-# Commit guidance
+# Agent commit guidance
 
-Contributors consult this guidance before committing project changes.
+Read this guide before committing project changes. Follow existing project-wide commit conventions through their canonical owners.
 
 ## Prerequisites
 
@@ -26,4 +26,4 @@ A request to commit does not imply permission to push. Before an authorized push
 
 Changes to these conventions require <the agreed approval process>. Record the approved change here and reconcile affected project instructions.
 
-<!-- Seed instructions: confirm message format, prerequisites, branch rules, and approval requirements. Commit timing and staging scope belong in harness-loaded agent instructions, not here. Do not impose Conventional Commits on every project. Replace placeholders and remove this comment before writing. -->
+<!-- Seed instructions: write agent instructions, defaulting to docs/agents/commits.md. Index this guide under Agent documentation. Reference any existing project-wide commit conventions rather than duplicate them. Confirm message format, prerequisites, branch rules, and approval requirements. Commit timing and staging scope belong in harness-loaded agent instructions, not here. Do not impose Conventional Commits on every project. Replace placeholders and remove this comment before writing. -->
