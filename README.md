@@ -95,6 +95,42 @@ uses existing CLI options or Nix paths; there is no custom installer or dependen
 resolver. The dependency audit and verified group-selection commands remain open
 under [task-domain organization](https://github.com/ItsEthanDev/its-skills/issues/2).
 
+### Workflow dependencies
+
+These are explicit calls to other shipped skills, not a requirement to install all
+of `general`. Include the dependencies of each selected branch recursively. A
+conditional dependency is needed only when that branch is used.
+
+| Skill | Required skills | Conditional skills |
+| --- | --- | --- |
+| `ingest-document` | `alignment` | — |
+| `retro` | `writing` | — |
+| `wayfinder` | — | `alignment` for charting or alignment tickets; `research` for research tickets; `prototype` for prototype tickets. |
+| `verifying-work` | — | `codebase-design` for software test surfaces/adapters; `tdd` for maintained tests; `writing` when authoring project verification guidance; the project's own verification skill when its procedure applies. |
+| `diagnosing-bugs` | `verifying-work` | Follow the verification branch's dependencies. |
+| `frontend-design` | — | `verifying-work` when executing checks. |
+| `implement` | `verifying-work`, `code-review` | `tdd` where applicable; follow those skills' conditional dependencies. |
+| `improve-codebase-architecture` | `codebase-design` | `alignment` after choosing a candidate. |
+| `tdd` | — | `codebase-design` when the interface or seam is unsettled. |
+
+Skills not listed have no explicit calls to another shipped skill. References to
+an independently run workflow, such as TDD's review-stage reference to
+`code-review`, do not make that workflow part of the current invocation.
+Suggestions to run `setup` establish missing project guidance; setup is not an
+installed runtime dependency of those consumers.
+
+Project-owned commit, constitution, domain-language, and decision-record guidance
+replaces the retired skills with those names. Preserve that guidance and the
+selected skill's own prerequisites: `prototype` requires version control, but
+`teach` does not require Git, `pr`, or any other shipped skill. General-purpose
+skills may still require a tracker, delegation, a shell, or version control for
+the particular method selected; those are not engineering-only assumptions.
+
+This table is a source-level dependency inventory, not evidence that either
+installation path resolves dependencies automatically or has been exercised.
+Published-source discovery and complete-bundle installation remain tracked in
+[installation verification](https://github.com/ItsEthanDev/its-skills/issues/16).
+
 ### Individual skills
 
 Choose any skill or combination by identifier:
