@@ -55,7 +55,7 @@ Send them the file, or open it for them. They'll click through the walkthroughs 
 
 ### 5. Capture the answer and the prototype
 
-Once the prototype has answered its question, capture the answer and the prototype the way the [SKILL](SKILL.md) describes. Preserve the self-contained HTML file as a re-runnable primary source. If implementation is separately in scope, the validated reducer / machine / function set can lift into the real module; keep the HTML shell out of production. Follow [ENGINEERING.md](ENGINEERING.md) for implementation boundaries.
+Once the prototype has answered its question, capture the answer, then capture the prototype the way the [SKILL](SKILL.md) describes. The logic-specific mapping: the validated reducer / machine / function set lifts into the real module (the decision, absorbed); the HTML shell rides along to the throwaway branch that keeps the prototype as a primary source, and being one self-contained file, it stays trivially re-runnable there.
 
 ## Anti-patterns
 
