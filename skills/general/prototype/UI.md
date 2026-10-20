@@ -97,7 +97,7 @@ Surface the URL (and the `?variant=` keys). The user will flip through whenever 
 
 ### 6. Capture the answer and clean up
 
-Once the user has chosen a variant, capture the answer (which variant and why), then capture the prototype the way the [SKILL](SKILL.md) describes. Preserve the full set of variants as a primary source. Follow [ENGINEERING.md](ENGINEERING.md) for implementation boundaries.
+Once a variant has won, capture the answer (which variant and why), then capture the prototype the way the [SKILL](SKILL.md) describes. Preserve the full set of variants as a primary source. Follow [ENGINEERING.md](ENGINEERING.md) for implementation boundaries.
 
 If implementation is separately in scope, fold the winner into the real code and keep prototype scaffolding out of production:
 
