@@ -133,7 +133,6 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 ## Project documentation
 
 - [Quickstart](docs/quickstart.md): prerequisites and local verification.
-- [Distribution](docs/deployment.md): source publication, verification, and limits.
 - [Constitution](CONSTITUTION.md): binding project constraints and amendment rules.
 - [Project standards](STANDARDS.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
