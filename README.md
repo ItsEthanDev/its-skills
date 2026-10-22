@@ -133,7 +133,7 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 ## Project documentation
 
 - [Quickstart](docs/quickstart.md): prerequisites and local verification.
-- [Project standards](STANDARDS.md): guiding qualities for project work.
+- [Guiding Principles](PRINCIPLES.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
 
 ## Agent documentation

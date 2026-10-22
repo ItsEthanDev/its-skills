@@ -1,6 +1,6 @@
 # Project instructions
 
-Before designing, changing, or reviewing project work, read [STANDARDS.md](STANDARDS.md) and assess the applicable standards.
+Before designing, changing, or reviewing project work, read [PRINCIPLES.md](PRINCIPLES.md) and assess the applicable guidance.
 
 When writing or editing skills, read [the writing skill](skills/general/writing/SKILL.md) and follow its agent-writing and skill-writing references.
 
