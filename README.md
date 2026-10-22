@@ -139,7 +139,6 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 ## Agent documentation
 
 - [Agent instructions](AGENTS.md): conditional pointers and commit behavior.
-- [Commit guidance](docs/agents/commits.md): agent prerequisites, messages, branches, and reporting.
 - [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding.
 - [Triage labels](docs/agents/triage-labels.md): implementation-role mappings.
 - [Domain guidance](docs/agents/domain.md): active terminology practice and maintenance.
