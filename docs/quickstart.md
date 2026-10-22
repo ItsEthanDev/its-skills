@@ -26,13 +26,12 @@ From the repository root:
 
 ```sh
 python3 scripts/check_repo.py
-git diff --check
 ```
 
-Success prints `Repository consistency checks passed.`; `git diff --check`
+Success prints `Repository consistency checks passed.`
 produces no output and exits successfully.
 
-The Python check validates catalog coverage, required bundle notices, and existing
+The check validates catalog coverage, required bundle notices, and existing
 attribution inventory entries. It does not establish instruction quality,
 provenance accuracy, license adequacy, or installation behavior.
 
