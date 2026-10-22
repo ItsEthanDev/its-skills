@@ -135,7 +135,6 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 - [Quickstart](docs/quickstart.md): prerequisites and local verification.
 - [Project standards](STANDARDS.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
-- [Decision records](docs/decisions.md): accepted decisions and their rationale.
 
 ## Agent documentation
 
@@ -144,7 +143,6 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 - [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding.
 - [Triage labels](docs/agents/triage-labels.md): implementation-role mappings.
 - [Domain guidance](docs/agents/domain.md): active terminology practice and maintenance.
-- [Decision-record guidance](docs/agents/decision-records.md): selection, format, approval, and maintenance.
 
 ## Acknowledgments
 

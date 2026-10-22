@@ -25,9 +25,6 @@ Use [Project documentation](README.md#project-documentation) and
 - Before exploring a domain area, discussing or changing domain concepts, or
   proposing a change, read [domain guidance](docs/agents/domain.md).
   Follow its active terminology and approval practices.
-- When resolving a consequential trade-off or offering, writing, or revisiting
-  a decision record, read [decision-record guidance](docs/agents/decision-records.md)
-  and relevant records.
 - Before committing, read [commit guidance](docs/agents/commits.md).
 
 Follow each document's maintenance and approval rules.
