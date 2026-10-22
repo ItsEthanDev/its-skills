@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Setup
 
-Scaffold the project documentation and configuration that people and agents need. Set up the whole project, or just the feature the user asks for: a constitution, commit guidance, an issue tracker, a quickstart, or another feature below.
+Scaffold the project documentation and configuration that people and agents need. Set up the whole project, or just the feature the user asks for: a constitution, an issue tracker, a quickstart, or another feature below.
 
 This is a prompt-driven skill, not a deterministic script. Explore, present what you found, confirm with the user, then write.
 
@@ -19,7 +19,7 @@ The project owns the resulting conventions. Its documentation must explain how t
 Look at the current project to understand its starting state. Read whatever exists; don't assume:
 
 - `README.md` and `AGENTS.md` at the project root: what do they already cover? Is there a documentation index? Follow existing links before assuming guidance is missing.
-- Existing governance, coding standards, commit guidance, and decision records: where do accepted conventions live, and how are changes approved?
+- Existing governance, coding standards, and decision records: where do accepted conventions live, and how are changes approved?
 - Quickstart, deployment, and equivalent documentation elsewhere: are there working instructions worth preserving or linking to?
 - In a Git repository, `git remote -v` and `.git/config`: where is it hosted? Which remote tracks the project?
 - Manifests, lockfiles, environment configuration, scripts, and CI, where present: what prerequisites, local commands, and checks does the project actually use?
@@ -65,15 +65,12 @@ Read only the references for the selected features, when you reach them:
 | Domain language            | [references/domain-docs.md](references/domain-docs.md)               | [Glossary](assets/glossary.md), [consumer guidance](assets/domain.md)                                                               |
 | Decision records           | [references/decision-records.md](references/decision-records.md)     | [Record index](assets/decision-record-index.md), [agent guidance](assets/decision-records.md)                                       |
 | Constitution               | [references/constitution.md](references/constitution.md)             | [Constitution](assets/constitution.md), [agent guidance](assets/constitution-guidance.md)                                           |
-| Coding standards           | [references/coding-standards.md](references/coding-standards.md)     | [Coding standards](assets/coding-standards.md)                                                                                      |
-| Commit guidance            | [references/commit-guidance.md](references/commit-guidance.md)       | [Commit guidance](assets/commit-guidance.md)                                                                                        |
-| Linting and formatting     | [references/linting-formatting.md](references/linting-formatting.md) | Use the selected tools' current configuration formats.                                                                              |
 
 Paths in the templates are starting points, not requirements. Preserve existing owners and agree on locations before writing. When adding guidance or changing its location, include documentation discovery in scope so people and agents can find it.
 
 ### 4. Confirm and edit
 
-Show the user a draft of all proposed additions and changes for the selected features, including index and agent-pointer changes. For tooling, include dependencies, configuration, commands, and CI changes. Separate a repository-wide reformat from tool setup; propose it as its own change.
+Show the user a draft of all proposed additions and changes for the selected features, including index and agent-pointer changes.
 
 For migration, show what is being replaced, what depends on the old convention, and how those consumers and links will be reconciled. Follow the project's existing amendment and approval procedure; approving setup does not bypass it.
 
