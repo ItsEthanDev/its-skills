@@ -13,6 +13,31 @@ produce through the skills. Where applicable, embed that behavior in the skill's
 instructions rather than repeat the standard by name or require downstream
 projects to adopt this document. Each standard's scope is described below.
 
+## Composable skills
+
+Each skill should have a clear purpose and invocation boundary. Shared guidance
+should follow the Clear ownership standard: consuming skills reference its
+authoritative source rather than duplicate its rules.
+
+This standard governs skill design and relationships between skills, not the
+conventions of consuming projects.
+
+**Review question:** Is it clear when this skill applies and which guidance it
+owns rather than obtains from another source?
+
+## Deliberate context use
+
+Skills should keep universally needed instructions inline and disclose
+branch-specific guidance through pointers that state when to read it.
+Descriptions should identify invocation conditions; user-invoked descriptions
+should state the task they serve.
+
+This standard governs how skills present and load instructions. Discoverability
+addresses how readers find relevant guidance.
+
+**Review question:** Can an agent identify when to invoke the skill and load
+the guidance needed for the task without loading unrelated branches?
+
 ## Project independence
 
 Projects should remain understandable and maintainable without the skills
@@ -95,9 +120,6 @@ project guidance should also direct agents to find existing owners, make changes
 in the appropriate home, and reference guidance rather than create competing
 copies.
 
-This applies the constitution's canonical-ownership constraint across skills
-and project documentation.
-
 **Review question:** Is it clear where this guidance belongs and which source
 governs when documents disagree?
 
@@ -144,8 +166,6 @@ into every session.
 Skills that establish or reorganize project guidance should make their outputs
 discoverable to the intended readers. A document's existence provides a
 maintenance cue, but does not replace a path to finding it.
-
-This applies the constitution's deliberate-context-use constraint to navigation.
 
 **Review question:** Can the intended reader find this guidance when it matters,
 without already knowing where it lives?

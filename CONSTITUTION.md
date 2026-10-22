@@ -1,26 +1,14 @@
 # Project Constitution
 
 **Status:** Ratified
-**Version:** 1.1.0
+**Version:** 2.0.0
 **Ratified:** 2026-10-12
-**Last amended:** 2026-10-19
+**Last amended:** 2026-10-22
 
 ## Purpose and scope
 
 This constitution establishes durable constraints for ItsSkills' skills,
 supporting resources, project guidance, and distributions.
-
-## PR-001 — Composable skills
-
-Each skill MUST have a clear purpose and invocation boundary. Shared guidance MUST have one canonical owner; consuming skills MUST reference that owner rather than duplicate its rules.
-
-**Compliance signal:** New or changed skills identify when they apply. Guidance shared by multiple skills has an authoritative source and references from its consumers.
-
-## PR-002 — Deliberate context use
-
-Skills MUST keep universally needed instructions inline and disclose branch-specific guidance through pointers that state when to read it. Skill descriptions MUST identify invocation conditions; user-invoked descriptions MUST state the task they serve.
-
-**Compliance signal:** New or changed descriptions make invocation clear. Required references have explicit reading conditions, and branch-specific material is loaded only when relevant.
 
 ## PR-003 — Attribution
 
