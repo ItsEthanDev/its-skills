@@ -12,8 +12,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Inspired | [Anthropic: `skills/frontend-design/SKILL.md`](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md) | Creation commit f1c0190 explicitly records idea-level influence and original instructions. Comparison finds shared design concerns, not copied passages; the distinctive-identity premise is not imported. |
+| Local file | Classification | Pinned source                                                                                                                                                      | Evidence and changes                                                                                                                                                                                       |
+| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Inspired       | [Anthropic: `skills/frontend-design/SKILL.md`](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md) | Creation commit f1c0190 explicitly records idea-level influence and original instructions. Comparison finds shared design concerns, not copied passages; the distinctive-identity premise is not imported. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

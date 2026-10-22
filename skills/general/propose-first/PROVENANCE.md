@@ -10,8 +10,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Original | — | No identifiable match in the audited sources; local procedure imported in c8cf794 and revised in ef77f2a and 373c274. |
+| Local file | Classification | Pinned source | Evidence and changes                                                                                                  |
+| ---------- | -------------- | ------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Original       | —             | No identifiable match in the audited sources; local procedure imported in c8cf794 and revised in ef77f2a and 373c274. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

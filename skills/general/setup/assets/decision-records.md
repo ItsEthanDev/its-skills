@@ -41,7 +41,7 @@ These are engineering examples. For other work, apply the same criteria to its c
 {1-3 sentences: what's the context, what did we decide, and why.}
 ```
 
-That's it. A record can be a single paragraph. The value is in recording *that* a decision was made and *why*, not in filling out sections.
+That's it. A record can be a single paragraph. The value is in recording _that_ a decision was made and _why_, not in filling out sections.
 
 ### Optional sections
 
@@ -57,6 +57,6 @@ Add an index link when a record is accepted. A proposal is not an accepted decis
 
 If guidance or a record moves, reconcile its index links and other pointers. Create an individual record only when there is a decision to record; this index can exist before the first one.
 
-Adapted guidance and applicable notices: [Third-party notices](<relative-path-to-retained-notices>).
+Adapted guidance and applicable notices: [Third-party notices](relative-path-to-retained-notices).
 
 <!-- Seed instructions: these criteria and the short format are proposed defaults, not mandatory conventions for every project. Confirm or adapt them to the user's intent and existing practices. Keep only examples relevant to the project, replacing them with concrete domain examples when useful. Resolve location, naming, acceptance, status/supersession, and maintenance placeholders; format examples are intentional instructional syntax. Adapt the link to the actual human-facing record index. The generated project must contain the actual chosen criteria and format, not delegate them to a skill. Remove this comment before writing. -->

@@ -1,6 +1,6 @@
 # Domain language
 
-Actively build and sharpen the project's domain language as you design. This is the *active* discipline: challenging terms, inventing edge-case scenarios, and writing the glossary down the moment terms crystallise. Merely reading the glossary for vocabulary is not the whole practice: use this guidance when changing the language, not just consuming it.
+Actively build and sharpen the project's domain language as you design. This is the _active_ discipline: challenging terms, inventing edge-case scenarios, and writing the glossary down the moment terms crystallise. Merely reading the glossary for vocabulary is not the whole practice: use this guidance when changing the language, not just consuming it.
 
 ## Layout and reading rules
 

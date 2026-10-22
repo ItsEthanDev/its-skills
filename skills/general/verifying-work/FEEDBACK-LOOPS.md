@@ -6,20 +6,20 @@ Build a **tight** signal: specific enough to detect the relevant mistake, repeat
 
 Prefer existing project tools and the smallest check that establishes the claim. Supplement it when the claim crosses another seam.
 
-| Surface | Signal |
-| --- | --- |
-| Automated test | Exercise the affected public interface with fixtures and assertions on observable outcomes. |
-| HTTP interaction | Drive the intended running instance and assert response content and required effects, not just status. |
-| CLI or TUI | Invoke the real entry point with fixture input; check exit status, output, and effects. Use a terminal harness when interaction matters. |
-| Browser | Drive the relevant interaction and assert DOM, console, or network outcomes; inspect screenshots for visual claims. |
-| Captured trace | Replay a redacted request, payload, or event sequence through the relevant code path. |
-| Temporary harness | Run the smallest representative subset that still exercises the behavior; disclose substitutions and what they omit. |
-| Property or fuzz check | Generate bounded inputs against an independent property; retain seeds and inputs for failures. |
-| Bisection | Automate the verdict across known states so `git bisect run` can consume it. |
-| Differential check | Compare old/new versions or configurations on identical inputs against the preserved contract. |
-| Documentation or configuration | Inspect authoritative sources, resolve references, validate schemas, and exercise relevant examples where safe. |
-| Performance | Compare controlled repeated measurements with a relevant baseline; account for warmup, caches, workload, and noise. |
-| Human-assisted check | Give precise actions and expected observations; capture the actual answer and its limits. |
+| Surface                        | Signal                                                                                                                                   |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Automated test                 | Exercise the affected public interface with fixtures and assertions on observable outcomes.                                              |
+| HTTP interaction               | Drive the intended running instance and assert response content and required effects, not just status.                                   |
+| CLI or TUI                     | Invoke the real entry point with fixture input; check exit status, output, and effects. Use a terminal harness when interaction matters. |
+| Browser                        | Drive the relevant interaction and assert DOM, console, or network outcomes; inspect screenshots for visual claims.                      |
+| Captured trace                 | Replay a redacted request, payload, or event sequence through the relevant code path.                                                    |
+| Temporary harness              | Run the smallest representative subset that still exercises the behavior; disclose substitutions and what they omit.                     |
+| Property or fuzz check         | Generate bounded inputs against an independent property; retain seeds and inputs for failures.                                           |
+| Bisection                      | Automate the verdict across known states so `git bisect run` can consume it.                                                             |
+| Differential check             | Compare old/new versions or configurations on identical inputs against the preserved contract.                                           |
+| Documentation or configuration | Inspect authoritative sources, resolve references, validate schemas, and exercise relevant examples where safe.                          |
+| Performance                    | Compare controlled repeated measurements with a relevant baseline; account for warmup, caches, workload, and noise.                      |
+| Human-assisted check           | Give precise actions and expected observations; capture the actual answer and its limits.                                                |
 
 When human interaction cannot be automated, adapt [the human-assisted template](scripts/hitl-loop.template.sh) if useful. Run it in a terminal the human can actually interact with, or have them run it and return the captured observations. A prompt printed into an unattended tool session is not human assistance. Capture observations, never credentials.
 

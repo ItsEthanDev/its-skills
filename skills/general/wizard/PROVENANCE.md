@@ -10,9 +10,9 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Copied | [Matt Pocock: `skills/engineering/wizard/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md) | Byte-identical to the pinned upstream file. |
-| `template.sh` | Copied | [Matt Pocock: `skills/engineering/wizard/template.sh`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/template.sh) | Byte-identical to the pinned upstream file. |
+| Local file    | Classification | Pinned source                                                                                                                                                                    | Evidence and changes                        |
+| ------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| `SKILL.md`    | Copied         | [Matt Pocock: `skills/engineering/wizard/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md)       | Byte-identical to the pinned upstream file. |
+| `template.sh` | Copied         | [Matt Pocock: `skills/engineering/wizard/template.sh`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/template.sh) | Byte-identical to the pinned upstream file. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

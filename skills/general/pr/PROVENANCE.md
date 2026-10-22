@@ -12,8 +12,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/pr/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md) | Instruction body retained except for one evidence paragraph, generalized to match executable behavior, prose, or research and state verification limits. Visual summary requirement and upstream metadata credit to Dex Horthy / Humanlayer preserved. |
+| Local file | Classification | Pinned source                                                                                                                                                      | Evidence and changes                                                                                                                                                                                                                                   |
+| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/engineering/pr/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md) | Instruction body retained except for one evidence paragraph, generalized to match executable behavior, prose, or research and state verification limits. Visual summary requirement and upstream metadata credit to Dex Horthy / Humanlayer preserved. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

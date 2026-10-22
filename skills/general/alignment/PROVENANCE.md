@@ -10,8 +10,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Copied | [Matt Pocock: `skills/productivity/grilling/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md) | Interview body is verbatim; local name, description, and heading changed. |
+| Local file | Classification | Pinned source                                                                                                                                                                    | Evidence and changes                                                      |
+| ---------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `SKILL.md` | Copied         | [Matt Pocock: `skills/productivity/grilling/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md) | Interview body is verbatim; local name, description, and heading changed. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

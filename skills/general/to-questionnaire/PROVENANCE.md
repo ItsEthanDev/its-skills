@@ -10,8 +10,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/productivity/to-questionnaire/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md) | Identical except "Grill the send, not the subject." becomes "Align on the send, not the subject." |
+| Local file | Classification | Pinned source                                                                                                                                                                                    | Evidence and changes                                                                              |
+| ---------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/productivity/to-questionnaire/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md) | Identical except "Grill the send, not the subject." becomes "Align on the send, not the subject." |
 
 The source revision pins this comparison, not necessarily the original import. The original import revision is not recorded.

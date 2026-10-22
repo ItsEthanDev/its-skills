@@ -54,20 +54,20 @@ Then take the selected features in an order that respects their dependencies. On
 
 Read only the references for the selected features, when you reach them:
 
-| Feature | Read when setting up | Seed templates |
-| --- | --- | --- |
-| Project overview | [references/project-docs.md](references/project-docs.md) | [README](assets/readme.md) |
-| Documentation discovery | [references/discovery.md](references/discovery.md) | [Agent navigation](assets/agent-guidance.md) |
-| Quickstart | [references/quickstart.md](references/quickstart.md) | [Quickstart](assets/quickstart.md) |
-| Deployment or distribution | [references/deployment.md](references/deployment.md) | [Deployment](assets/deployment.md) |
-| Issue tracker | [references/issue-tracker.md](references/issue-tracker.md) | [GitHub](assets/issue-tracker-github.md), [GitLab](assets/issue-tracker-gitlab.md), [local markdown](assets/issue-tracker-local.md) |
-| Implementation triage | [references/triage-labels.md](references/triage-labels.md) | [Triage labels](assets/triage-labels.md) |
-| Domain language | [references/domain-docs.md](references/domain-docs.md) | [Glossary](assets/glossary.md), [consumer guidance](assets/domain.md) |
-| Decision records | [references/decision-records.md](references/decision-records.md) | [Record index](assets/decision-record-index.md), [agent guidance](assets/decision-records.md) |
-| Constitution | [references/constitution.md](references/constitution.md) | [Constitution](assets/constitution.md), [agent guidance](assets/constitution-guidance.md) |
-| Coding standards | [references/coding-standards.md](references/coding-standards.md) | [Coding standards](assets/coding-standards.md) |
-| Commit guidance | [references/commit-guidance.md](references/commit-guidance.md) | [Commit guidance](assets/commit-guidance.md) |
-| Linting and formatting | [references/linting-formatting.md](references/linting-formatting.md) | Use the selected tools' current configuration formats. |
+| Feature                    | Read when setting up                                                 | Seed templates                                                                                                                      |
+| -------------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Project overview           | [references/project-docs.md](references/project-docs.md)             | [README](assets/readme.md)                                                                                                          |
+| Documentation discovery    | [references/discovery.md](references/discovery.md)                   | [Agent navigation](assets/agent-guidance.md)                                                                                        |
+| Quickstart                 | [references/quickstart.md](references/quickstart.md)                 | [Quickstart](assets/quickstart.md)                                                                                                  |
+| Deployment or distribution | [references/deployment.md](references/deployment.md)                 | [Deployment](assets/deployment.md)                                                                                                  |
+| Issue tracker              | [references/issue-tracker.md](references/issue-tracker.md)           | [GitHub](assets/issue-tracker-github.md), [GitLab](assets/issue-tracker-gitlab.md), [local markdown](assets/issue-tracker-local.md) |
+| Implementation triage      | [references/triage-labels.md](references/triage-labels.md)           | [Triage labels](assets/triage-labels.md)                                                                                            |
+| Domain language            | [references/domain-docs.md](references/domain-docs.md)               | [Glossary](assets/glossary.md), [consumer guidance](assets/domain.md)                                                               |
+| Decision records           | [references/decision-records.md](references/decision-records.md)     | [Record index](assets/decision-record-index.md), [agent guidance](assets/decision-records.md)                                       |
+| Constitution               | [references/constitution.md](references/constitution.md)             | [Constitution](assets/constitution.md), [agent guidance](assets/constitution-guidance.md)                                           |
+| Coding standards           | [references/coding-standards.md](references/coding-standards.md)     | [Coding standards](assets/coding-standards.md)                                                                                      |
+| Commit guidance            | [references/commit-guidance.md](references/commit-guidance.md)       | [Commit guidance](assets/commit-guidance.md)                                                                                        |
+| Linting and formatting     | [references/linting-formatting.md](references/linting-formatting.md) | Use the selected tools' current configuration formats.                                                                              |
 
 Paths in the templates are starting points, not requirements. Preserve existing owners and agree on locations before writing. When adding guidance or changing its location, include documentation discovery in scope so people and agents can find it.
 

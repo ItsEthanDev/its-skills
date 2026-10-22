@@ -1,6 +1,6 @@
 # Domain Language
 
-Actively build and sharpen the project's domain language as you design. This is the *active* discipline: challenging terms, inventing edge-case scenarios, and writing the glossary down the moment terms crystallise. Merely reading the glossary for vocabulary is not the whole practice: use this guidance when changing the language, not just consuming it.
+Actively build and sharpen the project's domain language as you design. This is the _active_ discipline: challenging terms, inventing edge-case scenarios, and writing the glossary down the moment terms crystallise. Merely reading the glossary for vocabulary is not the whole practice: use this guidance when changing the language, not just consuming it.
 
 ## Before exploring, read these
 
@@ -59,6 +59,6 @@ Preserve established definitions unless the change is agreed, and reconcile affe
 
 Keep each accepted term in its owning context glossary. Keep this guide and the documentation index linked when owners move. If decision records are used, follow their separate guidance for consequential decisions rather than recording them as definitions.
 
-Adapted guidance and applicable notices: [Third-party notices](<relative-path-to-retained-notices>).
+Adapted guidance and applicable notices: [Third-party notices](relative-path-to-retained-notices).
 
 <!-- Seed instructions: confirm the active practice, definition format, context layout, and approval process with the user. Replace prose placeholders and supply real project-relative links; the term-format example is intentional instructional syntax. Retain the engineering example only when useful to the project. Remove this comment before writing. -->

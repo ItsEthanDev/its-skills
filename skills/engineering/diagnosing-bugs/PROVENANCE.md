@@ -12,8 +12,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/diagnosing-bugs/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md) | Phases 2–6 and redaction retained; Phase 1 delegates feedback-loop construction and strengthens the reproduction gate. |
+| Local file | Classification | Pinned source                                                                                                                                                                                | Evidence and changes                                                                                                   |
+| ---------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/engineering/diagnosing-bugs/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md) | Phases 2–6 and redaction retained; Phase 1 delegates feedback-loop construction and strengthens the reproduction gate. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

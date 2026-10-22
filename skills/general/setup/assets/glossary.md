@@ -2,7 +2,7 @@
 
 <One or two sentences describing this domain context.>
 
-This glossary records the project's agreed domain vocabulary. See [Domain guidance](<relative-path-to-domain-guidance>) for when to consult it and how to propose, approve, or change definitions.
+This glossary records the project's agreed domain vocabulary. See [Domain guidance](relative-path-to-domain-guidance) for when to consult it and how to propose, approve, or change definitions.
 
 ## Language
 

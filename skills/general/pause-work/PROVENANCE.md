@@ -14,9 +14,9 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/productivity/handoff/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md) | Handoff paragraph, suggested-skills section, artifact references, and redaction instructions retained and expanded. |
-| `SKILL.md` | Adapted | [Lauren Tan (Poteto): `pstack/skills/poteto-mode/playbooks/pause-safely.md`](https://github.com/cursor/plugins/blob/1dcc2bacde73ddd284803b7af28164d0436198fc/pstack/skills/poteto-mode/playbooks/pause-safely.md) | Safe-boundary stop, no new work, child-agent cancellation, and irreversible-action constraints adapted; automatic WIP commit not retained. |
+| Local file | Classification | Pinned source                                                                                                                                                                                                     | Evidence and changes                                                                                                                       |
+| ---------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/productivity/handoff/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md)                                    | Handoff paragraph, suggested-skills section, artifact references, and redaction instructions retained and expanded.                        |
+| `SKILL.md` | Adapted        | [Lauren Tan (Poteto): `pstack/skills/poteto-mode/playbooks/pause-safely.md`](https://github.com/cursor/plugins/blob/1dcc2bacde73ddd284803b7af28164d0436198fc/pstack/skills/poteto-mode/playbooks/pause-safely.md) | Safe-boundary stop, no new work, child-agent cancellation, and irreversible-action constraints adapted; automatic WIP commit not retained. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

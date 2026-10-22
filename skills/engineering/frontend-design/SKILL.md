@@ -47,12 +47,12 @@ Do not imply that a simulated action completed a real payment, delivery, or subm
 
 ### Prefer these treatments
 
-| Instead of | Prefer |
-| --- | --- |
-| "Back to company website (opens in a new tab)" | A back arrow when context makes the destination clear, or an arrow with a short destination label. Do not add a new-tab sentence by default. |
-| "Form details are stored in browser storage and persist on refresh" | No notice for routine draft persistence; retain an explanation only for a user-relevant consequence. |
-| "Preview: This demo does not submit requests yet" | No persistent demo notice. Report the limitation in the handoff and do not claim that a real request was sent. |
-| "Please click the button below to save your changes" | "Save changes" on the button. |
+| Instead of                                                          | Prefer                                                                                                                                       |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| "Back to company website (opens in a new tab)"                      | A back arrow when context makes the destination clear, or an arrow with a short destination label. Do not add a new-tab sentence by default. |
+| "Form details are stored in browser storage and persist on refresh" | No notice for routine draft persistence; retain an explanation only for a user-relevant consequence.                                         |
+| "Preview: This demo does not submit requests yet"                   | No persistent demo notice. Report the limitation in the handoff and do not claim that a real request was sent.                               |
+| "Please click the button below to save your changes"                | "Save changes" on the button.                                                                                                                |
 
 ## Inspect and simplify
 

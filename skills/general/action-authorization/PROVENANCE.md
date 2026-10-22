@@ -8,9 +8,9 @@
 
 ## File evidence
 
-| Local file | Classification | Source | Evidence |
-| --- | --- | --- | --- |
-| `SKILL.md` | Original | Local requirements and design discussion | Effect-based authorization procedure, scoped grants, defaults, persistence, and retry rules written for this change. |
-| `PERMISSION-FORMAT.md` | Original | Local requirements and design discussion | Project permission-record format and examples written for this change. |
+| Local file             | Classification | Source                                   | Evidence                                                                                                             |
+| ---------------------- | -------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `SKILL.md`             | Original       | Local requirements and design discussion | Effect-based authorization procedure, scoped grants, defaults, persistence, and retry rules written for this change. |
+| `PERMISSION-FORMAT.md` | Original       | Local requirements and design discussion | Project permission-record format and examples written for this change.                                               |
 
 This new skill was not part of the pinned third-party comparison documented in the collection's notices. Its classification records its known creation history, not a claim that an external-source audit was performed.

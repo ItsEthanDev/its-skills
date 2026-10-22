@@ -19,22 +19,22 @@ Proceed to the permission check only when the effects are understood; ask about 
 
 Consult applicable instructions, conversation grants, and `docs/agents/action-permissions.md` if present, or the permission-file location designated by project instructions. Read [Permission file format](PERMISSION-FORMAT.md) when consulting or maintaining that file. A missing file does not block work. Use these defaults unless an applicable instruction or decision changes them:
 
-| Effects | Default |
-| --- | --- |
-| Read-only public or project-development access (including authenticated issues, production logs, and database tables), excluding the effects below | Standing permission |
-| Private-data disclosure, unusual cost, or material production burden—even from a read | Ask |
-| Remote writes, publication, pushes, deployments, system activation, destructive actions beyond ordinary local edits, spending, or other consequential effects | Ask |
+| Effects                                                                                                                                                       | Default             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- |
+| Read-only public or project-development access (including authenticated issues, production logs, and database tables), excluding the effects below            | Standing permission |
+| Private-data disclosure, unusual cost, or material production burden—even from a read                                                                         | Ask                 |
+| Remote writes, publication, pushes, deployments, system activation, destructive actions beyond ordinary local edits, spending, or other consequential effects | Ask                 |
 
 An explicit request authorizes the described operation, not additional effects. "Push this branch" needs no redundant approval when its effects and target are clear; "implement this feature" does not authorize deployment.
 
 Bound every permission by **action, target, and constraints**:
 
-| Decision | Scope and lifetime |
-| --- | --- |
-| Deny | Stop the specified operation, including alternative routes to the same effect. Persists until explicitly changed. |
-| Allow once | One described operation, possibly several tool calls; consumed on success. |
-| Allow for session | The specified class of operations in the current session only. |
-| Standing permission | The specified class across sessions until changed or revoked. |
+| Decision            | Scope and lifetime                                                                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Deny                | Stop the specified operation, including alternative routes to the same effect. Persists until explicitly changed. |
+| Allow once          | One described operation, possibly several tool calls; consumed on success.                                        |
+| Allow for session   | The specified class of operations in the current session only.                                                    |
+| Standing permission | The specified class across sessions until changed or revoked.                                                     |
 
 A specific denial overrides a broader permission. Performing a denied action requires explicit revision of the denial, not merely another request to perform it. Higher-priority instructions, stricter applicable requirements, and tool restrictions still apply.
 

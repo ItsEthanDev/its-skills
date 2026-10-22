@@ -12,8 +12,8 @@ Retain this file and the applicable license files when distributing this directo
 
 ## File evidence
 
-| Local file | Classification | Pinned source | Evidence and changes |
-| --- | --- | --- | --- |
-| `SKILL.md` | Adapted | [Matt Pocock: `skills/engineering/to-spec/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md) | Specification template retained; tracker operations and triage role mappings are discovered through the project's documentation index and agent instructions, with missing guidance surfaced before tracker use. |
+| Local file | Classification | Pinned source                                                                                                                                                                | Evidence and changes                                                                                                                                                                                             |
+| ---------- | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SKILL.md` | Adapted        | [Matt Pocock: `skills/engineering/to-spec/SKILL.md`](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md) | Specification template retained; tracker operations and triage role mappings are discovered through the project's documentation index and agent instructions, with missing guidance surfaced before tracker use. |
 
 The source revisions pin this comparison, not necessarily the original import. "Original" means no identifiable borrowing from the three audited projects, not proof of independent creation. Local history includes imports from earlier Nix-configuration adaptations whose exact upstream import revisions are not recorded.

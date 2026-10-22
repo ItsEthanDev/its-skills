@@ -2,13 +2,13 @@
 
 Use these GitHub labels for implementation triage.
 
-| Skill role | Label | Meaning |
-| --- | --- | --- |
-| `needs-triage` | `needs-triage` | Maintainer evaluation required. |
-| `needs-info` | `needs-info` | Waiting for missing information. |
+| Skill role        | Label             | Meaning                                   |
+| ----------------- | ----------------- | ----------------------------------------- |
+| `needs-triage`    | `needs-triage`    | Maintainer evaluation required.           |
+| `needs-info`      | `needs-info`      | Waiting for missing information.          |
 | `ready-for-agent` | `ready-for-agent` | Fully specified for agent implementation. |
-| `ready-for-human` | `ready-for-human` | Requires human implementation. |
-| `wontfix` | `wontfix` | Will not be actioned. |
+| `ready-for-human` | `ready-for-human` | Requires human implementation.            |
+| `wontfix`         | `wontfix`         | Will not be actioned.                     |
 
 Wayfinder maps and decision tickets use only `wayfinder:` labels, not these
 implementation labels. Their lifecycle is defined in

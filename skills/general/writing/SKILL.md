@@ -13,4 +13,4 @@ Write proposed artifact text in the artifact's voice, even when presenting a dra
 
 - For prose that people read, including documentation, READMEs, RFCs, ADRs, PR descriptions, and commit messages, read [human-writing.md](human-writing.md).
 - For instructions that coding agents consume, including `AGENTS.md`, `CLAUDE.md`, prompts, and skills, read [agent-writing.md](agent-writing.md).
-Load one reference for a single-audience artifact. Load both references for a mixed-audience artifact.
+  Load one reference for a single-audience artifact. Load both references for a mixed-audience artifact.
