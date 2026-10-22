@@ -66,10 +66,6 @@ Matt Pocock's domain-modeling skill. Their applicable MIT notice is included in
   [domain-modeling/SKILL.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md)
   and definition rules from
   [GLOSSARY-FORMAT.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/GLOSSARY-FORMAT.md).
-- [Decision-record guidance](docs/agents/decision-records.md) adapts the offer criteria from
-  [domain-modeling/SKILL.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md)
-  and the short record format, examples, and optional sections from
-  [ADR-FORMAT.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/ADR-FORMAT.md).
 
 Local additions define project approval, discovery, and maintenance. The setup
 bundle's provenance identifies the corresponding adapted templates; upstream
