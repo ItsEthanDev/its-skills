@@ -8,8 +8,7 @@ ItsSkills is a source collection; there is no application server to start.
 - Python 3; the repository check needs no additional packages.
 - GitHub CLI (`gh`) and GitHub authentication only when using the issue tracker.
 
-Consumer installation prerequisites depend on the chosen
-[installation method](../README.md#installation).
+Consumer installation prerequisites depend on the chosen [installation method](../README.md#installation).
 
 ## Get the checkout
 
@@ -29,15 +28,9 @@ python3 scripts/check_repo.py
 ```
 
 Success prints `Repository consistency checks passed.`
-produces no output and exits successfully.
 
-The check validates catalog coverage, required bundle notices, and existing
-attribution inventory entries. It does not establish instruction quality,
-provenance accuracy, license adequacy, or installation behavior.
+The check validates catalog coverage, required bundle notices, and existing attribution inventory entries. It does not establish instruction quality, provenance accuracy, license adequacy, or installation behavior.
 
-Review changed instructions against the constitution and applicable writing
-guidance. For documentation changes, check local links and exercise changed
-commands where safe.
+Review changed instructions against the constitution and applicable writing guidance. For documentation changes, check local links and exercise changed commands where safe.
 
-The repository check also runs on pushes and pull requests through
-[GitHub Actions](../.github/workflows/check-repo.yml).
+The repository check also runs on pushes and pull requests through [GitHub Actions](../.github/workflows/check-repo.yml).
