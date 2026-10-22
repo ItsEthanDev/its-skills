@@ -1,28 +1,18 @@
 # ItsSkills
 
-ItsSkills is an experimental collection of reusable agent skills for general work, software engineering, and learning.
+ItsSkills is an collection of reusable agent skills for general work, software engineering, and learning.
 
 ## Skill catalog
 
 Use these identifiers with `--skill` when installing individual skills. Each link opens the skill's instructions. Invocation metadata support depends on the consuming agent.
 
-Skills named `to-<artifact>` transform context or source material into the named
-[artifact](GLOSSARY.md#work-products). Their completion criterion is producing the
-artifact, rather than executing its downstream use. Not every skill that produces
-an artifact needs a `to-` name.
+Skills live under `skills/<task-domain>/<skill>/` classified by purpose, not by implementation tools or occasional reuse. Each skill has one canonical home. Workflows in other domains can use it without copying it.
 
-Skills live under `skills/<task-domain>/<skill>/`. Classify by purpose, not by
-implementation tools or occasional reuse. Each skill has one canonical home;
-workflows in other domains can use it without copying it.
+Skills are divided into model invoked skills and manually invoked skills. The model can load model invoked skills when their invocation conditions match the task, while manually invoked skills must be explicitly invoked by the user.
 
 ### General
 
-Cross-domain work, including Git collaboration on code, prose, or other files.
-
 #### Model invoked
-
-The model can load these skills when their invocation conditions match the task.
-You can also invoke them explicitly.
 
 | Skill | Purpose |
 | --- | --- |
@@ -39,8 +29,6 @@ You can also invoke them explicitly.
 
 #### Manually invoked
 
-Invoke these skills explicitly. Their metadata sets `disable-model-invocation: true`.
-
 | Skill | Purpose |
 | --- | --- |
 | [dry-run](skills/general/dry-run/SKILL.md) | Preview a small edit as a diff and wait for approval before changing files. |
@@ -52,8 +40,6 @@ Invoke these skills explicitly. Their metadata sets `disable-model-invocation: t
 | [wayfinder](skills/general/wayfinder/SKILL.md) | Map work spanning multiple agent sessions into decision tickets and resolve them in sequence. |
 
 ### Engineering
-
-Software design, implementation, review, diagnosis, and testing.
 
 #### Model invoked
 
@@ -86,11 +72,6 @@ Software design, implementation, review, diagnosis, and testing.
 
 The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. The unpinned examples below target main; select a revision containing the skills you need.
 
-A task-domain directory is an ownership and browsing boundary, not a self-contained
-installation. Include the general skills required by selected workflows. Selection
-uses existing CLI options or Nix paths; there is no custom installer or dependency
-resolver.
-
 ### Individual skills
 
 Choose any skill or combination by identifier:
@@ -107,17 +88,9 @@ Install `setup` to establish a project's documentation, conventions, and selecte
 npx skills add ItsEthanDev/its-skills --skill setup
 ```
 
-Invoke `setup` explicitly in your agent. It explores the project, establishes your
-intent, and asks you to approve the proposed changes before writing. Run it for
-general setup, scope it to a feature such as commit guidance or a constitution,
-or use it to extend or migrate existing conventions. Features are selected for
-the work the project supports; a tracker, constitution, or toolchain is not
-mandatory. Approved lint/format setup can configure tools as well as document them.
+Invoke `setup` explicitly in your agent harness. It explores the project, establishes your intent, and asks you to approve the proposed changes before writing. Run it for general setup, scope it to a feature such as commit guidance or a constitution, or use it to extend or migrate existing conventions. Features are selected for the work the project supports; a tracker, constitution, or toolchain is not mandatory. Approved lint/format setup can configure tools as well as document them.
 
-The generated guidance belongs to the project and remains usable without the
-setup skill. The README indexes selected guidance by purpose; agent instructions
-explain when to follow it. Future setup recommendations do not change existing
-project policy without an approved change.
+The generated guidance belongs to the project and remains usable without the setup skill. The README indexes selected guidance by purpose; agent instructions explain when to follow it.
 
 ### Nix
 
@@ -130,21 +103,18 @@ inputs.its-skills = {
 };
 ```
 
-Your consumer's `flake.lock` pins the source revision. ItsSkills does not require a provider flake, package build, or separate copy of the skills.
-
-For Pi through Home Manager, pass your flake `inputs` through `extraSpecialArgs` and point its skill discovery at the source directory:
+For installation of skills through Home Manager, pass your flake `inputs` through `extraSpecialArgs` and point its skill discovery at the source directory. Replace `my-coding-agent` with your preferred agent harness. Refer to home manager options to determine the exact interface for your setup.
 
 ```nix
 { inputs, ... }: {
-  programs.pi-coding-agent = {
+  programs.my-coding-agent = {
     enable = true;
     settings.skills = [ "${inputs.its-skills}/skills" ];
   };
 }
 ```
 
-The directory contains every skill in nested task-domain directories. To select
-engineering plus all general skills, use:
+The directory contains every skill in nested task-domain directories. To select a specific directory, use the following pattern:
 
 ```nix
 settings.skills = [
@@ -153,29 +123,12 @@ settings.skills = [
 ];
 ```
 
-For individual skills, use complete directory paths such as
-`"${inputs.its-skills}/skills/general/writing"`, and include any skills they require.
-Selecting only a domain directory does not add dependencies from other domains.
-Keep each selected skill's references, templates, scripts, `PROVENANCE.md`,
-`LICENSE`, and any `licenses/` directory with it; selecting a `SKILL.md` alone does
-not preserve its bundle or notices.
+For individual skills, use complete directory paths such as `"${inputs.its-skills}/skills/general/writing"`, and include any skills they require. Selecting only a domain directory does not add dependencies from other domains.
 
 ### Installation notes
 
 - The CLI commands leave target-agent selection to the CLI prompts and use project-local installation by default. Add `--global` for user-wide installation or `--agent <agent>` to select a target explicitly.
 - Invocation metadata support depends on the consuming agent.
-
-## Verification
-
-Run the repository consistency check with Python 3 (no additional packages):
-
-```sh
-python3 scripts/check_repo.py
-```
-
-The check enforces `skills/<general|engineering|learning>/<skill>/SKILL.md`, globally unique skill directory names, catalog coverage, and a `LICENSE` and `PROVENANCE.md` in each skill directory. It validates existing third-party inventory entries, classifications, and provenance links without requiring an inventory entry for every skill. It reports all errors and exits nonzero on failure. Provenance accuracy and license adequacy still require human review.
-
-The same check runs in GitHub Actions on pushes and pull requests.
 
 ## Project documentation
 
@@ -203,7 +156,3 @@ ItsSkills draws on ideas and adapted guidance from:
 - [Matt Pocock's skills](https://github.com/mattpocock/skills), published under the [MIT license](https://github.com/mattpocock/skills/blob/24fe0ef7737efae15c87225755e9f6f5965e4888/LICENSE). Copyright (c) 2026 Matt Pocock.
 - [Lauren Tan (Poteto)'s Pstack](https://github.com/cursor/plugins/tree/main/pstack), published under the [MIT license](https://github.com/cursor/plugins/blob/e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a/pstack/LICENSE). Copyright (c) 2026 Lauren Tan.
 - [Anthropic's frontend design skill](https://github.com/anthropics/skills/tree/main/skills/frontend-design), published under the [Apache License 2.0](https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/LICENSE.txt).
-
-## License
-
-ItsSkills' original material uses [MIT](LICENSE). Copied and adapted material retains its applicable upstream notices. The [skill inventory](THIRD-PARTY-NOTICES.md#skill-inventory) classifies audited skills and links to file-level evidence. Each skill directory includes `PROVENANCE.md`, `LICENSE`, and any additional upstream licenses under `licenses/`; retain them with individual skill distributions. Inspiration credits do not change the license of original local text.
