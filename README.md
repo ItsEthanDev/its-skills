@@ -133,7 +133,6 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 ## Project documentation
 
 - [Quickstart](docs/quickstart.md): prerequisites and local verification.
-- [Constitution](CONSTITUTION.md): binding project constraints and amendment rules.
 - [Project standards](STANDARDS.md): guiding qualities for project work.
 - [Glossary](GLOSSARY.md): agreed project terms.
 - [Decision records](docs/decisions.md): accepted decisions and their rationale.
@@ -142,7 +141,6 @@ For individual skills, use complete directory paths such as `"${inputs.its-skill
 
 - [Agent instructions](AGENTS.md): conditional pointers and commit behavior.
 - [Commit guidance](docs/agents/commits.md): agent prerequisites, messages, branches, and reporting.
-- [Constitution guidance](docs/agents/constitution.md): applying and amending governance.
 - [Issue tracker](docs/agents/issue-tracker.md): GitHub operations and wayfinding.
 - [Triage labels](docs/agents/triage-labels.md): implementation-role mappings.
 - [Domain guidance](docs/agents/domain.md): active terminology practice and maintenance.

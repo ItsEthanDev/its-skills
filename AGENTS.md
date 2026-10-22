@@ -28,9 +28,6 @@ Use [Project documentation](README.md#project-documentation) and
 - When resolving a consequential trade-off or offering, writing, or revisiting
   a decision record, read [decision-record guidance](docs/agents/decision-records.md)
   and relevant records.
-- Before changing governed work or proposing an amendment, read the
-  [constitution](CONSTITUTION.md) and
-  [agent constitution guidance](docs/agents/constitution.md).
 - Before committing, read [commit guidance](docs/agents/commits.md).
 
 Follow each document's maintenance and approval rules.

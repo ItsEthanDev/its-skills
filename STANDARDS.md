@@ -4,10 +4,6 @@ These standards describe the qualities that guide work on ItsSkills, including
 the design and review of its skills and supporting resources. They support
 judgment and trade-offs; they are not additional constitutional requirements.
 
-The [constitution](CONSTITUTION.md) contains binding constraints. These standards
-do not override them. Assess relevant standards when reviewing work, and explain
-meaningful departures rather than treating them as automatic failures.
-
 Some standards also guide the artifacts and practices that consuming agents
 produce through the skills. Where applicable, embed that behavior in the skill's
 instructions rather than repeat the standard by name or require downstream
