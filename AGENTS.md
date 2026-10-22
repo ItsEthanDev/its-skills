@@ -1,30 +1,24 @@
 # Project instructions
 
-Before proposing or changing skills, supporting files, or distribution documentation, read [CONSTITUTION.md](CONSTITUTION.md).
+Before designing, changing, or reviewing project work, read [PRINCIPLES.md](PRINCIPLES.md) and assess the applicable guidance.
 
-When writing or editing skills, read [the writing skill](skills/writing/SKILL.md) and follow its agent-writing and skill-writing references.
+When writing or editing skills, read [the writing skill](skills/general/writing/SKILL.md) and follow its agent-writing and skill-writing references.
 
 Before changing attribution or distributing copied or adapted material, read [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and the [README license section](README.md#license).
 
-## Agent skills
+## Project guidance
 
-### Getting started
+Use [Project documentation](README.md#project-documentation) and
+[Agent documentation](README.md#agent-documentation) to locate project guidance.
 
-When setting up the checkout or verifying a change, read `docs/quickstart.md`.
+- Before using local tools or verifying work, read the [quickstart](docs/quickstart.md).
+- Before reading, creating, or updating tickets, read [issue-tracker guidance](docs/agents/issue-tracker.md).
+- Before writing standing project documentation, read [tracker boundaries](docs/agents/issue-tracker.md#standing-documentation).
+- Before assigning implementation triage roles, read [triage labels](docs/agents/triage-labels.md).
+- Before exploring a domain area, discussing or changing domain concepts, or proposing a change, read [domain guidance](docs/agents/domain.md). Follow its active terminology and approval practices.
 
-### Distribution
+Follow each document's maintenance and approval rules.
 
-Before planning a release or changing distribution, read `docs/deployment.md`.
+## Commits
 
-### Issue tracker
-
-Before reading, creating, or updating tickets, read `docs/agents/issue-tracker.md`.
-
-### Triage labels
-
-Before applying implementation triage roles, read `docs/agents/triage-labels.md`.
-
-### Domain docs
-
-Before exploring a domain area or proposing a change, read `docs/agents/domain.md`
-and follow its glossary pointers.
+After completing and verifying a coherent unit of work, commit its changes unless explicitly instructed otherwise. Stage only changes belonging to that work; leave unrelated changes untouched. If verification or commit scope is unresolved, report the blocker rather than commit incomplete or ambiguous work. A request to commit does not imply permission to push.

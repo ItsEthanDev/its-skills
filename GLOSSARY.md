@@ -2,6 +2,8 @@
 
 ItsSkills is a collection of reusable agent instructions and their supporting resources.
 
+See [Domain guidance](docs/agents/domain.md) for when to consult this glossary and how to propose, approve, or change definitions.
+
 ## Skills
 
 **Skill**:
@@ -14,6 +16,12 @@ and license notices.
 **Task domain**:
 The kind of work a skill supports, such as software engineering or learning.
 Cross-domain skills support work across multiple task domains.
+
+## Work products
+
+**Artifact**:
+A recorded work product that can be reviewed, shared, or used independently
+of the conversation that produced it.
 
 ## Planning and tracking
 
