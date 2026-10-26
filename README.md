@@ -60,14 +60,6 @@ Skills are divided into model invoked skills and manually invoked skills. The mo
 | [to-spec](skills/engineering/to-spec/SKILL.md)                                             | Synthesize the conversation into a spec and publish it to the issue tracker.                                       |
 | [to-implementation-tickets](skills/engineering/to-implementation-tickets/SKILL.md)         | Break a plan, spec, or conversation into tracer-bullet implementation tickets with explicit blocking dependencies. |
 
-### Learning
-
-#### Manually invoked
-
-| Skill                                   | Purpose                                                                      |
-| --------------------------------------- | ---------------------------------------------------------------------------- |
-| [teach](skills/learning/teach/SKILL.md) | Teach a skill or concept through lessons in a persistent learning workspace. |
-
 ## Installation
 
 The repository follows Vercel's skills CLI source layout and can be consumed as a source-only Nix flake input. Both methods use the same complete skill bundles. The unpinned examples below target main; select a revision containing the skills you need.
