@@ -28,7 +28,7 @@ When the user states how something works, check whether the project work agrees.
 
 ### Update the glossary inline
 
-When a term is resolved, update its owning glossary right there, following the approval process below. Don't batch these up: capture them as they happen. Distinguish a proposed definition from an accepted one; proposing a term does not settle it.
+When a term is resolved, update its owning glossary right there. Don't batch these up: capture them as they happen. Distinguish a proposed definition from an accepted one; proposing a term does not settle it.
 
 The glossary should be totally devoid of implementation details. Do not treat it as a spec, a scratch pad, or a repository for implementation decisions. It is a glossary and nothing else.
 

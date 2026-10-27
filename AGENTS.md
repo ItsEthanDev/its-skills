@@ -4,7 +4,7 @@ Before designing, changing, or reviewing project work, read [PRINCIPLES.md](PRIN
 
 When writing or editing skills, read [the writing skill](skills/general/writing/SKILL.md) and follow its agent-writing and skill-writing references.
 
-Before changing attribution or distributing copied or adapted material, read [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and the [README license section](README.md#license).
+Before changing attribution or distributing copied or adapted material, read [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) and relevant licenses.
 
 ## Project guidance
 

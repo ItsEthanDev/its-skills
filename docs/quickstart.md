@@ -31,6 +31,6 @@ Success prints `Repository consistency checks passed.`
 
 The check validates catalog coverage, required bundle notices, and existing attribution inventory entries. It does not establish instruction quality, provenance accuracy, license adequacy, or installation behavior.
 
-Review changed instructions against the constitution and applicable writing guidance. For documentation changes, check local links and exercise changed commands where safe.
+Review changed instructions against the principles and applicable writing guidance. For documentation changes, check local links and exercise changed commands where safe.
 
 The repository check also runs on pushes and pull requests through [GitHub Actions](../.github/workflows/check-repo.yml).
