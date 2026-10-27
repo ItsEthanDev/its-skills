@@ -1,6 +1,6 @@
 ---
 name: setup
-description: "Establish, extend, or migrate a project's documentation, conventions, and selected tooling, across the project or for a specific feature."
+description: "Establish, extend, or migrate a project's documentation and conventions, across the project or for a specific feature."
 disable-model-invocation: true
 ---
 
@@ -86,7 +86,7 @@ Write standing project documentation as the current design and procedures. Retai
 
 Check that all selected docs exist in the agreed locations, local links resolve, template placeholders are replaced, and commands match the project's scripts and configuration. Follow discovery from both README sections and the direct harness pointers through the relevant guidance. Confirm that human-facing artifacts and agent procedures are separated, their links resolve, and a contributor can apply the selected methods, format, and maintenance/approval rules using only project documentation, without consulting tracker history. Check proposed standing documentation for historical or transitional narratives and topic-specific tracker references. No required procedure may exist only in this skill, its references, or removable template comments. Leave unselected features alone.
 
-Run safe local checks when feasible; record what was actually verified. Setup may write documentation and configure approved local tooling. Before executing dependency installation or checks, inspect lifecycle hooks and command effects. Obtain separate authorization for effects outside the approved scope. Do not deploy, provision infrastructure, publish releases, activate systems, or mutate the external tracker to test the instructions. Documenting a push or deployment procedure is not permission to execute it.
+Run safe local checks when feasible; record what was actually verified. Setup may write documentation and the configuration for selected features. Before executing dependency installation or checks, inspect lifecycle hooks and command effects. Obtain separate authorization for effects outside the approved scope. Do not deploy, provision infrastructure, publish releases, activate systems, or mutate the external tracker to test the instructions. Documenting a push or deployment procedure is not permission to execute it.
 
 ### 6. Done
 
