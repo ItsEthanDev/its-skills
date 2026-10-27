@@ -9,6 +9,7 @@ import sys
 
 
 CLASSIFICATIONS = {"Copied", "Adapted", "Inspired", "Original"}
+TASK_DOMAINS = {"general", "engineering", "learning"}
 LINK = re.compile(r"\[(`?)([a-z0-9]+(?:-[a-z0-9]+)*)\1\]\(([^\s)]+)\)")
 
 
@@ -79,7 +80,8 @@ def check_entries(root, rows, skills, target, errors):
         names.append(name)
         if name not in skills:
             errors.append(f"{location}: unknown skill '{name}'")
-        expected = f"skills/{name}/{target}"
+            continue
+        expected = (skills[name] / target).as_posix()
         if link != expected:
             errors.append(f"{location}: expected link '{expected}', got '{link}'")
         elif not (root / link).is_file():
@@ -94,18 +96,34 @@ def check_repo(root):
     """Return all consistency errors; an empty list means the checks passed."""
     root = Path(root)
     errors = []
-    skills = {path.parent.name for path in (root / "skills").glob("*/SKILL.md") if path.is_file()}
+    skills = {}
+    for path in sorted((root / "skills").rglob("SKILL.md")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(root)
+        if len(relative.parts) != 4 or relative.parts[1] not in TASK_DOMAINS:
+            errors.append(
+                f"{relative}: expected skills/<general|engineering|learning>/<skill>/SKILL.md"
+            )
+            continue
+        name = path.parent.name
+        if name in skills:
+            errors.append(
+                f"{relative}: duplicate skill identifier '{name}' (also in {skills[name]})"
+            )
+            continue
+        skills[name] = relative.parent
     if not skills:
-        errors.append("skills/: no skills found (expected skills/*/SKILL.md)")
+        errors.append("skills/: no skills found (expected skills/<domain>/<skill>/SKILL.md)")
     for name in sorted(skills):
         for required in ("LICENSE", "PROVENANCE.md"):
-            path = Path("skills") / name / required
+            path = skills[name] / required
             if not (root / path).is_file():
                 errors.append(f"{path}: missing required file")
 
     catalog = table_rows(root, "README.md", "Skill catalog", ["Skill", "Purpose"], errors)
     catalog_names = check_entries(root, catalog, skills, "SKILL.md", errors)
-    for name in sorted(skills - catalog_names):
+    for name in sorted(skills.keys() - catalog_names):
         errors.append(f"README.md: missing catalog entry for '{name}'")
 
     inventory = table_rows(

@@ -21,44 +21,54 @@ The review combines full local-file inspection, exact diffs, distinctive passage
 
 ## Skill inventory
 
-| Skill | Classification | Evidence |
-| --- | --- | --- |
-| [`alignment`](skills/alignment/PROVENANCE.md) | Copied | Renamed copy of grilling; the interview procedure is verbatim. |
-| [`code-review`](skills/code-review/PROVENANCE.md) | Adapted | Near-verbatim code-review with the setup reference retargeted. |
-| [`codebase-design`](skills/codebase-design/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
-| [`commit`](skills/commit/PROVENANCE.md) | Original | Local commit procedure; no identifiable borrowing in the audited sources. |
-| [`constitute`](skills/constitute/PROVENANCE.md) | Original | Local governance skill and template. |
-| [`decision-records`](skills/decision-records/PROVENANCE.md) | Adapted | ADR branch extracted from domain-modeling; template copied verbatim. |
-| [`diagnosing-bugs`](skills/diagnosing-bugs/PROVENANCE.md) | Adapted | Diagnosis workflow retained; feedback-loop construction extracted and reproduction gate changed. |
-| [`domain-language`](skills/domain-language/PROVENANCE.md) | Adapted | Glossary branch extracted from domain-modeling; template copied verbatim. |
-| [`dry-run`](skills/dry-run/PROVENANCE.md) | Original | Local diff-preview and approval procedure. |
-| [`frontend-design`](skills/frontend-design/PROVENANCE.md) | Inspired | Original task-centered instructions informed by Anthropic frontend-design. |
-| [`implement`](skills/implement/PROVENANCE.md) | Adapted | Implementation workflow extended with verification gates. |
-| [`improve-codebase-architecture`](skills/improve-codebase-architecture/PROVENANCE.md) | Adapted | Architecture review retargeted to local skills; report guidance copied verbatim. |
-| [`ingest-document`](skills/ingest-document/PROVENANCE.md) | Original | Local document-intake and adoption procedure. |
-| [`pause-work`](skills/pause-work/PROVENANCE.md) | Adapted | Matt handoff text combined with Poteto safe-pause guidance. |
-| [`pr`](skills/pr/PROVENANCE.md) | Copied | Verbatim PR guidance, including the restored upstream credit. |
-| [`propose-first`](skills/propose-first/PROVENANCE.md) | Original | Local investigation, recommendation, and approval procedure. |
-| [`prototype`](skills/prototype/PROVENANCE.md) | Copied | All three instruction files are byte-identical. |
-| [`repitch`](skills/repitch/PROVENANCE.md) | Adapted | wait-what expanded with scope and conversational-state rules. |
-| [`research`](skills/research/PROVENANCE.md) | Copied | Byte-identical research skill. |
-| [`retro`](skills/retro/PROVENANCE.md) | Adapted | Near-verbatim retro with writing references retargeted. |
-| [`setup`](skills/setup/PROVENANCE.md) | Adapted | Matt setup and tracker templates expanded with original project-documentation templates. |
-| [`specify`](skills/specify/PROVENANCE.md) | Adapted | to-spec renamed and adapted to configured triage roles. |
-| [`tdd`](skills/tdd/PROVENANCE.md) | Copied | Skill and both test-quality references are byte-identical. |
-| [`teach`](skills/teach/PROVENANCE.md) | Copied | Skill and all three format references are byte-identical to Matt's teach skill. |
-| [`ticket`](skills/ticket/PROVENANCE.md) | Adapted | to-tickets renamed and adapted to configured tracker conventions. |
-| [`to-questionnaire`](skills/to-questionnaire/PROVENANCE.md) | Adapted | Matt's questionnaire skill with "Grill the send" changed to "Align on the send". |
-| [`verifying-work`](skills/verifying-work/PROVENANCE.md) | Adapted | Poteto verification protocols and Matt feedback-loop guidance combined; HITL script copied. |
-| [`wayfinder`](skills/wayfinder/PROVENANCE.md) | Adapted | Wayfinding procedure adapted to local skills and tracker conventions. |
-| [`wizard`](skills/wizard/PROVENANCE.md) | Copied | Skill and bash template are byte-identical. |
-| [`writing`](skills/writing/PROVENANCE.md) | Adapted | Matt agent-writing and Poteto technical-writing guidance behind an original audience router. |
+| Skill                                                                                             | Classification | Evidence                                                                                                                                                     |
+| ------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`alignment`](skills/general/alignment/PROVENANCE.md)                                             | Copied         | Renamed copy of grilling; the interview procedure is verbatim.                                                                                               |
+| [`code-review`](skills/engineering/code-review/PROVENANCE.md)                                     | Adapted        | Near-verbatim code-review with the setup reference retargeted.                                                                                               |
+| [`codebase-design`](skills/engineering/codebase-design/PROVENANCE.md)                             | Copied         | All three instruction files are byte-identical.                                                                                                              |
+| [`diagnosing-bugs`](skills/engineering/diagnosing-bugs/PROVENANCE.md)                             | Adapted        | Diagnosis workflow retained; feedback-loop construction extracted and reproduction gate changed.                                                             |
+| [`dry-run`](skills/general/dry-run/PROVENANCE.md)                                                 | Original       | Local diff-preview and approval procedure.                                                                                                                   |
+| [`frontend-design`](skills/engineering/frontend-design/PROVENANCE.md)                             | Inspired       | Original task-centered instructions informed by Anthropic frontend-design.                                                                                   |
+| [`implement`](skills/engineering/implement/PROVENANCE.md)                                         | Adapted        | Implementation workflow extended with verification gates.                                                                                                    |
+| [`improve-codebase-architecture`](skills/engineering/improve-codebase-architecture/PROVENANCE.md) | Adapted        | Architecture review retargeted to local skills; report guidance copied verbatim.                                                                             |
+| [`ingest-document`](skills/general/ingest-document/PROVENANCE.md)                                 | Original       | Local document-intake and adoption procedure.                                                                                                                |
+| [`pause-work`](skills/general/pause-work/PROVENANCE.md)                                           | Adapted        | Matt handoff text combined with Poteto safe-pause guidance.                                                                                                  |
+| [`pr`](skills/general/pr/PROVENANCE.md)                                                           | Adapted        | PR guidance retained; evidence guidance generalized for executable behavior, prose, and research. Upstream credit preserved.                                 |
+| [`propose-first`](skills/general/propose-first/PROVENANCE.md)                                     | Original       | Local investigation, recommendation, and approval procedure.                                                                                                 |
+| [`prototype`](skills/general/prototype/PROVENANCE.md)                                             | Adapted        | Shared process generalized for non-code artifacts; engineering rules extracted and capture boundaries clarified.                                             |
+| [`repitch`](skills/general/repitch/PROVENANCE.md)                                                 | Adapted        | wait-what expanded with scope and conversational-state rules.                                                                                                |
+| [`research`](skills/general/research/PROVENANCE.md)                                               | Copied         | Byte-identical research skill.                                                                                                                               |
+| [`retro`](skills/general/retro/PROVENANCE.md)                                                     | Adapted        | Retrospective procedure retained; engineering guidance extracted into a conditional reference.                                                               |
+| [`setup`](skills/general/setup/PROVENANCE.md)                                                     | Adapted        | Matt setup and domain-modeling guidance adapted into selectable features and project-owned terminology/decision-record methods; file-level sources retained. |
+| [`to-spec`](skills/engineering/to-spec/PROVENANCE.md)                                             | Adapted        | to-spec adapted to configured triage roles.                                                                                                                  |
+| [`tdd`](skills/engineering/tdd/PROVENANCE.md)                                                     | Copied         | Skill and both test-quality references are byte-identical.                                                                                                   |
+| [`to-implementation-tickets`](skills/engineering/to-implementation-tickets/PROVENANCE.md)         | Adapted        | to-tickets renamed and adapted to configured tracker conventions.                                                                                            |
+| [`to-questionnaire`](skills/general/to-questionnaire/PROVENANCE.md)                               | Adapted        | Matt's questionnaire skill with "Grill the send" changed to "Align on the send".                                                                             |
+| [`verifying-work`](skills/general/verifying-work/PROVENANCE.md)                                   | Adapted        | Poteto verification protocols and Matt feedback-loop guidance combined; HITL script copied.                                                                  |
+| [`wayfinder`](skills/general/wayfinder/PROVENANCE.md)                                             | Adapted        | Wayfinding procedure adapted to local skills and tracker conventions.                                                                                        |
+| [`wizard`](skills/general/wizard/PROVENANCE.md)                                                   | Copied         | Skill and bash template are byte-identical.                                                                                                                  |
+| [`writing`](skills/general/writing/PROVENANCE.md)                                                 | Adapted        | Matt agent-writing and Poteto technical-writing guidance behind an original audience router.                                                                 |
 
 ### Retained upstream credit and audit limits
 
 Matt's `pr` skill credits Dex Horthy / Humanlayer's `show-me`; that metadata is preserved in the local file. Humanlayer was not independently audited because this review is limited to the three requested projects. This is an upstream credit, not a claim that its separate licensing has been verified.
 
 Anthropic's frontend-design license is colocated as a source reference, not as the license of the original local skill. Its repository's third-party dependency notices concern components not included in this skill bundle; none of those components is distributed here. No frontend-design-specific `NOTICE` file was found in the pinned source tree.
+
+## Project guidance
+
+The terminology and decision-record methods in setup and project guidance adapt
+Matt Pocock's domain-modeling skill. Their applicable MIT notice is included in
+`skills/general/setup/licenses/Matt-Pocock-MIT.txt` and in this collection-level notice.
+
+- [Domain guidance](docs/agents/domain.md) adapts the active terminology practice from
+  [domain-modeling/SKILL.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md)
+  and definition rules from
+  [GLOSSARY-FORMAT.md](https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/GLOSSARY-FORMAT.md).
+
+Local additions define project approval, discovery, and maintenance. The setup
+bundle's provenance identifies the corresponding adapted templates; upstream
+authorship is not claimed for unrelated local policy.
 
 ## Matt Pocock's skills
 
