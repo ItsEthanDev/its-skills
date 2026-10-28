@@ -5,7 +5,9 @@ description: Plan, draft, revise, or review durable technical prose for humans o
 
 # Writing
 
-Write for the artifact's eventual reader, not the conversation that produced it. State the chosen conventions, decisions, status, and requirements directly, including in drafts presented in chat. Remove planning residue: rejected alternatives, reminders of debates, and caveats that require the conversation to make sense. Keep rationale when it helps future decisions. Reference established rules rather than repeat them.
+Write for the artifact's eventual reader, not the conversation that produced it. State the chosen conventions, decisions, status, and requirements directly, including in drafts presented in chat. Remove planning residue: rejected alternatives, reminders of debates, and caveats that require the conversation to make sense. Keep rationale when it helps future decisions.
+
+Give each rule, convention, or procedure one authoritative home with a recognizable purpose. Link to it where readers need it, so they can find the guidance without already knowing where it lives. Maintain the guidance in its owning document rather than repeat it elsewhere.
 
 Write proposed artifact text in the artifact's voice. Write “The plan is accepted,” not “The owner accepts the plan.” Name a person only when their identity is necessary to the artifact's meaning or accountability; keep incidental conversation attribution in the source record that owns provenance, when one exists.
 
