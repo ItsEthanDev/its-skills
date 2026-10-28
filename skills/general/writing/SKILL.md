@@ -5,9 +5,9 @@ description: Plan, draft, revise, or review durable technical prose for humans o
 
 # Writing
 
-Write for the artifact's reader and purpose.
+Write for the artifact's eventual reader, not the conversation that produced it. State the chosen conventions, decisions, status, and requirements directly, including in drafts presented in chat. Remove planning residue: rejected alternatives, reminders of debates, and caveats that require the conversation to make sense. Keep rationale when it helps future decisions, and preserve alternatives or history when the artifact's purpose calls for them. Reference established rules rather than repeat them.
 
-Write proposed artifact text in the artifact's voice, even when presenting a draft in chat. State its decisions, status, and requirements directly instead of narrating the conversation that produced them. Write “The plan is accepted,” not “The owner accepts the plan.” Name a person only when their identity is necessary to the artifact's meaning or accountability; keep incidental conversation attribution in the source record that owns provenance, when one exists.
+Write proposed artifact text in the artifact's voice. Write “The plan is accepted,” not “The owner accepts the plan.” Name a person only when their identity is necessary to the artifact's meaning or accountability; keep incidental conversation attribution in the source record that owns provenance, when one exists.
 
 ## Choose the reader
 
