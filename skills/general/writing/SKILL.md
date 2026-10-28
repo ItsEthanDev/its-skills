@@ -9,6 +9,8 @@ Write for the artifact's eventual reader, not the conversation that produced it.
 
 Write proposed artifact text in the artifact's voice. Write “The plan is accepted,” not “The owner accepts the plan.” Name a person only when their identity is necessary to the artifact's meaning or accountability; keep incidental conversation attribution in the source record that owns provenance, when one exists.
 
+Write maintained documentation as a coherent description of the current design, not as layers of amendments to earlier designs. When the design changes, revise the affected guidance in place so readers need no knowledge of its predecessors. Preserve useful history in artifacts intended for that purpose, such as decision records, changelogs, migration guides, and the issue tracker.
+
 ## Choose the reader
 
 - For prose that people read, including documentation, READMEs, RFCs, ADRs, PR descriptions, and commit messages, read [human-writing.md](human-writing.md).
