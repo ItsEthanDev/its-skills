@@ -13,6 +13,8 @@ Write proposed artifact text in the artifact's voice. Write “The plan is accep
 
 Write maintained documentation as a coherent description of the current design, not as layers of amendments to earlier designs. When the design changes, revise the affected guidance in place so readers need no knowledge of its predecessors. Preserve useful history in artifacts intended for that purpose, such as decision records, changelogs, migration guides, and the issue tracker.
 
+Make human-facing documents stand on their own. Keep agent-specific instructions in dedicated agent guidance, and shared procedures and governance in canonical project documents that both humans and agents can use.
+
 ## Choose the reader
 
 - For prose that people read, including documentation, READMEs, RFCs, ADRs, PR descriptions, and commit messages, read [human-writing.md](human-writing.md).
